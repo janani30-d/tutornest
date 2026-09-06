@@ -28633,3 +28633,17 @@ html[dir="rtl"] .pricing-how-works-step,
 html[dir="rtl"] .pricing-why-benefit {
     direction: rtl;
 }
+
+/* =========================================================
+   SCROLL TO TOP - DARK MODE
+========================================================= */
+
+body.dark-mode .scroll-top-btn {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .scroll-top-btn i.fa-arrow-up {
+    color: #FFFFFF !important;
+}
