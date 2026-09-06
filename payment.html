@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TutorNest | Payments & Receipts</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/dash-responsive.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         DASHBOARD LAYOUT
+    ========================================================== -->
+
+    <div class="dashboard-layout">
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <!-- Sidebar Header -->
+            <div class="dashboard-sidebar-header">
+
+                <a href="dashboard.html" class="dashboard-sidebar-logo">
+                    <img src="images/logo.png" alt="TutorNest">
+                </a>
+
+                <button
+                    type="button"
+                    class="dashboard-sidebar-close"
+                    id="dashboardSidebarClose"
+                    aria-label="Close navigation">
+
+                    <i class="fas fa-times"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- Sidebar Navigation -->
+            <nav class="dashboard-navigation">
+
+                <ul>
+
+                    <!-- Dashboard -->
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fas fa-house"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <!-- Find a Tutor -->
+                    <li>
+                        <a href="tutor.html">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Find a Tutor</span>
+                        </a>
+                    </li>
+
+                    <!-- My Tutors -->
+                    <li>
+                        <a href="mytutor.html">
+                            <i class="fas fa-chalkboard-user"></i>
+                            <span>My Tutors</span>
+                        </a>
+                    </li>
+
+                    <!-- My Sessions -->
+                    <li>
+                        <a href="my-session.html">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>My Sessions</span>
+                        </a>
+                    </li>
+
+                    <!-- Session Notes -->
+                    <li>
+                        <a href="session-notes.html">
+                            <i class="fas fa-note-sticky"></i>
+                            <span>Session Notes</span>
+                        </a>
+                    </li>
+
+                    <!-- Payments & Receipts -->
+                    <li>
+                        <a href="payment.html" class="active">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Payments &amp; Receipts</span>
+                        </a>
+                    </li>
+
+                    <!-- Profile -->
+                    <li>
+                        <a href="profile.html">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Sidebar Bottom -->
+            <div class="dashboard-sidebar-bottom">
+
+                <a href="login.html">
+                    <i class="fas fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Sidebar Overlay -->
+        <div
+            class="dashboard-sidebar-overlay"
+            id="dashboardSidebarOverlay">
+        </div>
+
+
+        <!-- =====================================================
+             MAIN AREA
+        ====================================================== -->
+
+        <main class="dashboard-main">
+
+            <!-- =================================================
+                 TOPBAR
+            ================================================== -->
+
+            <header class="dashboard-topbar">
+
+                <!-- Topbar Left -->
+                <div class="dashboard-topbar-left">
+
+                    <!-- Hamburger -->
+                    <button
+                        type="button"
+                        class="dashboard-hamburger"
+                        id="dashboardHamburger"
+                        aria-label="Open navigation"
+                        aria-expanded="false">
+
+                        <i class="fas fa-bars"></i>
+
+                    </button>
+
+
+                    <!-- Page Heading -->
+                    <div class="dashboard-page-heading">
+
+                        <span>Parent Dashboard</span>
+
+                        <h1>Payments &amp; Receipts</h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Topbar Right -->
+                <div class="dashboard-topbar-right">
+
+                    
+
+
+                    <!-- Dark Mode -->
+                    <button
+                        type="button"
+                        class="dashboard-control-button"
+                        id="dashboardDarkModeToggle"
+                        aria-label="Switch to dark mode"
+                        title="Dark Mode">
+
+                        <i class="fas fa-moon"></i>
+
+                        <span>Dark</span>
+
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button
+                        type="button"
+                        class="dashboard-control-button"
+                        id="dashboardRtlToggle"
+                        aria-label="Switch to right-to-left"
+                        title="RTL">
+
+                        <i class="fas fa-align-right"></i>
+
+                        <span>RTL</span>
+
+                    </button>
+
+
+                    <!-- Notifications -->
+                    <button
+                        type="button"
+                        class="dashboard-notification-button"
+                        aria-label="Notifications">
+
+                        <i class="fas fa-bell"></i>
+
+                        <span class="dashboard-notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- Profile -->
+                    <button
+                        type="button"
+                        class="dashboard-profile-button"
+                        aria-label="Open profile">
+
+                        <span class="dashboard-profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </span>
+
+                        <span class="dashboard-profile-info">
+
+                            <strong>Jeni</strong>
+
+                            <small>Parent</small>
+
+                        </span>
+
+                        <i class="fas fa-chevron-down"></i>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 PAGE CONTENT
+            ================================================== -->
+
+            <div class="dashboard-content">
+
+
+                <!-- =================================================
+                     1. PAYMENT HERO
+                ================================================== -->
+
+                <section class="dashboard-payment-intro">
+
+                    <div class="dashboard-payment-intro-content">
+
+                        <div class="dashboard-payment-intro-text">
+
+                            <span class="dashboard-payment-intro-label">
+                                <i class="fas fa-wallet"></i>
+                                Payments &amp; Receipts
+                            </span>
+
+                            <h2>
+                                Manage Your Tutoring Payments
+                            </h2>
+
+                            <p>
+                                View your payment history, track tutoring
+                                expenses and download receipts whenever
+                                you need them.
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-payment-intro-action">
+
+                            <a
+                                href="#paymentHistory"
+                                class="dashboard-payment-history-button">
+
+                                <i class="fas fa-receipt"></i>
+
+                                View Payment History
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     2. PAYMENT OVERVIEW
+                ================================================== -->
+
+                <section class="dashboard-payment-overview-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span class="dashboard-section-label">
+                                Overview
+                            </span>
+
+                            <h2>
+                                Payment Summary
+                            </h2>
+
+                        </div>
+
+                        <span class="dashboard-section-note">
+                            Your current payment activity
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-payment-stats-grid">
+
+
+                        <!-- Total Spent -->
+                        <article class="dashboard-payment-stat-card">
+
+                            <div class="dashboard-payment-stat-icon">
+                                <i class="fas fa-indian-rupee-sign"></i>
+                            </div>
+
+                            <div class="dashboard-payment-stat-content">
+
+                                <span>
+                                    Total Spent
+                                </span>
+
+                                <strong>
+                                    ₹24,850
+                                </strong>
+
+                                <small>
+                                    All tutoring payments
+                                </small>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- This Month -->
+                        <article class="dashboard-payment-stat-card">
+
+                            <div class="dashboard-payment-stat-icon">
+                                <i class="fas fa-calendar-days"></i>
+                            </div>
+
+                            <div class="dashboard-payment-stat-content">
+
+                                <span>
+                                    This Month
+                                </span>
+
+                                <strong>
+                                    ₹4,250
+                                </strong>
+
+                                <small>
+                                    September 2026
+                                </small>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Successful Payments -->
+                        <article class="dashboard-payment-stat-card">
+
+                            <div class="dashboard-payment-stat-icon">
+                                <i class="fas fa-circle-check"></i>
+                            </div>
+
+                            <div class="dashboard-payment-stat-content">
+
+                                <span>
+                                    Successful Payments
+                                </span>
+
+                                <strong>
+                                    32
+                                </strong>
+
+                                <small>
+                                    Payments completed
+                                </small>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Pending -->
+                        <article class="dashboard-payment-stat-card">
+
+                            <div class="dashboard-payment-stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+
+                            <div class="dashboard-payment-stat-content">
+
+                                <span>
+                                    Pending
+                                </span>
+
+                                <strong>
+                                    1
+                                </strong>
+
+                                <small>
+                                    Payment awaiting confirmation
+                                </small>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     3. RECENT PAYMENTS
+                ================================================== -->
+
+                <section class="dashboard-recent-payments-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span class="dashboard-section-label">
+                                Recent Activity
+                            </span>
+
+                            <h2>
+                                Recent Payments
+                            </h2>
+
+                        </div>
+
+                        <a
+                            href="#paymentHistory"
+                            class="dashboard-section-link">
+
+                            View All Payments
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="dashboard-recent-payments-list">
+
+
+                        <!-- Payment 1 -->
+                        <article class="dashboard-payment-card">
+
+                            <div class="dashboard-payment-card-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+
+
+                            <div class="dashboard-payment-card-main">
+
+                                <div class="dashboard-payment-card-header">
+
+                                    <div>
+
+                                        <span class="dashboard-payment-subject">
+                                            Mathematics
+                                        </span>
+
+                                        <h3>
+                                            Priya Sharma
+                                        </h3>
+
+                                    </div>
+
+                                    <span class="dashboard-payment-status">
+                                        <i class="fas fa-circle-check"></i>
+                                        Paid
+                                    </span>
+
+                                </div>
+
+
+                                <div class="dashboard-payment-card-details">
+
+                                    <span>
+                                        <i class="fas fa-calendar"></i>
+                                        Sep 03, 2026
+                                    </span>
+
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        5:00 PM – 6:00 PM
+                                    </span>
+
+                                    <span>
+                                        <i class="fas fa-credit-card"></i>
+                                        UPI
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-payment-card-amount">
+
+                                <strong>
+                                    ₹500
+                                </strong>
+
+                                <span>
+                                    Payment ID: TN25001
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-payment-card-action">
+
+                                <button
+                                    type="button"
+                                    class="dashboard-payment-receipt-button">
+
+                                    <i class="fas fa-download"></i>
+                                    Receipt
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- Payment 2 -->
+                        <article class="dashboard-payment-card">
+
+                            <div class="dashboard-payment-card-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+
+
+                            <div class="dashboard-payment-card-main">
+
+                                <div class="dashboard-payment-card-header">
+
+                                    <div>
+
+                                        <span class="dashboard-payment-subject">
+                                            Science
+                                        </span>
+
+                                        <h3>
+                                            Arjun Kumar
+                                        </h3>
+
+                                    </div>
+
+                                    <span class="dashboard-payment-status">
+                                        <i class="fas fa-circle-check"></i>
+                                        Paid
+                                    </span>
+
+                                </div>
+
+
+                                <div class="dashboard-payment-card-details">
+
+                                    <span>
+                                        <i class="fas fa-calendar"></i>
+                                        Sep 01, 2026
+                                    </span>
+
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        6:30 PM – 7:30 PM
+                                    </span>
+
+                                    <span>
+                                        <i class="fas fa-credit-card"></i>
+                                        Card
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-payment-card-amount">
+
+                                <strong>
+                                    ₹450
+                                </strong>
+
+                                <span>
+                                    Payment ID: TN24986
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-payment-card-action">
+
+                                <button
+                                    type="button"
+                                    class="dashboard-payment-receipt-button">
+
+                                    <i class="fas fa-download"></i>
+                                    Receipt
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- Payment 3 -->
+                        <article class="dashboard-payment-card">
+
+                            <div class="dashboard-payment-card-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+
+
+                            <div class="dashboard-payment-card-main">
+
+                                <div class="dashboard-payment-card-header">
+
+                                    <div>
+
+                                        <span class="dashboard-payment-subject">
+                                            English
+                                        </span>
+
+                                        <h3>
+                                            Ananya Rao
+                                        </h3>
+
+                                    </div>
+
+                                    <span class="dashboard-payment-status">
+                                        <i class="fas fa-circle-check"></i>
+                                        Paid
+                                    </span>
+
+                                </div>
+
+
+                                <div class="dashboard-payment-card-details">
+
+                                    <span>
+                                        <i class="fas fa-calendar"></i>
+                                        Aug 29, 2026
+                                    </span>
+
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        5:30 PM – 6:30 PM
+                                    </span>
+
+                                    <span>
+                                        <i class="fas fa-credit-card"></i>
+                                        UPI
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-payment-card-amount">
+
+                                <strong>
+                                    ₹400
+                                </strong>
+
+                                <span>
+                                    Payment ID: TN24971
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-payment-card-action">
+
+                                <button
+                                    type="button"
+                                    class="dashboard-payment-receipt-button">
+
+                                    <i class="fas fa-download"></i>
+                                    Receipt
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     4. PAYMENT & RECEIPT HISTORY
+                ================================================== -->
+
+                <section
+                    class="dashboard-payment-history-section"
+                    id="paymentHistory">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span class="dashboard-section-label">
+                                Transactions
+                            </span>
+
+                            <h2>
+                                Payment &amp; Receipt History
+                            </h2>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="dashboard-payment-filter-button">
+
+                            <i class="fas fa-filter"></i>
+
+                            Filter
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="dashboard-payment-history-table-wrapper">
+
+                        <div class="dashboard-payment-history-table">
+
+                            <!-- Table Header -->
+                            <div class="dashboard-payment-history-row dashboard-payment-history-header">
+
+                                <span>
+                                    Payment
+                                </span>
+
+                                <span>
+                                    Tutor
+                                </span>
+
+                                <span>
+                                    Date
+                                </span>
+
+                                <span>
+                                    Method
+                                </span>
+
+                                <span>
+                                    Amount
+                                </span>
+
+                                <span>
+                                    Status
+                                </span>
+
+                                <span>
+                                    Receipt
+                                </span>
+
+                            </div>
+
+
+                            <!-- Row 1 -->
+                            <div class="dashboard-payment-history-row">
+
+                                <span
+                                    class="dashboard-payment-history-payment">
+
+                                    <i class="fas fa-calculator"></i>
+
+                                    Mathematics Session
+
+                                </span>
+
+                                <span>
+                                    Priya Sharma
+                                </span>
+
+                                <span>
+                                    Sep 03, 2026
+                                </span>
+
+                                <span>
+                                    UPI
+                                </span>
+
+                                <strong>
+                                    ₹500
+                                </strong>
+
+                                <span class="dashboard-payment-history-status">
+                                    Paid
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="dashboard-payment-download-button"
+                                    aria-label="Download receipt">
+
+                                    <i class="fas fa-download"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- Row 2 -->
+                            <div class="dashboard-payment-history-row">
+
+                                <span
+                                    class="dashboard-payment-history-payment">
+
+                                    <i class="fas fa-flask"></i>
+
+                                    Science Session
+
+                                </span>
+
+                                <span>
+                                    Arjun Kumar
+                                </span>
+
+                                <span>
+                                    Sep 01, 2026
+                                </span>
+
+                                <span>
+                                    Card
+                                </span>
+
+                                <strong>
+                                    ₹450
+                                </strong>
+
+                                <span class="dashboard-payment-history-status">
+                                    Paid
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="dashboard-payment-download-button"
+                                    aria-label="Download receipt">
+
+                                    <i class="fas fa-download"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- Row 3 -->
+                            <div class="dashboard-payment-history-row">
+
+                                <span
+                                    class="dashboard-payment-history-payment">
+
+                                    <i class="fas fa-book"></i>
+
+                                    English Session
+
+                                </span>
+
+                                <span>
+                                    Ananya Rao
+                                </span>
+
+                                <span>
+                                    Aug 29, 2026
+                                </span>
+
+                                <span>
+                                    UPI
+                                </span>
+
+                                <strong>
+                                    ₹400
+                                </strong>
+
+                                <span class="dashboard-payment-history-status">
+                                    Paid
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="dashboard-payment-download-button"
+                                    aria-label="Download receipt">
+
+                                    <i class="fas fa-download"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- Row 4 -->
+                            <div class="dashboard-payment-history-row">
+
+                                <span
+                                    class="dashboard-payment-history-payment">
+
+                                    <i class="fas fa-laptop-code"></i>
+
+                                    Computer Science Session
+
+                                </span>
+
+                                <span>
+                                    Rahul Menon
+                                </span>
+
+                                <span>
+                                    Aug 27, 2026
+                                </span>
+
+                                <span>
+                                    UPI
+                                </span>
+
+                                <strong>
+                                    ₹550
+                                </strong>
+
+                                <span class="dashboard-payment-history-status">
+                                    Paid
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="dashboard-payment-download-button"
+                                    aria-label="Download receipt">
+
+                                    <i class="fas fa-download"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- Row 5 -->
+                            <div class="dashboard-payment-history-row">
+
+                                <span
+                                    class="dashboard-payment-history-payment">
+
+                                    <i class="fas fa-calculator"></i>
+
+                                    Mathematics Session
+
+                                </span>
+
+                                <span>
+                                    Priya Sharma
+                                </span>
+
+                                <span>
+                                    Aug 25, 2026
+                                </span>
+
+                                <span>
+                                    Card
+                                </span>
+
+                                <strong>
+                                    ₹500
+                                </strong>
+
+                                <span class="dashboard-payment-history-status">
+                                    Paid
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="dashboard-payment-download-button"
+                                    aria-label="Download receipt">
+
+                                    <i class="fas fa-download"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- Row 6 -->
+                            <div class="dashboard-payment-history-row">
+
+                                <span
+                                    class="dashboard-payment-history-payment">
+
+                                    <i class="fas fa-flask"></i>
+
+                                    Science Session
+
+                                </span>
+
+                                <span>
+                                    Arjun Kumar
+                                </span>
+
+                                <span>
+                                    Aug 22, 2026
+                                </span>
+
+                                <span>
+                                    UPI
+                                </span>
+
+                                <strong>
+                                    ₹450
+                                </strong>
+
+                                <span class="dashboard-payment-history-status">
+                                    Paid
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="dashboard-payment-download-button"
+                                    aria-label="Download receipt">
+
+                                    <i class="fas fa-download"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     5. PAYMENT METHODS
+                ================================================== -->
+
+                <section class="dashboard-payment-methods-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span class="dashboard-section-label">
+                                Payment Options
+                            </span>
+
+                            <h2>
+                                Saved Payment Methods
+                            </h2>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="dashboard-payment-add-method-button">
+
+                            <i class="fas fa-plus"></i>
+
+                            Add Payment Method
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="dashboard-payment-methods-grid">
+
+
+                        <!-- UPI -->
+                        <article class="dashboard-payment-method-card">
+
+                            <div class="dashboard-payment-method-icon">
+
+                                <i class="fas fa-mobile-screen-button"></i>
+
+                            </div>
+
+                            <div class="dashboard-payment-method-content">
+
+                                <span>
+                                    UPI
+                                </span>
+
+                                <strong>
+                                    jenijohn@upi
+                                </strong>
+
+                                <small>
+                                    Default payment method
+                                </small>
+
+                            </div>
+
+                            <span class="dashboard-payment-method-default">
+                                Default
+                            </span>
+
+                        </article>
+
+
+                        <!-- Card -->
+                        <article class="dashboard-payment-method-card">
+
+                            <div class="dashboard-payment-method-icon">
+
+                                <i class="fas fa-credit-card"></i>
+
+                            </div>
+
+                            <div class="dashboard-payment-method-content">
+
+                                <span>
+                                    Debit Card
+                                </span>
+
+                                <strong>
+                                    •••• •••• •••• 4821
+                                </strong>
+
+                                <small>
+                                    Added August 2026
+                                </small>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="dashboard-payment-method-manage-button">
+
+                                Manage
+
+                            </button>
+
+                        </article>
+
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     6. PAYMENT SUPPORT
+                ================================================== -->
+
+                <section class="dashboard-payment-support-section">
+
+                    <div class="dashboard-payment-support-content">
+
+                        <div class="dashboard-payment-support-icon">
+
+                            <i class="fas fa-headset"></i>
+
+                        </div>
+
+
+                        <div class="dashboard-payment-support-text">
+
+                            <span class="dashboard-payment-support-label">
+                                Payment Support
+                            </span>
+
+                            <h2>
+                                Need Help With a Payment?
+                            </h2>
+
+                            <p>
+                                Our support team can help you with payment
+                                issues, receipts, refunds or transaction
+                                questions.
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-payment-support-action">
+
+                            <a
+                                href="contact.html"
+                                class="dashboard-payment-support-button">
+
+                                <i class="fas fa-headset"></i>
+
+                                Contact Support
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="dashboard-logout-modal"
+    id="dashboardLogoutModal"
+    aria-hidden="true"
+>
+
+    <div class="dashboard-logout-overlay" id="dashboardLogoutOverlay"></div>
+
+    <div
+        class="dashboard-logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dashboardLogoutTitle"
+    >
+
+        <button
+            type="button"
+            class="dashboard-logout-close"
+            id="dashboardLogoutClose"
+            aria-label="Close logout popup"
+        >
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="dashboard-logout-icon">
+            <i class="fas fa-right-from-bracket"></i>
+        </div>
+
+        <div class="dashboard-logout-content">
+
+            <h2 id="dashboardLogoutTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout from your TutorNest account?
+            </p>
+
+        </div>
+
+        <div class="dashboard-logout-actions">
+
+            <button
+                type="button"
+                class="dashboard-logout-no"
+                id="dashboardLogoutNo"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="dashboard-logout-yes"
+                id="dashboardLogoutYes"
+            >
+                <i class="fas fa-right-from-bracket"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+</div>
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TutorNest | Profile</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/dash-responsive.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         DASHBOARD LAYOUT
+    ====================================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <div class="dashboard-sidebar-header">
+
+                <a href="dashboard.html" class="dashboard-sidebar-logo">
+                    <img
+                        src="images/logo.png"
+                        alt="TutorNest"
+                    >
+                </a>
+
+                <button
+                    type="button"
+                    class="dashboard-sidebar-close"
+                    id="dashboardSidebarClose"
+                    aria-label="Close menu"
+                >
+                    <i class="fas fa-times"></i>
+                </button>
+
+            </div>
+
+
+            <!-- Sidebar Navigation -->
+
+            <nav class="dashboard-navigation">
+
+                <ul>
+
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fas fa-house"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tutor.html">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Find a Tutor</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mytutor.html">
+                            <i class="fas fa-chalkboard-user"></i>
+                            <span>My Tutors</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="my-session.html">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>My Sessions</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="session-notes.html">
+                            <i class="fas fa-note-sticky"></i>
+                            <span>Session Notes</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="payment.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Payments &amp; Receipts</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="profile.html" class="active">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Sidebar Bottom -->
+
+            <div class="dashboard-sidebar-bottom">
+
+                <a href="login.html">
+                    <i class="fas fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Sidebar Overlay -->
+
+        <div
+            class="dashboard-sidebar-overlay"
+            id="dashboardSidebarOverlay"
+        ></div>
+
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =================================================
+                 TOPBAR
+            ================================================== -->
+
+            <header class="dashboard-topbar">
+
+                <div class="dashboard-topbar-left">
+
+                    <button
+                        type="button"
+                        class="dashboard-hamburger"
+                        id="dashboardHamburger"
+                        aria-label="Open menu"
+                        aria-expanded="false"
+                    >
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+
+                    <div class="dashboard-page-heading">
+
+                        <span>Parent Dashboard</span>
+
+                        <h1>Profile</h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Topbar Right -->
+
+                <div class="dashboard-topbar-right">
+
+
+                    
+
+                    <!-- Dark Mode -->
+
+                    <button
+                        type="button"
+                        class="dashboard-control-button"
+                        id="dashboardDarkModeToggle"
+                        aria-label="Switch to dark mode"
+                        title="Dark Mode"
+                    >
+                        <i class="fas fa-moon"></i>
+                        <span>Dark</span>
+                    </button>
+
+
+                    <!-- RTL -->
+
+                    <button
+                        type="button"
+                        class="dashboard-control-button"
+                        id="dashboardRtlToggle"
+                        aria-label="Switch to right-to-left"
+                        title="RTL"
+                    >
+                        <i class="fas fa-align-right"></i>
+                        <span>RTL</span>
+                    </button>
+
+
+                    <!-- Notifications -->
+
+                    <button
+                        type="button"
+                        class="dashboard-notification-button"
+                        aria-label="Notifications"
+                    >
+                        <i class="fas fa-bell"></i>
+
+                        <span class="dashboard-notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- Profile -->
+
+                    <button
+                        type="button"
+                        class="dashboard-profile-button"
+                        aria-label="Profile"
+                    >
+
+                        <span class="dashboard-profile-avatar">
+                            J
+                        </span>
+
+                        <span class="dashboard-profile-info">
+
+                            <strong>Jeni</strong>
+
+                            <small>Parent</small>
+
+                        </span>
+
+                        <i class="fas fa-chevron-down"></i>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 DASHBOARD CONTENT
+            ================================================== -->
+
+            <div class="dashboard-content dashboard-profile-content">
+
+
+                <!-- =================================================
+                     1. PROFILE HERO
+                ================================================== -->
+
+                <section class="dashboard-profile-intro">
+
+                    <div class="dashboard-profile-intro-content">
+
+
+                        <!-- Profile Avatar -->
+
+                        <div class="dashboard-profile-intro-avatar">
+
+                            <span>J</span>
+
+                            <button
+                                type="button"
+                                class="dashboard-profile-avatar-edit"
+                                aria-label="Change profile photo"
+                                title="Change profile photo"
+                            >
+                                <i class="fas fa-camera"></i>
+                            </button>
+
+                        </div>
+
+
+                        <!-- Profile Information -->
+
+                        <div class="dashboard-profile-intro-text">
+
+                            <span class="dashboard-profile-intro-label">
+                                <i class="fas fa-user"></i>
+                                My Profile
+                            </span>
+
+                            <h2>Jeni</h2>
+
+                            <p>
+                                Parent account • Managing your child's
+                                tutoring journey with TutorNest.
+                            </p>
+
+                            <div class="dashboard-profile-intro-meta">
+
+                                <span>
+                                    <i class="fas fa-circle-check"></i>
+                                    Verified Account
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-calendar"></i>
+                                    Member since 2026
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Hero Action -->
+
+                    <div class="dashboard-profile-intro-action">
+
+                        <button
+                            type="button"
+                            class="dashboard-profile-edit-button"
+                            id="dashboardProfileEditButton"
+                        >
+                            <i class="fas fa-pen"></i>
+                            Edit Profile
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     2. PERSONAL INFORMATION
+                ================================================== -->
+
+                <section class="dashboard-profile-personal-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span class="dashboard-section-label">
+                                Personal Details
+                            </span>
+
+                            <h2>Personal Information</h2>
+
+                        </div>
+
+                        <span class="dashboard-section-note">
+                            Keep your account details up to date
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-profile-form-card">
+
+                        <form id="dashboardProfileForm">
+
+
+                            <div class="dashboard-profile-form-grid">
+
+
+                                <!-- Full Name -->
+
+                                <div class="dashboard-profile-field">
+
+                                    <label for="dashboardProfileName">
+                                        Full Name
+                                    </label>
+
+                                    <div class="dashboard-profile-input-wrap">
+
+                                        <i class="fas fa-user"></i>
+
+                                        <input
+                                            type="text"
+                                            id="dashboardProfileName"
+                                            name="fullName"
+                                            value="Jeni John"
+                                            placeholder="Enter your full name"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Email -->
+
+                                <div class="dashboard-profile-field">
+
+                                    <label for="dashboardProfileEmail">
+                                        Email Address
+                                    </label>
+
+                                    <div class="dashboard-profile-input-wrap">
+
+                                        <i class="fas fa-envelope"></i>
+
+                                        <input
+                                            type="email"
+                                            id="dashboardProfileEmail"
+                                            name="email"
+                                            value="jeni@example.com"
+                                            placeholder="Enter your email"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Phone -->
+
+                                <div class="dashboard-profile-field">
+
+                                    <label for="dashboardProfilePhone">
+                                        Phone Number
+                                    </label>
+
+                                    <div class="dashboard-profile-input-wrap">
+
+                                        <i class="fas fa-phone"></i>
+
+                                        <input
+                                            type="tel"
+                                            id="dashboardProfilePhone"
+                                            name="phone"
+                                            value="+91 98765 43210"
+                                            placeholder="Enter your phone number"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Account Type -->
+
+                                <div class="dashboard-profile-field">
+
+                                    <label for="dashboardProfileAccountType">
+                                        Account Type
+                                    </label>
+
+                                    <div class="dashboard-profile-input-wrap">
+
+                                        <i class="fas fa-user-shield"></i>
+
+                                        <select
+                                            id="dashboardProfileAccountType"
+                                            name="accountType"
+                                        >
+                                            <option selected>
+                                                Parent / Guardian
+                                            </option>
+                                            <option>
+                                                Student
+                                            </option>
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div
+                                class="dashboard-profile-form-message"
+                                id="dashboardProfileFormMessage"
+                                aria-live="polite"
+                            ></div>
+
+
+                            <div class="dashboard-profile-form-actions">
+
+                                <button
+                                    type="button"
+                                    class="dashboard-profile-cancel-button"
+                                    id="dashboardProfileCancelButton"
+                                >
+                                    Cancel
+                                </button>
+
+                                <button
+                                    type="submit"
+                                    class="dashboard-profile-save-button"
+                                    id="dashboardProfileSaveButton"
+                                >
+                                    <i class="fas fa-check"></i>
+                                    Save Changes
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     3. CHILD / LEARNING INFORMATION
+                ================================================== -->
+
+                <section class="dashboard-profile-learning-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span class="dashboard-section-label">
+                                Learning Details
+                            </span>
+
+                            <h2>Child &amp; Learning Information</h2>
+
+                        </div>
+
+                        <span class="dashboard-section-note">
+                            Help us personalize tutoring recommendations
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-profile-learning-card">
+
+
+                        <div class="dashboard-profile-learning-grid">
+
+
+                            <!-- Child Name -->
+
+                            <div class="dashboard-profile-field">
+
+                                <label for="dashboardProfileChildName">
+                                    Child Name
+                                </label>
+
+                                <div class="dashboard-profile-input-wrap">
+
+                                    <i class="fas fa-child"></i>
+
+                                    <input
+                                        type="text"
+                                        id="dashboardProfileChildName"
+                                        value="Aarav"
+                                        placeholder="Enter child's name"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Grade -->
+
+                            <div class="dashboard-profile-field">
+
+                                <label for="dashboardProfileGrade">
+                                    Grade / Level
+                                </label>
+
+                                <div class="dashboard-profile-input-wrap">
+
+                                    <i class="fas fa-graduation-cap"></i>
+
+                                    <select id="dashboardProfileGrade">
+
+                                        <option>Primary School</option>
+                                        <option>Middle School</option>
+                                        <option selected>
+                                            Grade 8 / High School
+                                        </option>
+                                        <option>
+                                            Higher Secondary
+                                        </option>
+                                        <option>College</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Preferred Subject -->
+
+                            <div class="dashboard-profile-field">
+
+                                <label for="dashboardProfileSubject">
+                                    Preferred Subject
+                                </label>
+
+                                <div class="dashboard-profile-input-wrap">
+
+                                    <i class="fas fa-book-open"></i>
+
+                                    <select id="dashboardProfileSubject">
+
+                                        <option selected>
+                                            Mathematics
+                                        </option>
+
+                                        <option>Science</option>
+                                        <option>English</option>
+                                        <option>
+                                            Computer Science
+                                        </option>
+
+                                        <option>
+                                            Social Studies
+                                        </option>
+
+                                        <option>Languages</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Learning Mode -->
+
+                            <div class="dashboard-profile-field">
+
+                                <label for="dashboardProfileLearningMode">
+                                    Learning Mode
+                                </label>
+
+                                <div class="dashboard-profile-input-wrap">
+
+                                    <i class="fas fa-house-user"></i>
+
+                                    <select id="dashboardProfileLearningMode">
+
+                                        <option selected>
+                                            Home Tutoring
+                                        </option>
+
+                                        <option>
+                                            Online Tutoring
+                                        </option>
+
+                                        <option>
+                                            Hybrid Learning
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- Preferred Subjects -->
+
+                        <div class="dashboard-profile-preferred-subjects">
+
+                            <div class="dashboard-profile-subject-heading">
+
+                                <i class="fas fa-book"></i>
+
+                                <span>
+                                    Other Preferred Subjects
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-profile-subject-tags">
+
+                                <span>Science</span>
+                                <span>English</span>
+                                <span>Computer Science</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     4. PREFERENCES
+                ================================================== -->
+
+                <section class="dashboard-profile-preferences-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span class="dashboard-section-label">
+                                Preferences
+                            </span>
+
+                            <h2>Account Preferences</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-profile-preferences-grid">
+
+
+                        <!-- Session Time -->
+
+                        <article class="dashboard-profile-preference-card">
+
+                            <div class="dashboard-profile-preference-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+
+                            <div class="dashboard-profile-preference-content">
+
+                                <span>Preferred Session Time</span>
+
+                                <strong>Evening</strong>
+
+                                <small>
+                                    Usually between 5:00 PM – 8:00 PM
+                                </small>
+
+                            </div>
+
+                            <i class="fas fa-chevron-right dashboard-profile-preference-arrow"></i>
+
+                        </article>
+
+
+                        <!-- Notifications -->
+
+                        <article class="dashboard-profile-preference-card">
+
+                            <div class="dashboard-profile-preference-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+
+                            <div class="dashboard-profile-preference-content">
+
+                                <span>Notifications</span>
+
+                                <strong>Enabled</strong>
+
+                                <small>
+                                    Session reminders and updates
+                                </small>
+
+                            </div>
+
+                            <i class="fas fa-chevron-right dashboard-profile-preference-arrow"></i>
+
+                        </article>
+
+
+                        <!-- Email Updates -->
+
+                        <article class="dashboard-profile-preference-card">
+
+                            <div class="dashboard-profile-preference-icon">
+                                <i class="fas fa-envelope-open-text"></i>
+                            </div>
+
+                            <div class="dashboard-profile-preference-content">
+
+                                <span>Email Updates</span>
+
+                                <strong>Enabled</strong>
+
+                                <small>
+                                    Receive important TutorNest updates
+                                </small>
+
+                            </div>
+
+                            <i class="fas fa-chevron-right dashboard-profile-preference-arrow"></i>
+
+                        </article>
+
+
+                        <!-- Language -->
+
+                        <article class="dashboard-profile-preference-card">
+
+                            <div class="dashboard-profile-preference-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+
+                            <div class="dashboard-profile-preference-content">
+
+                                <span>Language</span>
+
+                                <strong>English</strong>
+
+                                <small>
+                                    Change your preferred language
+                                </small>
+
+                            </div>
+
+                            <i class="fas fa-chevron-right dashboard-profile-preference-arrow"></i>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     5. SECURITY
+                ================================================== -->
+
+                <section class="dashboard-profile-security-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span class="dashboard-section-label">
+                                Account Security
+                            </span>
+
+                            <h2>Security</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-profile-security-card">
+
+
+                        <div class="dashboard-profile-security-main">
+
+                            <div class="dashboard-profile-security-icon">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+
+
+                            <div class="dashboard-profile-security-content">
+
+                                <span>Account Protection</span>
+
+                                <h3>Your account is secure</h3>
+
+                                <p>
+                                    Your account information and tutoring
+                                    activity are protected by TutorNest.
+                                </p>
+
+                                <small>
+                                    <i class="fas fa-circle-check"></i>
+                                    Last password update: Recently
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="dashboard-profile-password-button"
+                            id="dashboardProfilePasswordButton"
+                        >
+                            <i class="fas fa-key"></i>
+                            Change Password
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     6. PROFILE SUPPORT
+                ================================================== -->
+
+                <section class="dashboard-profile-support-section">
+
+                    <div class="dashboard-profile-support-content">
+
+                        <div class="dashboard-profile-support-icon">
+                            <i class="fas fa-circle-question"></i>
+                        </div>
+
+
+                        <div class="dashboard-profile-support-text">
+
+                            <span>
+                                Need Help?
+                            </span>
+
+                            <h2>
+                                Need help managing your profile?
+                            </h2>
+
+                            <p>
+                                Our support team can help you update your
+                                account details and preferences.
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-profile-support-action">
+
+                            <a
+                                href="contact.html"
+                                class="dashboard-profile-support-button"
+                            >
+                                <i class="fas fa-headset"></i>
+                                Contact Support
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- =====================================================
+         SCRIPTS
+    ====================================================== -->
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="dashboard-logout-modal"
+    id="dashboardLogoutModal"
+    aria-hidden="true"
+>
+
+    <div class="dashboard-logout-overlay" id="dashboardLogoutOverlay"></div>
+
+    <div
+        class="dashboard-logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dashboardLogoutTitle"
+    >
+
+        <button
+            type="button"
+            class="dashboard-logout-close"
+            id="dashboardLogoutClose"
+            aria-label="Close logout popup"
+        >
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="dashboard-logout-icon">
+            <i class="fas fa-right-from-bracket"></i>
+        </div>
+
+        <div class="dashboard-logout-content">
+
+            <h2 id="dashboardLogoutTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout from your TutorNest account?
+            </p>
+
+        </div>
+
+        <div class="dashboard-logout-actions">
+
+            <button
+                type="button"
+                class="dashboard-logout-no"
+                id="dashboardLogoutNo"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="dashboard-logout-yes"
+                id="dashboardLogoutYes"
+            >
+                <i class="fas fa-right-from-bracket"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+</div>
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

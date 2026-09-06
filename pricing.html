@@ -1,0 +1,2331 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- Basic Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Title -->
+  <title>TutorNest | Home Tutoring & Learning</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     TUTORNEST
+     PART 1 - HEADER / NAVIGATION
+========================================================= -->
+
+
+<header class="site-header" id="siteHeader">
+
+  <div class="header-container">
+
+
+    <!-- =====================================================
+         LOGO
+    ====================================================== -->
+
+    <a
+      href="index.html"
+      class="site-logo"
+      aria-label="TutorNest Home">
+
+      <img
+        src="images/logo.png"
+        alt="TutorNest Logo"
+        class="logo-image">
+
+    </a>
+
+
+
+    <!-- =====================================================
+         DESKTOP NAVIGATION
+    ====================================================== -->
+
+    <nav
+      class="desktop-navigation"
+      aria-label="Main Navigation">
+
+      <ul class="nav-list">
+
+
+        <!-- HOME DROPDOWN -->
+
+        <li class="nav-item nav-dropdown">
+
+          <button
+            type="button"
+            class="nav-link dropdown-toggle"
+            aria-expanded="false">
+
+            <span>Home</span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <ul class="dropdown-menu">
+
+            <li class="dropdown-item">
+
+              <a href="index.html">
+                Home 1
+              </a>
+
+            </li>
+
+            <li class="dropdown-item">
+
+              <a href="home-2.html">
+                Home 2
+              </a>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <!-- FIND A TUTOR -->
+
+        <li class="nav-item">
+
+          <a
+            href="find-tutor.html"
+            class="nav-link">
+
+            Find a Tutor
+
+          </a>
+
+        </li>
+
+
+        <!-- SUBJECTS -->
+
+        <li class="nav-item">
+
+          <a
+            href="subjects.html"
+            class="nav-link">
+
+            Subjects
+
+          </a>
+
+        </li>
+
+
+        <!-- HOW IT WORKS -->
+
+        <li class="nav-item">
+
+          <a
+            href="how-it-works.html"
+            class="nav-link">
+
+            How It Works
+
+          </a>
+
+        </li>
+
+
+        <!-- PRICING -->
+
+        <li class="nav-item">
+
+          <a
+            href="pricing.html"
+            class="nav-link active">
+
+            Pricing
+
+          </a>
+
+        </li>
+
+
+        
+
+
+        <!-- CONTACT -->
+
+        <li class="nav-item">
+
+          <a
+            href="contact.html"
+            class="nav-link">
+
+            Contact
+
+          </a>
+
+        </li>
+
+
+      </ul>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         DESKTOP HEADER ACTIONS
+    ====================================================== -->
+
+    <div class="desktop-header-actions">
+
+
+      <!-- DARK MODE -->
+
+      <button
+        type="button"
+        class="header-icon-btn theme-toggle"
+        id="themeToggle"
+        aria-label="Switch to dark mode"
+        title="Dark Mode">
+
+        <i class="fa-solid fa-moon"></i>
+
+      </button>
+
+
+      <!-- RTL -->
+
+      <button
+        type="button"
+        class="header-rtl-btn rtl-toggle"
+        id="rtlToggle"
+        aria-label="Switch to RTL"
+        title="RTL">
+
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+        <span>RTL</span>
+
+      </button>
+
+
+      <!-- LOGIN -->
+
+      <a
+        href="login.html"
+        class="header-login-btn">
+
+        <i class="fa-solid fa-right-to-bracket"></i>
+
+        <span>Login</span>
+
+      </a>
+
+
+      <!-- DASHBOARD -->
+
+      <a
+        href="dashboard.html"
+        class="header-dashboard-btn">
+
+        <i class="fa-solid fa-table-columns"></i>
+
+        <span>Dashboard</span>
+
+      </a>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         HAMBURGER BUTTON
+         Mobile + iPad Mini + iPad Pro
+    ====================================================== -->
+
+    <button
+      type="button"
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mobileMenu">
+
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+
+    </button>
+
+
+  </div>
+
+
+
+  <!-- =========================================================
+       MOBILE / TABLET MENU
+  ========================================================== -->
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu">
+
+
+    <nav
+      class="mobile-navigation"
+      aria-label="Mobile Navigation">
+
+
+      <ul class="mobile-nav-list">
+
+
+        <!-- HOME DROPDOWN -->
+
+        <li class="mobile-nav-item mobile-nav-dropdown">
+
+          <button
+            type="button"
+            class="mobile-nav-link mobile-dropdown-toggle"
+            aria-expanded="false">
+
+            <span class="mobile-nav-link-left">
+
+              <i class="fa-solid fa-house"></i>
+
+              <span>Home</span>
+
+            </span>
+
+            <i class="fa-solid fa-chevron-down mobile-dropdown-icon"></i>
+
+          </button>
+
+
+          <ul class="mobile-dropdown-menu">
+
+            <li>
+
+              <a href="index.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Home 1</span>
+
+              </a>
+
+            </li>
+
+
+            <li>
+
+              <a href="home-2.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Home 2</span>
+
+              </a>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+
+
+        <!-- FIND A TUTOR -->
+
+        <li class="mobile-nav-item">
+
+          <a
+            href="find-tutor.html"
+            class="mobile-nav-link">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <span>Find a Tutor</span>
+
+          </a>
+
+        </li>
+
+
+
+        <!-- SUBJECTS -->
+
+        <li class="mobile-nav-item">
+
+          <a
+            href="subjects.html"
+            class="mobile-nav-link">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <span>Subjects</span>
+
+          </a>
+
+        </li>
+
+
+
+        <!-- HOW IT WORKS -->
+
+        <li class="mobile-nav-item">
+
+          <a
+            href="how-it-works.html"
+            class="mobile-nav-link">
+
+            <i class="fa-solid fa-list-check"></i>
+
+            <span>How It Works</span>
+
+          </a>
+
+        </li>
+
+
+
+        <!-- PRICING -->
+
+        <li class="mobile-nav-item">
+
+          <a
+            href="pricing.html"
+            class="mobile-nav-link">
+
+            <i class="fa-solid fa-tags"></i>
+
+            <span>Pricing</span>
+
+          </a>
+
+        </li>
+
+
+
+        
+
+
+
+        <!-- CONTACT -->
+
+        <li class="mobile-nav-item">
+
+          <a
+            href="contact.html"
+            class="mobile-nav-link">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <span>Contact</span>
+
+          </a>
+
+        </li>
+
+
+      </ul>
+
+
+
+      <!-- DIVIDER -->
+
+      <div class="mobile-menu-divider"></div>
+
+
+
+      <!-- =====================================================
+           MOBILE ACTIONS
+      ====================================================== -->
+
+      <div class="mobile-menu-actions">
+
+
+        <!-- DARK MODE -->
+
+        <button
+          type="button"
+          class="mobile-action-btn mobile-theme-toggle"
+          id="mobileThemeToggle">
+
+          <span class="mobile-action-left">
+
+            <i class="fa-solid fa-moon"></i>
+
+            <span>Dark Mode</span>
+
+          </span>
+
+        </button>
+
+
+
+        <!-- RTL -->
+
+        <button
+          type="button"
+          class="mobile-action-btn mobile-rtl-toggle"
+          id="mobileRtlToggle">
+
+          <span class="mobile-action-left">
+
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+            <span>RTL</span>
+
+          </span>
+
+        </button>
+
+
+
+        <!-- LOGIN -->
+
+        <a
+          href="login.html"
+          class="mobile-login-btn">
+
+          <i class="fa-solid fa-right-to-bracket"></i>
+
+          <span>Login</span>
+
+        </a>
+
+
+
+        <!-- DASHBOARD -->
+
+        <a
+          href="dashboard.html"
+          class="mobile-dashboard-btn">
+
+          <i class="fa-solid fa-table-columns"></i>
+
+          <span>Dashboard</span>
+
+        </a>
+
+
+      </div>
+
+
+    </nav>
+
+  </div>
+
+
+</header>
+<!-- =========================================================
+     PRICING PAGE
+     SECTION 1: PRICING HERO
+     PART 1 - HTML
+========================================================= -->
+
+<main class="pricing-main">
+
+    <section class="pricing-hero-section">
+
+        <!-- Background Decorative Shapes -->
+        <div class="pricing-hero-shape pricing-hero-shape-one"></div>
+        <div class="pricing-hero-shape pricing-hero-shape-two"></div>
+        <div class="pricing-hero-shape pricing-hero-shape-three"></div>
+
+        <div class="container">
+
+            <div class="pricing-hero-content">
+
+                <!-- Badge -->
+                <span class="pricing-hero-badge">
+                    <i class="fa-solid fa-tags"></i>
+                    <span>SIMPLE &amp; TRANSPARENT PRICING</span>
+                </span>
+
+                <!-- Title -->
+                <h1 class="pricing-hero-title">
+                    Choose a Plan That
+                    <span>Fits Your Learning</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="pricing-hero-description">
+                    Flexible tutoring plans designed to make quality
+                    learning simple, accessible, and easy to manage.
+                    Choose the support that works best for your goals.
+                </p>
+
+                <!-- Pricing Highlights -->
+                <div class="pricing-hero-highlights">
+
+                    <!-- Highlight 1 -->
+                    <div class="pricing-hero-highlight">
+                        <div class="pricing-hero-highlight-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <div class="pricing-hero-highlight-content">
+                            <strong>No Hidden Fees</strong>
+                            <span>Clear pricing</span>
+                        </div>
+                    </div>
+
+                    <!-- Highlight 2 -->
+                    <div class="pricing-hero-highlight">
+                        <div class="pricing-hero-highlight-icon">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+
+                        <div class="pricing-hero-highlight-content">
+                            <strong>Qualified Tutors</strong>
+                            <span>Trusted learning support</span>
+                        </div>
+                    </div>
+
+                    <!-- Highlight 3 -->
+                    <div class="pricing-hero-highlight">
+                        <div class="pricing-hero-highlight-icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+
+                        <div class="pricing-hero-highlight-content">
+                            <strong>Flexible Sessions</strong>
+                            <span>Learn your way</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hero Actions -->
+                <div class="pricing-hero-actions">
+
+                    <a
+                        href="#pricing-plans"
+                        class="pricing-hero-primary"
+                    >
+                        <span>View Pricing Plans</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+
+                    <a
+                        href="find-tutor.html"
+                        class="pricing-hero-secondary"
+                    >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Find a Tutor</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+<!-- =========================================================
+     PRICING PAGE
+     SECTION 2: TUTORING PLANS
+     PART 1 - HTML
+========================================================= -->
+
+<section class="pricing-plans-section" id="pricing-plans">
+
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="pricing-plans-header">
+
+            <span class="pricing-plans-badge">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>TUTORING PLANS</span>
+            </span>
+
+            <h2 class="pricing-plans-title">
+                Flexible Plans for
+                <span>Every Learning Goal</span>
+            </h2>
+
+            <p class="pricing-plans-description">
+                Choose the tutoring plan that matches your learning
+                needs, schedule, and level of support.
+            </p>
+
+        </div>
+
+
+        <!-- Pricing Plans -->
+        <div class="pricing-plans-grid">
+
+            <!-- =================================================
+                 STARTER PLAN
+            ================================================== -->
+
+            <article class="pricing-plan-card">
+
+                <div class="pricing-plan-top">
+
+                    <div class="pricing-plan-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+
+                    <span class="pricing-plan-label">
+                        STARTER
+                    </span>
+
+                    <h3 class="pricing-plan-name">
+                        Starter
+                    </h3>
+
+                    <p class="pricing-plan-description">
+                        Occasional learning support for students
+                        who need help when they need it.
+                    </p>
+
+                </div>
+
+
+                <!-- Price -->
+                <div class="pricing-plan-price">
+                    <span class="pricing-plan-currency">₹</span>
+                    <span class="pricing-plan-amount">399</span>
+                    <span class="pricing-plan-period">/ session</span>
+                </div>
+
+
+                <div class="pricing-plan-divider"></div>
+
+
+                <!-- Features -->
+                <ul class="pricing-plan-features">
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Qualified tutor matching</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Home tutoring available</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Online tutoring available</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Flexible session booking</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Basic learning support</span>
+                    </li>
+
+                </ul>
+
+
+                <!-- Button -->
+                <a
+                    href="find-tutor.html"
+                    class="pricing-plan-button"
+                >
+                    <span>Choose Starter</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- =================================================
+                 GROWTH PLAN - FEATURED
+            ================================================== -->
+
+            <article class="pricing-plan-card pricing-plan-card-featured">
+
+                <!-- Popular Badge -->
+                <span class="pricing-plan-popular">
+                    <i class="fa-solid fa-star"></i>
+                    <span>MOST POPULAR</span>
+                </span>
+
+
+                <div class="pricing-plan-top">
+
+                    <div class="pricing-plan-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <span class="pricing-plan-label">
+                        GROWTH
+                    </span>
+
+                    <h3 class="pricing-plan-name">
+                        Growth
+                    </h3>
+
+                    <p class="pricing-plan-description">
+                        Regular tutoring support for students
+                        focused on steady academic progress.
+                    </p>
+
+                </div>
+
+
+                <!-- Price -->
+                <div class="pricing-plan-price">
+                    <span class="pricing-plan-currency">₹</span>
+                    <span class="pricing-plan-amount">699</span>
+                    <span class="pricing-plan-period">/ session</span>
+                </div>
+
+
+                <div class="pricing-plan-divider"></div>
+
+
+                <!-- Features -->
+                <ul class="pricing-plan-features">
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Everything in Starter</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Personalized learning support</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Progress tracking</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Parent progress updates</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Priority tutor support</span>
+                    </li>
+
+                </ul>
+
+
+                <!-- Button -->
+                <a
+                    href="find-tutor.html"
+                    class="pricing-plan-button pricing-plan-button-featured"
+                >
+                    <span>Choose Growth</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- =================================================
+                 PREMIUM PLAN
+            ================================================== -->
+
+            <article class="pricing-plan-card">
+
+                <div class="pricing-plan-top">
+
+                    <div class="pricing-plan-icon">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+
+                    <span class="pricing-plan-label">
+                        PREMIUM
+                    </span>
+
+                    <h3 class="pricing-plan-name">
+                        Premium
+                    </h3>
+
+                    <p class="pricing-plan-description">
+                        Intensive learning support for students
+                        with focused academic goals.
+                    </p>
+
+                </div>
+
+
+                <!-- Price -->
+                <div class="pricing-plan-price">
+                    <span class="pricing-plan-currency">₹</span>
+                    <span class="pricing-plan-amount">999</span>
+                    <span class="pricing-plan-period">/ session</span>
+                </div>
+
+
+                <div class="pricing-plan-divider"></div>
+
+
+                <!-- Features -->
+                <ul class="pricing-plan-features">
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Everything in Growth</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Advanced tutor matching</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Intensive learning support</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Detailed progress tracking</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Priority support</span>
+                    </li>
+
+                </ul>
+
+
+                <!-- Button -->
+                <a
+                    href="find-tutor.html"
+                    class="pricing-plan-button"
+                >
+                    <span>Choose Premium</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+        </div>
+
+
+        <!-- Pricing Note -->
+        <div class="pricing-plans-note">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <p>
+                Prices are shown per tutoring session.
+                Final pricing may vary based on subject,
+                tutor experience, and learning requirements.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     PRICING
+     SECTION 3: COMPARE WHAT'S INCLUDED
+     PART 1 - HTML
+========================================================= -->
+
+<section class="pricing-comparison-section" id="pricing-comparison">
+
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+        <div class="pricing-comparison-header">
+
+            <span class="pricing-comparison-badge">
+                <i class="fa-solid fa-table-list"></i>
+                <span>COMPARE PLANS</span>
+            </span>
+
+            <h2 class="pricing-comparison-title">
+                See What's Included
+                <span>in Every Plan</span>
+            </h2>
+
+            <p class="pricing-comparison-description">
+                Compare the features included in each tutoring plan
+                and choose the level of learning support that fits
+                your needs best.
+            </p>
+
+        </div>
+
+
+        <!-- COMPARISON TABLE -->
+        <div class="pricing-comparison-table-wrapper">
+
+            <table class="pricing-comparison-table">
+
+                <thead>
+                    <tr>
+
+                        <th class="pricing-comparison-feature-column">
+                            <span>Features</span>
+                        </th>
+
+                        <th class="pricing-comparison-plan-column">
+                            <div class="pricing-comparison-plan-heading">
+                                <span class="pricing-comparison-plan-label">
+                                    STARTER
+                                </span>
+
+                                <strong>Starter</strong>
+
+                                <span class="pricing-comparison-plan-price">
+                                    ₹399 / session
+                                </span>
+                            </div>
+                        </th>
+
+                        <th class="pricing-comparison-plan-column pricing-comparison-growth-column">
+
+                            <span class="pricing-comparison-most-popular">
+                                <i class="fa-solid fa-star"></i>
+                                Most Popular
+                            </span>
+
+                            <div class="pricing-comparison-plan-heading">
+                                <span class="pricing-comparison-plan-label">
+                                    GROWTH
+                                </span>
+
+                                <strong>Growth</strong>
+
+                                <span class="pricing-comparison-plan-price">
+                                    ₹699 / session
+                                </span>
+                            </div>
+
+                        </th>
+
+                        <th class="pricing-comparison-plan-column">
+                            <div class="pricing-comparison-plan-heading">
+                                <span class="pricing-comparison-plan-label">
+                                    PREMIUM
+                                </span>
+
+                                <strong>Premium</strong>
+
+                                <span class="pricing-comparison-plan-price">
+                                    ₹999 / session
+                                </span>
+                            </div>
+                        </th>
+
+                    </tr>
+                </thead>
+
+
+                <tbody>
+
+                    <!-- ROW 1 -->
+                    <tr>
+                        <th scope="row">
+                            <div class="pricing-comparison-feature">
+                                <i class="fa-solid fa-user-check"></i>
+                                <span>Tutor Matching</span>
+                            </div>
+                        </th>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td class="pricing-comparison-growth-column">
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <!-- ROW 2 -->
+                    <tr>
+                        <th scope="row">
+                            <div class="pricing-comparison-feature">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>Verified Tutors</span>
+                            </div>
+                        </th>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td class="pricing-comparison-growth-column">
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <!-- ROW 3 -->
+                    <tr>
+                        <th scope="row">
+                            <div class="pricing-comparison-feature">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Home Tutoring</span>
+                            </div>
+                        </th>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td class="pricing-comparison-growth-column">
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <!-- ROW 4 -->
+                    <tr>
+                        <th scope="row">
+                            <div class="pricing-comparison-feature">
+                                <i class="fa-solid fa-laptop"></i>
+                                <span>Online Tutoring</span>
+                            </div>
+                        </th>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td class="pricing-comparison-growth-column">
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <!-- ROW 5 -->
+                    <tr>
+                        <th scope="row">
+                            <div class="pricing-comparison-feature">
+                                <i class="fa-solid fa-calendar-check"></i>
+                                <span>Flexible Scheduling</span>
+                            </div>
+                        </th>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td class="pricing-comparison-growth-column">
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <!-- ROW 6 -->
+                    <tr>
+                        <th scope="row">
+                            <div class="pricing-comparison-feature">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span>Progress Tracking</span>
+                            </div>
+                        </th>
+
+                        <td>
+                            <span class="pricing-comparison-unavailable">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+                        </td>
+
+                        <td class="pricing-comparison-growth-column">
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <!-- ROW 7 -->
+                    <tr>
+                        <th scope="row">
+                            <div class="pricing-comparison-feature">
+                                <i class="fa-solid fa-message"></i>
+                                <span>Parent Updates</span>
+                            </div>
+                        </th>
+
+                        <td>
+                            <span class="pricing-comparison-unavailable">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+                        </td>
+
+                        <td class="pricing-comparison-growth-column">
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <!-- ROW 8 -->
+                    <tr>
+                        <th scope="row">
+                            <div class="pricing-comparison-feature">
+                                <i class="fa-solid fa-headset"></i>
+                                <span>Priority Support</span>
+                            </div>
+                        </th>
+
+                        <td>
+                            <span class="pricing-comparison-unavailable">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+                        </td>
+
+                        <td class="pricing-comparison-growth-column">
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="pricing-comparison-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <!-- BOTTOM NOTE -->
+        <div class="pricing-comparison-bottom">
+
+            <div class="pricing-comparison-bottom-content">
+
+                <div class="pricing-comparison-bottom-icon">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+
+                <div class="pricing-comparison-bottom-text">
+                    <strong>Not sure which plan is right for you?</strong>
+
+                    <span>
+                        Our team can help you choose the right tutoring
+                        support for your learning goals.
+                    </span>
+                </div>
+
+            </div>
+
+            <a href="contact.html" class="pricing-comparison-bottom-button">
+                <span>Talk to Us</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     PRICING
+     SECTION 4: HOW PRICING WORKS
+     PART 1 - HTML
+========================================================= -->
+
+<section class="pricing-how-works-section" id="pricing-how-works">
+
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+        <div class="pricing-how-works-header">
+
+            <span class="pricing-how-works-badge">
+                <i class="fa-solid fa-route"></i>
+                <span>HOW PRICING WORKS</span>
+            </span>
+
+            <h2 class="pricing-how-works-title">
+                Simple Steps to
+                <span>Start Learning</span>
+            </h2>
+
+            <p class="pricing-how-works-description">
+                Getting started with TutorNest is simple.
+                Choose the right support, book your session,
+                and begin learning with confidence.
+            </p>
+
+        </div>
+
+
+        <!-- PROCESS -->
+        <div class="pricing-how-works-process">
+
+            <!-- STEP 1 -->
+            <div class="pricing-how-works-step">
+
+                <div class="pricing-how-works-step-number">
+                    <span>01</span>
+                </div>
+
+                <div class="pricing-how-works-step-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+
+                <div class="pricing-how-works-step-content">
+
+                    <span class="pricing-how-works-step-label">
+                        STEP ONE
+                    </span>
+
+                    <h3 class="pricing-how-works-step-title">
+                        Choose Your Plan
+                    </h3>
+
+                    <p class="pricing-how-works-step-description">
+                        Select the tutoring support that matches
+                        your learning needs, goals, and budget.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONNECTOR -->
+            <div class="pricing-how-works-connector">
+                <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+
+            <!-- STEP 2 -->
+            <div class="pricing-how-works-step">
+
+                <div class="pricing-how-works-step-number">
+                    <span>02</span>
+                </div>
+
+                <div class="pricing-how-works-step-icon">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <div class="pricing-how-works-step-content">
+
+                    <span class="pricing-how-works-step-label">
+                        STEP TWO
+                    </span>
+
+                    <h3 class="pricing-how-works-step-title">
+                        Book Your Session
+                    </h3>
+
+                    <p class="pricing-how-works-step-description">
+                        Find your preferred tutor and choose a
+                        convenient schedule and learning mode.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONNECTOR -->
+            <div class="pricing-how-works-connector">
+                <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+
+            <!-- STEP 3 -->
+            <div class="pricing-how-works-step">
+
+                <div class="pricing-how-works-step-number">
+                    <span>03</span>
+                </div>
+
+                <div class="pricing-how-works-step-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div class="pricing-how-works-step-content">
+
+                    <span class="pricing-how-works-step-label">
+                        STEP THREE
+                    </span>
+
+                    <h3 class="pricing-how-works-step-title">
+                        Start Learning
+                    </h3>
+
+                    <p class="pricing-how-works-step-description">
+                        Connect with your tutor and begin a
+                        personalized learning experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM ACTION -->
+        <div class="pricing-how-works-action">
+
+            <div class="pricing-how-works-action-content">
+
+                <div class="pricing-how-works-action-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <div class="pricing-how-works-action-text">
+
+                    <strong>
+                        Ready to find the right learning support?
+                    </strong>
+
+                    <span>
+                        Explore qualified tutors and choose a plan
+                        that works for you.
+                    </span>
+
+                </div>
+
+            </div>
+
+            <a href="find-tutor.html" class="pricing-how-works-action-button">
+                <span>Find a Tutor</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     PRICING
+     SECTION 5: WHY TUTORNEST PRICING?
+     PART 1 - HTML
+========================================================= -->
+
+<section class="pricing-why-section" id="pricing-why">
+
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+        <div class="pricing-why-header">
+
+            <span class="pricing-why-badge">
+                <i class="fa-solid fa-shield-heart"></i>
+                <span>WHY TUTORNEST</span>
+            </span>
+
+            <h2 class="pricing-why-title">
+                More Value.
+                <span>Better Learning.</span>
+            </h2>
+
+            <p class="pricing-why-description">
+                Our pricing is designed to give students and families
+                clear choices, trusted tutors, and flexible learning
+                support without unnecessary complexity.
+            </p>
+
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+        <div class="pricing-why-wrapper">
+
+            <!-- IMAGE SIDE -->
+            <div class="pricing-why-image-side">
+
+                <div class="pricing-why-image-wrapper">
+
+                    <img
+                        src="images/pricing-why.jpg"
+                        alt="Student learning with a tutor"
+                        class="pricing-why-image"
+                    >
+
+                    <!-- FLOATING TRUST BADGE -->
+                    <div class="pricing-why-trust-badge">
+
+                        <div class="pricing-why-trust-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <div class="pricing-why-trust-content">
+                            <strong>VALUE YOU CAN TRUST</strong>
+                            <span>Simple &amp; transparent pricing</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTENT SIDE -->
+            <div class="pricing-why-content">
+
+                <!-- BENEFIT 1 -->
+                <div class="pricing-why-benefit">
+
+                    <div class="pricing-why-benefit-icon">
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+
+                    <div class="pricing-why-benefit-text">
+
+                        <h3>No Hidden Fees</h3>
+
+                        <p>
+                            Know what you are paying for with
+                            clear and transparent session pricing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BENEFIT 2 -->
+                <div class="pricing-why-benefit">
+
+                    <div class="pricing-why-benefit-icon">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+
+                    <div class="pricing-why-benefit-text">
+
+                        <h3>Qualified Tutors</h3>
+
+                        <p>
+                            Connect with verified and experienced
+                            tutors who are ready to support your goals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BENEFIT 3 -->
+                <div class="pricing-why-benefit">
+
+                    <div class="pricing-why-benefit-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <div class="pricing-why-benefit-text">
+
+                        <h3>Flexible Sessions</h3>
+
+                        <p>
+                            Choose home or online tutoring and
+                            learn in a way that fits your schedule.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BENEFIT 4 -->
+                <div class="pricing-why-benefit">
+
+                    <div class="pricing-why-benefit-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <div class="pricing-why-benefit-text">
+
+                        <h3>Learning Support</h3>
+
+                        <p>
+                            Get learning support that grows with
+                            your needs, progress, and academic goals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CTA -->
+                <div class="pricing-why-action">
+
+                    <a
+                        href="find-tutor.html"
+                        class="pricing-why-button"
+                    >
+                        <span>Find a Tutor</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     PRICING
+     SECTION 6: PRICING FAQ
+     PART 1 - HTML
+========================================================= -->
+
+<section class="pricing-faq-section" id="pricing-faq">
+
+    <div class="container">
+
+        <div class="pricing-faq-wrapper">
+
+            <!-- LEFT CONTENT -->
+            <div class="pricing-faq-content">
+
+                <span class="pricing-faq-badge">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>PRICING FAQ</span>
+                </span>
+
+                <h2 class="pricing-faq-title">
+                    Questions About Pricing?
+                    <span>We've Got Answers.</span>
+                </h2>
+
+                <p class="pricing-faq-description">
+                    Find clear answers to common questions about
+                    tutoring plans, session pricing, cancellations,
+                    and choosing the right learning support.
+                </p>
+
+                <!-- SUPPORT CARD -->
+                <div class="pricing-faq-support">
+
+                    <div class="pricing-faq-support-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <div class="pricing-faq-support-content">
+                        <strong>Still have questions?</strong>
+
+                        <span>
+                            Our support team is here to help.
+                        </span>
+                    </div>
+
+                    <a
+                        href="contact.html"
+                        class="pricing-faq-support-link"
+                        aria-label="Contact TutorNest support"
+                    >
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ LIST -->
+            <div class="pricing-faq-list">
+
+                <!-- FAQ 1 - ACTIVE -->
+                <div class="pricing-faq-item pricing-faq-item">
+
+                    <button
+                        type="button"
+                        class="pricing-faq-question"
+                        aria-expanded="true"
+                        aria-controls="pricing-faq-answer-1"
+                    >
+                        <span>
+                            Are there any registration or joining fees?
+                        </span>
+
+                        <span class="pricing-faq-toggle">
+                            <i class="fa-solid fa-minus"></i>
+                        </span>
+                    </button>
+
+                    <div
+                        class="pricing-faq-answer"
+                        id="pricing-faq-answer-1"
+                    >
+                        <p>
+                            No. TutorNest keeps pricing simple and
+                            transparent. You can choose a tutoring
+                            plan and pay for the sessions you book
+                            without additional registration or joining
+                            fees.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 2 -->
+                <div class="pricing-faq-item">
+
+                    <button
+                        type="button"
+                        class="pricing-faq-question"
+                        aria-expanded="false"
+                        aria-controls="pricing-faq-answer-2"
+                    >
+                        <span>
+                            Can I change my tutoring plan later?
+                        </span>
+
+                        <span class="pricing-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div
+                        class="pricing-faq-answer"
+                        id="pricing-faq-answer-2"
+                        hidden
+                    >
+                        <p>
+                            Yes. You can choose a different tutoring
+                            plan as your learning needs change. The
+                            plan you select can be adjusted based on
+                            the level of support you need.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 3 -->
+                <div class="pricing-faq-item">
+
+                    <button
+                        type="button"
+                        class="pricing-faq-question"
+                        aria-expanded="false"
+                        aria-controls="pricing-faq-answer-3"
+                    >
+                        <span>
+                            Can I cancel or reschedule a session?
+                        </span>
+
+                        <span class="pricing-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div
+                        class="pricing-faq-answer"
+                        id="pricing-faq-answer-3"
+                        hidden
+                    >
+                        <p>
+                            Yes. Session changes can be requested
+                            according to the applicable booking and
+                            cancellation terms. We recommend making
+                            changes as early as possible.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 4 -->
+                <div class="pricing-faq-item">
+
+                    <button
+                        type="button"
+                        class="pricing-faq-question"
+                        aria-expanded="false"
+                        aria-controls="pricing-faq-answer-4"
+                    >
+                        <span>
+                            Does pricing vary by subject or tutor?
+                        </span>
+
+                        <span class="pricing-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div
+                        class="pricing-faq-answer"
+                        id="pricing-faq-answer-4"
+                        hidden
+                    >
+                        <p>
+                            Pricing may vary depending on the subject,
+                            tutor experience, learning level, and
+                            specific learning requirements. The listed
+                            plan prices provide a simple starting point.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 5 -->
+                <div class="pricing-faq-item">
+
+                    <button
+                        type="button"
+                        class="pricing-faq-question"
+                        aria-expanded="false"
+                        aria-controls="pricing-faq-answer-5"
+                    >
+                        <span>
+                            Is online tutoring cheaper than home tutoring?
+                        </span>
+
+                        <span class="pricing-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div
+                        class="pricing-faq-answer"
+                        id="pricing-faq-answer-5"
+                        hidden
+                    >
+                        <p>
+                            Online tutoring can have different pricing
+                            from home tutoring depending on the tutor,
+                            subject, and session requirements. You can
+                            choose the learning mode that suits you best.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 6 -->
+                <div class="pricing-faq-item">
+
+                    <button
+                        type="button"
+                        class="pricing-faq-question"
+                        aria-expanded="false"
+                        aria-controls="pricing-faq-answer-6"
+                    >
+                        <span>
+                            Can I switch to a different tutor?
+                        </span>
+
+                        <span class="pricing-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div
+                        class="pricing-faq-answer"
+                        id="pricing-faq-answer-6"
+                        hidden
+                    >
+                        <p>
+                            Yes. If your selected tutor is not the
+                            right fit, you can explore other qualified
+                            tutors and choose someone who better matches
+                            your learning preferences.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 7 -->
+                <div class="pricing-faq-item">
+
+                    <button
+                        type="button"
+                        class="pricing-faq-question"
+                        aria-expanded="false"
+                        aria-controls="pricing-faq-answer-7"
+                    >
+                        <span>
+                            What happens if I need more learning support?
+                        </span>
+
+                        <span class="pricing-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div
+                        class="pricing-faq-answer"
+                        id="pricing-faq-answer-7"
+                        hidden
+                    >
+                        <p>
+                            You can move to a plan with additional
+                            learning support, progress tracking,
+                            parent updates, or priority assistance
+                            when your learning needs increase.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 8 -->
+                <div class="pricing-faq-item">
+
+                    <button
+                        type="button"
+                        class="pricing-faq-question"
+                        aria-expanded="false"
+                        aria-controls="pricing-faq-answer-8"
+                    >
+                        <span>
+                            How do I choose the right plan?
+                        </span>
+
+                        <span class="pricing-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div
+                        class="pricing-faq-answer"
+                        id="pricing-faq-answer-8"
+                        hidden
+                    >
+                        <p>
+                            Start by considering how often you need
+                            tutoring and how much learning support
+                            you want. Starter is suitable for occasional
+                            help, Growth for regular support, and Premium
+                            for more intensive learning needs.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     PRICING PAGE
+     SECTION 7: FINAL CTA
+     PART 1 - HTML
+========================================================= -->
+
+<section class="pricing-final-cta-section">
+
+    <!-- Decorative Shapes -->
+    <div class="pricing-final-cta-circle pricing-final-cta-circle-one"></div>
+    <div class="pricing-final-cta-circle pricing-final-cta-circle-two"></div>
+    <div class="pricing-final-cta-circle pricing-final-cta-circle-three"></div>
+
+    <div class="container">
+
+        <div class="pricing-final-cta-content">
+
+            <!-- Badge -->
+            <span class="pricing-final-cta-badge">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>READY TO INVEST IN BETTER LEARNING?</span>
+            </span>
+
+            <!-- Title -->
+            <h2 class="pricing-final-cta-title">
+                Choose Better Support.
+                <span>Start Learning With Confidence.</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="pricing-final-cta-description">
+                Choose a plan, find the right tutor, and take the
+                next step toward achieving your academic goals
+                with TutorNest.
+            </p>
+
+            <!-- Actions -->
+            <div class="pricing-final-cta-actions">
+
+                <a
+                    href="find-tutor.html"
+                    class="pricing-final-cta-primary"
+                >
+                    <span>Find a Tutor</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a
+                    href="#pricing-plans"
+                    class="pricing-final-cta-secondary"
+                >
+                    <i class="fa-solid fa-rocket"></i>
+                    <span>Get Started</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     TUTORNEST FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <!-- Footer Main -->
+        <div class="footer-main">
+
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="index.html"
+                   class="footer-logo"
+                   aria-label="TutorNest Home">
+
+                    <img src="images/logo.png"
+                         alt="TutorNest Logo">
+
+                </a>
+
+                <p class="footer-description">
+                    Connecting students with trusted tutors
+                    for personalized learning and academic success.
+                </p>
+
+
+                <!-- Social Media -->
+                <div class="footer-social">
+
+                    <a href="#"
+                       class="footer-social-link"
+                       aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#"
+                       class="footer-social-link"
+                       aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#"
+                       class="footer-social-link"
+                       aria-label="X">
+
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </a>
+
+                    <a href="#"
+                       class="footer-social-link"
+                       aria-label="LinkedIn">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3 class="footer-title">
+                    Quick Links
+                </h3>
+
+                <ul class="footer-link-list">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="find-tutor.html">
+                            Find a Tutor
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="subjects.html">
+                            Subjects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="how-it-works.html">
+                            How It Works
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Company -->
+            <div class="footer-column">
+
+                <h3 class="footer-title">
+                    Company
+                </h3>
+
+                <ul class="footer-link-list">
+
+                    <li>
+                        <a href="pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column footer-contact">
+
+                <h3 class="footer-title">
+                    Contact Us
+                </h3>
+
+                <ul class="footer-contact-list">
+
+                    <li>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>
+                            Chennai, Tamil Nadu, India
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <a href="mailto:hello@tutornest.com">
+                            hello@tutornest.com
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <span>
+                            Mon – Sat: 9:00 AM – 7:00 PM
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p class="footer-copyright">
+                © 2026 TutorNest. All rights reserved.
+            </p>
+
+
+            <div class="footer-bottom-links">
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- JS -->
+<!-- Scroll To Top Button -->
+<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

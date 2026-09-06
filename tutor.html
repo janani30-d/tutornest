@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TutorNest | Find a Tutor</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/dash-responsive.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         DASHBOARD LAYOUT
+    ========================================================== -->
+
+    <div class="dashboard-layout">
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <!-- Sidebar Header -->
+            <div class="dashboard-sidebar-header">
+
+                <a href="index.html" class="dashboard-sidebar-logo">
+                    <img src="images/logo.png" alt="TutorNest">
+                </a>
+
+                <button
+                    type="button"
+                    class="dashboard-sidebar-close"
+                    id="dashboardSidebarClose"
+                    aria-label="Close dashboard menu">
+
+                    <i class="fas fa-times"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- Sidebar Navigation -->
+            <nav
+                class="dashboard-navigation"
+                aria-label="Dashboard navigation">
+
+                <ul>
+
+                    <!-- Dashboard -->
+                    <li>
+                        <a href="dashboard.html">
+
+                            <i class="fas fa-th-large"></i>
+
+                            <span>Dashboard</span>
+
+                        </a>
+                    </li>
+
+
+                    <!-- Find a Tutor - ACTIVE -->
+                    <li>
+                        <a
+                            href="dashboard-find-tutor.html"
+                            class="active">
+
+                            <i class="fas fa-user-graduate"></i>
+
+                            <span>Find a Tutor</span>
+
+                        </a>
+                    </li>
+
+
+                    <!-- My Tutors -->
+                    <li>
+                        <a href="mytutor.html">
+
+                            <i class="fas fa-chalkboard-user"></i>
+
+                            <span>My Tutors</span>
+
+                        </a>
+                    </li>
+
+
+                    <!-- My Sessions -->
+                    <li>
+                        <a href="my-session.html">
+
+                            <i class="fas fa-calendar-check"></i>
+
+                            <span>My Sessions</span>
+
+                        </a>
+                    </li>
+
+
+                    <!-- Session Notes -->
+                    <li>
+                        <a href="session-notes.html">
+
+                            <i class="fas fa-note-sticky"></i>
+
+                            <span>Session Notes</span>
+
+                        </a>
+                    </li>
+
+
+                    <!-- Payments -->
+                    <li>
+                        <a href="payment.html">
+
+                            <i class="fas fa-receipt"></i>
+
+                            <span>Payments &amp; Receipts</span>
+
+                        </a>
+                    </li>
+
+
+                    <!-- Profile -->
+                    <li>
+                        <a href="profile.html">
+
+                            <i class="fas fa-user"></i>
+
+                            <span>Profile</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Sidebar Bottom -->
+            <div class="dashboard-sidebar-bottom">
+
+                <a href="login.html">
+
+                    <i class="fas fa-right-from-bracket"></i>
+
+                    <span>Logout</span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================================
+             SIDEBAR OVERLAY
+        ====================================================== -->
+
+        <div
+            class="dashboard-sidebar-overlay"
+            id="dashboardSidebarOverlay">
+        </div>
+
+
+        <!-- =====================================================
+             MAIN DASHBOARD AREA
+        ====================================================== -->
+
+        <div class="dashboard-main">
+
+
+            <!-- =================================================
+                 TOP BAR
+            ================================================== -->
+
+            <header class="dashboard-topbar">
+
+                <!-- Topbar Left -->
+                <div class="dashboard-topbar-left">
+
+                    <!-- Hamburger -->
+                    <button
+                        type="button"
+                        class="dashboard-hamburger"
+                        id="dashboardHamburger"
+                        aria-label="Open dashboard menu"
+                        aria-expanded="false">
+
+                        <i class="fas fa-bars"></i>
+
+                    </button>
+
+
+                    <!-- Page Heading -->
+                    <div class="dashboard-page-heading">
+
+                        <span>Parent Dashboard</span>
+
+                        <h1>Find a Tutor</h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Topbar Right -->
+                <div class="dashboard-topbar-right">
+
+
+                    
+
+
+                    <!-- Dark Mode -->
+                    <button
+                        type="button"
+                        class="dashboard-control-button"
+                        id="dashboardDarkModeToggle"
+                        aria-label="Switch to dark mode"
+                        title="Dark Mode">
+
+                        <i class="fas fa-moon"></i>
+
+                        <span>Dark</span>
+
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button
+                        type="button"
+                        class="dashboard-control-button"
+                        id="dashboardRtlToggle"
+                        aria-label="Switch to right-to-left"
+                        title="RTL">
+
+                        <i class="fas fa-align-right"></i>
+
+                        <span>RTL</span>
+
+                    </button>
+
+
+                    <!-- Notifications -->
+                    <button
+                        type="button"
+                        class="dashboard-notification-button"
+                        aria-label="Notifications"
+                        title="Notifications">
+
+                        <i class="fas fa-bell"></i>
+
+                        <span class="dashboard-notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- Profile -->
+                    <button
+                        type="button"
+                        class="dashboard-profile-button"
+                        aria-label="Open profile">
+
+                        <span class="dashboard-profile-avatar">
+                            J
+                        </span>
+
+                        <span class="dashboard-profile-info">
+
+                            <strong>Jeni</strong>
+
+                            <span>Parent</span>
+
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 PAGE CONTENT
+            ================================================== -->
+
+            <main class="dashboard-content">
+
+
+                <!-- =================================================
+                     PAGE INTRO
+                ================================================== -->
+
+                <section class="dashboard-find-page-intro">
+
+                    <div class="dashboard-find-page-heading">
+
+                        <span class="dashboard-section-label">
+                            Tutor Search
+                        </span>
+
+                        <h2>
+                            Find the Right Tutor for Your Child
+                        </h2>
+
+                        <p>
+                            Browse verified tutors based on subject,
+                            qualification, grade level and learning
+                            preferences.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     SEARCH & FILTERS
+                ================================================== -->
+
+                <section class="dashboard-find-search-section">
+
+                    <div class="dashboard-find-search-card">
+
+
+                        <!-- Search Header -->
+                        <div class="dashboard-find-search-header">
+
+                            <div class="dashboard-find-search-icon">
+
+                                <i class="fas fa-user-graduate"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Search for a Tutor
+                                </h3>
+
+                                <p>
+                                    Choose your preferences to find
+                                    suitable tutors.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Search Form -->
+                        <form
+                            class="dashboard-find-search-form"
+                            id="dashboardFindTutorForm">
+
+
+                            <!-- Subject -->
+                            <div class="dashboard-find-form-group">
+
+                                <label for="dashboardFindSubject">
+                                    Subject
+                                </label>
+
+                                <div class="dashboard-find-select">
+
+                                    <i class="fas fa-book"></i>
+
+                                    <select id="dashboardFindSubject">
+
+                                        <option value="">
+                                            Select Subject
+                                        </option>
+
+                                        <option value="mathematics">
+                                            Mathematics
+                                        </option>
+
+                                        <option value="science">
+                                            Science
+                                        </option>
+
+                                        <option value="english">
+                                            English
+                                        </option>
+
+                                        <option value="computer-science">
+                                            Computer Science
+                                        </option>
+
+                                        <option value="social-studies">
+                                            Social Studies
+                                        </option>
+
+                                        <option value="languages">
+                                            Languages
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Qualification -->
+                            <div class="dashboard-find-form-group">
+
+                                <label for="dashboardFindQualification">
+                                    Qualification
+                                </label>
+
+                                <div class="dashboard-find-select">
+
+                                    <i class="fas fa-graduation-cap"></i>
+
+                                    <select id="dashboardFindQualification">
+
+                                        <option value="">
+                                            Select Qualification
+                                        </option>
+
+                                        <option value="graduate">
+                                            Graduate
+                                        </option>
+
+                                        <option value="postgraduate">
+                                            Postgraduate
+                                        </option>
+
+                                        <option value="certified">
+                                            Certified Tutor
+                                        </option>
+
+                                        <option value="experienced">
+                                            Experienced Tutor
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Grade / Level -->
+                            <div class="dashboard-find-form-group">
+
+                                <label for="dashboardFindGrade">
+                                    Grade / Level
+                                </label>
+
+                                <div class="dashboard-find-select">
+
+                                    <i class="fas fa-layer-group"></i>
+
+                                    <select id="dashboardFindGrade">
+
+                                        <option value="">
+                                            Select Grade / Level
+                                        </option>
+
+                                        <option value="primary">
+                                            Primary School
+                                        </option>
+
+                                        <option value="middle">
+                                            Middle School
+                                        </option>
+
+                                        <option value="high-school">
+                                            High School
+                                        </option>
+
+                                        <option value="higher-secondary">
+                                            Higher Secondary
+                                        </option>
+
+                                        <option value="college">
+                                            College
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Learning Mode -->
+                            <div class="dashboard-find-form-group">
+
+                                <label for="dashboardFindMode">
+                                    Learning Mode
+                                </label>
+
+                                <div class="dashboard-find-select">
+
+                                    <i class="fas fa-chalkboard"></i>
+
+                                    <select id="dashboardFindMode">
+
+                                        <option value="">
+                                            Select Learning Mode
+                                        </option>
+
+                                        <option value="home">
+                                            Home Tutoring
+                                        </option>
+
+                                        <option value="online">
+                                            Online Tutoring
+                                        </option>
+
+                                        <option value="hybrid">
+                                            Hybrid Learning
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Preferred Timing -->
+                            <div class="dashboard-find-form-group">
+
+                                <label for="dashboardFindTiming">
+                                    Preferred Timing
+                                </label>
+
+                                <div class="dashboard-find-select">
+
+                                    <i class="fas fa-clock"></i>
+
+                                    <select id="dashboardFindTiming">
+
+                                        <option value="">
+                                            Select Preferred Timing
+                                        </option>
+
+                                        <option value="morning">
+                                            Morning
+                                        </option>
+
+                                        <option value="afternoon">
+                                            Afternoon
+                                        </option>
+
+                                        <option value="evening">
+                                            Evening
+                                        </option>
+
+                                        <option value="weekend">
+                                            Weekend
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Search Button -->
+                            <button
+                                type="submit"
+                                class="dashboard-find-search-button">
+
+                                <i class="fas fa-search"></i>
+
+                                <span>Search Tutors</span>
+
+                            </button>
+
+                        </form>
+
+
+                        <!-- Trust Message -->
+                        <div class="dashboard-find-search-trust">
+
+                            <i class="fas fa-circle-check"></i>
+
+                            <span>
+                                All recommended tutors are verified
+                                by TutorNest.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     RECOMMENDED TUTORS
+                ================================================== -->
+
+                <section class="dashboard-recommended-tutors-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span class="dashboard-section-label">
+                                Recommendations
+                            </span>
+
+                            <h2>
+                                Recommended Tutors
+                            </h2>
+
+                        </div>
+
+                        <span class="dashboard-section-note">
+                            Tutors matched to your preferences
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-recommended-tutors-grid">
+
+
+                        <!-- Tutor 1 -->
+                        <article class="dashboard-recommended-tutor-card">
+
+                            <div class="dashboard-recommended-tutor-top">
+
+                                <div class="dashboard-recommended-tutor-image">
+
+                                    <img
+                                        src="images/tutor-1.jpg"
+                                        alt="Priya Sharma">
+
+                                    <span class="dashboard-tutor-online-dot"></span>
+
+                                </div>
+
+                                <div class="dashboard-recommended-tutor-info">
+
+                                    <div class="dashboard-tutor-name-row">
+
+                                        <h3>
+                                            Priya Sharma
+                                        </h3>
+
+                                        <i
+                                            class="fas fa-circle-check"
+                                            title="Verified Tutor">
+                                        </i>
+
+                                    </div>
+
+                                    <p>
+                                        Mathematics Tutor
+                                    </p>
+
+                                    <div class="dashboard-tutor-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <strong>4.9</strong>
+
+                                        <span>
+                                            (120+ students)
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-tags">
+
+                                <span>Algebra</span>
+                                <span>Geometry</span>
+                                <span>Calculus</span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-details">
+
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    8 Years
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-clock"></i>
+                                    Flexible
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-card-footer">
+
+                                <div class="dashboard-tutor-price">
+
+                                    <strong>₹500</strong>
+
+                                    <span>/ session</span>
+
+                                </div>
+
+                                <a
+                                    href="tutor-profile.html"
+                                    class="dashboard-tutor-profile-button">
+
+                                    View Profile
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Tutor 2 -->
+                        <article class="dashboard-recommended-tutor-card">
+
+                            <div class="dashboard-recommended-tutor-top">
+
+                                <div class="dashboard-recommended-tutor-image">
+
+                                    <img
+                                        src="images/tutor-2.jpg"
+                                        alt="Arjun Kumar">
+
+                                    <span class="dashboard-tutor-online-dot"></span>
+
+                                </div>
+
+                                <div class="dashboard-recommended-tutor-info">
+
+                                    <div class="dashboard-tutor-name-row">
+
+                                        <h3>
+                                            Arjun Kumar
+                                        </h3>
+
+                                        <i
+                                            class="fas fa-circle-check"
+                                            title="Verified Tutor">
+                                        </i>
+
+                                    </div>
+
+                                    <p>
+                                        Science Tutor
+                                    </p>
+
+                                    <div class="dashboard-tutor-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <strong>4.8</strong>
+
+                                        <span>
+                                            (95+ students)
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-tags">
+
+                                <span>Physics</span>
+                                <span>Chemistry</span>
+                                <span>Biology</span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-details">
+
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    6 Years
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-clock"></i>
+                                    Flexible
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-card-footer">
+
+                                <div class="dashboard-tutor-price">
+
+                                    <strong>₹450</strong>
+
+                                    <span>/ session</span>
+
+                                </div>
+
+                                <a
+                                    href="tutor-profile.html"
+                                    class="dashboard-tutor-profile-button">
+
+                                    View Profile
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Tutor 3 -->
+                        <article class="dashboard-recommended-tutor-card">
+
+                            <div class="dashboard-recommended-tutor-top">
+
+                                <div class="dashboard-recommended-tutor-image">
+
+                                    <img
+                                        src="images/tutor-3.jpg"
+                                        alt="Ananya Rao">
+
+                                    <span class="dashboard-tutor-online-dot"></span>
+
+                                </div>
+
+                                <div class="dashboard-recommended-tutor-info">
+
+                                    <div class="dashboard-tutor-name-row">
+
+                                        <h3>
+                                            Ananya Rao
+                                        </h3>
+
+                                        <i
+                                            class="fas fa-circle-check"
+                                            title="Verified Tutor">
+                                        </i>
+
+                                    </div>
+
+                                    <p>
+                                        English Tutor
+                                    </p>
+
+                                    <div class="dashboard-tutor-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <strong>4.9</strong>
+
+                                        <span>
+                                            (110+ students)
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-tags">
+
+                                <span>Grammar</span>
+                                <span>Writing</span>
+                                <span>Speaking</span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-details">
+
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    7 Years
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-clock"></i>
+                                    Flexible
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-card-footer">
+
+                                <div class="dashboard-tutor-price">
+
+                                    <strong>₹400</strong>
+
+                                    <span>/ session</span>
+
+                                </div>
+
+                                <a
+                                    href="tutor-profile.html"
+                                    class="dashboard-tutor-profile-button">
+
+                                    View Profile
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Tutor 4 -->
+                        <article class="dashboard-recommended-tutor-card">
+
+                            <div class="dashboard-recommended-tutor-top">
+
+                                <div class="dashboard-recommended-tutor-image">
+
+                                    <img
+                                        src="images/tutor-4.jpg"
+                                        alt="Rahul Menon">
+
+                                    <span class="dashboard-tutor-online-dot"></span>
+
+                                </div>
+
+                                <div class="dashboard-recommended-tutor-info">
+
+                                    <div class="dashboard-tutor-name-row">
+
+                                        <h3>
+                                            Rahul Menon
+                                        </h3>
+
+                                        <i
+                                            class="fas fa-circle-check"
+                                            title="Verified Tutor">
+                                        </i>
+
+                                    </div>
+
+                                    <p>
+                                        Computer Science Tutor
+                                    </p>
+
+                                    <div class="dashboard-tutor-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <strong>4.8</strong>
+
+                                        <span>
+                                            (85+ students)
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-tags">
+
+                                <span>Python</span>
+                                <span>Java</span>
+                                <span>C++</span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-details">
+
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    5 Years
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-clock"></i>
+                                    Flexible
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-card-footer">
+
+                                <div class="dashboard-tutor-price">
+
+                                    <strong>₹550</strong>
+
+                                    <span>/ session</span>
+
+                                </div>
+
+                                <a
+                                    href="tutor-profile.html"
+                                    class="dashboard-tutor-profile-button">
+
+                                    View Profile
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Tutor 5 -->
+                        <article class="dashboard-recommended-tutor-card">
+
+                            <div class="dashboard-recommended-tutor-top">
+
+                                <div class="dashboard-recommended-tutor-image">
+
+                                    <img
+                                        src="images/tutor-5.jpg"
+                                        alt="Meera Krishnan">
+
+                                    <span class="dashboard-tutor-online-dot"></span>
+
+                                </div>
+
+                                <div class="dashboard-recommended-tutor-info">
+
+                                    <div class="dashboard-tutor-name-row">
+
+                                        <h3>
+                                            Meera Krishnan
+                                        </h3>
+
+                                        <i
+                                            class="fas fa-circle-check"
+                                            title="Verified Tutor">
+                                        </i>
+
+                                    </div>
+
+                                    <p>
+                                        Social Studies Tutor
+                                    </p>
+
+                                    <div class="dashboard-tutor-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <strong>4.9</strong>
+
+                                        <span>
+                                            (90+ students)
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-tags">
+
+                                <span>History</span>
+                                <span>Geography</span>
+                                <span>Civics</span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-details">
+
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    6 Years
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-clock"></i>
+                                    Flexible
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-card-footer">
+
+                                <div class="dashboard-tutor-price">
+
+                                    <strong>₹425</strong>
+
+                                    <span>/ session</span>
+
+                                </div>
+
+                                <a
+                                    href="tutor-profile.html"
+                                    class="dashboard-tutor-profile-button">
+
+                                    View Profile
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Tutor 6 -->
+                        <article class="dashboard-recommended-tutor-card">
+
+                            <div class="dashboard-recommended-tutor-top">
+
+                                <div class="dashboard-recommended-tutor-image">
+
+                                    <img
+                                        src="images/tutor-6.jpg"
+                                        alt="Vikram Patel">
+
+                                    <span class="dashboard-tutor-online-dot"></span>
+
+                                </div>
+
+                                <div class="dashboard-recommended-tutor-info">
+
+                                    <div class="dashboard-tutor-name-row">
+
+                                        <h3>
+                                            Vikram Patel
+                                        </h3>
+
+                                        <i
+                                            class="fas fa-circle-check"
+                                            title="Verified Tutor">
+                                        </i>
+
+                                    </div>
+
+                                    <p>
+                                        Physics Tutor
+                                    </p>
+
+                                    <div class="dashboard-tutor-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <strong>4.8</strong>
+
+                                        <span>
+                                            (100+ students)
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-tags">
+
+                                <span>Mechanics</span>
+                                <span>Optics</span>
+                                <span>Thermodynamics</span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-details">
+
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    7 Years
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-clock"></i>
+                                    Flexible
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-tutor-card-footer">
+
+                                <div class="dashboard-tutor-price">
+
+                                    <strong>₹500</strong>
+
+                                    <span>/ session</span>
+
+                                </div>
+
+                                <a
+                                    href="tutor-profile.html"
+                                    class="dashboard-tutor-profile-button">
+
+                                    View Profile
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     TUTOR CATEGORIES
+                ================================================== -->
+
+                <section class="dashboard-tutor-categories-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span class="dashboard-section-label">
+                                Explore Subjects
+                            </span>
+
+                            <h2>
+                                Tutor Categories
+                            </h2>
+
+                        </div>
+
+                        <a
+                            href="subjects.html"
+                            class="dashboard-section-link">
+
+                            View All Subjects
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="dashboard-tutor-categories-grid">
+
+
+                        <!-- Mathematics -->
+                        <a
+                            href="dashboard-find-tutor.html"
+                            class="dashboard-tutor-category-card">
+
+                            <span class="dashboard-tutor-category-icon">
+
+                                <i class="fas fa-calculator"></i>
+
+                            </span>
+
+                            <span class="dashboard-tutor-category-content">
+
+                                <strong>
+                                    Mathematics
+                                </strong>
+
+                                <small>
+                                    120+ Tutors
+                                </small>
+
+                            </span>
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <!-- Science -->
+                        <a
+                            href="dashboard-find-tutor.html"
+                            class="dashboard-tutor-category-card">
+
+                            <span class="dashboard-tutor-category-icon">
+
+                                <i class="fas fa-flask"></i>
+
+                            </span>
+
+                            <span class="dashboard-tutor-category-content">
+
+                                <strong>
+                                    Science
+                                </strong>
+
+                                <small>
+                                    100+ Tutors
+                                </small>
+
+                            </span>
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <!-- English -->
+                        <a
+                            href="dashboard-find-tutor.html"
+                            class="dashboard-tutor-category-card">
+
+                            <span class="dashboard-tutor-category-icon">
+
+                                <i class="fas fa-book-open"></i>
+
+                            </span>
+
+                            <span class="dashboard-tutor-category-content">
+
+                                <strong>
+                                    English
+                                </strong>
+
+                                <small>
+                                    90+ Tutors
+                                </small>
+
+                            </span>
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <!-- Computer Science -->
+                        <a
+                            href="dashboard-find-tutor.html"
+                            class="dashboard-tutor-category-card">
+
+                            <span class="dashboard-tutor-category-icon">
+
+                                <i class="fas fa-laptop-code"></i>
+
+                            </span>
+
+                            <span class="dashboard-tutor-category-content">
+
+                                <strong>
+                                    Computer Science
+                                </strong>
+
+                                <small>
+                                    80+ Tutors
+                                </small>
+
+                            </span>
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     HELP PANEL
+                ================================================== -->
+
+                <section class="dashboard-find-help-section">
+
+                    <div class="dashboard-find-help-content">
+
+                        <div class="dashboard-find-help-icon">
+
+                            <i class="fas fa-headset"></i>
+
+                        </div>
+
+                        <div class="dashboard-find-help-text">
+
+                            <span class="dashboard-section-label">
+                                Need Assistance?
+                            </span>
+
+                            <h2>
+                                Need Help Finding a Tutor?
+                            </h2>
+
+                            <p>
+                                Tell us what your child needs and our
+                                team can help you find the right tutor.
+                            </p>
+
+                        </div>
+
+                        <a
+                            href="contact.html"
+                            class="dashboard-find-help-button">
+
+                            <i class="fas fa-headset"></i>
+
+                            Contact Support
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="dashboard-logout-modal"
+    id="dashboardLogoutModal"
+    aria-hidden="true"
+>
+
+    <div class="dashboard-logout-overlay" id="dashboardLogoutOverlay"></div>
+
+    <div
+        class="dashboard-logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dashboardLogoutTitle"
+    >
+
+        <button
+            type="button"
+            class="dashboard-logout-close"
+            id="dashboardLogoutClose"
+            aria-label="Close logout popup"
+        >
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="dashboard-logout-icon">
+            <i class="fas fa-right-from-bracket"></i>
+        </div>
+
+        <div class="dashboard-logout-content">
+
+            <h2 id="dashboardLogoutTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout from your TutorNest account?
+            </p>
+
+        </div>
+
+        <div class="dashboard-logout-actions">
+
+            <button
+                type="button"
+                class="dashboard-logout-no"
+                id="dashboardLogoutNo"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="dashboard-logout-yes"
+                id="dashboardLogoutYes"
+            >
+                <i class="fas fa-right-from-bracket"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+</div>
+   
+    <script src="js/dashboard.js"></script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- Basic Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Title -->
+  <title>TutorNest | Home Tutoring & Learning</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     TUTORNEST
+     PART 1 - HEADER / NAVIGATION
+========================================================= -->
+
+
+<header class="site-header" id="siteHeader">
+
+  <div class="header-container">
+
+
+    <!-- =====================================================
+         LOGO
+    ====================================================== -->
+
+    <a
+      href="index.html"
+      class="site-logo"
+      aria-label="TutorNest Home">
+
+      <img
+        src="images/logo.png"
+        alt="TutorNest Logo"
+        class="logo-image">
+
+    </a>
+
+
+
+    <!-- =====================================================
+         DESKTOP NAVIGATION
+    ====================================================== -->
+
+    <nav
+      class="desktop-navigation"
+      aria-label="Main Navigation">
+
+      <ul class="nav-list">
+
+
+        <!-- HOME DROPDOWN -->
+
+        <li class="nav-item nav-dropdown">
+
+          <button
+            type="button"
+            class="nav-link dropdown-toggle"
+            aria-expanded="false">
+
+            <span>Home</span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <ul class="dropdown-menu">
+
+            <li class="dropdown-item">
+
+              <a href="index.html">
+                Home 1
+              </a>
+
+            </li>
+
+            <li class="dropdown-item">
+
+              <a href="home-2.html">
+                Home 2
+              </a>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <!-- FIND A TUTOR -->
+
+        <li class="nav-item">
+
+          <a
+            href="find-tutor.html"
+            class="nav-link">
+
+            Find a Tutor
+
+          </a>
+
+        </li>
+
+
+        <!-- SUBJECTS -->
+
+        <li class="nav-item">
+
+          <a
+            href="subjects.html"
+            class="nav-link active">
+
+            Subjects
+
+          </a>
+
+        </li>
+
+
+        <!-- HOW IT WORKS -->
+
+        <li class="nav-item">
+
+          <a
+            href="how-it-works.html"
+            class="nav-link">
+
+            How It Works
+
+          </a>
+
+        </li>
+
+
+        <!-- PRICING -->
+
+        <li class="nav-item">
+
+          <a
+            href="pricing.html"
+            class="nav-link">
+
+            Pricing
+
+          </a>
+
+        </li>
+
+
+        
+
+
+        <!-- CONTACT -->
+
+        <li class="nav-item">
+
+          <a
+            href="contact.html"
+            class="nav-link">
+
+            Contact
+
+          </a>
+
+        </li>
+
+
+      </ul>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         DESKTOP HEADER ACTIONS
+    ====================================================== -->
+
+    <div class="desktop-header-actions">
+
+
+      <!-- DARK MODE -->
+
+      <button
+        type="button"
+        class="header-icon-btn theme-toggle"
+        id="themeToggle"
+        aria-label="Switch to dark mode"
+        title="Dark Mode">
+
+        <i class="fa-solid fa-moon"></i>
+
+      </button>
+
+
+      <!-- RTL -->
+
+      <button
+        type="button"
+        class="header-rtl-btn rtl-toggle"
+        id="rtlToggle"
+        aria-label="Switch to RTL"
+        title="RTL">
+
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+        <span>RTL</span>
+
+      </button>
+
+
+      <!-- LOGIN -->
+
+      <a
+        href="login.html"
+        class="header-login-btn">
+
+        <i class="fa-solid fa-right-to-bracket"></i>
+
+        <span>Login</span>
+
+      </a>
+
+
+      <!-- DASHBOARD -->
+
+      <a
+        href="dashboard.html"
+        class="header-dashboard-btn">
+
+        <i class="fa-solid fa-table-columns"></i>
+
+        <span>Dashboard</span>
+
+      </a>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         HAMBURGER BUTTON
+         Mobile + iPad Mini + iPad Pro
+    ====================================================== -->
+
+    <button
+      type="button"
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mobileMenu">
+
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+
+    </button>
+
+
+  </div>
+
+
+
+  <!-- =========================================================
+       MOBILE / TABLET MENU
+  ========================================================== -->
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu">
+
+
+    <nav
+      class="mobile-navigation"
+      aria-label="Mobile Navigation">
+
+
+      <ul class="mobile-nav-list">
+
+
+        <!-- HOME DROPDOWN -->
+
+        <li class="mobile-nav-item mobile-nav-dropdown">
+
+          <button
+            type="button"
+            class="mobile-nav-link mobile-dropdown-toggle"
+            aria-expanded="false">
+
+            <span class="mobile-nav-link-left">
+
+              <i class="fa-solid fa-house"></i>
+
+              <span>Home</span>
+
+            </span>
+
+            <i class="fa-solid fa-chevron-down mobile-dropdown-icon"></i>
+
+          </button>
+
+
+          <ul class="mobile-dropdown-menu">
+
+            <li>
+
+              <a href="index.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Home 1</span>
+
+              </a>
+
+            </li>
+
+
+            <li>
+
+              <a href="home-2.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Home 2</span>
+
+              </a>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+
+
+        <!-- FIND A TUTOR -->
+
+        <li class="mobile-nav-item">
+
+          <a
+            href="find-tutor.html"
+            class="mobile-nav-link">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <span>Find a Tutor</span>
+
+          </a>
+
+        </li>
+
+
+
+        <!-- SUBJECTS -->
+
+        <li class="mobile-nav-item">
+
+          <a
+            href="subjects.html"
+            class="mobile-nav-link">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <span>Subjects</span>
+
+          </a>
+
+        </li>
+
+
+
+        <!-- HOW IT WORKS -->
+
+        <li class="mobile-nav-item">
+
+          <a
+            href="how-it-works.html"
+            class="mobile-nav-link">
+
+            <i class="fa-solid fa-list-check"></i>
+
+            <span>How It Works</span>
+
+          </a>
+
+        </li>
+
+
+
+        <!-- PRICING -->
+
+        <li class="mobile-nav-item">
+
+          <a
+            href="pricing.html"
+            class="mobile-nav-link">
+
+            <i class="fa-solid fa-tags"></i>
+
+            <span>Pricing</span>
+
+          </a>
+
+        </li>
+
+
+
+        
+
+
+
+        <!-- CONTACT -->
+
+        <li class="mobile-nav-item">
+
+          <a
+            href="contact.html"
+            class="mobile-nav-link">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <span>Contact</span>
+
+          </a>
+
+        </li>
+
+
+      </ul>
+
+
+
+      <!-- DIVIDER -->
+
+      <div class="mobile-menu-divider"></div>
+
+
+
+      <!-- =====================================================
+           MOBILE ACTIONS
+      ====================================================== -->
+
+      <div class="mobile-menu-actions">
+
+
+        <!-- DARK MODE -->
+
+        <button
+          type="button"
+          class="mobile-action-btn mobile-theme-toggle"
+          id="mobileThemeToggle">
+
+          <span class="mobile-action-left">
+
+            <i class="fa-solid fa-moon"></i>
+
+            <span>Dark Mode</span>
+
+          </span>
+
+        </button>
+
+
+
+        <!-- RTL -->
+
+        <button
+          type="button"
+          class="mobile-action-btn mobile-rtl-toggle"
+          id="mobileRtlToggle">
+
+          <span class="mobile-action-left">
+
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+            <span>RTL</span>
+
+          </span>
+
+        </button>
+
+
+
+        <!-- LOGIN -->
+
+        <a
+          href="login.html"
+          class="mobile-login-btn">
+
+          <i class="fa-solid fa-right-to-bracket"></i>
+
+          <span>Login</span>
+
+        </a>
+
+
+
+        <!-- DASHBOARD -->
+
+        <a
+          href="dashboard.html"
+          class="mobile-dashboard-btn">
+
+          <i class="fa-solid fa-table-columns"></i>
+
+          <span>Dashboard</span>
+
+        </a>
+
+
+      </div>
+
+
+    </nav>
+
+  </div>
+
+
+</header>
+<! =========================================================
+   TUTORNEST
+   SUBJECTS PAGE
+   SECTION 1: SUBJECTS HERO
+   PART 1 - HTML
+========================================================= !>
+
+<main class="subjects-main">
+
+    <section class="subjects-hero-section">
+
+        <!-- Background Overlay -->
+        <div class="subjects-hero-overlay"></div>
+
+        <div class="container">
+
+            <div class="subjects-hero-content">
+
+                <!-- Badge -->
+                <span class="subjects-hero-badge">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>EXPLORE OUR SUBJECTS</span>
+                </span>
+
+                <!-- Heading -->
+                <h1 class="subjects-hero-title">
+                    Learn More.
+                    <span>Explore More.</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="subjects-hero-description">
+                    Discover expert tutoring across popular subjects
+                    and find the right learning support for your
+                    academic goals.
+                </p>
+
+            </div>
+
+            <!-- Subject Search -->
+            <div class="subjects-hero-search-box">
+
+                <form
+                    class="subjects-hero-search-form"
+                    id="subjectsSearchForm"
+                >
+
+                    <!-- Subject -->
+                    <div class="subjects-hero-search-field">
+
+                        <label
+                            for="subjectsSearchInput"
+                            class="sr-only"
+                        >
+                            Search Subject
+                        </label>
+
+                        <div class="subjects-hero-search-input">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input
+                                type="text"
+                                id="subjectsSearchInput"
+                                name="subject"
+                                placeholder="Search for a subject..."
+                                autocomplete="off"
+                            >
+                        </div>
+
+                    </div>
+
+                    <!-- Learning Level -->
+                    <div class="subjects-hero-search-field">
+
+                        <label
+                            for="subjectsSearchLevel"
+                            class="sr-only"
+                        >
+                            Select Learning Level
+                        </label>
+
+                        <div class="subjects-hero-search-select">
+
+                            <select
+                                id="subjectsSearchLevel"
+                                name="level"
+                            >
+                                <option value="">
+                                    Select Learning Level
+                                </option>
+
+                                <option value="primary">
+                                    Primary School
+                                </option>
+
+                                <option value="middle-school">
+                                    Middle School
+                                </option>
+
+                                <option value="high-school">
+                                    High School
+                                </option>
+
+                                <option value="higher-secondary">
+                                    Higher Secondary
+                                </option>
+
+                                <option value="college">
+                                    College
+                                </option>
+                            </select>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Search Button -->
+                    <button
+                        type="submit"
+                        class="subjects-hero-search-button"
+                    >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Explore Subjects</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+<! =========================================================
+   TUTORNEST
+   SUBJECTS PAGE
+   SECTION 2: POPULAR SUBJECTS
+   PART 1 - HTML
+========================================================= !>
+
+<section class="subjects-popular-section">
+
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="subjects-popular-header">
+
+            <span class="subjects-popular-badge">
+                <i class="fa-solid fa-star"></i>
+                <span>POPULAR SUBJECTS</span>
+            </span>
+
+            <h2 class="subjects-popular-title">
+                Explore Subjects
+                <span>That Inspire Learning</span>
+            </h2>
+
+            <p class="subjects-popular-description">
+                Choose from popular subjects and connect with
+                experienced tutors who make learning simple,
+                engaging, and effective.
+            </p>
+
+        </div>
+
+
+        <!-- Subject Cards -->
+        <div class="subjects-popular-grid">
+
+            <!-- Mathematics -->
+            <article class="subjects-popular-card">
+
+                <div class="subjects-popular-card-top">
+
+                    <div class="subjects-popular-icon">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+
+                    <span class="subjects-popular-count">
+                        120+ Tutors
+                    </span>
+
+                </div>
+
+                <div class="subjects-popular-card-content">
+
+                    <h3>Mathematics</h3>
+
+                    <p>
+                        Build strong problem-solving skills and
+                        understand mathematical concepts with
+                        personalized guidance.
+                    </p>
+
+                    <a
+                        href="find-tutor.html"
+                        class="subjects-popular-link"
+                    >
+                        <span>Explore Tutors</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Science -->
+            <article class="subjects-popular-card">
+
+                <div class="subjects-popular-card-top">
+
+                    <div class="subjects-popular-icon">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+
+                    <span class="subjects-popular-count">
+                        100+ Tutors
+                    </span>
+
+                </div>
+
+                <div class="subjects-popular-card-content">
+
+                    <h3>Science</h3>
+
+                    <p>
+                        Discover science through clear explanations,
+                        practical examples, and guided learning
+                        from experienced tutors.
+                    </p>
+
+                    <a
+                        href="find-tutor.html"
+                        class="subjects-popular-link"
+                    >
+                        <span>Explore Tutors</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- English -->
+            <article class="subjects-popular-card">
+
+                <div class="subjects-popular-card-top">
+
+                    <div class="subjects-popular-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <span class="subjects-popular-count">
+                        90+ Tutors
+                    </span>
+
+                </div>
+
+                <div class="subjects-popular-card-content">
+
+                    <h3>English</h3>
+
+                    <p>
+                        Improve grammar, writing, communication,
+                        vocabulary, and overall language confidence
+                        with expert support.
+                    </p>
+
+                    <a
+                        href="find-tutor.html"
+                        class="subjects-popular-link"
+                    >
+                        <span>Explore Tutors</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Computer Science -->
+            <article class="subjects-popular-card">
+
+                <div class="subjects-popular-card-top">
+
+                    <div class="subjects-popular-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <span class="subjects-popular-count">
+                        80+ Tutors
+                    </span>
+
+                </div>
+
+                <div class="subjects-popular-card-content">
+
+                    <h3>Computer Science</h3>
+
+                    <p>
+                        Learn programming, coding concepts, and
+                        practical computer skills through guided
+                        hands-on learning.
+                    </p>
+
+                    <a
+                        href="find-tutor.html"
+                        class="subjects-popular-link"
+                    >
+                        <span>Explore Tutors</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Social Studies -->
+            <article class="subjects-popular-card">
+
+                <div class="subjects-popular-card-top">
+
+                    <div class="subjects-popular-icon">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+
+                    <span class="subjects-popular-count">
+                        70+ Tutors
+                    </span>
+
+                </div>
+
+                <div class="subjects-popular-card-content">
+
+                    <h3>Social Studies</h3>
+
+                    <p>
+                        Understand history, geography, civics, and
+                        important ideas about society and the world
+                        around you.
+                    </p>
+
+                    <a
+                        href="find-tutor.html"
+                        class="subjects-popular-link"
+                    >
+                        <span>Explore Tutors</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Languages -->
+            <article class="subjects-popular-card">
+
+                <div class="subjects-popular-card-top">
+
+                    <div class="subjects-popular-icon">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+
+                    <span class="subjects-popular-count">
+                        60+ Tutors
+                    </span>
+
+                </div>
+
+                <div class="subjects-popular-card-content">
+
+                    <h3>Languages</h3>
+
+                    <p>
+                        Develop speaking, reading, writing, and
+                        listening skills with personalized language
+                        practice and expert guidance.
+                    </p>
+
+                    <a
+                        href="find-tutor.html"
+                        class="subjects-popular-link"
+                    >
+                        <span>Explore Tutors</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- Bottom Action -->
+        <div class="subjects-popular-action">
+
+            <p>
+                Looking for a different subject?
+            </p>
+
+            <a
+                href="find-tutor.html"
+                class="subjects-popular-button"
+            >
+                <span>Browse All Tutors</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     TUTORNEST — SUBJECTS PAGE
+     SECTION 3: SUBJECTS BY LEARNING LEVEL
+     PART 1 — HTML
+========================================================= -->
+
+<section class="subjects-level-section">
+
+    <div class="container">
+
+        <div class="subjects-level-wrapper">
+
+            <!-- LEFT CONTENT -->
+            <div class="subjects-level-intro">
+
+                <span class="subjects-level-badge">
+                    <i class="fa-solid fa-stairs"></i>
+                    <span>LEARNING LEVELS</span>
+                </span>
+
+                <h2 class="subjects-level-title">
+                    Learning Support
+                    <span>For Every Stage</span>
+                </h2>
+
+                <p class="subjects-level-description">
+                    Whether you're building strong foundations or
+                    working toward advanced academic goals, find
+                    tutoring support designed for your learning level.
+                </p>
+
+                <div class="subjects-level-highlight">
+
+                    <div class="subjects-level-highlight-icon">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+
+                    <div class="subjects-level-highlight-content">
+                        <strong>Personalized Learning</strong>
+                        <span>
+                            Find tutors who match your level,
+                            subject, and learning goals.
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="subjects-level-action">
+
+                    <a
+                        href="find-tutor.html"
+                        class="subjects-level-button"
+                    >
+                        <span>Find a Tutor</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT LEARNING JOURNEY -->
+            <div class="subjects-level-journey">
+
+                <!-- LEVEL 01 -->
+                <a
+                    href="find-tutor.html"
+                    class="subjects-level-item"
+                >
+
+                    <div class="subjects-level-number">
+                        <span>01</span>
+                    </div>
+
+                    <div class="subjects-level-icon">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+
+                    <div class="subjects-level-content">
+
+                        <div class="subjects-level-heading">
+                            <h3>Primary School</h3>
+                            <span>Foundation Level</span>
+                        </div>
+
+                        <p>
+                            Build strong basics in Mathematics,
+                            English, Science, and essential
+                            learning skills.
+                        </p>
+
+                        <div class="subjects-level-subjects">
+                            <span>Mathematics</span>
+                            <span>English</span>
+                            <span>Science</span>
+                        </div>
+
+                    </div>
+
+                    <div class="subjects-level-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </a>
+
+
+                <!-- LEVEL 02 -->
+                <a
+                    href="find-tutor.html"
+                    class="subjects-level-item"
+                >
+
+                    <div class="subjects-level-number">
+                        <span>02</span>
+                    </div>
+
+                    <div class="subjects-level-icon">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+
+                    <div class="subjects-level-content">
+
+                        <div class="subjects-level-heading">
+                            <h3>Middle School</h3>
+                            <span>Core Learning</span>
+                        </div>
+
+                        <p>
+                            Strengthen core concepts and develop
+                            deeper understanding across important
+                            school subjects.
+                        </p>
+
+                        <div class="subjects-level-subjects">
+                            <span>Mathematics</span>
+                            <span>Science</span>
+                            <span>English</span>
+                        </div>
+
+                    </div>
+
+                    <div class="subjects-level-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </a>
+
+
+                <!-- LEVEL 03 -->
+                <a
+                    href="find-tutor.html"
+                    class="subjects-level-item"
+                >
+
+                    <div class="subjects-level-number">
+                        <span>03</span>
+                    </div>
+
+                    <div class="subjects-level-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <div class="subjects-level-content">
+
+                        <div class="subjects-level-heading">
+                            <h3>High School</h3>
+                            <span>Academic Growth</span>
+                        </div>
+
+                        <p>
+                            Improve subject knowledge and prepare
+                            confidently for important academic
+                            milestones and examinations.
+                        </p>
+
+                        <div class="subjects-level-subjects">
+                            <span>Mathematics</span>
+                            <span>Physics</span>
+                            <span>Chemistry</span>
+                            <span>Biology</span>
+                        </div>
+
+                    </div>
+
+                    <div class="subjects-level-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </a>
+
+
+                <!-- LEVEL 04 -->
+                <a
+                    href="find-tutor.html"
+                    class="subjects-level-item"
+                >
+
+                    <div class="subjects-level-number">
+                        <span>04</span>
+                    </div>
+
+                    <div class="subjects-level-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <div class="subjects-level-content">
+
+                        <div class="subjects-level-heading">
+                            <h3>Higher Secondary</h3>
+                            <span>Focused Preparation</span>
+                        </div>
+
+                        <p>
+                            Get focused academic support with
+                            advanced concepts, exam preparation,
+                            and subject-specific tutoring.
+                        </p>
+
+                        <div class="subjects-level-subjects">
+                            <span>Advanced Mathematics</span>
+                            <span>Science</span>
+                            <span>Computer Science</span>
+                        </div>
+
+                    </div>
+
+                    <div class="subjects-level-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </a>
+
+
+                <!-- LEVEL 05 -->
+                <a
+                    href="find-tutor.html"
+                    class="subjects-level-item"
+                >
+
+                    <div class="subjects-level-number">
+                        <span>05</span>
+                    </div>
+
+                    <div class="subjects-level-icon">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+
+                    <div class="subjects-level-content">
+
+                        <div class="subjects-level-heading">
+                            <h3>College</h3>
+                            <span>Advanced Learning</span>
+                        </div>
+
+                        <p>
+                            Connect with tutors for specialized
+                            subjects, technical skills, programming,
+                            mathematics, and academic support.
+                        </p>
+
+                        <div class="subjects-level-subjects">
+                            <span>Programming</span>
+                            <span>Mathematics</span>
+                            <span>Languages</span>
+                        </div>
+
+                    </div>
+
+                    <div class="subjects-level-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     TUTORNEST — SUBJECTS PAGE
+     SECTION 4: EXPLORE WHAT YOU CAN LEARN
+     PART 1 — HTML
+========================================================= -->
+
+<section class="subjects-explore-section">
+
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+        <div class="subjects-explore-header">
+
+            <span class="subjects-explore-badge">
+                <i class="fa-solid fa-compass"></i>
+                <span>EXPLORE WHAT YOU CAN LEARN</span>
+            </span>
+
+            <h2 class="subjects-explore-title">
+                Discover More
+                <span>Ways to Learn</span>
+            </h2>
+
+            <p class="subjects-explore-description">
+                TutorNest supports more than everyday subjects.
+                Find learning support for exams, assignments,
+                technology, communication, and more.
+            </p>
+
+        </div>
+
+
+        <!-- EXPLORE CONTENT -->
+        <div class="subjects-explore-wrapper">
+
+
+            <!-- LEFT IMAGE -->
+            <div class="subjects-explore-image-wrapper">
+
+                <div class="subjects-explore-image">
+
+                    <img
+                        src="images/subjects-explore.jpg"
+                        alt="Student learning with a tutor"
+                    >
+
+                    <div class="subjects-explore-image-overlay"></div>
+
+                    <div class="subjects-explore-image-content">
+
+                        <span>
+                            <i class="fa-solid fa-lightbulb"></i>
+                            LEARN WITH PURPOSE
+                        </span>
+
+                        <strong>
+                            Every Goal Has
+                            a Learning Path.
+                        </strong>
+
+                        <p>
+                            Find the right support and
+                            make every learning session count.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT LEARNING OPTIONS -->
+            <div class="subjects-explore-list">
+
+
+                <!-- ITEM 1 -->
+                <a
+                    href="find-tutor.html"
+                    class="subjects-explore-item"
+                >
+
+                    <div class="subjects-explore-item-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+
+                    <div class="subjects-explore-item-content">
+
+                        <span class="subjects-explore-item-label">
+                            LEARNING GOAL
+                        </span>
+
+                        <h3>
+                            Exam Preparation
+                        </h3>
+
+                        <p>
+                            Prepare with focused guidance,
+                            revision support, practice,
+                            and exam-oriented learning.
+                        </p>
+
+                    </div>
+
+                    <div class="subjects-explore-item-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </a>
+
+
+                <!-- ITEM 2 -->
+                <a
+                    href="find-tutor.html"
+                    class="subjects-explore-item"
+                >
+
+                    <div class="subjects-explore-item-icon">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+
+                    <div class="subjects-explore-item-content">
+
+                        <span class="subjects-explore-item-label">
+                            ACADEMIC SUPPORT
+                        </span>
+
+                        <h3>
+                            Homework & Assignments
+                        </h3>
+
+                        <p>
+                            Get clear explanations and helpful
+                            guidance to complete assignments
+                            with greater confidence.
+                        </p>
+
+                    </div>
+
+                    <div class="subjects-explore-item-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </a>
+
+
+                <!-- ITEM 3 -->
+                <a
+                    href="find-tutor.html"
+                    class="subjects-explore-item"
+                >
+
+                    <div class="subjects-explore-item-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <div class="subjects-explore-item-content">
+
+                        <span class="subjects-explore-item-label">
+                            SKILLS & TECHNOLOGY
+                        </span>
+
+                        <h3>
+                            Coding & Technology
+                        </h3>
+
+                        <p>
+                            Learn programming, computer skills,
+                            and technology concepts through
+                            practical tutoring.
+                        </p>
+
+                    </div>
+
+                    <div class="subjects-explore-item-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </a>
+
+
+                <!-- ITEM 4 -->
+                <a
+                    href="find-tutor.html"
+                    class="subjects-explore-item"
+                >
+
+                    <div class="subjects-explore-item-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <div class="subjects-explore-item-content">
+
+                        <span class="subjects-explore-item-label">
+                            COMMUNICATION SKILLS
+                        </span>
+
+                        <h3>
+                            Language & Communication
+                        </h3>
+
+                        <p>
+                            Improve speaking, writing, vocabulary,
+                            communication, and language confidence
+                            with personalized support.
+                        </p>
+
+                    </div>
+
+                    <div class="subjects-explore-item-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     TUTORNEST — SUBJECTS PAGE
+     FINAL CTA SECTION
+     PART 1 — HTML
+========================================================= -->
+
+<section class="subjects-final-cta-section">
+
+    <!-- DECORATIVE SHAPES -->
+    <div class="subjects-final-cta-circle subjects-final-cta-circle-one"></div>
+    <div class="subjects-final-cta-circle subjects-final-cta-circle-two"></div>
+    <div class="subjects-final-cta-circle subjects-final-cta-circle-three"></div>
+
+
+    <div class="container">
+
+        <div class="subjects-final-cta-content">
+
+            <!-- CTA BADGE -->
+            <span class="subjects-final-cta-badge">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>READY TO KEEP LEARNING?</span>
+            </span>
+
+
+            <!-- CTA TITLE -->
+            <h2 class="subjects-final-cta-title">
+                Your Learning Journey
+                <span>Starts Here.</span>
+            </h2>
+
+
+            <!-- CTA DESCRIPTION -->
+            <p class="subjects-final-cta-description">
+                Explore the right subject, connect with a qualified
+                tutor, and take the next step toward your academic goals.
+            </p>
+
+
+            <!-- CTA ACTIONS -->
+            <div class="subjects-final-cta-actions">
+
+                <a
+                    href="find-tutor.html"
+                    class="subjects-final-cta-primary"
+                >
+                    <span>Find a Tutor</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+
+                <a
+                    href="subjects.html"
+                    class="subjects-final-cta-secondary"
+                >
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Explore Subjects</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     TUTORNEST FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <!-- Footer Main -->
+        <div class="footer-main">
+
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="index.html"
+                   class="footer-logo"
+                   aria-label="TutorNest Home">
+
+                    <img src="images/logo.png"
+                         alt="TutorNest Logo">
+
+                </a>
+
+                <p class="footer-description">
+                    Connecting students with trusted tutors
+                    for personalized learning and academic success.
+                </p>
+
+
+                <!-- Social Media -->
+                <div class="footer-social">
+
+                    <a href="#"
+                       class="footer-social-link"
+                       aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#"
+                       class="footer-social-link"
+                       aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#"
+                       class="footer-social-link"
+                       aria-label="X">
+
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </a>
+
+                    <a href="#"
+                       class="footer-social-link"
+                       aria-label="LinkedIn">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3 class="footer-title">
+                    Quick Links
+                </h3>
+
+                <ul class="footer-link-list">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="find-tutor.html">
+                            Find a Tutor
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="subjects.html">
+                            Subjects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="how-it-works.html">
+                            How It Works
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Company -->
+            <div class="footer-column">
+
+                <h3 class="footer-title">
+                    Company
+                </h3>
+
+                <ul class="footer-link-list">
+
+                    <li>
+                        <a href="pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column footer-contact">
+
+                <h3 class="footer-title">
+                    Contact Us
+                </h3>
+
+                <ul class="footer-contact-list">
+
+                    <li>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>
+                            Chennai, Tamil Nadu, India
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <a href="mailto:hello@tutornest.com">
+                            hello@tutornest.com
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <span>
+                            Mon – Sat: 9:00 AM – 7:00 PM
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p class="footer-copyright">
+                © 2026 TutorNest. All rights reserved.
+            </p>
+
+
+            <div class="footer-bottom-links">
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- JS -->
+<!-- Scroll To Top Button -->
+<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

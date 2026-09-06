@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TutorNest | My Sessions</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/logo.png"
+    >
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/dash-responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard-layout">
+
+
+    <!-- =====================================================
+         DASHBOARD SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="dashboard-sidebar"
+        id="dashboardSidebar"
+    >
+
+        <div class="dashboard-sidebar-header">
+
+            <a
+                href="index.html"
+                class="dashboard-sidebar-logo"
+                aria-label="TutorNest Home"
+            >
+
+                <img
+                    src="images/logo.png"
+                    alt="TutorNest"
+                >
+
+            </a>
+
+
+            <button
+                type="button"
+                class="dashboard-sidebar-close"
+                id="dashboardSidebarClose"
+                aria-label="Close dashboard menu"
+            >
+
+                <i class="fas fa-times"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Dashboard Navigation -->
+
+        <nav
+            class="dashboard-navigation"
+            aria-label="Dashboard navigation"
+        >
+
+            <ul>
+
+
+                <!-- Dashboard -->
+
+                <li>
+
+                    <a href="dashboard.html">
+
+                        <i class="fas fa-th-large"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- Find a Tutor -->
+
+                <li>
+
+                    <a href="tutor.html">
+
+                        <i class="fas fa-user-graduate"></i>
+
+                        <span>
+                            Find a Tutor
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- My Tutors -->
+
+                <li>
+
+                    <a href="mytutor.html">
+
+                        <i class="fas fa-chalkboard-user"></i>
+
+                        <span>
+                            My Tutors
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- My Sessions - ACTIVE -->
+
+                <li>
+
+                    <a
+                        href="my-session.html"
+                        class="active"
+                    >
+
+                        <i class="fas fa-calendar-check"></i>
+
+                        <span>
+                            My Sessions
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- Session Notes -->
+
+                <li>
+
+                    <a href="session-notes.html">
+
+                        <i class="fas fa-note-sticky"></i>
+
+                        <span>
+                            Session Notes
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- Payments & Receipts -->
+
+                <li>
+
+                    <a href="payment.html">
+
+                        <i class="fas fa-receipt"></i>
+
+                        <span>
+                            Payments &amp; Receipts
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- Profile -->
+
+                <li>
+
+                    <a href="profile.html">
+
+                        <i class="fas fa-user"></i>
+
+                        <span>
+                            Profile
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+
+        <!-- Logout -->
+
+        <div class="dashboard-sidebar-bottom">
+
+            <a href="login.html">
+
+                <i class="fas fa-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         SIDEBAR OVERLAY
+    ====================================================== -->
+
+    <div
+        class="dashboard-sidebar-overlay"
+        id="dashboardSidebarOverlay"
+    ></div>
+
+
+
+    <!-- =====================================================
+         DASHBOARD MAIN
+    ====================================================== -->
+
+    <div class="dashboard-main">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="dashboard-topbar">
+
+
+            <!-- Topbar Left -->
+
+            <div class="dashboard-topbar-left">
+
+
+                <button
+                    type="button"
+                    class="dashboard-hamburger"
+                    id="dashboardHamburger"
+                    aria-label="Open dashboard menu"
+                    aria-expanded="false"
+                >
+
+                    <i class="fas fa-bars"></i>
+
+                </button>
+
+
+                <div class="dashboard-page-heading">
+
+                    <span>
+                        Parent Dashboard
+                    </span>
+
+                    <h1>
+                        My Sessions
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Topbar Right -->
+
+            <div class="dashboard-topbar-right">
+
+
+                
+
+
+                <!-- Dark Mode -->
+
+                <button
+                    type="button"
+                    class="dashboard-control-button"
+                    id="dashboardDarkModeToggle"
+                    aria-label="Switch to dark mode"
+                    title="Dark Mode"
+                >
+
+                    <i class="fas fa-moon"></i>
+
+                    <span>
+                        Dark
+                    </span>
+
+                </button>
+
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="dashboard-control-button"
+                    id="dashboardRtlToggle"
+                    aria-label="Switch to right-to-left"
+                    title="RTL"
+                >
+
+                    <i class="fas fa-align-right"></i>
+
+                    <span>
+                        RTL
+                    </span>
+
+                </button>
+
+
+                <!-- Notifications -->
+
+                <button
+                    type="button"
+                    class="dashboard-notification-button"
+                    aria-label="Notifications"
+                    title="Notifications"
+                >
+
+                    <i class="fas fa-bell"></i>
+
+                    <span class="dashboard-notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- Profile -->
+
+                <button
+                    type="button"
+                    class="dashboard-profile-button"
+                    aria-label="Open profile"
+                >
+
+                    <span class="dashboard-profile-avatar">
+                        J
+                    </span>
+
+                    <span class="dashboard-profile-info">
+
+                        <strong>
+                            Jeni
+                        </strong>
+
+                        <span>
+                            Parent
+                        </span>
+
+                    </span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             DASHBOARD CONTENT
+        ================================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- =================================================
+                 SECTION 1 — MY SESSIONS INTRO
+            ================================================== -->
+
+            <section class="dashboard-my-sessions-intro">
+
+
+                <div class="dashboard-my-sessions-intro-content">
+
+                    <span class="dashboard-my-sessions-intro-label">
+
+                        <i class="fas fa-calendar-check"></i>
+
+                        My Sessions
+
+                    </span>
+
+
+                    <h2>
+                        Manage Your Child's Tutoring Sessions
+                    </h2>
+
+
+                    <p>
+                        Keep track of upcoming lessons, review completed
+                        sessions, and manage your child's tutoring schedule
+                        from one place.
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-my-sessions-intro-action">
+
+                    <a
+                        href="tutor.html"
+                        class="dashboard-my-sessions-book-button"
+                    >
+
+                        <i class="fas fa-plus"></i>
+
+                        Book New Session
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SECTION 2 — SESSION OVERVIEW
+            ================================================== -->
+
+            <section class="dashboard-my-sessions-overview-section">
+
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            Overview
+                        </span>
+
+                        <h2>
+                            Session Activity
+                        </h2>
+
+                    </div>
+
+
+                    <span class="dashboard-section-note">
+                        Your tutoring activity at a glance
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-my-sessions-stats-grid">
+
+
+                    <!-- Upcoming Sessions -->
+
+                    <article class="dashboard-my-sessions-stat-card">
+
+                        <div class="dashboard-my-sessions-stat-icon">
+
+                            <i class="fas fa-calendar-days"></i>
+
+                        </div>
+
+
+                        <div class="dashboard-my-sessions-stat-content">
+
+                            <span>
+                                Upcoming Sessions
+                            </span>
+
+                            <strong>
+                                5
+                            </strong>
+
+                            <small>
+                                Scheduled sessions
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Completed Sessions -->
+
+                    <article class="dashboard-my-sessions-stat-card">
+
+                        <div class="dashboard-my-sessions-stat-icon">
+
+                            <i class="fas fa-circle-check"></i>
+
+                        </div>
+
+
+                        <div class="dashboard-my-sessions-stat-content">
+
+                            <span>
+                                Completed Sessions
+                            </span>
+
+                            <strong>
+                                28
+                            </strong>
+
+                            <small>
+                                Sessions completed
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Cancelled Sessions -->
+
+                    <article class="dashboard-my-sessions-stat-card">
+
+                        <div class="dashboard-my-sessions-stat-icon">
+
+                            <i class="fas fa-calendar-xmark"></i>
+
+                        </div>
+
+
+                        <div class="dashboard-my-sessions-stat-content">
+
+                            <span>
+                                Cancelled Sessions
+                            </span>
+
+                            <strong>
+                                2
+                            </strong>
+
+                            <small>
+                                Cancelled sessions
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Total Sessions -->
+
+                    <article class="dashboard-my-sessions-stat-card">
+
+                        <div class="dashboard-my-sessions-stat-icon">
+
+                            <i class="fas fa-calendar-week"></i>
+
+                        </div>
+
+
+                        <div class="dashboard-my-sessions-stat-content">
+
+                            <span>
+                                Total Sessions
+                            </span>
+
+                            <strong>
+                                35
+                            </strong>
+
+                            <small>
+                                All sessions
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SECTION 3 — UPCOMING SESSIONS
+            ================================================== -->
+
+            <section class="dashboard-upcoming-session-page-section">
+
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            Schedule
+                        </span>
+
+                        <h2>
+                            Upcoming Sessions
+                        </h2>
+
+                    </div>
+
+
+                    <span class="dashboard-section-note">
+                        Your next tutoring lessons
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-session-page-list">
+
+
+                    <!-- SESSION 1 -->
+
+                    <article class="dashboard-session-page-card">
+
+
+                        <div class="dashboard-session-page-date">
+
+                            <span>
+                                SEP
+                            </span>
+
+                            <strong>
+                                06
+                            </strong>
+
+                            <small>
+                                Tomorrow
+                            </small>
+
+                        </div>
+
+
+                        <div class="dashboard-session-page-main">
+
+
+                            <div class="dashboard-session-page-header">
+
+                                <div>
+
+                                    <span class="dashboard-session-page-label">
+                                        Mathematics
+                                    </span>
+
+                                    <h3>
+                                        Mathematics Session
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="dashboard-session-page-status">
+
+                                    <i class="fas fa-circle"></i>
+
+                                    Upcoming
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-session-page-details">
+
+                                <span>
+
+                                    <i class="fas fa-user-graduate"></i>
+
+                                    Priya Sharma
+
+                                </span>
+
+
+                                <span>
+
+                                    <i class="fas fa-clock"></i>
+
+                                    5:00 PM – 6:00 PM
+
+                                </span>
+
+
+                                <span>
+
+                                    <i class="fas fa-school"></i>
+
+                                    Grade 8
+
+                                </span>
+
+
+                                <span>
+
+                                    <i class="fas fa-house"></i>
+
+                                    Home Tutoring
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-session-page-actions">
+
+                            <a
+                                href="#"
+                                class="dashboard-session-page-details-button"
+                            >
+                                View Details
+                            </a>
+
+
+                            <button
+                                type="button"
+                                class="dashboard-session-page-more-button"
+                                aria-label="More session options"
+                            >
+
+                                <i class="fas fa-ellipsis-vertical"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- SESSION 2 -->
+
+                    <article class="dashboard-session-page-card">
+
+
+                        <div class="dashboard-session-page-date">
+
+                            <span>
+                                SEP
+                            </span>
+
+                            <strong>
+                                08
+                            </strong>
+
+                            <small>
+                                Monday
+                            </small>
+
+                        </div>
+
+
+                        <div class="dashboard-session-page-main">
+
+
+                            <div class="dashboard-session-page-header">
+
+                                <div>
+
+                                    <span class="dashboard-session-page-label">
+                                        Science
+                                    </span>
+
+                                    <h3>
+                                        Science Session
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="dashboard-session-page-status">
+
+                                    <i class="fas fa-circle"></i>
+
+                                    Upcoming
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-session-page-details">
+
+                                <span>
+
+                                    <i class="fas fa-user-graduate"></i>
+
+                                    Arjun Kumar
+
+                                </span>
+
+
+                                <span>
+
+                                    <i class="fas fa-clock"></i>
+
+                                    6:30 PM – 7:30 PM
+
+                                </span>
+
+
+                                <span>
+
+                                    <i class="fas fa-school"></i>
+
+                                    Grade 8
+
+                                </span>
+
+
+                                <span>
+
+                                    <i class="fas fa-laptop"></i>
+
+                                    Online Tutoring
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-session-page-actions">
+
+                            <a
+                                href="#"
+                                class="dashboard-session-page-details-button"
+                            >
+                                View Details
+                            </a>
+
+
+                            <button
+                                type="button"
+                                class="dashboard-session-page-more-button"
+                                aria-label="More session options"
+                            >
+
+                                <i class="fas fa-ellipsis-vertical"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- SESSION 3 -->
+
+                    <article class="dashboard-session-page-card">
+
+
+                        <div class="dashboard-session-page-date">
+
+                            <span>
+                                SEP
+                            </span>
+
+                            <strong>
+                                10
+                            </strong>
+
+                            <small>
+                                Wednesday
+                            </small>
+
+                        </div>
+
+
+                        <div class="dashboard-session-page-main">
+
+
+                            <div class="dashboard-session-page-header">
+
+                                <div>
+
+                                    <span class="dashboard-session-page-label">
+                                        English
+                                    </span>
+
+                                    <h3>
+                                        English Session
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="dashboard-session-page-status">
+
+                                    <i class="fas fa-circle"></i>
+
+                                    Upcoming
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-session-page-details">
+
+                                <span>
+
+                                    <i class="fas fa-user-graduate"></i>
+
+                                    Ananya Rao
+
+                                </span>
+
+
+                                <span>
+
+                                    <i class="fas fa-clock"></i>
+
+                                    5:30 PM – 6:30 PM
+
+                                </span>
+
+
+                                <span>
+
+                                    <i class="fas fa-school"></i>
+
+                                    Grade 8
+
+                                </span>
+
+
+                                <span>
+
+                                    <i class="fas fa-house"></i>
+
+                                    Home Tutoring
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-session-page-actions">
+
+                            <a
+                                href="#"
+                                class="dashboard-session-page-details-button"
+                            >
+                                View Details
+                            </a>
+
+
+                            <button
+                                type="button"
+                                class="dashboard-session-page-more-button"
+                                aria-label="More session options"
+                            >
+
+                                <i class="fas fa-ellipsis-vertical"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- Upcoming Sessions Footer -->
+
+                <div class="dashboard-session-page-footer">
+
+                    <span>
+
+                        <i class="fas fa-circle-info"></i>
+
+                        You have 5 sessions scheduled.
+
+                    </span>
+
+
+                    <a href="#">
+
+                        Manage Schedule
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SECTION 4 — RECENT COMPLETED SESSIONS
+            ================================================== -->
+
+            <section class="dashboard-completed-sessions-section">
+
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            Session History
+                        </span>
+
+                        <h2>
+                            Recent Completed Sessions
+                        </h2>
+
+                    </div>
+
+
+                    <a
+                        href="#"
+                        class="dashboard-section-link"
+                    >
+
+                        View All History
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <div class="dashboard-completed-sessions-list">
+
+
+                    <!-- COMPLETED 1 -->
+
+                    <article class="dashboard-completed-session-card">
+
+
+                        <div class="dashboard-completed-session-icon">
+
+                            <i class="fas fa-calculator"></i>
+
+                        </div>
+
+
+                        <div class="dashboard-completed-session-info">
+
+                            <span>
+                                Mathematics
+                            </span>
+
+                            <h3>
+                                Mathematics Session
+                            </h3>
+
+                            <p>
+                                Priya Sharma
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-completed-session-date">
+
+                            <span>
+                                Sep 03, 2026
+                            </span>
+
+                            <small>
+                                5:00 PM – 6:00 PM
+                            </small>
+
+                        </div>
+
+
+                        <div class="dashboard-completed-session-status">
+
+                            <span>
+
+                                <i class="fas fa-circle-check"></i>
+
+                                Completed
+
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="#"
+                            class="dashboard-completed-session-button"
+                        >
+                            View Details
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- COMPLETED 2 -->
+
+                    <article class="dashboard-completed-session-card">
+
+
+                        <div class="dashboard-completed-session-icon">
+
+                            <i class="fas fa-flask"></i>
+
+                        </div>
+
+
+                        <div class="dashboard-completed-session-info">
+
+                            <span>
+                                Science
+                            </span>
+
+                            <h3>
+                                Science Session
+                            </h3>
+
+                            <p>
+                                Arjun Kumar
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-completed-session-date">
+
+                            <span>
+                                Sep 01, 2026
+                            </span>
+
+                            <small>
+                                6:30 PM – 7:30 PM
+                            </small>
+
+                        </div>
+
+
+                        <div class="dashboard-completed-session-status">
+
+                            <span>
+
+                                <i class="fas fa-circle-check"></i>
+
+                                Completed
+
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="#"
+                            class="dashboard-completed-session-button"
+                        >
+                            View Details
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- COMPLETED 3 -->
+
+                    <article class="dashboard-completed-session-card">
+
+
+                        <div class="dashboard-completed-session-icon">
+
+                            <i class="fas fa-book-open"></i>
+
+                        </div>
+
+
+                        <div class="dashboard-completed-session-info">
+
+                            <span>
+                                English
+                            </span>
+
+                            <h3>
+                                English Session
+                            </h3>
+
+                            <p>
+                                Ananya Rao
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-completed-session-date">
+
+                            <span>
+                                Aug 29, 2026
+                            </span>
+
+                            <small>
+                                5:30 PM – 6:30 PM
+                            </small>
+
+                        </div>
+
+
+                        <div class="dashboard-completed-session-status">
+
+                            <span>
+
+                                <i class="fas fa-circle-check"></i>
+
+                                Completed
+
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="#"
+                            class="dashboard-completed-session-button"
+                        >
+                            View Details
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SECTION 5 — SESSION SUPPORT
+            ================================================== -->
+
+            <section class="dashboard-my-sessions-support-section">
+
+
+                <div class="dashboard-my-sessions-support-content">
+
+
+                    <div class="dashboard-my-sessions-support-icon">
+
+                        <i class="fas fa-headset"></i>
+
+                    </div>
+
+
+                    <div class="dashboard-my-sessions-support-text">
+
+                        <span>
+                            Session Support
+                        </span>
+
+                        <h2>
+                            Need Help With Your Sessions?
+                        </h2>
+
+                        <p>
+                            Our support team is here to help with scheduling,
+                            rescheduling, cancellations, or any session-related
+                            questions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-my-sessions-support-action">
+
+                        <a
+                            href="contact.html"
+                            class="dashboard-my-sessions-support-button"
+                        >
+
+                            <i class="fas fa-headset"></i>
+
+                            Contact Support
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="dashboard-logout-modal"
+    id="dashboardLogoutModal"
+    aria-hidden="true"
+>
+
+    <div class="dashboard-logout-overlay" id="dashboardLogoutOverlay"></div>
+
+    <div
+        class="dashboard-logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dashboardLogoutTitle"
+    >
+
+        <button
+            type="button"
+            class="dashboard-logout-close"
+            id="dashboardLogoutClose"
+            aria-label="Close logout popup"
+        >
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="dashboard-logout-icon">
+            <i class="fas fa-right-from-bracket"></i>
+        </div>
+
+        <div class="dashboard-logout-content">
+
+            <h2 id="dashboardLogoutTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout from your TutorNest account?
+            </p>
+
+        </div>
+
+        <div class="dashboard-logout-actions">
+
+            <button
+                type="button"
+                class="dashboard-logout-no"
+                id="dashboardLogoutNo"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="dashboard-logout-yes"
+                id="dashboardLogoutYes"
+            >
+                <i class="fas fa-right-from-bracket"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+
+<script src="js/dashboard.js"></script>
+
+
+</body>
+
+</html>

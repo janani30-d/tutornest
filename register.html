@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TutorNest | Create Account</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/logo.png"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     REGISTER CONTROLS
+========================================================= -->
+
+<div class="register-controls">
+
+    <button
+        type="button"
+        class="register-control-button"
+        id="registerDarkModeToggle"
+        aria-label="Toggle dark mode"
+        title="Dark Mode"
+    >
+        <i class="fa-solid fa-moon"></i>
+        <span>Dark</span>
+    </button>
+
+
+    <button
+        type="button"
+        class="register-control-button"
+        id="registerRtlToggle"
+        aria-label="Toggle RTL direction"
+        title="RTL"
+    >
+        <i class="fa-solid fa-align-right"></i>
+        <span>RTL</span>
+    </button>
+
+</div>
+
+
+
+<!-- =========================================================
+     REGISTER MAIN
+========================================================= -->
+
+<main class="register-main">
+
+    <section class="register-section">
+
+        <div class="register-wrapper">
+
+
+            <!-- =================================================
+                 LEFT INTRO
+            ================================================== -->
+
+            <div class="register-intro">
+
+                <div class="register-intro-content">
+
+
+                    <!-- LOGO -->
+
+                    <a
+                        href="index.html"
+                        class="register-logo"
+                    >
+                        <img
+                            src="images/logo.png"
+                            alt="TutorNest"
+                        >
+                    </a>
+
+
+                    <!-- BADGE -->
+
+                    <span class="register-intro-badge">
+
+                        <i class="fa-solid fa-user-plus"></i>
+
+                        <span>
+                            JOIN TUTORNEST
+                        </span>
+
+                    </span>
+
+
+                    <!-- TITLE -->
+
+                    <h1 class="register-intro-title">
+
+                        Start Your
+                        <span>Learning Journey.</span>
+
+                    </h1>
+
+
+                    <!-- DESCRIPTION -->
+
+                    <p class="register-intro-description">
+
+                        Create your TutorNest account and
+                        connect with qualified tutors who can
+                        help you learn, grow, and achieve your
+                        academic goals.
+
+                    </p>
+
+
+                    <!-- FEATURES -->
+
+                    <div class="register-intro-features">
+
+
+                        <div class="register-intro-feature">
+
+                            <div class="register-intro-feature-icon">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+
+                            <div class="register-intro-feature-content">
+
+                                <strong>
+                                    Qualified Tutors
+                                </strong>
+
+                                <span>
+                                    Learn with trusted tutors.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="register-intro-feature">
+
+                            <div class="register-intro-feature-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+
+                            <div class="register-intro-feature-content">
+
+                                <strong>
+                                    Flexible Booking
+                                </strong>
+
+                                <span>
+                                    Choose sessions that suit you.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="register-intro-feature">
+
+                            <div class="register-intro-feature-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+
+                            <div class="register-intro-feature-content">
+
+                                <strong>
+                                    Track Your Progress
+                                </strong>
+
+                                <span>
+                                    Stay focused on your goals.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 REGISTER FORM SIDE
+            ================================================== -->
+
+            <div class="register-form-side">
+
+                <div class="register-card">
+
+
+                    <!-- CARD HEADER -->
+
+                    <div class="register-card-header">
+
+                        <div class="register-card-icon">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                        </div>
+
+
+                        <span class="register-card-label">
+                            CREATE ACCOUNT
+                        </span>
+
+
+                        <h2 class="register-card-title">
+                            Join TutorNest
+                        </h2>
+
+
+                        <p class="register-card-description">
+                            Create your account to start learning.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- REGISTER FORM -->
+
+                    <form
+                        class="register-form"
+                        id="registerForm"
+                        novalidate
+                    >
+
+
+                        <!-- FULL NAME -->
+
+                        <div class="register-form-group">
+
+                            <label for="registerFullName">
+                                Full Name
+                            </label>
+
+                            <div class="register-input-wrapper">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="registerFullName"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+                            <small
+                                class="register-error-message"
+                                id="registerFullNameError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div class="register-form-group">
+
+                            <label for="registerEmail">
+                                Email Address
+                            </label>
+
+                            <div class="register-input-wrapper">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                                <input
+                                    type="email"
+                                    id="registerEmail"
+                                    name="email"
+                                    placeholder="Enter your email address"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                            <small
+                                class="register-error-message"
+                                id="registerEmailError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- PHONE -->
+
+                        <div class="register-form-group">
+
+                            <label for="registerPhone">
+                                Phone Number
+                            </label>
+
+                            <div class="register-input-wrapper">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <input
+                                    type="tel"
+                                    id="registerPhone"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                    autocomplete="tel"
+                                >
+
+                            </div>
+
+                            <small
+                                class="register-error-message"
+                                id="registerPhoneError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- ACCOUNT TYPE -->
+
+                        <div class="register-form-group">
+
+                            <label for="registerAccountType">
+                                Account Type
+                            </label>
+
+                            <div
+                                class="register-input-wrapper register-select-wrapper"
+                            >
+
+                                <i class="fa-solid fa-users"></i>
+
+                                <select
+                                    id="registerAccountType"
+                                    name="accountType"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select account type
+                                    </option>
+
+                                    <option value="student">
+                                        Student
+                                    </option>
+
+                                    <option value="parent">
+                                        Parent / Guardian
+                                    </option>
+
+                                    <option value="tutor">
+                                        Tutor
+                                    </option>
+
+                                </select>
+
+                                <i
+                                    class="fa-solid fa-chevron-down register-select-arrow"
+                                ></i>
+
+                            </div>
+
+                            <small
+                                class="register-error-message"
+                                id="registerAccountTypeError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- PASSWORD -->
+
+                        <div class="register-form-group">
+
+                            <label for="registerPassword">
+                                Password
+                            </label>
+
+                            <div
+                                class="register-input-wrapper register-password-wrapper"
+                            >
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input
+                                    type="password"
+                                    id="registerPassword"
+                                    name="password"
+                                    placeholder="Create a password"
+                                    autocomplete="new-password"
+                                    minlength="6"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="register-password-toggle"
+                                    id="registerPasswordToggle"
+                                    aria-label="Show password"
+                                    title="Show password"
+                                >
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </div>
+
+                            <small
+                                class="register-error-message"
+                                id="registerPasswordError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- CONFIRM PASSWORD -->
+
+                        <div class="register-form-group">
+
+                            <label for="registerConfirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <div
+                                class="register-input-wrapper register-password-wrapper"
+                            >
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input
+                                    type="password"
+                                    id="registerConfirmPassword"
+                                    name="confirmPassword"
+                                    placeholder="Confirm your password"
+                                    autocomplete="new-password"
+                                    minlength="6"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="register-password-toggle"
+                                    id="registerConfirmPasswordToggle"
+                                    aria-label="Show password"
+                                    title="Show password"
+                                >
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </div>
+
+                            <small
+                                class="register-error-message"
+                                id="registerConfirmPasswordError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- TERMS -->
+
+                        <div class="register-terms">
+
+                            <label class="register-terms-label">
+
+                                <input
+                                    type="checkbox"
+                                    id="registerTerms"
+                                    name="terms"
+                                    required
+                                >
+
+                                <span>
+                                    I agree to the
+                                    <a href="#">
+                                        Terms &amp; Conditions
+                                    </a>
+                                    and
+                                    <a href="#">
+                                        Privacy Policy
+                                    </a>.
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+
+                        <!-- AUTH MESSAGE -->
+
+                        <div
+                            class="register-auth-message"
+                            id="registerAuthMessage"
+                            role="alert"
+                            aria-live="polite"
+                        ></div>
+
+
+
+                        <!-- CREATE ACCOUNT -->
+
+                        <button
+                            type="submit"
+                            class="register-submit"
+                            id="registerSubmitButton"
+                        >
+
+                            <span>
+                                Create Account
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+
+                        <!-- DIVIDER -->
+
+                        <div class="register-divider">
+
+                            <span></span>
+
+                            <small>
+                                OR CONTINUE WITH
+                            </small>
+
+                            <span></span>
+
+                        </div>
+
+
+
+                        <!-- SOCIAL -->
+
+                        <div class="register-social-buttons">
+
+
+                            <!-- GOOGLE -->
+
+                            <button
+                                type="button"
+                                class="register-social-button register-social-google"
+                                id="registerGoogle"
+                                aria-label="Continue with Google"
+                                title="Continue with Google"
+                            >
+
+                                <svg
+                                    class="register-social-google-icon"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true"
+                                >
+
+                                    <path
+                                        fill="#4285F4"
+                                        d="M21.35 12.27c0-.79-.07-1.55-.22-2.27H12v4.3h5.22a4.47 4.47 0 0 1-1.94 2.93v2.43h3.14c1.84-1.69 2.93-4.18 2.93-7.39z"
+                                    />
+
+                                    <path
+                                        fill="#34A853"
+                                        d="M12 21.75c2.63 0 4.84-.87 6.45-2.36l-3.14-2.43c-.87.58-1.98.93-3.31.93-2.54 0-4.69-1.72-5.46-4.03H3.29v2.5A9.75 9.75 0 0 0 12 21.75z"
+                                    />
+
+                                    <path
+                                        fill="#FBBC05"
+                                        d="M6.54 13.86A5.86 5.86 0 0 1 6.23 12c0-.65.11-1.28.31-1.86v-2.5H3.29A9.75 9.75 0 0 0 2.25 12c0 1.57.38 3.05 1.04 4.36l3.25-2.5z"
+                                    />
+
+                                    <path
+                                        fill="#EA4335"
+                                        d="M12 6.11c1.43 0 2.71.49 3.72 1.46l2.79-2.79C16.84 3.2 14.63 2.25 12 2.25a9.75 9.75 0 0 0-8.71 5.39l3.25 2.5 3.25 2.5C7.31 7.83 9.46 6.11 12 6.11z"
+                                    />
+
+                                </svg>
+
+                            </button>
+
+
+
+                            <!-- FACEBOOK -->
+
+                            <button
+                                type="button"
+                                class="register-social-button register-social-facebook"
+                                id="registerFacebook"
+                                aria-label="Continue with Facebook"
+                                title="Continue with Facebook"
+                            >
+
+                                <i class="fa-brands fa-facebook-f"></i>
+
+                            </button>
+
+
+
+                            <!-- APPLE -->
+
+                            <button
+                                type="button"
+                                class="register-social-button register-social-apple"
+                                id="registerApple"
+                                aria-label="Continue with Apple"
+                                title="Continue with Apple"
+                            >
+
+                                <i class="fa-brands fa-apple"></i>
+
+                            </button>
+
+
+                        </div>
+
+
+
+                    </form>
+
+
+
+                    <!-- CARD FOOTER -->
+
+                    <div class="register-card-footer">
+
+                        <span>
+                            Already have an account?
+                        </span>
+
+                        <a href="login.html">
+                            Sign In
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<script src="js/script.js"></script>
+
+<script src="js/register.js"></script>
+
+
+</body>
+
+</html>

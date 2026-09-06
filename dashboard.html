@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- Basic Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Title -->
+  <title>TutorNest | Home Tutoring & Learning</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/dashboard.css">
+
+  <link rel="stylesheet" href="css/dash-responsive.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         DASHBOARD LAYOUT
+    ====================================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="dashboard-sidebar"
+            id="dashboardSidebar"
+        >
+
+
+            <!-- =============================================
+                 SIDEBAR HEADER
+            ============================================== -->
+
+            <div class="dashboard-sidebar-header">
+
+                <a
+                    href="index.html"
+                    class="dashboard-sidebar-logo"
+                >
+
+                    <img
+                        src="images/logo.png"
+                        alt="TutorNest"
+                    >
+
+                </a>
+
+
+                <!-- Mobile / Tablet Close Button -->
+
+                <button
+                    type="button"
+                    class="dashboard-sidebar-close"
+                    id="dashboardSidebarClose"
+                    aria-label="Close dashboard menu"
+                >
+
+                    <i class="fas fa-times"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 SIDEBAR NAVIGATION
+            ============================================== -->
+
+            <nav
+                class="dashboard-navigation"
+                aria-label="Dashboard navigation"
+            >
+
+                <ul>
+
+
+                    <!-- Dashboard -->
+
+                    <li>
+
+                        <a
+                            href="dashboard.html"
+                            class="active"
+                        >
+
+                            <i class="fas fa-th-large"></i>
+
+                            <span>Dashboard</span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- Find a Tutor -->
+
+                    <li>
+
+                        <a href="tutor.html">
+
+                            <i class="fas fa-user-graduate"></i>
+
+                            <span>Find a Tutor</span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- My Tutors -->
+
+                    <li>
+
+                        <a href="mytutor.html">
+
+                            <i class="fas fa-chalkboard-user"></i>
+
+                            <span>My Tutors</span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- My Sessions -->
+
+                    <li>
+
+                        <a href="my-session.html">
+
+                            <i class="fas fa-calendar-check"></i>
+
+                            <span>My Sessions</span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- Session Notes -->
+
+                    <li>
+
+                        <a href="session-notes.html">
+
+                            <i class="fas fa-note-sticky"></i>
+
+                            <span>Session Notes</span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- Payments & Receipts -->
+
+                    <li>
+
+                        <a href="payment.html">
+
+                            <i class="fas fa-receipt"></i>
+
+                            <span>Payments &amp; Receipts</span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- Profile -->
+
+                    <li>
+
+                        <a href="profile.html">
+
+                            <i class="fas fa-user"></i>
+
+                            <span>Profile</span>
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </nav>
+
+
+
+            <!-- =============================================
+                 SIDEBAR BOTTOM
+                 ONLY LOGOUT
+            ============================================== -->
+
+            <div class="dashboard-sidebar-bottom">
+
+                <a href="login.html">
+
+                    <i class="fas fa-right-from-bracket"></i>
+
+                    <span>Logout</span>
+
+                </a>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             SIDEBAR OVERLAY
+        ================================================== -->
+
+        <div
+            class="dashboard-sidebar-overlay"
+            id="dashboardSidebarOverlay"
+        ></div>
+
+
+
+        <!-- =================================================
+             MAIN DASHBOARD
+        ================================================== -->
+
+        <div class="dashboard-main">
+
+
+            <!-- =============================================
+                 TOP BAR
+            ============================================== -->
+
+            <header class="dashboard-topbar">
+
+
+                <!-- =========================================
+                     TOP BAR LEFT
+                ========================================== -->
+
+                <div class="dashboard-topbar-left">
+
+
+                    <!-- Hamburger -->
+
+                    <button
+                        type="button"
+                        class="dashboard-hamburger"
+                        id="dashboardHamburger"
+                        aria-label="Open dashboard menu"
+                        aria-expanded="false"
+                    >
+
+                        <i class="fas fa-bars"></i>
+
+                    </button>
+
+
+                    <!-- Page Heading -->
+
+                    <div class="dashboard-page-heading">
+
+                        <span>Parent Dashboard</span>
+
+                        <h1>Dashboard</h1>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =========================================
+                     TOP BAR RIGHT
+                ========================================== -->
+
+                <div class="dashboard-topbar-right">
+
+
+                    
+
+
+                    <!-- Dark Mode -->
+
+                    <button
+                        type="button"
+                        class="dashboard-control-button"
+                        id="dashboardDarkModeToggle"
+                        aria-label="Switch to dark mode"
+                        title="Dark Mode"
+                    >
+
+                        <i class="fas fa-moon"></i>
+
+                        <span>Dark</span>
+
+                    </button>
+
+
+
+                    <!-- RTL -->
+
+                    <button
+                        type="button"
+                        class="dashboard-control-button"
+                        id="dashboardRtlToggle"
+                        aria-label="Switch to right-to-left"
+                        title="RTL"
+                    >
+
+                        <i class="fas fa-align-right"></i>
+
+                        <span>RTL</span>
+
+                    </button>
+
+
+
+                    <!-- Notifications -->
+
+                    <button
+                        type="button"
+                        class="dashboard-notification-button"
+                        aria-label="Notifications"
+                        title="Notifications"
+                    >
+
+                        <i class="fas fa-bell"></i>
+
+                        <span class="dashboard-notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- Profile -->
+
+                    <button
+                        type="button"
+                        class="dashboard-profile-button"
+                        aria-label="Open profile"
+                    >
+
+                        <span class="dashboard-profile-avatar">
+                            J
+                        </span>
+
+                        <span class="dashboard-profile-info">
+
+                            <strong>Jeni</strong>
+
+                            <span>Parent</span>
+
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 DASHBOARD CONTENT
+            ================================================== -->
+
+            <main class="dashboard-content">
+<! =========================================================
+   DASHBOARD SECTION 1
+   WELCOME / OVERVIEW
+========================================================= !>
+
+<section class="dashboard-welcome-section">
+
+    <div class="dashboard-welcome-content">
+
+        <span class="dashboard-welcome-label">
+            <i class="fas fa-hand-sparkles"></i>
+            Welcome Back
+        </span>
+
+        <h2>
+            Hello, Jeni!
+        </h2>
+
+        <p>
+            Manage your child's tutoring sessions, find trusted tutors,
+            and keep track of their learning journey from one place.
+        </p>
+
+        <a
+            href="find-tutor.html"
+            class="dashboard-welcome-button"
+        >
+            <i class="fas fa-search"></i>
+            Find a Tutor
+        </a>
+
+    </div>
+
+
+    <div class="dashboard-welcome-visual">
+
+        <div class="dashboard-welcome-icon">
+
+            <i class="fas fa-graduation-cap"></i>
+
+        </div>
+
+        <span class="dashboard-welcome-circle circle-one"></span>
+
+        <span class="dashboard-welcome-circle circle-two"></span>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     DASHBOARD SECTION 2
+     QUICK STATISTICS
+========================================================= -->
+
+<section class="dashboard-stats-section">
+
+    <div class="dashboard-section-heading">
+        <div>
+            <span class="dashboard-section-label">Overview</span>
+            <h2>Learning at a Glance</h2>
+        </div>
+
+        <span class="dashboard-section-note">
+            Your current tutoring activity
+        </span>
+    </div>
+
+
+    <div class="dashboard-stats-grid">
+
+        <!-- Active Tutors -->
+        <article class="dashboard-stat-card">
+
+            <div class="dashboard-stat-icon">
+                <i class="fas fa-chalkboard-user"></i>
+            </div>
+
+            <div class="dashboard-stat-content">
+                <span class="dashboard-stat-title">
+                    Active Tutors
+                </span>
+
+                <strong class="dashboard-stat-value">
+                    3
+                </strong>
+
+                <span class="dashboard-stat-description">
+                    Currently teaching
+                </span>
+            </div>
+
+            <span class="dashboard-stat-arrow">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </span>
+
+        </article>
+
+
+        <!-- Upcoming Sessions -->
+        <article class="dashboard-stat-card">
+
+            <div class="dashboard-stat-icon">
+                <i class="fas fa-calendar-check"></i>
+            </div>
+
+            <div class="dashboard-stat-content">
+                <span class="dashboard-stat-title">
+                    Upcoming Sessions
+                </span>
+
+                <strong class="dashboard-stat-value">
+                    5
+                </strong>
+
+                <span class="dashboard-stat-description">
+                    Scheduled sessions
+                </span>
+            </div>
+
+            <span class="dashboard-stat-arrow">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </span>
+
+        </article>
+
+
+        <!-- Completed Sessions -->
+        <article class="dashboard-stat-card">
+
+            <div class="dashboard-stat-icon">
+                <i class="fas fa-circle-check"></i>
+            </div>
+
+            <div class="dashboard-stat-content">
+                <span class="dashboard-stat-title">
+                    Completed Sessions
+                </span>
+
+                <strong class="dashboard-stat-value">
+                    28
+                </strong>
+
+                <span class="dashboard-stat-description">
+                    Sessions completed
+                </span>
+            </div>
+
+            <span class="dashboard-stat-arrow">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </span>
+
+        </article>
+
+
+        <!-- Learning Hours -->
+        <article class="dashboard-stat-card">
+
+            <div class="dashboard-stat-icon">
+                <i class="fas fa-clock"></i>
+            </div>
+
+            <div class="dashboard-stat-content">
+                <span class="dashboard-stat-title">
+                    Learning Hours
+                </span>
+
+                <strong class="dashboard-stat-value">
+                    42
+                </strong>
+
+                <span class="dashboard-stat-description">
+                    Total learning hours
+                </span>
+            </div>
+
+            <span class="dashboard-stat-arrow">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </span>
+
+        </article>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     DASHBOARD SECTION 3
+     FIND A TUTOR
+========================================================= -->
+
+<section class="dashboard-find-tutor-section">
+
+    <!-- =====================================================
+         SECTION HEADER
+    ====================================================== -->
+
+    <div class="dashboard-section-heading">
+
+        <div>
+
+            <span class="dashboard-section-label">
+                Tutor Search
+            </span>
+
+            <h2>
+                Find the Right Tutor
+            </h2>
+
+        </div>
+
+        <a
+            href="find-tutor.html"
+            class="dashboard-section-link"
+        >
+            View All Tutors
+            <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+
+    <!-- =====================================================
+         FIND TUTOR PANEL
+    ====================================================== -->
+
+    <div class="dashboard-find-tutor-panel">
+
+
+        <!-- =================================================
+             PANEL INTRO
+        ================================================== -->
+
+        <div class="dashboard-find-tutor-intro">
+
+            <div class="dashboard-find-tutor-icon">
+                <i class="fas fa-user-graduate"></i>
+            </div>
+
+            <div class="dashboard-find-tutor-text">
+
+                <h3>
+                    Find a Tutor for Your Child
+                </h3>
+
+                <p>
+                    Search verified tutors based on subject,
+                    qualification, grade and preferred timing.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SEARCH FORM
+        ================================================== -->
+
+        <form
+            class="dashboard-tutor-search-form"
+            id="dashboardTutorSearchForm"
+        >
+
+
+            <!-- Subject -->
+
+            <div class="dashboard-tutor-field">
+
+                <label for="dashboardTutorSubject">
+                    Subject
+                </label>
+
+                <div class="dashboard-tutor-input">
+
+                    <i class="fas fa-book"></i>
+
+                    <select
+                        id="dashboardTutorSubject"
+                        name="subject"
+                    >
+
+                        <option value="">
+                            Select Subject
+                        </option>
+
+                        <option value="mathematics">
+                            Mathematics
+                        </option>
+
+                        <option value="science">
+                            Science
+                        </option>
+
+                        <option value="english">
+                            English
+                        </option>
+
+                        <option value="computer-science">
+                            Computer Science
+                        </option>
+
+                        <option value="social-studies">
+                            Social Studies
+                        </option>
+
+                        <option value="languages">
+                            Languages
+                        </option>
+
+                    </select>
+
+                    <i class="fas fa-chevron-down dashboard-select-arrow"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- Qualification -->
+
+            <div class="dashboard-tutor-field">
+
+                <label for="dashboardTutorQualification">
+                    Qualification
+                </label>
+
+                <div class="dashboard-tutor-input">
+
+                    <i class="fas fa-graduation-cap"></i>
+
+                    <select
+                        id="dashboardTutorQualification"
+                        name="qualification"
+                    >
+
+                        <option value="">
+                            Select Qualification
+                        </option>
+
+                        <option value="graduate">
+                            Graduate
+                        </option>
+
+                        <option value="postgraduate">
+                            Postgraduate
+                        </option>
+
+                        <option value="certified">
+                            Certified Tutor
+                        </option>
+
+                        <option value="experienced">
+                            Experienced Tutor
+                        </option>
+
+                    </select>
+
+                    <i class="fas fa-chevron-down dashboard-select-arrow"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- Grade / Level -->
+
+            <div class="dashboard-tutor-field">
+
+                <label for="dashboardTutorGrade">
+                    Grade / Level
+                </label>
+
+                <div class="dashboard-tutor-input">
+
+                    <i class="fas fa-school"></i>
+
+                    <select
+                        id="dashboardTutorGrade"
+                        name="grade"
+                    >
+
+                        <option value="">
+                            Select Grade
+                        </option>
+
+                        <option value="primary">
+                            Primary School
+                        </option>
+
+                        <option value="middle">
+                            Middle School
+                        </option>
+
+                        <option value="high-school">
+                            High School
+                        </option>
+
+                        <option value="higher-secondary">
+                            Higher Secondary
+                        </option>
+
+                        <option value="college">
+                            College
+
+                        </option>
+
+                    </select>
+
+                    <i class="fas fa-chevron-down dashboard-select-arrow"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- Preferred Timing -->
+
+            <div class="dashboard-tutor-field">
+
+                <label for="dashboardTutorTiming">
+                    Preferred Timing
+                </label>
+
+                <div class="dashboard-tutor-input">
+
+                    <i class="fas fa-clock"></i>
+
+                    <select
+                        id="dashboardTutorTiming"
+                        name="timing"
+                    >
+
+                        <option value="">
+                            Select Timing
+                        </option>
+
+                        <option value="morning">
+                            Morning
+                        </option>
+
+                        <option value="afternoon">
+                            Afternoon
+                        </option>
+
+                        <option value="evening">
+                            Evening
+                        </option>
+
+                        <option value="weekend">
+                            Weekend
+
+                        </option>
+
+                    </select>
+
+                    <i class="fas fa-chevron-down dashboard-select-arrow"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- Search Button -->
+
+            <button
+                type="submit"
+                class="dashboard-find-tutor-button"
+            >
+
+                <i class="fas fa-search"></i>
+
+                <span>
+                    Find Tutors
+                </span>
+
+            </button>
+
+
+        </form>
+
+
+        <!-- =================================================
+             TRUST MESSAGE
+        ================================================== -->
+
+        <div class="dashboard-tutor-trust">
+
+            <i class="fas fa-circle-check"></i>
+
+            <span>
+                All recommended tutors are verified by TutorNest.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     DASHBOARD SECTION 4
+     UPCOMING SESSIONS
+========================================================= -->
+
+<section class="dashboard-upcoming-sessions-section">
+
+    <!-- =====================================================
+         SECTION HEADER
+    ====================================================== -->
+
+    <div class="dashboard-section-heading">
+
+        <div>
+
+            <span class="dashboard-section-label">
+                Schedule
+            </span>
+
+            <h2>
+                Upcoming Sessions
+            </h2>
+
+        </div>
+
+        <a
+            href="#"
+            class="dashboard-section-link"
+        >
+            View All Sessions
+            <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+
+    <!-- =====================================================
+         SESSIONS LIST
+    ====================================================== -->
+
+    <div class="dashboard-sessions-list">
+
+
+        <!-- =================================================
+             SESSION 1
+        ================================================== -->
+
+        <article class="dashboard-session-card">
+
+            <!-- Date / Time -->
+
+            <div class="dashboard-session-date">
+
+                <div class="dashboard-session-date-icon">
+                    <i class="fas fa-calendar-day"></i>
+                </div>
+
+                <div class="dashboard-session-date-info">
+
+                    <strong>
+                        Tomorrow
+                    </strong>
+
+                    <span>
+                        5:00 PM
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Session Information -->
+
+            <div class="dashboard-session-info">
+
+                <div class="dashboard-session-top">
+
+                    <span class="dashboard-session-status">
+                        Upcoming
+                    </span>
+
+                    <span class="dashboard-session-mode">
+                        <i class="fas fa-house"></i>
+                        Home Tutoring
+                    </span>
+
+                </div>
+
+                <h3>
+                    Mathematics
+                </h3>
+
+                <p>
+                    <i class="fas fa-user-graduate"></i>
+                    Priya Sharma
+                    <span class="dashboard-session-divider">
+                        •
+                    </span>
+                    Grade 8
+                </p>
+
+            </div>
+
+
+            <!-- Action -->
+
+            <a
+                href="#"
+                class="dashboard-session-action"
+            >
+                <span>
+                    View Details
+                </span>
+
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+        <!-- =================================================
+             SESSION 2
+        ================================================== -->
+
+        <article class="dashboard-session-card">
+
+            <!-- Date / Time -->
+
+            <div class="dashboard-session-date">
+
+                <div class="dashboard-session-date-icon">
+                    <i class="fas fa-calendar-day"></i>
+                </div>
+
+                <div class="dashboard-session-date-info">
+
+                    <strong>
+                        Sep 08
+                    </strong>
+
+                    <span>
+                        6:30 PM
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Session Information -->
+
+            <div class="dashboard-session-info">
+
+                <div class="dashboard-session-top">
+
+                    <span class="dashboard-session-status">
+                        Upcoming
+                    </span>
+
+                    <span class="dashboard-session-mode">
+                        <i class="fas fa-laptop"></i>
+                        Online Tutoring
+                    </span>
+
+                </div>
+
+                <h3>
+                    Science
+                </h3>
+
+                <p>
+                    <i class="fas fa-user-graduate"></i>
+                    Arjun Kumar
+                    <span class="dashboard-session-divider">
+                        •
+                    </span>
+                    Grade 8
+                </p>
+
+            </div>
+
+
+            <!-- Action -->
+
+            <a
+                href="#"
+                class="dashboard-session-action"
+            >
+                <span>
+                    View Details
+                </span>
+
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+        <!-- =================================================
+             SESSION 3
+        ================================================== -->
+
+        <article class="dashboard-session-card">
+
+            <!-- Date / Time -->
+
+            <div class="dashboard-session-date">
+
+                <div class="dashboard-session-date-icon">
+                    <i class="fas fa-calendar-day"></i>
+                </div>
+
+                <div class="dashboard-session-date-info">
+
+                    <strong>
+                        Sep 10
+                    </strong>
+
+                    <span>
+                        5:30 PM
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Session Information -->
+
+            <div class="dashboard-session-info">
+
+                <div class="dashboard-session-top">
+
+                    <span class="dashboard-session-status">
+                        Upcoming
+                    </span>
+
+                    <span class="dashboard-session-mode">
+                        <i class="fas fa-house"></i>
+                        Home Tutoring
+                    </span>
+
+                </div>
+
+                <h3>
+                    English
+                </h3>
+
+                <p>
+                    <i class="fas fa-user-graduate"></i>
+                    Ananya Rao
+                    <span class="dashboard-session-divider">
+                        •
+                    </span>
+                    Grade 8
+                </p>
+
+            </div>
+
+
+            <!-- Action -->
+
+            <a
+                href="#"
+                class="dashboard-session-action"
+            >
+                <span>
+                    View Details
+                </span>
+
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         SESSION FOOTER
+    ====================================================== -->
+
+    <div class="dashboard-sessions-footer">
+
+        <span>
+            <i class="fas fa-circle-check"></i>
+            You have 5 sessions scheduled
+        </span>
+
+        <a
+            href="#"
+            class="dashboard-sessions-calendar-link"
+        >
+            <i class="fas fa-calendar-plus"></i>
+            Manage Schedule
+        </a>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     DASHBOARD SECTION 5
+     MY TUTORS
+========================================================= -->
+
+<section class="dashboard-my-tutors-section">
+
+    <!-- =====================================================
+         SECTION HEADER
+    ====================================================== -->
+
+    <div class="dashboard-section-heading">
+
+        <div>
+
+            <span class="dashboard-section-label">
+                Your Tutors
+            </span>
+
+            <h2>
+                My Tutors
+            </h2>
+
+        </div>
+
+        <a
+            href="find-tutor.html"
+            class="dashboard-section-link"
+        >
+            Find More Tutors
+            <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+
+    <!-- =====================================================
+         SECTION DESCRIPTION
+    ====================================================== -->
+
+    <p class="dashboard-my-tutors-description">
+        Tutors currently teaching and supporting your child.
+    </p>
+
+
+    <!-- =====================================================
+         TUTORS LIST
+    ====================================================== -->
+
+    <div class="dashboard-my-tutors-list">
+
+
+        <!-- =================================================
+             TUTOR 1
+        ================================================== -->
+
+        <article class="dashboard-my-tutor-card">
+
+            <!-- Tutor Profile -->
+
+            <div class="dashboard-my-tutor-profile">
+
+                <div class="dashboard-my-tutor-image">
+
+                    <img
+                        src="images/tutor-1.jpg"
+                        alt="Priya Sharma"
+                    >
+
+                    <span class="dashboard-my-tutor-online">
+                        <i class="fas fa-circle"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-my-tutor-details">
+
+                    <div class="dashboard-my-tutor-name-row">
+
+                        <h3>
+                            Priya Sharma
+                        </h3>
+
+                        <span class="dashboard-my-tutor-verified">
+                            <i class="fas fa-circle-check"></i>
+                            Verified
+                        </span>
+
+                    </div>
+
+                    <span class="dashboard-my-tutor-subject">
+                        Mathematics Tutor
+                    </span>
+
+                    <div class="dashboard-my-tutor-rating">
+
+                        <span>
+                            <i class="fas fa-star"></i>
+                            4.9
+                        </span>
+
+                        <span class="dashboard-my-tutor-separator">
+                            •
+                        </span>
+
+                        <span>
+                            8 Years Experience
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tutor Activity -->
+
+            <div class="dashboard-my-tutor-activity">
+
+                <div class="dashboard-my-tutor-stat">
+
+                    <strong>
+                        12
+                    </strong>
+
+                    <span>
+                        Sessions
+                    </span>
+
+                </div>
+
+                <div class="dashboard-my-tutor-stat">
+
+                    <strong>
+                        24
+                    </strong>
+
+                    <span>
+                        Learning Hours
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Action -->
+
+            <a
+                href="tutor-profile.html"
+                class="dashboard-my-tutor-button"
+            >
+                View Profile
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+        <!-- =================================================
+             TUTOR 2
+        ================================================== -->
+
+        <article class="dashboard-my-tutor-card">
+
+            <!-- Tutor Profile -->
+
+            <div class="dashboard-my-tutor-profile">
+
+                <div class="dashboard-my-tutor-image">
+
+                    <img
+                        src="images/tutor-2.jpg"
+                        alt="Arjun Kumar"
+                    >
+
+                    <span class="dashboard-my-tutor-online">
+                        <i class="fas fa-circle"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-my-tutor-details">
+
+                    <div class="dashboard-my-tutor-name-row">
+
+                        <h3>
+                            Arjun Kumar
+                        </h3>
+
+                        <span class="dashboard-my-tutor-verified">
+                            <i class="fas fa-circle-check"></i>
+                            Verified
+                        </span>
+
+                    </div>
+
+                    <span class="dashboard-my-tutor-subject">
+                        Science Tutor
+                    </span>
+
+                    <div class="dashboard-my-tutor-rating">
+
+                        <span>
+                            <i class="fas fa-star"></i>
+                            4.8
+                        </span>
+
+                        <span class="dashboard-my-tutor-separator">
+                            •
+                        </span>
+
+                        <span>
+                            6 Years Experience
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tutor Activity -->
+
+            <div class="dashboard-my-tutor-activity">
+
+                <div class="dashboard-my-tutor-stat">
+
+                    <strong>
+                        9
+                    </strong>
+
+                    <span>
+                        Sessions
+                    </span>
+
+                </div>
+
+                <div class="dashboard-my-tutor-stat">
+
+                    <strong>
+                        18
+                    </strong>
+
+                    <span>
+                        Learning Hours
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Action -->
+
+            <a
+                href="tutor-profile.html"
+                class="dashboard-my-tutor-button"
+            >
+                View Profile
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+        <!-- =================================================
+             TUTOR 3
+        ================================================== -->
+
+        <article class="dashboard-my-tutor-card">
+
+            <!-- Tutor Profile -->
+
+            <div class="dashboard-my-tutor-profile">
+
+                <div class="dashboard-my-tutor-image">
+
+                    <img
+                        src="images/tutor-3.jpg"
+                        alt="Ananya Rao"
+                    >
+
+                    <span class="dashboard-my-tutor-online">
+                        <i class="fas fa-circle"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-my-tutor-details">
+
+                    <div class="dashboard-my-tutor-name-row">
+
+                        <h3>
+                            Ananya Rao
+                        </h3>
+
+                        <span class="dashboard-my-tutor-verified">
+                            <i class="fas fa-circle-check"></i>
+                            Verified
+                        </span>
+
+                    </div>
+
+                    <span class="dashboard-my-tutor-subject">
+                        English Tutor
+                    </span>
+
+                    <div class="dashboard-my-tutor-rating">
+
+                        <span>
+                            <i class="fas fa-star"></i>
+                            4.9
+                        </span>
+
+                        <span class="dashboard-my-tutor-separator">
+                            •
+                        </span>
+
+                        <span>
+                            7 Years Experience
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tutor Activity -->
+
+            <div class="dashboard-my-tutor-activity">
+
+                <div class="dashboard-my-tutor-stat">
+
+                    <strong>
+                        7
+                    </strong>
+
+                    <span>
+                        Sessions
+                    </span>
+
+                </div>
+
+                <div class="dashboard-my-tutor-stat">
+
+                    <strong>
+                        14
+                    </strong>
+
+                    <span>
+                        Learning Hours
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Action -->
+
+            <a
+                href="tutor-profile.html"
+                class="dashboard-my-tutor-button"
+            >
+                View Profile
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         TUTORS FOOTER
+    ====================================================== -->
+
+    <div class="dashboard-my-tutors-footer">
+
+        <span>
+            <i class="fas fa-shield-check"></i>
+            Your child is learning with verified tutors.
+        </span>
+
+        <a
+            href="find-tutor.html"
+            class="dashboard-my-tutors-find-link"
+        >
+            <i class="fas fa-user-plus"></i>
+            Add Another Tutor
+        </a>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     DASHBOARD SECTION 6
+     LEARNING PROGRESS
+========================================================= -->
+
+<section class="dashboard-learning-progress-section">
+
+    <div class="dashboard-section-heading">
+        <div>
+            <span class="dashboard-section-label">Progress</span>
+            <h2>Learning Progress</h2>
+        </div>
+
+        <a href="#" class="dashboard-section-link">
+            View Full Progress
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+
+    <p class="dashboard-learning-progress-description">
+        Track your child's learning growth, completed sessions and subject performance.
+    </p>
+
+
+    <div class="dashboard-learning-progress-layout">
+
+        <!-- =================================================
+             OVERALL PROGRESS
+        ================================================== -->
+
+        <article class="dashboard-overall-progress-card">
+
+            <div class="dashboard-progress-card-header">
+                <div>
+                    <span class="dashboard-progress-small-label">
+                        Overall Progress
+                    </span>
+
+                    <h3>Great Learning Momentum</h3>
+                </div>
+
+                <div class="dashboard-progress-main-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </div>
+
+
+            <div class="dashboard-progress-circle-wrap">
+
+                <div class="dashboard-progress-circle">
+
+                    <svg
+                        class="dashboard-progress-ring"
+                        viewBox="0 0 120 120"
+                        aria-hidden="true"
+                    >
+                        <circle
+                            class="dashboard-progress-ring-bg"
+                            cx="60"
+                            cy="60"
+                            r="50"
+                        ></circle>
+
+                        <circle
+                            class="dashboard-progress-ring-value"
+                            cx="60"
+                            cy="60"
+                            r="50"
+                        ></circle>
+                    </svg>
+
+                    <div class="dashboard-progress-circle-content">
+                        <strong>78%</strong>
+                        <span>Progress</span>
+                    </div>
+
+                </div>
+
+                <div class="dashboard-progress-summary">
+
+                    <div class="dashboard-progress-summary-item">
+                        <span class="dashboard-progress-summary-icon">
+                            <i class="fas fa-circle-check"></i>
+                        </span>
+
+                        <div>
+                            <strong>28</strong>
+                            <span>Completed Sessions</span>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-progress-summary-item">
+                        <span class="dashboard-progress-summary-icon">
+                            <i class="fas fa-clock"></i>
+                        </span>
+
+                        <div>
+                            <strong>42 hrs</strong>
+                            <span>Learning Time</span>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-progress-summary-item">
+                        <span class="dashboard-progress-summary-icon">
+                            <i class="fas fa-arrow-trend-up"></i>
+                        </span>
+
+                        <div>
+                            <strong>+12%</strong>
+                            <span>This Month</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-progress-message">
+                <i class="fas fa-lightbulb"></i>
+
+                <span>
+                    Your child is making steady progress. Keep the current learning routine going.
+                </span>
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             SUBJECT PERFORMANCE
+        ================================================== -->
+
+        <article class="dashboard-subject-progress-card">
+
+            <div class="dashboard-progress-card-header">
+
+                <div>
+                    <span class="dashboard-progress-small-label">
+                        Subject Performance
+                    </span>
+
+                    <h3>Progress by Subject</h3>
+                </div>
+
+                <button
+                    type="button"
+                    class="dashboard-progress-filter-button"
+                    aria-label="Filter subjects"
+                    title="Filter subjects"
+                >
+                    <i class="fas fa-sliders"></i>
+                </button>
+
+            </div>
+
+
+            <div class="dashboard-subject-progress-list">
+
+                <!-- Mathematics -->
+
+                <div class="dashboard-subject-progress-item">
+
+                    <div class="dashboard-subject-progress-top">
+
+                        <div class="dashboard-subject-progress-name">
+                            <span class="dashboard-subject-progress-icon">
+                                <i class="fas fa-calculator"></i>
+                            </span>
+
+                            <span>Mathematics</span>
+                        </div>
+
+                        <strong>85%</strong>
+
+                    </div>
+
+                    <div class="dashboard-progress-bar">
+                        <span
+                            class="dashboard-progress-bar-fill"
+                            style="width: 85%;"
+                        ></span>
+                    </div>
+
+                    <span class="dashboard-subject-progress-status">
+                        Strong progress
+                    </span>
+
+                </div>
+
+
+                <!-- Science -->
+
+                <div class="dashboard-subject-progress-item">
+
+                    <div class="dashboard-subject-progress-top">
+
+                        <div class="dashboard-subject-progress-name">
+                            <span class="dashboard-subject-progress-icon">
+                                <i class="fas fa-flask"></i>
+                            </span>
+
+                            <span>Science</span>
+                        </div>
+
+                        <strong>78%</strong>
+
+                    </div>
+
+                    <div class="dashboard-progress-bar">
+                        <span
+                            class="dashboard-progress-bar-fill"
+                            style="width: 78%;"
+                        ></span>
+                    </div>
+
+                    <span class="dashboard-subject-progress-status">
+                        Good progress
+                    </span>
+
+                </div>
+
+
+                <!-- English -->
+
+                <div class="dashboard-subject-progress-item">
+
+                    <div class="dashboard-subject-progress-top">
+
+                        <div class="dashboard-subject-progress-name">
+                            <span class="dashboard-subject-progress-icon">
+                                <i class="fas fa-book-open"></i>
+                            </span>
+
+                            <span>English</span>
+                        </div>
+
+                        <strong>72%</strong>
+
+                    </div>
+
+                    <div class="dashboard-progress-bar">
+                        <span
+                            class="dashboard-progress-bar-fill"
+                            style="width: 72%;"
+                        ></span>
+                    </div>
+
+                    <span class="dashboard-subject-progress-status">
+                        Improving
+                    </span>
+
+                </div>
+
+
+                <!-- Computer Science -->
+
+                <div class="dashboard-subject-progress-item">
+
+                    <div class="dashboard-subject-progress-top">
+
+                        <div class="dashboard-subject-progress-name">
+                            <span class="dashboard-subject-progress-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </span>
+
+                            <span>Computer Science</span>
+                        </div>
+
+                        <strong>68%</strong>
+
+                    </div>
+
+                    <div class="dashboard-progress-bar">
+                        <span
+                            class="dashboard-progress-bar-fill"
+                            style="width: 68%;"
+                        ></span>
+                    </div>
+
+                    <span class="dashboard-subject-progress-status">
+                        Keep practicing
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-subject-progress-footer">
+
+                <span>
+                    <i class="fas fa-circle-info"></i>
+                    Progress is based on recent learning activity.
+                </span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- =====================================================
+         RECENT PROGRESS HIGHLIGHTS
+    ====================================================== -->
+
+    <div class="dashboard-progress-highlights">
+
+        <div class="dashboard-progress-highlight">
+
+            <span class="dashboard-progress-highlight-icon">
+                <i class="fas fa-arrow-trend-up"></i>
+            </span>
+
+            <div>
+                <strong>12% improvement</strong>
+                <span>Overall progress this month</span>
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-progress-highlight">
+
+            <span class="dashboard-progress-highlight-icon">
+                <i class="fas fa-bullseye"></i>
+            </span>
+
+            <div>
+                <strong>Mathematics leading</strong>
+                <span>85% current progress</span>
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-progress-highlight">
+
+            <span class="dashboard-progress-highlight-icon">
+                <i class="fas fa-calendar-check"></i>
+            </span>
+
+            <div>
+                <strong>5 sessions scheduled</strong>
+                <span>Continue the learning routine</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+            </main>
+
+
+        </div>
+
+    </div>
+
+
+
+   
+
+<!-- JS -->
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="dashboard-logout-modal"
+    id="dashboardLogoutModal"
+    aria-hidden="true"
+>
+
+    <div class="dashboard-logout-overlay" id="dashboardLogoutOverlay"></div>
+
+    <div
+        class="dashboard-logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dashboardLogoutTitle"
+    >
+
+        <button
+            type="button"
+            class="dashboard-logout-close"
+            id="dashboardLogoutClose"
+            aria-label="Close logout popup"
+        >
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="dashboard-logout-icon">
+            <i class="fas fa-right-from-bracket"></i>
+        </div>
+
+        <div class="dashboard-logout-content">
+
+            <h2 id="dashboardLogoutTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout from your TutorNest account?
+            </p>
+
+        </div>
+
+        <div class="dashboard-logout-actions">
+
+            <button
+                type="button"
+                class="dashboard-logout-no"
+                id="dashboardLogoutNo"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="dashboard-logout-yes"
+                id="dashboardLogoutYes"
+            >
+                <i class="fas fa-right-from-bracket"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+</div>
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>

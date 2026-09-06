@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TutorNest | My Tutors</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/dash-responsive.css">
+</head>
+
+
+<body>
+
+<div class="dashboard-layout">
+
+
+    <!-- =====================================================
+         DASHBOARD SIDEBAR
+    ====================================================== -->
+
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="dashboard-sidebar-header">
+
+            <a
+                href="index.html"
+                class="dashboard-sidebar-logo"
+                aria-label="TutorNest Home"
+            >
+                <img
+                    src="images/logo.png"
+                    alt="TutorNest"
+                >
+            </a>
+
+            <button
+                type="button"
+                class="dashboard-sidebar-close"
+                id="dashboardSidebarClose"
+                aria-label="Close dashboard menu"
+            >
+                <i class="fas fa-times"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Dashboard Navigation -->
+
+        <nav
+            class="dashboard-navigation"
+            aria-label="Dashboard navigation"
+        >
+
+            <ul>
+
+                <!-- Dashboard -->
+
+                <li>
+                    <a href="dashboard.html">
+
+                        <i class="fas fa-th-large"></i>
+
+                        <span>Dashboard</span>
+
+                    </a>
+                </li>
+
+
+                <!-- Find a Tutor -->
+
+                <li>
+                    <a href="tutor.html">
+
+                        <i class="fas fa-user-graduate"></i>
+
+                        <span>Find a Tutor</span>
+
+                    </a>
+                </li>
+
+
+                <!-- My Tutors - ACTIVE -->
+
+                <li>
+                    <a
+                        href="mytutor.html"
+                        class="active"
+                    >
+
+                        <i class="fas fa-chalkboard-user"></i>
+
+                        <span>My Tutors</span>
+
+                    </a>
+                </li>
+
+
+                <!-- My Sessions -->
+
+                <li>
+                    <a href="my-session.html">
+
+                        <i class="fas fa-calendar-check"></i>
+
+                        <span>My Sessions</span>
+
+                    </a>
+                </li>
+
+
+                <!-- Session Notes -->
+
+                <li>
+                    <a href="session-notes.html">
+
+                        <i class="fas fa-note-sticky"></i>
+
+                        <span>Session Notes</span>
+
+                    </a>
+                </li>
+
+
+                <!-- Payments & Receipts -->
+
+                <li>
+                    <a href="#">
+
+                        <i class="fas fa-receipt"></i>
+
+                        <span>Payments &amp; Receipts</span>
+
+                    </a>
+                </li>
+
+
+                <!-- Profile -->
+
+                <li>
+                    <a href="#">
+
+                        <i class="fas fa-user"></i>
+
+                        <span>Profile</span>
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- Logout -->
+
+        <div class="dashboard-sidebar-bottom">
+
+            <a href="login.html">
+
+                <i class="fas fa-right-from-bracket"></i>
+
+                <span>Logout</span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         SIDEBAR OVERLAY
+    ====================================================== -->
+
+    <div
+        class="dashboard-sidebar-overlay"
+        id="dashboardSidebarOverlay"
+    ></div>
+
+
+    <!-- =====================================================
+         DASHBOARD MAIN
+    ====================================================== -->
+
+    <div class="dashboard-main">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="dashboard-topbar">
+
+
+            <!-- Topbar Left -->
+
+            <div class="dashboard-topbar-left">
+
+                <button
+                    type="button"
+                    class="dashboard-hamburger"
+                    id="dashboardHamburger"
+                    aria-label="Open dashboard menu"
+                    aria-expanded="false"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+
+
+                <div class="dashboard-page-heading">
+
+                    <span>Parent Dashboard</span>
+
+                    <h1>My Tutors</h1>
+
+                </div>
+
+            </div>
+
+
+            <!-- Topbar Right -->
+
+            <div class="dashboard-topbar-right">
+
+
+                
+
+
+                <!-- Dark Mode -->
+
+                <button
+                    type="button"
+                    class="dashboard-control-button"
+                    id="dashboardDarkModeToggle"
+                    aria-label="Switch to dark mode"
+                    title="Dark Mode"
+                >
+
+                    <i class="fas fa-moon"></i>
+
+                    <span>Dark</span>
+
+                </button>
+
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="dashboard-control-button"
+                    id="dashboardRtlToggle"
+                    aria-label="Switch to right-to-left"
+                    title="RTL"
+                >
+
+                    <i class="fas fa-align-right"></i>
+
+                    <span>RTL</span>
+
+                </button>
+
+
+                <!-- Notifications -->
+
+                <button
+                    type="button"
+                    class="dashboard-notification-button"
+                    aria-label="Notifications"
+                    title="Notifications"
+                >
+
+                    <i class="fas fa-bell"></i>
+
+                    <span class="dashboard-notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- Profile -->
+
+                <button
+                    type="button"
+                    class="dashboard-profile-button"
+                    aria-label="Open profile"
+                >
+
+                    <span class="dashboard-profile-avatar">
+                        J
+                    </span>
+
+                    <span class="dashboard-profile-info">
+
+                        <strong>Jeni</strong>
+
+                        <span>Parent</span>
+
+                    </span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             PAGE CONTENT
+        ================================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- =================================================
+                 1. MY TUTORS HERO
+            ================================================== -->
+
+            <section class="dashboard-my-tutors-intro">
+
+                <div class="dashboard-my-tutors-intro-content">
+
+                    <span class="dashboard-section-label">
+                        Your Learning Team
+                    </span>
+
+                    <h2>
+                        My Tutors
+                    </h2>
+
+                    <p>
+                        Manage the tutors currently supporting your
+                        child's learning journey, view their activity,
+                        and book upcoming sessions.
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-my-tutors-intro-action">
+
+                    <a
+                        href="dashboard-find-tutor.html"
+                        class="dashboard-my-tutors-find-button"
+                    >
+
+                        <i class="fas fa-user-plus"></i>
+
+                        <span>Find Another Tutor</span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 2. TUTOR OVERVIEW
+            ================================================== -->
+
+            <section class="dashboard-my-tutors-overview-section">
+
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            Overview
+                        </span>
+
+                        <h2>
+                            Your Tutoring Activity
+                        </h2>
+
+                    </div>
+
+                    <span class="dashboard-section-note">
+                        Current tutoring summary
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-my-tutors-stats-grid">
+
+
+                    <!-- Active Tutors -->
+
+                    <article class="dashboard-my-tutors-stat-card">
+
+                        <div class="dashboard-my-tutors-stat-icon">
+                            <i class="fas fa-chalkboard-user"></i>
+                        </div>
+
+                        <div class="dashboard-my-tutors-stat-content">
+
+                            <span>
+                                Active Tutors
+                            </span>
+
+                            <strong>
+                                3
+                            </strong>
+
+                            <small>
+                                Currently supporting your child
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Total Sessions -->
+
+                    <article class="dashboard-my-tutors-stat-card">
+
+                        <div class="dashboard-my-tutors-stat-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+
+                        <div class="dashboard-my-tutors-stat-content">
+
+                            <span>
+                                Total Sessions
+                            </span>
+
+                            <strong>
+                                28
+                            </strong>
+
+                            <small>
+                                Sessions completed
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Learning Hours -->
+
+                    <article class="dashboard-my-tutors-stat-card">
+
+                        <div class="dashboard-my-tutors-stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+
+                        <div class="dashboard-my-tutors-stat-content">
+
+                            <span>
+                                Learning Hours
+                            </span>
+
+                            <strong>
+                                42
+                            </strong>
+
+                            <small>
+                                Total learning time
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Subjects -->
+
+                    <article class="dashboard-my-tutors-stat-card">
+
+                        <div class="dashboard-my-tutors-stat-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+
+                        <div class="dashboard-my-tutors-stat-content">
+
+                            <span>
+                                Subjects Covered
+                            </span>
+
+                            <strong>
+                                3
+                            </strong>
+
+                            <small>
+                                Subjects currently learning
+                            </small>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 3. MY ACTIVE TUTORS
+            ================================================== -->
+
+            <section class="dashboard-my-tutors-list-section">
+
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            Your Tutors
+                        </span>
+
+                        <h2>
+                            My Active Tutors
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="dashboard-find-tutor.html"
+                        class="dashboard-section-link"
+                    >
+
+                        Find More Tutors
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <p class="dashboard-my-tutors-description">
+                    Tutors currently teaching and supporting your
+                    child's learning.
+                </p>
+
+
+
+                <div class="dashboard-my-tutors-list">
+
+
+
+                    <!-- =================================================
+                         TUTOR 1 - PRIYA SHARMA
+                    ================================================== -->
+
+                    <article class="dashboard-my-tutor-card">
+
+
+                        <!-- Tutor Information -->
+
+                        <div class="dashboard-my-tutor-main">
+
+
+                            <div class="dashboard-my-tutor-photo">
+
+                                <img
+                                    src="images/tutor-1.jpg"
+                                    alt="Priya Sharma"
+                                >
+
+                                <span
+                                    class="dashboard-my-tutor-online"
+                                    title="Currently available"
+                                ></span>
+
+                            </div>
+
+
+                            <div class="dashboard-my-tutor-info">
+
+                                <div class="dashboard-my-tutor-name-row">
+
+                                    <h3>
+                                        Priya Sharma
+                                    </h3>
+
+                                    <i
+                                        class="fas fa-circle-check"
+                                        title="Verified Tutor"
+                                    ></i>
+
+                                </div>
+
+                                <p>
+                                    Mathematics Tutor
+                                </p>
+
+
+                                <div class="dashboard-my-tutor-rating">
+
+                                    <i class="fas fa-star"></i>
+
+                                    <strong>
+                                        4.9
+                                    </strong>
+
+                                    <span>
+                                        Excellent rating
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Tutor Activity -->
+
+                        <div class="dashboard-my-tutor-activity">
+
+
+                            <div class="dashboard-my-tutor-activity-item">
+
+                                <i class="fas fa-briefcase"></i>
+
+                                <div>
+
+                                    <span>
+                                        Experience
+                                    </span>
+
+                                    <strong>
+                                        8 Years
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-my-tutor-activity-item">
+
+                                <i class="fas fa-calendar-check"></i>
+
+                                <div>
+
+                                    <span>
+                                        Sessions
+                                    </span>
+
+                                    <strong>
+                                        12 Sessions
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-my-tutor-activity-item">
+
+                                <i class="fas fa-clock"></i>
+
+                                <div>
+
+                                    <span>
+                                        Learning Hours
+                                    </span>
+
+                                    <strong>
+                                        24 Hours
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Next Session -->
+
+                        <div class="dashboard-my-tutor-next-session">
+
+                            <div class="dashboard-my-tutor-next-icon">
+
+                                <i class="fas fa-calendar-day"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    Next Session
+                                </span>
+
+                                <strong>
+                                    Tomorrow · 5:00 PM
+                                </strong>
+
+                                <small>
+                                    Mathematics · Grade 8
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Actions -->
+
+                        <div class="dashboard-my-tutor-actions">
+
+                            <a
+                                href="tutor-profile.html"
+                                class="dashboard-my-tutor-profile-button"
+                            >
+
+                                <i class="fas fa-user"></i>
+
+                                View Profile
+
+                            </a>
+
+                            <a
+                                href="#"
+                                class="dashboard-my-tutor-book-button"
+                            >
+
+                                <i class="fas fa-calendar-plus"></i>
+
+                                Book Session
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         TUTOR 2 - ARJUN KUMAR
+                    ================================================== -->
+
+                    <article class="dashboard-my-tutor-card">
+
+
+                        <div class="dashboard-my-tutor-main">
+
+                            <div class="dashboard-my-tutor-photo">
+
+                                <img
+                                    src="images/tutor-2.jpg"
+                                    alt="Arjun Kumar"
+                                >
+
+                                <span
+                                    class="dashboard-my-tutor-online"
+                                    title="Currently available"
+                                ></span>
+
+                            </div>
+
+
+                            <div class="dashboard-my-tutor-info">
+
+                                <div class="dashboard-my-tutor-name-row">
+
+                                    <h3>
+                                        Arjun Kumar
+                                    </h3>
+
+                                    <i
+                                        class="fas fa-circle-check"
+                                        title="Verified Tutor"
+                                    ></i>
+
+                                </div>
+
+                                <p>
+                                    Science Tutor
+                                </p>
+
+
+                                <div class="dashboard-my-tutor-rating">
+
+                                    <i class="fas fa-star"></i>
+
+                                    <strong>
+                                        4.8
+                                    </strong>
+
+                                    <span>
+                                        Excellent rating
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="dashboard-my-tutor-activity">
+
+                            <div class="dashboard-my-tutor-activity-item">
+
+                                <i class="fas fa-briefcase"></i>
+
+                                <div>
+
+                                    <span>
+                                        Experience
+                                    </span>
+
+                                    <strong>
+                                        6 Years
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-my-tutor-activity-item">
+
+                                <i class="fas fa-calendar-check"></i>
+
+                                <div>
+
+                                    <span>
+                                        Sessions
+                                    </span>
+
+                                    <strong>
+                                        9 Sessions
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-my-tutor-activity-item">
+
+                                <i class="fas fa-clock"></i>
+
+                                <div>
+
+                                    <span>
+                                        Learning Hours
+                                    </span>
+
+                                    <strong>
+                                        18 Hours
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="dashboard-my-tutor-next-session">
+
+                            <div class="dashboard-my-tutor-next-icon">
+
+                                <i class="fas fa-calendar-day"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    Next Session
+                                </span>
+
+                                <strong>
+                                    Sep 08 · 6:30 PM
+                                </strong>
+
+                                <small>
+                                    Science · Grade 8
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="dashboard-my-tutor-actions">
+
+                            <a
+                                href="tutor-profile.html"
+                                class="dashboard-my-tutor-profile-button"
+                            >
+
+                                <i class="fas fa-user"></i>
+
+                                View Profile
+
+                            </a>
+
+                            <a
+                                href="#"
+                                class="dashboard-my-tutor-book-button"
+                            >
+
+                                <i class="fas fa-calendar-plus"></i>
+
+                                Book Session
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         TUTOR 3 - ANANYA RAO
+                    ================================================== -->
+
+                    <article class="dashboard-my-tutor-card">
+
+
+                        <div class="dashboard-my-tutor-main">
+
+                            <div class="dashboard-my-tutor-photo">
+
+                                <img
+                                    src="images/tutor-3.jpg"
+                                    alt="Ananya Rao"
+                                >
+
+                                <span
+                                    class="dashboard-my-tutor-online"
+                                    title="Currently available"
+                                ></span>
+
+                            </div>
+
+
+                            <div class="dashboard-my-tutor-info">
+
+                                <div class="dashboard-my-tutor-name-row">
+
+                                    <h3>
+                                        Ananya Rao
+                                    </h3>
+
+                                    <i
+                                        class="fas fa-circle-check"
+                                        title="Verified Tutor"
+                                    ></i>
+
+                                </div>
+
+                                <p>
+                                    English Tutor
+                                </p>
+
+
+                                <div class="dashboard-my-tutor-rating">
+
+                                    <i class="fas fa-star"></i>
+
+                                    <strong>
+                                        4.9
+                                    </strong>
+
+                                    <span>
+                                        Excellent rating
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="dashboard-my-tutor-activity">
+
+                            <div class="dashboard-my-tutor-activity-item">
+
+                                <i class="fas fa-briefcase"></i>
+
+                                <div>
+
+                                    <span>
+                                        Experience
+                                    </span>
+
+                                    <strong>
+                                        7 Years
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-my-tutor-activity-item">
+
+                                <i class="fas fa-calendar-check"></i>
+
+                                <div>
+
+                                    <span>
+                                        Sessions
+                                    </span>
+
+                                    <strong>
+                                        7 Sessions
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-my-tutor-activity-item">
+
+                                <i class="fas fa-clock"></i>
+
+                                <div>
+
+                                    <span>
+                                        Learning Hours
+                                    </span>
+
+                                    <strong>
+                                        14 Hours
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="dashboard-my-tutor-next-session">
+
+                            <div class="dashboard-my-tutor-next-icon">
+
+                                <i class="fas fa-calendar-day"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    Next Session
+                                </span>
+
+                                <strong>
+                                    Sep 10 · 5:30 PM
+                                </strong>
+
+                                <small>
+                                    English · Grade 8
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="dashboard-my-tutor-actions">
+
+                            <a
+                                href="tutor-profile.html"
+                                class="dashboard-my-tutor-profile-button"
+                            >
+
+                                <i class="fas fa-user"></i>
+
+                                View Profile
+
+                            </a>
+
+                            <a
+                                href="#"
+                                class="dashboard-my-tutor-book-button"
+                            >
+
+                                <i class="fas fa-calendar-plus"></i>
+
+                                Book Session
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 4. TUTOR ACTIVITY
+            ================================================== -->
+
+            <section class="dashboard-tutor-activity-section">
+
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            Recent Activity
+                        </span>
+
+                        <h2>
+                            Tutor Activity
+                        </h2>
+
+                    </div>
+
+                    <span class="dashboard-section-note">
+                        Your latest learning updates
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-tutor-activity-grid">
+
+
+                    <!-- Recent Session -->
+
+                    <article class="dashboard-tutor-activity-card">
+
+                        <div class="dashboard-tutor-activity-card-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+
+                        <div class="dashboard-tutor-activity-card-content">
+
+                            <span>
+                                Recent Session
+                            </span>
+
+                            <h3>
+                                Mathematics with Priya
+                            </h3>
+
+                            <p>
+                                Completed yesterday at 5:00 PM
+                            </p>
+
+                        </div>
+
+                        <i class="fas fa-arrow-right dashboard-tutor-activity-arrow"></i>
+
+                    </article>
+
+
+
+                    <!-- Next Session -->
+
+                    <article class="dashboard-tutor-activity-card">
+
+                        <div class="dashboard-tutor-activity-card-icon">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+
+                        <div class="dashboard-tutor-activity-card-content">
+
+                            <span>
+                                Next Session
+                            </span>
+
+                            <h3>
+                                Science with Arjun
+                            </h3>
+
+                            <p>
+                                September 8 · 6:30 PM
+                            </p>
+
+                        </div>
+
+                        <i class="fas fa-arrow-right dashboard-tutor-activity-arrow"></i>
+
+                    </article>
+
+
+
+                    <!-- Learning Progress -->
+
+                    <article class="dashboard-tutor-activity-card">
+
+                        <div class="dashboard-tutor-activity-card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+
+                        <div class="dashboard-tutor-activity-card-content">
+
+                            <span>
+                                Learning Progress
+                            </span>
+
+                            <h3>
+                                Overall progress is 78%
+                            </h3>
+
+                            <p>
+                                12% improvement this month
+                            </p>
+
+                        </div>
+
+                        <i class="fas fa-arrow-right dashboard-tutor-activity-arrow"></i>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 5. FIND MORE SUPPORT
+            ================================================== -->
+
+            <section class="dashboard-my-tutors-support-section">
+
+                <div class="dashboard-my-tutors-support-content">
+
+
+                    <!-- Icon -->
+
+                    <div class="dashboard-my-tutors-support-icon">
+
+                        <i class="fas fa-user-plus"></i>
+
+                    </div>
+
+
+                    <!-- Text -->
+
+                    <div class="dashboard-my-tutors-support-text">
+
+                        <span class="dashboard-section-label">
+                            Expand Your Learning Team
+                        </span>
+
+                        <h2>
+                            Looking for another tutor?
+                        </h2>
+
+                        <p>
+                            Explore more verified tutors and find the
+                            right learning support for your child.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Button -->
+
+                    <a
+                        href="dashboard-find-tutor.html"
+                        class="dashboard-my-tutors-support-button"
+                    >
+
+                        <span>
+                            Find a Tutor
+                        </span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="dashboard-logout-modal"
+    id="dashboardLogoutModal"
+    aria-hidden="true"
+>
+
+    <div class="dashboard-logout-overlay" id="dashboardLogoutOverlay"></div>
+
+    <div
+        class="dashboard-logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dashboardLogoutTitle"
+    >
+
+        <button
+            type="button"
+            class="dashboard-logout-close"
+            id="dashboardLogoutClose"
+            aria-label="Close logout popup"
+        >
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="dashboard-logout-icon">
+            <i class="fas fa-right-from-bracket"></i>
+        </div>
+
+        <div class="dashboard-logout-content">
+
+            <h2 id="dashboardLogoutTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout from your TutorNest account?
+            </p>
+
+        </div>
+
+        <div class="dashboard-logout-actions">
+
+            <button
+                type="button"
+                class="dashboard-logout-no"
+                id="dashboardLogoutNo"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="dashboard-logout-yes"
+                id="dashboardLogoutYes"
+            >
+                <i class="fas fa-right-from-bracket"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="js/dashboard.js"></script>
+
+
+</body>
+</html>

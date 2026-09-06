@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TutorNest | Session Notes</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/dash-responsive.css">
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     DASHBOARD LAYOUT
+========================================================= -->
+
+<div class="dashboard-layout">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <!-- Sidebar Header -->
+        <div class="dashboard-sidebar-header">
+
+            <a href="dashboard.html" class="dashboard-sidebar-logo">
+                <img
+                    src="images/logo.png"
+                    alt="TutorNest"
+                >
+            </a>
+
+            <button
+                type="button"
+                class="dashboard-sidebar-close"
+                id="dashboardSidebarClose"
+                aria-label="Close sidebar"
+            >
+                <i class="fas fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Sidebar Navigation -->
+        <nav class="dashboard-navigation">
+
+            <ul>
+
+                <!-- Dashboard -->
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-grid-2"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+
+                <!-- Find a Tutor -->
+                <li>
+                    <a href="tutor.html">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Find a Tutor</span>
+                    </a>
+                </li>
+
+
+                <!-- My Tutors -->
+                <li>
+                    <a href="mytutor.html">
+                        <i class="fas fa-users"></i>
+                        <span>My Tutors</span>
+                    </a>
+                </li>
+
+
+                <!-- My Sessions -->
+                <li>
+                    <a href="my-session.html">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>My Sessions</span>
+                    </a>
+                </li>
+
+
+                <!-- Session Notes - ACTIVE -->
+                <li>
+                    <a
+                        href="session-notes.html"
+                        class="active"
+                    >
+                        <i class="fas fa-note-sticky"></i>
+                        <span>Session Notes</span>
+                    </a>
+                </li>
+
+
+                <!-- Payments -->
+                <li>
+                    <a href="payment.html">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Payments &amp; Receipts</span>
+                    </a>
+                </li>
+
+
+                <!-- Profile -->
+                <li>
+                    <a href="profile.html">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+        <div class="dashboard-sidebar-bottom">
+
+            <a href="login.html">
+                <i class="fas fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Sidebar Overlay -->
+    <div
+        class="dashboard-sidebar-overlay"
+        id="dashboardSidebarOverlay"
+    ></div>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="dashboard-topbar">
+
+
+            <!-- Topbar Left -->
+            <div class="dashboard-topbar-left">
+
+                <!-- Mobile / Tablet Hamburger -->
+                <button
+                    type="button"
+                    class="dashboard-hamburger"
+                    id="dashboardHamburger"
+                    aria-label="Open dashboard menu"
+                    aria-expanded="false"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+
+
+                <!-- Page Heading -->
+                <div class="dashboard-page-heading">
+
+                    <span>Parent Dashboard</span>
+
+                    <strong>Session Notes</strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Topbar Right -->
+            <div class="dashboard-topbar-right">
+
+
+                
+
+
+                <!-- Dark Mode -->
+                <button
+                    type="button"
+                    class="dashboard-control-button"
+                    id="dashboardDarkModeToggle"
+                    aria-label="Switch to dark mode"
+                    title="Dark Mode"
+                >
+                    <i class="fas fa-moon"></i>
+                    <span>Dark</span>
+                </button>
+
+
+                <!-- RTL -->
+                <button
+                    type="button"
+                    class="dashboard-control-button"
+                    id="dashboardRtlToggle"
+                    aria-label="Switch to right-to-left"
+                    title="RTL"
+                >
+                    <i class="fas fa-align-right"></i>
+                    <span>RTL</span>
+                </button>
+
+
+                <!-- Notifications -->
+                <button
+                    type="button"
+                    class="dashboard-notification-button"
+                    aria-label="Notifications"
+                >
+                    <i class="fas fa-bell"></i>
+
+                    <span class="dashboard-notification-badge">
+                        3
+                    </span>
+                </button>
+
+
+                <!-- Profile -->
+                <button
+                    type="button"
+                    class="dashboard-profile-button"
+                    aria-label="Parent profile"
+                >
+
+                    <span class="dashboard-profile-avatar">
+                        J
+                    </span>
+
+                    <span class="dashboard-profile-info">
+
+                        <strong>Jeni</strong>
+
+                        <small>Parent</small>
+
+                    </span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             SESSION NOTES CONTENT
+        ================================================== -->
+
+        <div class="dashboard-content">
+
+
+            <!-- =================================================
+                 1. SESSION NOTES HERO
+            ================================================== -->
+
+            <section class="dashboard-session-notes-intro">
+
+                <div class="dashboard-session-notes-intro-content">
+
+                    <span class="dashboard-session-notes-intro-label">
+                        <i class="fas fa-note-sticky"></i>
+                        Session Notes
+                    </span>
+
+                    <h1>
+                        Keep Track of Your Child's Learning
+                    </h1>
+
+                    <p>
+                        Review notes and learning observations from
+                        your child's tutoring sessions. Stay informed
+                        about progress, strengths, and areas that need
+                        more attention.
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-session-notes-intro-action">
+
+                    <a
+                        href="#recentSessionNotes"
+                        class="dashboard-session-notes-view-button"
+                    >
+                        <i class="fas fa-eye"></i>
+                        View Recent Notes
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 2. NOTES OVERVIEW
+            ================================================== -->
+
+            <section class="dashboard-session-notes-overview-section">
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            Overview
+                        </span>
+
+                        <h2>
+                            Learning Notes at a Glance
+                        </h2>
+
+                    </div>
+
+                    <span class="dashboard-section-note">
+                        Your child's recent learning activity
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-session-notes-stats-grid">
+
+
+                    <!-- Total Notes -->
+                    <article class="dashboard-session-notes-stat-card">
+
+                        <div class="dashboard-session-notes-stat-icon">
+                            <i class="fas fa-note-sticky"></i>
+                        </div>
+
+                        <div class="dashboard-session-notes-stat-content">
+
+                            <span>Total Notes</span>
+
+                            <strong>28</strong>
+
+                            <small>
+                                Learning notes recorded
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Recent Notes -->
+                    <article class="dashboard-session-notes-stat-card">
+
+                        <div class="dashboard-session-notes-stat-icon">
+                            <i class="fas fa-clock-rotate-left"></i>
+                        </div>
+
+                        <div class="dashboard-session-notes-stat-content">
+
+                            <span>Recent Notes</span>
+
+                            <strong>6</strong>
+
+                            <small>
+                                Added this month
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Tutor Notes -->
+                    <article class="dashboard-session-notes-stat-card">
+
+                        <div class="dashboard-session-notes-stat-icon">
+                            <i class="fas fa-chalkboard-user"></i>
+                        </div>
+
+                        <div class="dashboard-session-notes-stat-content">
+
+                            <span>Tutor Notes</span>
+
+                            <strong>24</strong>
+
+                            <small>
+                                From verified tutors
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- This Month -->
+                    <article class="dashboard-session-notes-stat-card">
+
+                        <div class="dashboard-session-notes-stat-icon">
+                            <i class="fas fa-calendar-days"></i>
+                        </div>
+
+                        <div class="dashboard-session-notes-stat-content">
+
+                            <span>This Month</span>
+
+                            <strong>6</strong>
+
+                            <small>
+                                New learning updates
+                            </small>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 3. RECENT SESSION NOTES
+            ================================================== -->
+
+            <section
+                class="dashboard-recent-session-notes-section"
+                id="recentSessionNotes"
+            >
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            Recent Notes
+                        </span>
+
+                        <h2>
+                            Recent Session Notes
+                        </h2>
+
+                    </div>
+
+                    <span class="dashboard-section-note">
+                        Latest updates from your tutors
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-session-notes-list">
+
+
+                    <!-- =========================================
+                         NOTE 1
+                    ========================================== -->
+
+                    <article class="dashboard-session-note-card">
+
+                        <div class="dashboard-session-note-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+
+
+                        <div class="dashboard-session-note-main">
+
+                            <div class="dashboard-session-note-header">
+
+                                <div>
+
+                                    <span class="dashboard-session-note-subject">
+                                        Mathematics
+                                    </span>
+
+                                    <h3>
+                                        Strong progress in Algebra
+                                    </h3>
+
+                                </div>
+
+                                <span class="dashboard-session-note-status">
+                                    <i class="fas fa-circle-check"></i>
+                                    Reviewed
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-session-note-details">
+
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    Priya Sharma
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-calendar"></i>
+                                    Sep 03, 2026
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-clock"></i>
+                                    5:00 – 6:00 PM
+                                </span>
+
+                            </div>
+
+
+                            <p class="dashboard-session-note-summary">
+                                Your child showed strong understanding of
+                                algebraic expressions and solved most
+                                problems independently. Continue practicing
+                                equations for better accuracy.
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-session-note-action">
+
+                            <a
+                                href="#"
+                                class="dashboard-session-note-view-button"
+                            >
+                                View Note
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =========================================
+                         NOTE 2
+                    ========================================== -->
+
+                    <article class="dashboard-session-note-card">
+
+                        <div class="dashboard-session-note-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+
+
+                        <div class="dashboard-session-note-main">
+
+                            <div class="dashboard-session-note-header">
+
+                                <div>
+
+                                    <span class="dashboard-session-note-subject">
+                                        Science
+                                    </span>
+
+                                    <h3>
+                                        Good understanding of concepts
+                                    </h3>
+
+                                </div>
+
+                                <span class="dashboard-session-note-status">
+                                    <i class="fas fa-circle-check"></i>
+                                    Reviewed
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-session-note-details">
+
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    Arjun Kumar
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-calendar"></i>
+                                    Sep 01, 2026
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-clock"></i>
+                                    6:30 – 7:30 PM
+                                </span>
+
+                            </div>
+
+
+                            <p class="dashboard-session-note-summary">
+                                Your child demonstrated good understanding
+                                of the science concepts covered today.
+                                Practical examples helped improve
+                                confidence and participation.
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-session-note-action">
+
+                            <a
+                                href="#"
+                                class="dashboard-session-note-view-button"
+                            >
+                                View Note
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =========================================
+                         NOTE 3
+                    ========================================== -->
+
+                    <article class="dashboard-session-note-card">
+
+                        <div class="dashboard-session-note-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+
+
+                        <div class="dashboard-session-note-main">
+
+                            <div class="dashboard-session-note-header">
+
+                                <div>
+
+                                    <span class="dashboard-session-note-subject">
+                                        English
+                                    </span>
+
+                                    <h3>
+                                        Improving writing confidence
+                                    </h3>
+
+                                </div>
+
+                                <span class="dashboard-session-note-status">
+                                    <i class="fas fa-circle-check"></i>
+                                    Reviewed
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-session-note-details">
+
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    Ananya Rao
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-calendar"></i>
+                                    Aug 29, 2026
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-clock"></i>
+                                    5:30 – 6:30 PM
+                                </span>
+
+                            </div>
+
+
+                            <p class="dashboard-session-note-summary">
+                                Your child is becoming more confident
+                                while writing short paragraphs. Continue
+                                reading regularly and practice sentence
+                                structure at home.
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-session-note-action">
+
+                            <a
+                                href="#"
+                                class="dashboard-session-note-view-button"
+                            >
+                                View Note
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =========================================
+                         NOTE 4
+                    ========================================== -->
+
+                    <article class="dashboard-session-note-card">
+
+                        <div class="dashboard-session-note-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+
+
+                        <div class="dashboard-session-note-main">
+
+                            <div class="dashboard-session-note-header">
+
+                                <div>
+
+                                    <span class="dashboard-session-note-subject">
+                                        Computer Science
+                                    </span>
+
+                                    <h3>
+                                        Keep practicing Python basics
+                                    </h3>
+
+                                </div>
+
+                                <span class="dashboard-session-note-status">
+                                    <i class="fas fa-circle-check"></i>
+                                    Reviewed
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-session-note-details">
+
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    Rahul Menon
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-calendar"></i>
+                                    Aug 27, 2026
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-clock"></i>
+                                    5:00 – 6:00 PM
+                                </span>
+
+                            </div>
+
+
+                            <p class="dashboard-session-note-summary">
+                                Your child completed the basic Python
+                                exercises successfully. More practice with
+                                loops and conditional statements will help
+                                build confidence.
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-session-note-action">
+
+                            <a
+                                href="#"
+                                class="dashboard-session-note-view-button"
+                            >
+                                View Note
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Notes Footer -->
+                <div class="dashboard-session-notes-list-footer">
+
+                    <span>
+                        <i class="fas fa-circle-info"></i>
+                        Notes are updated by tutors after completed sessions.
+                    </span>
+
+                    <a href="#">
+                        View All Notes
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 4. LEARNING HIGHLIGHTS
+            ================================================== -->
+
+            <section class="dashboard-learning-highlights-section">
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            Insights
+                        </span>
+
+                        <h2>
+                            Learning Highlights
+                        </h2>
+
+                    </div>
+
+                    <span class="dashboard-section-note">
+                        Key observations from recent sessions
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-learning-highlights-grid">
+
+
+                    <!-- Strengths -->
+                    <article class="dashboard-learning-highlight-card">
+
+                        <div class="dashboard-learning-highlight-icon">
+                            <i class="fas fa-arrow-trend-up"></i>
+                        </div>
+
+                        <div class="dashboard-learning-highlight-content">
+
+                            <span>Strengths</span>
+
+                            <h3>
+                                Mathematics &amp; Science
+                            </h3>
+
+                            <p>
+                                Strong concept understanding and
+                                consistent participation during sessions.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Improvement -->
+                    <article class="dashboard-learning-highlight-card">
+
+                        <div class="dashboard-learning-highlight-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+
+                        <div class="dashboard-learning-highlight-content">
+
+                            <span>Areas to Improve</span>
+
+                            <h3>
+                                Writing &amp; Problem Solving
+                            </h3>
+
+                            <p>
+                                Regular practice can improve speed,
+                                accuracy, and written expression.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Recommendation -->
+                    <article class="dashboard-learning-highlight-card">
+
+                        <div class="dashboard-learning-highlight-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+
+                        <div class="dashboard-learning-highlight-content">
+
+                            <span>Tutor Recommendation</span>
+
+                            <h3>
+                                Keep a Consistent Routine
+                            </h3>
+
+                            <p>
+                                Continue regular sessions and short
+                                practice activities between lessons.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 5. TUTOR NOTES
+            ================================================== -->
+
+            <section class="dashboard-tutor-notes-section">
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            Tutor Updates
+                        </span>
+
+                        <h2>
+                            Tutor Notes
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="#"
+                        class="dashboard-section-link"
+                    >
+                        View Tutor Updates
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="dashboard-tutor-notes-grid">
+
+
+                    <!-- Priya -->
+                    <article class="dashboard-tutor-note-card">
+
+                        <div class="dashboard-tutor-note-top">
+
+                            <div class="dashboard-tutor-note-avatar">
+                                <img
+                                    src="images/tutor-1.jpg"
+                                    alt="Priya Sharma"
+                                >
+                            </div>
+
+                            <div class="dashboard-tutor-note-info">
+
+                                <h3>
+                                    Priya Sharma
+                                    <i class="fas fa-circle-check"></i>
+                                </h3>
+
+                                <span>
+                                    Mathematics Tutor
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Your child is progressing well in Algebra.
+                            We will focus next on multi-step equations
+                            and problem-solving accuracy.
+                        </p>
+
+
+                        <div class="dashboard-tutor-note-footer">
+
+                            <span>
+                                <i class="fas fa-calendar"></i>
+                                Sep 03, 2026
+                            </span>
+
+                            <a href="#">
+                                Read Note
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Arjun -->
+                    <article class="dashboard-tutor-note-card">
+
+                        <div class="dashboard-tutor-note-top">
+
+                            <div class="dashboard-tutor-note-avatar">
+                                <img
+                                    src="images/tutor-2.jpg"
+                                    alt="Arjun Kumar"
+                                >
+                            </div>
+
+                            <div class="dashboard-tutor-note-info">
+
+                                <h3>
+                                    Arjun Kumar
+                                    <i class="fas fa-circle-check"></i>
+                                </h3>
+
+                                <span>
+                                    Science Tutor
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Participation has improved during Science
+                            sessions. We will continue using practical
+                            examples to strengthen understanding.
+                        </p>
+
+
+                        <div class="dashboard-tutor-note-footer">
+
+                            <span>
+                                <i class="fas fa-calendar"></i>
+                                Sep 01, 2026
+                            </span>
+
+                            <a href="#">
+                                Read Note
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Ananya -->
+                    <article class="dashboard-tutor-note-card">
+
+                        <div class="dashboard-tutor-note-top">
+
+                            <div class="dashboard-tutor-note-avatar">
+                                <img
+                                    src="images/tutor-3.jpg"
+                                    alt="Ananya Rao"
+                                >
+                            </div>
+
+                            <div class="dashboard-tutor-note-info">
+
+                                <h3>
+                                    Ananya Rao
+                                    <i class="fas fa-circle-check"></i>
+                                </h3>
+
+                                <span>
+                                    English Tutor
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Writing confidence is improving steadily.
+                            Reading and short writing exercises are
+                            recommended between sessions.
+                        </p>
+
+
+                        <div class="dashboard-tutor-note-footer">
+
+                            <span>
+                                <i class="fas fa-calendar"></i>
+                                Aug 29, 2026
+                            </span>
+
+                            <a href="#">
+                                Read Note
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 6. SUPPORT
+            ================================================== -->
+
+            <section class="dashboard-session-notes-support-section">
+
+                <div class="dashboard-session-notes-support-content">
+
+
+                    <div class="dashboard-session-notes-support-icon">
+
+                        <i class="fas fa-headset"></i>
+
+                    </div>
+
+
+                    <div class="dashboard-session-notes-support-text">
+
+                        <span>
+                            Need Assistance
+                        </span>
+
+                        <h2>
+                            Need Help Understanding a Session Note?
+                        </h2>
+
+                        <p>
+                            Our support team can help you understand
+                            tutor feedback, learning observations, and
+                            recommendations.
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-session-notes-support-action">
+
+                        <a
+                            href="contact.html"
+                            class="dashboard-session-notes-support-button"
+                        >
+                            <i class="fas fa-headset"></i>
+                            Contact Support
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+
+<!-- =========================================================
+     DASHBOARD JAVASCRIPT
+========================================================= -->
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="dashboard-logout-modal"
+    id="dashboardLogoutModal"
+    aria-hidden="true"
+>
+
+    <div class="dashboard-logout-overlay" id="dashboardLogoutOverlay"></div>
+
+    <div
+        class="dashboard-logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dashboardLogoutTitle"
+    >
+
+        <button
+            type="button"
+            class="dashboard-logout-close"
+            id="dashboardLogoutClose"
+            aria-label="Close logout popup"
+        >
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="dashboard-logout-icon">
+            <i class="fas fa-right-from-bracket"></i>
+        </div>
+
+        <div class="dashboard-logout-content">
+
+            <h2 id="dashboardLogoutTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout from your TutorNest account?
+            </p>
+
+        </div>
+
+        <div class="dashboard-logout-actions">
+
+            <button
+                type="button"
+                class="dashboard-logout-no"
+                id="dashboardLogoutNo"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="dashboard-logout-yes"
+                id="dashboardLogoutYes"
+            >
+                <i class="fas fa-right-from-bracket"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+</div>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
