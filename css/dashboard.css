@@ -18361,3 +18361,44 @@ body.dark-mode .dashboard-profile-button i {
     opacity: 1 !important;
     visibility: visible !important;
 }
+
+/* =========================================================
+   DASHBOARD PROFILE - PHONE FIELD RTL
+========================================================= */
+
+html[dir="rtl"] .dashboard-profile-field label {
+    display: block !important;
+    width: 100% !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .dashboard-profile-input-wrap {
+    position: relative !important;
+    width: 100% !important;
+}
+
+html[dir="rtl"] .dashboard-profile-input-wrap > i {
+    position: absolute !important;
+    top: 50% !important;
+    right: 18px !important;
+    left: auto !important;
+    transform: translateY(-50%) !important;
+    color: var(--primary-color) !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+}
+
+html[dir="rtl"] .dashboard-profile-input-wrap input,
+html[dir="rtl"] .dashboard-profile-input-wrap select {
+    width: 100% !important;
+    direction: rtl !important;
+    text-align: right !important;
+    padding-right: 50px !important;
+    padding-left: 18px !important;
+    box-sizing: border-box !important;
+}
+
+html[dir="rtl"] .dashboard-profile-input-wrap input::placeholder {
+    direction: rtl !important;
+    text-align: right !important;
+}
