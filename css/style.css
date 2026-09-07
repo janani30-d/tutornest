@@ -30254,3 +30254,1002 @@ body.dark-mode .pricing-faq-support-link:hover i.fa-arrow-right {
     color: #2563EB !important;
     -webkit-text-fill-color: #2563EB !important;
 }
+
+
+
+
+/* =========================================================
+   TUTORNEST LOGIN PAGE
+   FONT SIZE CONSISTENCY
+========================================================= */
+
+/* =========================
+   TOP CONTROLS
+========================= */
+
+.login-control-button {
+    font-size: 14px;
+}
+
+.login-control-button i {
+    font-size: 16px;
+}
+
+
+/* =========================
+   LEFT INTRO
+========================= */
+
+.login-intro-badge {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.login-intro-badge i {
+    font-size: 13px;
+}
+
+.login-intro-title {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.login-intro-description {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.login-intro-feature-content strong {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.login-intro-feature-content span {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.login-intro-feature-icon i {
+    font-size: 16px;
+}
+
+
+/* =========================
+   LOGIN CARD HEADER
+========================= */
+
+.login-card-label {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.login-card-icon i {
+    font-size: 18px;
+}
+
+.login-card-title {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.login-card-description {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.login-form-group label {
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.login-input-wrapper input {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.login-input-wrapper > i {
+    font-size: 15px;
+}
+
+.login-password-toggle {
+    font-size: 14px;
+}
+
+.login-password-toggle i {
+    font-size: 14px;
+}
+
+.login-error-message {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   REMEMBER / FORGOT
+========================= */
+
+.login-form-options {
+    font-size: 12px;
+}
+
+.login-remember {
+    font-size: 12px;
+}
+
+.login-forgot {
+    font-size: 12px;
+}
+
+
+/* =========================
+   AUTH MESSAGE
+========================= */
+
+.login-auth-message {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SIGN IN BUTTON
+========================= */
+
+.login-submit {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.login-submit i {
+    font-size: 14px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.login-divider small {
+    font-size: 10px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.login-social-button {
+    font-size: 14px;
+}
+
+.login-social-button i {
+    font-size: 16px;
+}
+
+.login-social-google-icon {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* =========================
+   GUEST BUTTON
+========================= */
+
+.login-guest-button {
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.login-guest-button i {
+    font-size: 14px;
+}
+
+
+/* =========================
+   CARD FOOTER
+========================= */
+
+.login-card-footer {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.login-card-footer a {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .login-intro-title {
+        font-size: 36px;
+    }
+
+    .login-intro-description {
+        font-size: 14px;
+    }
+
+    .login-card-title {
+        font-size: 26px;
+    }
+
+    .login-card-description {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .login-intro-badge {
+        font-size: 10px;
+    }
+
+    .login-intro-title {
+        font-size: 30px;
+    }
+
+    .login-intro-description {
+        font-size: 14px;
+    }
+
+    .login-intro-feature-content strong {
+        font-size: 14px;
+    }
+
+    .login-intro-feature-content span {
+        font-size: 12px;
+    }
+
+    .login-card-label {
+        font-size: 10px;
+    }
+
+    .login-card-title {
+        font-size: 24px;
+    }
+
+    .login-card-description {
+        font-size: 13px;
+    }
+
+    .login-form-group label {
+        font-size: 11px;
+    }
+
+    .login-input-wrapper input {
+        font-size: 13px;
+    }
+
+    .login-form-options,
+    .login-remember,
+    .login-forgot {
+        font-size: 11px;
+    }
+
+    .login-submit {
+        font-size: 13px;
+    }
+
+    .login-guest-button {
+        font-size: 12px;
+    }
+
+    .login-card-footer {
+        font-size: 11px;
+    }
+
+    .login-card-footer a {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .login-intro-title {
+        font-size: 28px;
+    }
+
+    .login-intro-description {
+        font-size: 13px;
+    }
+
+    .login-card-title {
+        font-size: 22px;
+    }
+
+    .login-card-description {
+        font-size: 13px;
+    }
+
+    .login-form-group label {
+        font-size: 11px;
+    }
+
+    .login-input-wrapper input {
+        font-size: 12px;
+    }
+
+    .login-submit {
+        font-size: 13px;
+    }
+}
+
+
+/* LOGIN - SIGN IN ICON IN DARK MODE */
+body.dark-mode .login-submit i.fa-arrow-right {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Keep icon white when hovering the button */
+body.dark-mode .login-submit:hover i.fa-arrow-right {
+    color: #2563EB !important;
+    -webkit-text-fill-color: #2563EB !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* REGISTER - CREATE ACCOUNT ICON IN DARK MODE */
+body.dark-mode .register-submit i.fa-arrow-right {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Hover - icon changes to blue */
+body.dark-mode .register-submit:hover i.fa-arrow-right {
+    color: #2563EB !important;
+    -webkit-text-fill-color: #2563EB !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+
+
+/* =========================================================
+   REGISTER - ACCOUNT TYPE DROPDOWN DARK MODE
+========================================================= */
+
+body.dark-mode .register-select-wrapper select,
+body.dark-mode .register-input-wrapper select {
+    background: #1E293B !important;
+    color: #F8FAFC !important;
+    border-color: #334155 !important;
+}
+
+/* Dropdown options */
+body.dark-mode .register-select-wrapper select option,
+body.dark-mode .register-input-wrapper select option {
+    background: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+/* Placeholder option */
+body.dark-mode .register-select-wrapper select option[value=""],
+body.dark-mode .register-input-wrapper select option[value=""] {
+    background: #1E293B !important;
+    color: #94A3B8 !important;
+}
+
+/* Selected option */
+body.dark-mode .register-select-wrapper select option:checked,
+body.dark-mode .register-input-wrapper select option:checked {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Pricing Comparison - Most Popular Star */
+body.dark-mode .pricing-comparison-most-popular i.fa-star {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+
+
+
+/* =========================================================
+   HOME PROGRESS - RTL COLUMN SWAP
+   IMAGE LEFT | CONTENT + BUTTON RIGHT
+========================================================= */
+
+html[dir="rtl"] .home-progress-wrapper {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+}
+
+/* Content + button → RIGHT */
+html[dir="rtl"] .home-progress-content {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    width: 100% !important;
+    margin: 0 !important;
+
+    justify-self: stretch !important;
+    align-items: flex-end !important;
+    text-align: right !important;
+}
+
+/* All content stays on the right */
+html[dir="rtl"] .home-progress-badge,
+html[dir="rtl"] .home-progress-title,
+html[dir="rtl"] .home-progress-description,
+html[dir="rtl"] .home-progress-list {
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* Button → right */
+html[dir="rtl"] .home-progress-button {
+    align-self: flex-end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Image → LEFT */
+html[dir="rtl"] .home-progress-image {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+
+    justify-self: stretch !important;
+}
+
+/* =========================================================
+   HOME PROGRESS - FORCE RTL SWAP
+   IMAGE = LEFT
+   CONTENT + BUTTON = RIGHT
+========================================================= */
+
+html[dir="rtl"] .home-progress-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    direction: ltr !important;
+    width: 100% !important;
+}
+
+/* IMAGE → LEFT */
+html[dir="rtl"] .home-progress-wrapper .home-progress-image {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    justify-self: stretch !important;
+}
+
+/* CONTENT → RIGHT */
+html[dir="rtl"] .home-progress-wrapper .home-progress-content {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+
+    direction: rtl !important;
+    text-align: right !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+}
+
+/* Badge */
+html[dir="rtl"] .home-progress-content .home-progress-badge {
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* Heading */
+html[dir="rtl"] .home-progress-content .home-progress-title {
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* Description */
+html[dir="rtl"] .home-progress-content .home-progress-description {
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* Progress list */
+html[dir="rtl"] .home-progress-content .home-progress-list {
+    width: 100% !important;
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Button → RIGHT */
+html[dir="rtl"] .home-progress-content .home-progress-button {
+    align-self: flex-end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .home-progress-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        direction: rtl !important;
+    }
+
+    html[dir="rtl"] .home-progress-wrapper .home-progress-content {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        width: 100% !important;
+        align-items: flex-end !important;
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .home-progress-wrapper .home-progress-image {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+        width: 100% !important;
+    }
+
+    html[dir="rtl"] .home-progress-content .home-progress-button {
+        align-self: flex-end !important;
+    }
+}
+
+
+/* =========================================================
+   HOME PROGRESS - RTL
+   IMAGE LEFT | CONTENT + BUTTON RIGHT
+========================================================= */
+
+html[dir="rtl"] .home-progress-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    direction: ltr !important;
+}
+
+/* CONTENT + BUTTON → RIGHT */
+html[dir="rtl"] .home-progress-content {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    direction: rtl !important;
+    text-align: right !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+/* Badge */
+html[dir="rtl"] .home-progress-badge {
+    align-self: flex-end !important;
+    text-align: right !important;
+}
+
+/* Heading */
+html[dir="rtl"] .home-progress-title {
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* Highlighted heading */
+html[dir="rtl"] .home-progress-title span {
+    text-align: right !important;
+}
+
+/* Description */
+html[dir="rtl"] .home-progress-description {
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* List */
+html[dir="rtl"] .home-progress-list {
+    width: 100% !important;
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* List items */
+html[dir="rtl"] .home-progress-item {
+    direction: rtl !important;
+    justify-content: flex-start !important;
+}
+
+/* Button → RIGHT */
+html[dir="rtl"] .home-progress-button {
+    align-self: flex-end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* IMAGE → LEFT */
+html[dir="rtl"] .home-progress-image {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   HOME PROGRESS - RTL BUTTON WITH CONTENT
+========================================================= */
+
+html[dir="rtl"] .home-progress-content .home-progress-button {
+    align-self: flex-end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Make sure the button stays inside the right content column */
+html[dir="rtl"] .home-progress-content {
+    align-items: flex-end !important;
+}
+
+
+html[dir="rtl"] .home-progress-button {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    align-self: flex-end !important;
+}
+
+
+/* =========================================================
+   HOME PROGRESS - RTL
+   CONTENT + BUTTON RIGHT
+========================================================= */
+
+html[dir="rtl"] .home-progress-content {
+    align-items: flex-start !important;
+}
+
+/* Keep text aligned to the right */
+html[dir="rtl"] .home-progress-badge,
+html[dir="rtl"] .home-progress-title,
+html[dir="rtl"] .home-progress-description,
+html[dir="rtl"] .home-progress-list {
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* BUTTON → RIGHT */
+html[dir="rtl"] .home-progress-button {
+    align-self: flex-start !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    left: auto !important;
+    right: auto !important;
+}
+
+
+
+/* =========================================================
+   HOME 2 HERO - RTL OVERRIDE
+   Content + buttons → RIGHT
+   Image → LEFT
+========================================================= */
+
+html[dir="rtl"] .home-two-hero-wrapper {
+    direction: rtl !important;
+}
+
+/* Content moves to the RIGHT */
+html[dir="rtl"] .home-two-hero-content {
+    order: 1 !important;
+    text-align: right !important;
+    align-items: flex-end !important;
+}
+
+/* Heading */
+html[dir="rtl"] .home-two-hero-title {
+    text-align: right !important;
+}
+
+/* Description */
+html[dir="rtl"] .home-two-hero-description {
+    text-align: right !important;
+}
+
+/* Buttons move to the RIGHT */
+html[dir="rtl"] .home-two-hero-actions {
+    justify-content: flex-start !important;
+    flex-direction: row-reverse !important;
+}
+
+/* Trust items move to the RIGHT */
+html[dir="rtl"] .home-two-hero-trust {
+    justify-content: flex-start !important;
+    flex-direction: row-reverse !important;
+}
+
+html[dir="rtl"] .home-two-hero-trust-item {
+    direction: rtl !important;
+}
+
+/* Image moves to the LEFT */
+html[dir="rtl"] .home-two-hero-image-wrapper {
+    order: 2 !important;
+}
+
+
+/* =========================================================
+   HOME 2 HERO - FORCE RTL LAYOUT
+   Content + Buttons RIGHT
+   Image LEFT
+========================================================= */
+
+@media (min-width: 768px) {
+
+    html[dir="rtl"] .home-two-hero-wrapper {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+        direction: ltr !important;
+        width: 100% !important;
+    }
+
+    /* CONTENT → RIGHT */
+    html[dir="rtl"] .home-two-hero-content {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+
+        width: 100% !important;
+        text-align: right !important;
+        align-items: flex-end !important;
+
+        direction: rtl !important;
+        justify-self: stretch !important;
+    }
+
+    /* HEADING → RIGHT */
+    html[dir="rtl"] .home-two-hero-title {
+        width: 100% !important;
+        text-align: right !important;
+    }
+
+    /* DESCRIPTION → RIGHT */
+    html[dir="rtl"] .home-two-hero-description {
+        width: 100% !important;
+        text-align: right !important;
+    }
+
+    /* BUTTONS → RIGHT */
+    html[dir="rtl"] .home-two-hero-actions {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        direction: rtl !important;
+    }
+
+    /* TRUST ITEMS → RIGHT */
+    html[dir="rtl"] .home-two-hero-trust {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        direction: rtl !important;
+    }
+
+    /* IMAGE → LEFT */
+    html[dir="rtl"] .home-two-hero-image-wrapper {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+
+        width: 100% !important;
+        justify-self: stretch !important;
+
+        direction: ltr !important;
+    }
+}
+
+/* =========================================================
+   HOME 2 HERO - MOBILE RTL RESET
+========================================================= */
+
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .home-two-hero-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        direction: rtl !important;
+    }
+
+    html[dir="rtl"] .home-two-hero-content {
+        width: 100% !important;
+        text-align: right !important;
+        align-items: flex-end !important;
+        order: 1 !important;
+    }
+
+    html[dir="rtl"] .home-two-hero-image-wrapper {
+        width: 100% !important;
+        order: 2 !important;
+    }
+
+    html[dir="rtl"] .home-two-hero-title,
+    html[dir="rtl"] .home-two-hero-description {
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .home-two-hero-actions {
+        width: 100% !important;
+        justify-content: flex-start !important;
+        direction: rtl !important;
+    }
+
+    html[dir="rtl"] .home-two-hero-trust {
+        width: 100% !important;
+        justify-content: flex-start !important;
+        direction: rtl !important;
+        flex-wrap: wrap !important;
+    }
+}
+
+
+
+/* =========================================================
+   HOME 2 HERO - RTL CONTENT RIGHT
+========================================================= */
+
+html[dir="rtl"] .home-two-hero-content {
+    text-align: right !important;
+    align-items: flex-end !important;
+    justify-content: flex-start !important;
+    direction: rtl !important;
+}
+
+/* Badge */
+html[dir="rtl"] .home-two-hero-badge {
+    align-self: flex-end !important;
+}
+
+/* Heading */
+html[dir="rtl"] .home-two-hero-title {
+    text-align: right !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Description */
+html[dir="rtl"] .home-two-hero-description {
+    text-align: right !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* BUTTON CONTAINER → RIGHT */
+html[dir="rtl"] .home-two-hero-actions {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    direction: rtl !important;
+    width: 100% !important;
+}
+
+/* Individual buttons */
+html[dir="rtl"] .home-two-hero-primary-button,
+html[dir="rtl"] .home-two-hero-secondary-button {
+    margin-left: 0 !important;
+}
+
+/* Trust items → RIGHT */
+html[dir="rtl"] .home-two-hero-trust {
+    display: flex !important;
+    justify-content: flex-start !important;
+    direction: rtl !important;
+    width: 100% !important;
+}
+
+
+/* =========================================================
+   HOME 2 HERO - RTL ALIGNMENT
+   Badge + Heading + Paragraph + Buttons + Points
+   all aligned to the RIGHT
+========================================================= */
+
+html[dir="rtl"] .home-two-hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    text-align: right !important;
+}
+
+/* Personalized Learning Made Simple */
+html[dir="rtl"] .home-two-hero-badge {
+    align-self: flex-end !important;
+    text-align: right !important;
+}
+
+/* Heading */
+html[dir="rtl"] .home-two-hero-title {
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* Paragraph */
+html[dir="rtl"] .home-two-hero-description {
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* Buttons */
+html[dir="rtl"] .home-two-hero-actions {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    direction: rtl !important;
+}
+
+/* Trust / Points */
+html[dir="rtl"] .home-two-hero-trust {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    direction: rtl !important;
+}
+
+html[dir="rtl"] .home-two-hero-trust-item {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+
+html[dir="rtl"] .home-two-hero-actions,
+html[dir="rtl"] .home-two-hero-trust {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
