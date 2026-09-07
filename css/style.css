@@ -28647,3 +28647,1494 @@ body.dark-mode .scroll-top-btn {
 body.dark-mode .scroll-top-btn i.fa-arrow-up {
     color: #FFFFFF !important;
 }
+
+
+
+
+/* =========================================================
+   HEADER - REDUCE MENU GAP
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .desktop-navigation {
+        gap: 24px !important;
+    }
+
+    .desktop-navigation > ul {
+        gap: 24px !important;
+    }
+
+    .desktop-navigation > ul > li {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .header-container {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .header-actions {
+        gap: 10px !important;
+    }
+}
+
+
+/* =========================================================
+   DESKTOP HEADER - REDUCE MENU GAP
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .desktop-navigation > ul {
+        gap: 22px !important;
+    }
+
+    .desktop-navigation > ul > li {
+        margin: 0 !important;
+    }
+
+    .header-actions {
+        gap: 10px !important;
+    }
+}
+
+
+
+/* =========================================================
+   DESKTOP HEADER - LOGO & MENU SPACING
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    /* Move logo slightly toward the menu */
+    .site-logo {
+        margin-left: 25px !important;
+    }
+
+    /* Reduce spacing between menu items */
+    .desktop-navigation > ul {
+        gap: 18px !important;
+    }
+
+    .desktop-navigation > ul > li {
+        margin: 0 !important;
+    }
+
+    /* Keep right-side controls compact */
+    .header-actions {
+        gap: 8px !important;
+    }
+}
+
+
+/* =========================================================
+   DESKTOP HEADER - DARK MODE & RTL BUTTON BORDERS
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    /* Dark Mode button */
+    #themeToggle {
+        border: 1px solid #E2E8F0 !important;
+        border-radius: 10px !important;
+    }
+
+    /* RTL button */
+    #rtlToggle {
+        border: 1px solid #E2E8F0 !important;
+        border-radius: 10px !important;
+    }
+
+    /* Dark mode */
+    body.dark-mode #themeToggle,
+    body.dark-mode #rtlToggle {
+        border: 1px solid #334155 !important;
+    }
+
+    /* Keep border on hover */
+    #themeToggle:hover,
+    #rtlToggle:hover {
+        border-color: #2563EB !important;
+    }
+
+    body.dark-mode #themeToggle:hover,
+    body.dark-mode #rtlToggle:hover {
+        border-color: #2563EB !important;
+    }
+}
+
+
+body.dark-mode .header-dashboard-btn {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .header-dashboard-btn i {
+    color: #FFFFFF !important;
+}
+
+
+
+/* =========================================================
+   MOBILE DASHBOARD BUTTON - DARK MODE ICON
+========================================================= */
+
+html body.dark-mode .mobile-dashboard-btn i.fa-solid.fa-table-columns {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+/* =========================================================
+   DASHBOARD BUTTON - DARK MODE ICON
+========================================================= */
+
+html body.dark-mode a[href="dashboard.html"] i.fa-solid.fa-table-columns {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+
+/* Home Hero - Explore Subjects icon in dark mode */
+html body.dark-mode .home-hero-primary-btn i.fa-solid.fa-book-open {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+
+
+
+/* =========================================================
+   HOME 1 - STATS SECTION SIDE GAP
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .home-stats-section > .container {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+        box-sizing: border-box !important;
+    }
+
+    .home-stats-grid {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+
+/* =========================================================
+   HOME 1 - WHY SECTION SIDE GAP
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .home-why-section > .container {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+        box-sizing: border-box !important;
+    }
+
+    .home-why-section .home-why-grid {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .home-why-section .home-why-card {
+        box-sizing: border-box !important;
+    }
+}
+
+
+
+/* Home CTA Primary Button - Dark Mode */
+html body.dark-mode .home-cta-primary-button {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+html body.dark-mode .home-cta-primary-button .fa-arrow-right {
+    color: #FFFFFF !important;
+}
+
+/* Keep the same colors on hover */
+html body.dark-mode .home-cta-primary-button:hover {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+html body.dark-mode .home-cta-primary-button:hover .fa-arrow-right {
+    color: #FFFFFF !important;
+}
+/* Home CTA Primary Button - Dark Mode */
+html body.dark-mode .home-cta-primary-button,
+html body.dark-mode .home-cta-primary-button:hover {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+html body.dark-mode .home-cta-primary-button .fa-arrow-right,
+html body.dark-mode .home-cta-primary-button:hover .fa-arrow-right {
+    color: #FFFFFF !important;
+}
+
+/* =========================================================
+   HOME CTA PRIMARY BUTTON - DARK MODE
+========================================================= */
+
+html body.dark-mode .home-cta-primary-button,
+html body.dark-mode .home-cta-primary-button:hover {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+/* CTA text */
+html body.dark-mode .home-cta-primary-button span,
+html body.dark-mode .home-cta-primary-button:hover span {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* CTA arrow */
+html body.dark-mode .home-cta-primary-button .fa-arrow-right,
+html body.dark-mode .home-cta-primary-button:hover .fa-arrow-right {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   HOME 2 HERO - FLOATING BADGE DARK MODE
+========================================================= */
+
+body.dark-mode .home-two-hero-floating-card {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.30) !important;
+}
+
+body.dark-mode .home-two-hero-floating-icon {
+    background: #172554 !important;
+}
+
+body.dark-mode .home-two-hero-floating-icon i {
+    color: #2563EB !important;
+}
+
+body.dark-mode .home-two-hero-floating-content strong {
+    color: #F8FAFC !important;
+}
+
+body.dark-mode .home-two-hero-floating-content span {
+    color: #CBD5E1 !important;
+}
+
+/* Home 2 CTA primary button - arrow icon */
+body.dark-mode .home-two-cta-primary-button .fa-arrow-right {
+    color: #FFFFFF !important;
+}
+
+
+/* Home 2 FAQ Help Link - light mode hover */
+.home-two-faq-help-link:hover .fa-arrow-right {
+    color: #2563EB !important;
+}
+
+/* Subjects Final CTA - Dark Mode Icons */
+
+body.dark-mode .subjects-final-cta-primary .fa-arrow-right,
+body.dark-mode .subjects-final-cta-secondary .fa-book-open {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .subjects-final-cta-primary:hover .fa-arrow-right,
+body.dark-mode .subjects-final-cta-secondary:hover .fa-book-open {
+    color: #2563EB !important;
+}
+
+/* How It Works - arrow on hover in dark mode */
+body.dark-mode .how-it-works-after-book-arrow:hover .fa-arrow-right {
+    color: #FFFFFF !important;
+}
+
+
+
+html body.dark-mode .how-it-works-final-cta-secondary .fa-book-open,
+html body.dark-mode .how-it-works-final-cta-secondary:hover .fa-book-open {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+html body.dark-mode .how-it-works-final-cta-primary .fa-arrow-right,
+html body.dark-mode .how-it-works-final-cta-primary:hover .fa-arrow-right {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+html body.dark-mode .how-it-works-final-cta-primary span {
+    color: #FFFFFF !important;
+}
+
+html body.dark-mode .how-it-works-final-cta-primary:hover span {
+    color: #FFFFFF !important;
+}
+
+/* Pricing plan - gap between features and button */
+.pricing-plan-button {
+    margin-top: 24px !important;
+}
+
+
+/* Pricing - Most Popular badge in dark mode */
+body.dark-mode .pricing-plan-badge {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .pricing-plan-badge i {
+    color: #FFFFFF !important;
+}
+
+/* Pricing FAQ Support - Light Mode Hover Arrow */
+body:not(.dark-mode) .pricing-faq-support-link:hover .fa-arrow-right {
+    color: #2563EB !important;
+}
+/* =========================================================
+   CONTACT HERO PRIMARY BUTTON
+   HOVER ARROW ICON - BLUE
+========================================================= */
+
+html body .contact-hero-actions .contact-hero-primary:hover i.fa-solid.fa-arrow-down {
+    color: #2563EB !important;
+    -webkit-text-fill-color: #2563EB !important;
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   CONTACT LOCATION - GET DIRECTIONS
+   LIGHT MODE HOVER
+========================================================= */
+
+body:not(.dark-mode) .contact-location-button:hover {
+    color: #2563EB !important;
+    background: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+body:not(.dark-mode) .contact-location-button:hover .fa-arrow-right {
+    color: #2563EB !important;
+}
+/* Contact Location - Dark Mode Button Icon */
+body.dark-mode .contact-location-button i.fa-solid.fa-arrow-right {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+/* Contact Message Submit - Dark Mode Hover */
+body.dark-mode .contact-message-submit:hover {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .contact-message-submit:hover .fa-paper-plane {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .header-login-btn:hover .fa-solid.fa-right-to-bracket {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+
+
+
+
+/* =========================================================
+   TUTORNEST
+   GLOBAL FONT SIZE CONSISTENCY
+   ADD AT THE VERY BOTTOM OF RESPONSIVE.CSS
+========================================================= */
+
+/* =========================
+   BASE FONT
+========================= */
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.home-section-title,
+.home-two-section-title,
+.find-tutor-section-title,
+.subjects-section-title,
+.how-it-works-section-title,
+.pricing-section-title,
+.contact-section-title {
+    font-size: 40px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================
+   HERO TITLES
+========================= */
+
+.home-hero-title,
+.home-two-hero-title,
+.find-tutor-hero-title,
+.subjects-hero-title,
+.how-it-works-hero-title,
+.pricing-hero-title,
+.contact-hero-title {
+    font-size: 44px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================
+   SECTION DESCRIPTIONS
+========================= */
+
+.home-section-description,
+.home-two-section-description,
+.find-tutor-section-description,
+.subjects-section-description,
+.how-it-works-section-description,
+.pricing-section-description,
+.contact-section-description {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+}
+
+
+/* =========================
+   CARD TITLES
+========================= */
+
+.home-why-title,
+.home-subject-title,
+.home-tutor-name,
+.home-two-result-title,
+.home-two-why-title,
+.home-two-tutor-name,
+.find-tutor-card-name,
+.subjects-popular-title,
+.pricing-plan-title,
+.how-it-works-process-content h3 {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================
+   CARD / BODY TEXT
+========================= */
+
+.home-why-description,
+.home-subject-description,
+.home-two-result-description,
+.home-two-why-description,
+.home-two-tutor-description,
+.find-tutor-card-description,
+.subjects-popular-description,
+.pricing-plan-description,
+.how-it-works-process-content p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* =========================
+   BADGES / LABELS
+========================= */
+
+.home-section-badge,
+.home-two-section-badge,
+.find-tutor-section-badge,
+.subjects-section-badge,
+.how-it-works-section-badge,
+.pricing-section-badge,
+.contact-section-badge {
+    font-size: 11px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.home-hero-primary-btn,
+.home-hero-secondary-btn,
+.home-progress-button,
+.home-subjects-button,
+.home-tutors-button,
+.home-testimonials-button,
+
+.home-two-hero-primary-button,
+.home-two-hero-secondary-button,
+.home-two-search-button,
+.home-two-results-button,
+.home-two-why-button,
+.home-two-about-button,
+.home-two-benefits-button,
+.home-two-tutors-button,
+
+.find-tutor-search-button,
+.find-tutor-why-button,
+.find-tutor-booking-button,
+.find-tutor-categories-button,
+.find-tutor-book-button,
+.find-tutor-profile-button,
+.find-tutor-load-more-button,
+
+.subjects-hero-search-button,
+.subjects-popular-button,
+.subjects-level-button,
+
+.how-it-works-hero-button,
+.how-it-works-journey-button,
+.how-it-works-learning-button,
+.how-it-works-after-book-button,
+
+.pricing-hero-primary,
+.pricing-hero-secondary,
+.pricing-plan-button,
+.pricing-plan-button-featured,
+.pricing-comparison-bottom-button,
+.pricing-how-works-action-button,
+.pricing-why-button,
+
+.contact-hero-primary,
+.contact-hero-secondary,
+.contact-message-submit,
+.contact-location-button {
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================
+   CTA BUTTONS
+========================= */
+
+.home-cta-primary-button,
+.home-cta-secondary-button,
+.home-two-cta-primary-button,
+.home-two-cta-secondary-button,
+.find-tutor-final-cta-primary,
+.find-tutor-final-cta-secondary,
+.subjects-final-cta-primary,
+.subjects-final-cta-secondary,
+.how-it-works-final-cta-primary,
+.how-it-works-final-cta-secondary,
+.pricing-final-cta-primary,
+.pricing-final-cta-secondary {
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================
+   FORM LABELS
+========================= */
+
+label {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+
+/* =========================
+   FORM INPUTS
+========================= */
+
+input,
+select,
+textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.pricing-faq-question,
+.home-two-faq-question {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    font-weight: 600 !important;
+}
+
+.pricing-faq-answer,
+.home-two-faq-answer {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1199px) {
+
+    .home-section-title,
+    .home-two-section-title,
+    .find-tutor-section-title,
+    .subjects-section-title,
+    .how-it-works-section-title,
+    .pricing-section-title,
+    .contact-section-title {
+        font-size: 36px !important;
+    }
+
+    .home-hero-title,
+    .home-two-hero-title,
+    .find-tutor-hero-title,
+    .subjects-hero-title,
+    .how-it-works-hero-title,
+    .pricing-hero-title,
+    .contact-hero-title {
+        font-size: 40px !important;
+    }
+
+    .home-why-title,
+    .home-subject-title,
+    .home-tutor-name,
+    .home-two-result-title,
+    .home-two-why-title,
+    .home-two-tutor-name,
+    .find-tutor-card-name,
+    .subjects-popular-title,
+    .pricing-plan-title,
+    .how-it-works-process-content h3 {
+        font-size: 17px !important;
+    }
+
+    .home-why-description,
+    .home-subject-description,
+    .home-two-result-description,
+    .home-two-why-description,
+    .home-two-tutor-description,
+    .find-tutor-card-description,
+    .subjects-popular-description,
+    .pricing-plan-description,
+    .how-it-works-process-content p {
+        font-size: 14px !important;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .home-section-title,
+    .home-two-section-title,
+    .find-tutor-section-title,
+    .subjects-section-title,
+    .how-it-works-section-title,
+    .pricing-section-title,
+    .contact-section-title {
+        font-size: 30px !important;
+        line-height: 1.25 !important;
+    }
+
+    .home-hero-title,
+    .home-two-hero-title,
+    .find-tutor-hero-title,
+    .subjects-hero-title,
+    .how-it-works-hero-title,
+    .pricing-hero-title,
+    .contact-hero-title {
+        font-size: 32px !important;
+        line-height: 1.25 !important;
+    }
+
+    .home-section-description,
+    .home-two-section-description,
+    .find-tutor-section-description,
+    .subjects-section-description,
+    .how-it-works-section-description,
+    .pricing-section-description,
+    .contact-section-description {
+        font-size: 14px !important;
+        line-height: 1.65 !important;
+    }
+
+    .home-why-title,
+    .home-subject-title,
+    .home-tutor-name,
+    .home-two-result-title,
+    .home-two-why-title,
+    .home-two-tutor-name,
+    .find-tutor-card-name,
+    .subjects-popular-title,
+    .pricing-plan-title,
+    .how-it-works-process-content h3 {
+        font-size: 17px !important;
+        line-height: 1.4 !important;
+    }
+
+    .home-why-description,
+    .home-subject-description,
+    .home-two-result-description,
+    .home-two-why-description,
+    .home-two-tutor-description,
+    .find-tutor-card-description,
+    .subjects-popular-description,
+    .pricing-plan-description,
+    .how-it-works-process-content p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    .home-hero-primary-btn,
+    .home-hero-secondary-btn,
+    .home-progress-button,
+    .home-subjects-button,
+    .home-tutors-button,
+    .home-testimonials-button,
+    .home-two-hero-primary-button,
+    .home-two-hero-secondary-button,
+    .home-two-search-button,
+    .home-two-results-button,
+    .home-two-why-button,
+    .home-two-about-button,
+    .home-two-benefits-button,
+    .home-two-tutors-button,
+    .find-tutor-search-button,
+    .find-tutor-why-button,
+    .find-tutor-booking-button,
+    .find-tutor-categories-button,
+    .find-tutor-book-button,
+    .find-tutor-profile-button,
+    .find-tutor-load-more-button,
+    .subjects-hero-search-button,
+    .subjects-popular-button,
+    .subjects-level-button,
+    .how-it-works-hero-button,
+    .how-it-works-journey-button,
+    .how-it-works-learning-button,
+    .how-it-works-after-book-button,
+    .pricing-hero-primary,
+    .pricing-hero-secondary,
+    .pricing-plan-button,
+    .pricing-plan-button-featured,
+    .pricing-comparison-bottom-button,
+    .pricing-how-works-action-button,
+    .pricing-why-button,
+    .contact-hero-primary,
+    .contact-hero-secondary,
+    .contact-message-submit,
+    .contact-location-button,
+    .home-cta-primary-button,
+    .home-cta-secondary-button,
+    .home-two-cta-primary-button,
+    .home-two-cta-secondary-button,
+    .find-tutor-final-cta-primary,
+    .find-tutor-final-cta-secondary,
+    .subjects-final-cta-primary,
+    .subjects-final-cta-secondary,
+    .how-it-works-final-cta-primary,
+    .how-it-works-final-cta-secondary,
+    .pricing-final-cta-primary,
+    .pricing-final-cta-secondary {
+        font-size: 14px !important;
+    }
+
+    label {
+        font-size: 13px !important;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 14px !important;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .home-section-title,
+    .home-two-section-title,
+    .find-tutor-section-title,
+    .subjects-section-title,
+    .how-it-works-section-title,
+    .pricing-section-title,
+    .contact-section-title {
+        font-size: 28px !important;
+    }
+
+    .home-hero-title,
+    .home-two-hero-title,
+    .find-tutor-hero-title,
+    .subjects-hero-title,
+    .how-it-works-hero-title,
+    .pricing-hero-title,
+    .contact-hero-title {
+        font-size: 30px !important;
+    }
+
+    .home-section-description,
+    .home-two-section-description,
+    .find-tutor-section-description,
+    .subjects-section-description,
+    .how-it-works-section-description,
+    .pricing-section-description,
+    .contact-section-description {
+        font-size: 14px !important;
+    }
+
+    .home-why-title,
+    .home-subject-title,
+    .home-tutor-name,
+    .home-two-result-title,
+    .home-two-why-title,
+    .home-two-tutor-name,
+    .find-tutor-card-name,
+    .subjects-popular-title,
+    .pricing-plan-title,
+    .how-it-works-process-content h3 {
+        font-size: 16px !important;
+    }
+
+    .home-why-description,
+    .home-subject-description,
+    .home-two-result-description,
+    .home-two-why-description,
+    .home-two-tutor-description,
+    .find-tutor-card-description,
+    .subjects-popular-description,
+    .pricing-plan-description,
+    .how-it-works-process-content p {
+        font-size: 13px !important;
+    }
+}
+
+
+/* =========================
+   EXTRA SMALL
+========================= */
+
+@media (max-width: 360px) {
+
+    .home-section-title,
+    .home-two-section-title,
+    .find-tutor-section-title,
+    .subjects-section-title,
+    .how-it-works-section-title,
+    .pricing-section-title,
+    .contact-section-title {
+        font-size: 26px !important;
+    }
+
+    .home-hero-title,
+    .home-two-hero-title,
+    .find-tutor-hero-title,
+    .subjects-hero-title,
+    .how-it-works-hero-title,
+    .pricing-hero-title,
+    .contact-hero-title {
+        font-size: 28px !important;
+    }
+
+    .home-why-title,
+    .home-subject-title,
+    .home-tutor-name,
+    .home-two-result-title,
+    .home-two-why-title,
+    .home-two-tutor-name,
+    .find-tutor-card-name,
+    .subjects-popular-title,
+    .pricing-plan-title,
+    .how-it-works-process-content h3 {
+        font-size: 15px !important;
+    }
+
+    .home-why-description,
+    .home-subject-description,
+    .home-two-result-description,
+    .home-two-why-description,
+    .home-two-tutor-description,
+    .find-tutor-card-description,
+    .subjects-popular-description,
+    .pricing-plan-description,
+    .how-it-works-process-content p {
+        font-size: 13px !important;
+    }
+}
+/* =========================================================
+   HOME 2 - FEATURED TUTORS
+   FONT SIZE CONSISTENCY
+========================================================= */
+
+/* Section badge */
+.home-two-tutors-badge {
+    font-size: 11px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+/* Section heading */
+.home-two-tutors-heading {
+    font-size: 40px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+}
+
+/* Section description */
+.home-two-tutors-description {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    font-weight: 400 !important;
+}
+
+
+/* Tutor label */
+.home-two-tutor-featured-label {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+/* Tutor name */
+.home-two-tutor-featured-name {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+/* Tutor subject */
+.home-two-tutor-featured-subject {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    font-weight: 500 !important;
+}
+
+
+/* Rating */
+.home-two-tutor-featured-rating {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+}
+
+.home-two-tutor-featured-rating strong {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+.home-two-tutor-featured-rating > span:last-child {
+    font-size: 13px !important;
+}
+
+
+/* Meta information */
+.home-two-tutor-meta-item strong {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+.home-two-tutor-meta-item span {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    font-weight: 400 !important;
+}
+
+
+/* Tutor description */
+.home-two-tutor-featured-description {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+    font-weight: 400 !important;
+}
+
+
+/* Buttons */
+.home-two-tutor-profile-button,
+.home-two-tutor-book-button,
+.home-two-tutors-button {
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+
+/* Verified badge */
+.home-two-tutor-featured-status {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .home-two-tutors-heading {
+        font-size: 36px !important;
+    }
+
+    .home-two-tutor-featured-name {
+        font-size: 22px !important;
+    }
+
+    .home-two-tutors-description {
+        font-size: 14px !important;
+    }
+
+    .home-two-tutor-featured-description {
+        font-size: 14px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .home-two-tutors-heading {
+        font-size: 30px !important;
+        line-height: 1.25 !important;
+    }
+
+    .home-two-tutors-description {
+        font-size: 14px !important;
+        line-height: 1.65 !important;
+    }
+
+    .home-two-tutor-featured-name {
+        font-size: 20px !important;
+    }
+
+    .home-two-tutor-featured-subject {
+        font-size: 14px !important;
+    }
+
+    .home-two-tutor-featured-rating {
+        font-size: 13px !important;
+    }
+
+    .home-two-tutor-featured-rating strong {
+        font-size: 13px !important;
+    }
+
+    .home-two-tutor-featured-rating > span:last-child {
+        font-size: 12px !important;
+    }
+
+    .home-two-tutor-meta-item strong {
+        font-size: 14px !important;
+    }
+
+    .home-two-tutor-meta-item span {
+        font-size: 12px !important;
+    }
+
+    .home-two-tutor-featured-description {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    .home-two-tutor-profile-button,
+    .home-two-tutor-book-button,
+    .home-two-tutors-button {
+        font-size: 14px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .home-two-tutors-heading {
+        font-size: 28px !important;
+    }
+
+    .home-two-tutor-featured-name {
+        font-size: 19px !important;
+    }
+
+    .home-two-tutors-description {
+        font-size: 13px !important;
+    }
+
+    .home-two-tutor-featured-description {
+        font-size: 13px !important;
+    }
+
+    .home-two-tutor-meta-item strong {
+        font-size: 13px !important;
+    }
+
+    .home-two-tutor-meta-item span {
+        font-size: 11px !important;
+    }
+}
+
+/* =========================================================
+   HOME 2 - WHY TUTORNEST
+   CONSISTENT FONT SIZES
+========================================================= */
+
+.home-two-why-badge {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.home-two-why-title {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.home-two-why-description {
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.home-two-why-benefit-content h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.home-two-why-benefit-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.home-two-why-floating-content strong {
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.home-two-why-floating-content span {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.home-two-why-button {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   HOME PROGRESS SECTION - FORCE RTL HEADING ALIGNMENT
+========================================================= */
+
+html[dir="rtl"] body .home-progress-section .home-progress-content {
+    text-align: right !important;
+    direction: rtl !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+html[dir="rtl"] body .home-progress-section .home-progress-title {
+    display: block !important;
+    width: 100% !important;
+    text-align: right !important;
+    direction: rtl !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+html[dir="rtl"] body .home-progress-section .home-progress-title span {
+    display: inline !important;
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+html[dir="rtl"] body .home-progress-section .home-progress-badge {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+html[dir="rtl"] body .home-progress-section .home-progress-description {
+    width: 100% !important;
+    text-align: right !important;
+    direction: rtl !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* =========================================================
+   CONTACT PHONE INPUT - RTL
+========================================================= */
+
+html[dir="rtl"] .contact-message-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+html[dir="rtl"] .contact-message-input-wrapper > i {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    left: auto;
+    transform: translateY(-50%);
+    color: var(--primary-color) !important;
+    pointer-events: none;
+    z-index: 2;
+}
+
+html[dir="rtl"] .contact-message-input-wrapper input {
+    width: 100%;
+    direction: rtl;
+    text-align: right;
+    padding-right: 50px;
+    padding-left: 18px;
+    box-sizing: border-box;
+}
+
+html[dir="rtl"] .contact-message-input-wrapper input::placeholder {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .contact-message-input-wrapper input[type="tel"] {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .contact-form-group label {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+/* =========================================================
+   CONTACT LOCATION BUTTON - DARK MODE HOVER
+========================================================= */
+
+body.dark-mode .contact-location-button {
+    background: #2563EB !important;
+    color: #ffffff !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .contact-location-button i.fa-arrow-right {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+body.dark-mode .contact-location-button:hover {
+    background: #ffffff !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .contact-location-button:hover span {
+    color: #2563EB !important;
+}
+
+body.dark-mode .contact-location-button:hover i.fa-arrow-right {
+    color: #2563EB !important;
+    -webkit-text-fill-color: #2563EB !important;
+    opacity: 1 !important;
+}
+/* Progress Tracking badge - RTL */
+html[dir="rtl"] .home-progress-badge {
+    align-self: flex-end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* =========================================================
+   SUBJECTS - LEARNING LEVELS RTL ARROW POSITION
+========================================================= */
+
+html[dir="rtl"] .subjects-level-arrow {
+    right: auto !important;
+    left: 18px !important;
+}
+
+html[dir="rtl"] .subjects-level-arrow {
+    right: auto !important;
+    left: 12px !important;
+    transform: translateX(-8px) !important;
+}
+
+/* =========================================================
+   HOW IT WORKS - FIND A TUTOR BUTTON
+   DARK MODE HOVER
+========================================================= */
+
+body.dark-mode .how-it-works-after-book-button {
+    background: #2563EB !important;
+    color: #ffffff !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .how-it-works-after-book-button i.fa-arrow-right {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Dark mode hover */
+body.dark-mode .how-it-works-after-book-button:hover {
+    background: #ffffff !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .how-it-works-after-book-button:hover span {
+    color: #2563EB !important;
+}
+
+body.dark-mode .how-it-works-after-book-button:hover i.fa-arrow-right {
+    color: #2563EB !important;
+    -webkit-text-fill-color: #2563EB !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* =========================================================
+   HOW IT WORKS - STEP CARD ICON
+   DARK MODE CARD HOVER
+========================================================= */
+
+body.dark-mode .how-it-works-after-book-bottom:hover
+.how-it-works-after-book-bottom-icon i {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+body.dark-mode .how-it-works-after-book-bottom:hover
+.how-it-works-after-book-bottom-icon {
+    background: #172554 !important;
+}
+
+body.dark-mode .how-it-works-after-book-bottom:hover
+.how-it-works-after-book-bottom-icon i {
+    color: #ffffff !important;
+}
+
+
+/* HOW IT WORKS - AFTER BOOK ARROW - DARK MODE */
+
+body.dark-mode .how-it-works-after-book-arrow i.fa-arrow-right {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Keep white when card is hovered in dark mode */
+body.dark-mode .how-it-works-after-book-bottom:hover
+.how-it-works-after-book-arrow i.fa-arrow-right {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* =========================================================
+   PRICING FINAL CTA - DARK MODE ICONS
+========================================================= */
+
+body.dark-mode .pricing-final-cta-primary i.fa-arrow-right,
+body.dark-mode .pricing-final-cta-secondary i.fa-rocket {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Pricing Final CTA - Find a Tutor hover */
+body.dark-mode .pricing-final-cta-primary:hover {
+    color: #ffffff !important;
+}
+
+body.dark-mode .pricing-final-cta-primary:hover span {
+    color: #ffffff !important;
+}
+
+body.dark-mode .pricing-final-cta-primary:hover i.fa-arrow-right {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+
+/* =========================================================
+   FOOTER SOCIAL ICONS - DARK MODE
+========================================================= */
+
+body.dark-mode .footer-social-link i {
+    color: #2563EB !important;
+    opacity: 1 !important;
+}
+
+/* Hover */
+body.dark-mode .footer-social-link:hover {
+    background: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .footer-social-link:hover i {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+}

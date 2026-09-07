@@ -1747,3 +1747,265 @@ document.addEventListener("DOMContentLoaded", function () {
     applyDirection();
 
 });
+
+/* =========================================================
+   TUTORNEST — SHARED RTL TOGGLE
+   Works on Login, Register and Dashboard
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const html = document.documentElement;
+
+    const rtlButtons = [
+        document.getElementById("rtlToggle"),
+        document.getElementById("loginRtlToggle"),
+        document.getElementById("registerRtlToggle"),
+        document.getElementById("dashboardRtlToggle")
+    ].filter(Boolean);
+
+
+    /* ---------------------------------------------------------
+       Update all RTL buttons
+    --------------------------------------------------------- */
+
+    function updateRTLButtons() {
+
+        const isRTL = html.getAttribute("dir") === "rtl";
+
+        rtlButtons.forEach(function (button) {
+
+            const icon = button.querySelector("i");
+            const text = button.querySelector("span");
+
+            /* Swap arrows */
+            if (icon) {
+                icon.className = "fas fa-right-left";
+            }
+
+            /* Button text */
+            if (text) {
+                text.textContent = isRTL ? "LTR" : "RTL";
+            }
+
+            /* Accessibility */
+            button.setAttribute(
+                "aria-label",
+                isRTL
+                    ? "Switch to left-to-right"
+                    : "Switch to right-to-left"
+            );
+
+            button.setAttribute(
+                "title",
+                isRTL ? "LTR" : "RTL"
+            );
+        });
+    }
+
+
+    /* ---------------------------------------------------------
+       Apply saved direction
+    --------------------------------------------------------- */
+
+    const savedDirection =
+        localStorage.getItem("tutornest-direction");
+
+    if (savedDirection === "rtl") {
+
+        html.setAttribute("dir", "rtl");
+
+    } else {
+
+        html.setAttribute("dir", "ltr");
+
+        localStorage.setItem(
+            "tutornest-direction",
+            "ltr"
+        );
+    }
+
+
+    updateRTLButtons();
+
+
+    /* ---------------------------------------------------------
+       RTL Button Click
+    --------------------------------------------------------- */
+
+    rtlButtons.forEach(function (button) {
+
+        button.addEventListener("click", function (event) {
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            const currentDirection =
+                html.getAttribute("dir") || "ltr";
+
+            const newDirection =
+                currentDirection === "rtl"
+                    ? "ltr"
+                    : "rtl";
+
+            html.setAttribute(
+                "dir",
+                newDirection
+            );
+
+            localStorage.setItem(
+                "tutornest-direction",
+                newDirection
+            );
+
+            updateRTLButtons();
+
+        });
+
+    });
+
+});
+
+
+/* =========================================================
+   TUTORNEST - SHARED RTL / LTR SYSTEM
+   Works on:
+   Main pages
+   Login
+   Register
+   Dashboard
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const html = document.documentElement;
+
+    /* ---------------------------------------------------------
+       FIND RTL BUTTON ON CURRENT PAGE
+    --------------------------------------------------------- */
+
+    const rtlButtons = [
+        document.getElementById("rtlToggle"),
+        document.getElementById("loginRtlToggle"),
+        document.getElementById("registerRtlToggle"),
+        document.getElementById("dashboardRtlToggle")
+    ].filter(Boolean);
+
+
+    if (!rtlButtons.length) {
+        return;
+    }
+
+
+    /* ---------------------------------------------------------
+       UPDATE BUTTON
+    --------------------------------------------------------- */
+
+    function updateRTLButtons() {
+
+        const isRTL = html.getAttribute("dir") === "rtl";
+
+        rtlButtons.forEach(function (button) {
+
+            const icon = button.querySelector("i");
+            const text = button.querySelector("span");
+
+            if (icon) {
+
+                icon.className = isRTL
+                    ? "fas fa-arrow-right-arrow-left"
+                    : "fas fa-arrow-right-arrow-left";
+
+            }
+
+            if (text) {
+                text.textContent = isRTL ? "LTR" : "RTL";
+            }
+
+            button.setAttribute(
+                "aria-label",
+                isRTL
+                    ? "Switch to left-to-right"
+                    : "Switch to right-to-left"
+            );
+
+            button.setAttribute(
+                "title",
+                isRTL ? "LTR" : "RTL"
+            );
+        });
+    }
+
+
+    /* ---------------------------------------------------------
+       APPLY SAVED DIRECTION
+    --------------------------------------------------------- */
+
+    function applySavedDirection() {
+
+        const savedDirection =
+            localStorage.getItem("tutornest-direction");
+
+        if (savedDirection === "rtl") {
+
+            html.setAttribute("dir", "rtl");
+
+        } else {
+
+            html.setAttribute("dir", "ltr");
+
+            localStorage.setItem(
+                "tutornest-direction",
+                "ltr"
+            );
+        }
+
+        updateRTLButtons();
+    }
+
+
+    /* ---------------------------------------------------------
+       TOGGLE RTL / LTR
+    --------------------------------------------------------- */
+
+    rtlButtons.forEach(function (button) {
+
+        button.addEventListener("click", function (event) {
+
+            event.preventDefault();
+
+            const currentDirection =
+                html.getAttribute("dir") || "ltr";
+
+            const newDirection =
+                currentDirection === "rtl"
+                    ? "ltr"
+                    : "rtl";
+
+
+            html.setAttribute(
+                "dir",
+                newDirection
+            );
+
+
+            localStorage.setItem(
+                "tutornest-direction",
+                newDirection
+            );
+
+
+            updateRTLButtons();
+        });
+
+    });
+
+
+    /* ---------------------------------------------------------
+       INITIALIZE
+    --------------------------------------------------------- */
+
+    applySavedDirection();
+
+});
+

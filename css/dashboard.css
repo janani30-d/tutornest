@@ -13984,3 +13984,4380 @@ html[dir="rtl"] .dashboard-main {
     padding-left: 0 !important;
     padding-right: 15px !important;
 }
+
+
+
+/* =========================================================
+   FIND TUTOR PAGE
+   GAP BETWEEN TOPBAR AND HERO
+========================================================= */
+
+.dashboard-find-page-intro {
+    margin-top: 24px !important;
+}
+
+/* =========================================================
+   MY TUTORS PAGE
+   GAP BETWEEN TOPBAR AND HERO
+========================================================= */
+
+.dashboard-my-tutors-intro {
+    margin-top: 24px !important;
+}
+
+/* Find Another Tutor - visible in light mode */
+.dashboard-my-tutors-find-button {
+    color: #2563EB !important;
+}
+
+.dashboard-my-tutors-find-button i {
+    color: #2563EB !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+    .dashboard-my-tutors-intro {
+        margin-top: 20px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+    .dashboard-my-tutors-intro {
+        margin-top: 16px !important;
+    }
+}
+
+/* =========================================================
+   MY SESSIONS PAGE
+   GAP + HEADING COLOR
+========================================================= */
+
+.dashboard-my-sessions-intro {
+    margin-top: 24px !important;
+}
+
+/* Make "Manage" black */
+.dashboard-my-sessions-intro h2 {
+    color: #0F172A !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+    .dashboard-my-sessions-intro {
+        margin-top: 20px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+    .dashboard-my-sessions-intro {
+        margin-top: 16px !important;
+    }
+}
+html body .dashboard-my-sessions-intro h2,
+html body .dashboard-my-sessions-intro h2 span {
+    color: #0F172A !important;
+}
+/* =========================================================
+   MY SESSIONS - FULL HEADING BLACK
+========================================================= */
+
+html body .dashboard-my-sessions-intro h2 {
+    color: #0F172A !important;
+}
+
+html body .dashboard-my-sessions-intro h2::first-letter {
+    color: #0F172A !important;
+}
+
+/* =========================================================
+   SESSION NOTES PAGE
+   GAP BETWEEN TOPBAR AND HERO
+========================================================= */
+
+.dashboard-session-notes-intro {
+    margin-top: 24px !important;
+}
+
+@media (max-width: 1199px) {
+    .dashboard-session-notes-intro {
+        margin-top: 20px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .dashboard-session-notes-intro {
+        margin-top: 16px !important;
+    }
+}
+
+
+/* =========================================================
+   PAYMENTS & RECEIPTS PAGE
+   GAP BETWEEN TOPBAR AND HERO
+========================================================= */
+
+.dashboard-payment-intro {
+    margin-top: 24px !important;
+}
+
+@media (max-width: 1199px) {
+    .dashboard-payment-intro {
+        margin-top: 20px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .dashboard-payment-intro {
+        margin-top: 16px !important;
+    }
+}
+
+
+/* =========================================================
+   PROFILE PAGE
+   GAP BETWEEN TOPBAR AND HERO
+========================================================= */
+
+.dashboard-profile-intro {
+    margin-top: 24px !important;
+}
+
+@media (max-width: 1199px) {
+    .dashboard-profile-intro {
+        margin-top: 20px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .dashboard-profile-intro {
+        margin-top: 16px !important;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   TUTORNEST DASHBOARD
+   COMPLETE FONT SIZE CONSISTENCY
+========================================================= */
+
+
+/* =========================================================
+   1. SIDEBAR
+========================================================= */
+
+.dashboard-navigation a {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-sidebar-bottom a {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+}
+
+
+/* =========================================================
+   2. TOPBAR
+========================================================= */
+
+.dashboard-page-heading span {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-page-heading h1 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-control-button {
+    font-size: 13px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-profile-info strong {
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-profile-info > span {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+}
+
+
+/* =========================================================
+   3. WELCOME SECTION
+========================================================= */
+
+.dashboard-welcome-label {
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-welcome-content h2 {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-welcome-content p {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+}
+
+.dashboard-welcome-button {
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   4. COMMON SECTION HEADINGS
+========================================================= */
+
+.dashboard-section-label {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+
+.dashboard-section-heading h2 {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-section-note {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+}
+
+.dashboard-section-link {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+}
+
+
+/* =========================================================
+   5. QUICK STATISTICS
+========================================================= */
+
+.dashboard-stat-title {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-stat-value {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-stat-description {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-stat-arrow {
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   6. FIND A TUTOR
+========================================================= */
+
+.dashboard-find-tutor-text h3 {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-find-tutor-text p {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+}
+
+.dashboard-tutor-field label {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-tutor-input select {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-find-tutor-button {
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-tutor-trust {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* =========================================================
+   7. UPCOMING SESSIONS
+========================================================= */
+
+.dashboard-session-date-info strong {
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-session-date-info span {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-session-status {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-session-mode {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-session-info h3 {
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-session-info p {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+.dashboard-session-action {
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-sessions-footer {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+.dashboard-sessions-calendar-link {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+}
+
+
+/* =========================================================
+   8. MY TUTORS
+========================================================= */
+
+.dashboard-my-tutors-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+.dashboard-my-tutor-name-row h3 {
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-tutor-verified {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-my-tutor-subject {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-my-tutor-rating {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-my-tutor-stat strong {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-tutor-stat span {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-my-tutor-button {
+    font-size: 13px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-tutors-footer {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+.dashboard-my-tutors-find-link {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+}
+
+
+/* =========================================================
+   9. LEARNING PROGRESS
+========================================================= */
+
+.dashboard-learning-progress-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+.dashboard-progress-small-label {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-progress-card-header h3 {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-progress-circle-content strong {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-progress-circle-content span {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+}
+
+.dashboard-progress-summary-item strong {
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-progress-summary-item span {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-progress-message {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* =========================================================
+   10. SUBJECT PERFORMANCE
+========================================================= */
+
+.dashboard-subject-progress-name > span:last-child {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-subject-progress-top strong {
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-subject-progress-status {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-subject-progress-footer {
+    font-size: 11px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* =========================================================
+   11. PROGRESS HIGHLIGHTS
+========================================================= */
+
+.dashboard-progress-highlight strong {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-progress-highlight span {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+}
+
+
+/* =========================================================
+   12. LOGOUT POPUP
+========================================================= */
+
+.dashboard-logout-content h2 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-logout-content p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+.dashboard-logout-no,
+.dashboard-logout-yes {
+    font-size: 13px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .dashboard-page-heading h1 {
+        font-size: 21px !important;
+    }
+
+    .dashboard-welcome-content h2 {
+        font-size: 30px !important;
+    }
+
+    .dashboard-section-heading h2 {
+        font-size: 22px !important;
+    }
+
+    .dashboard-stat-value {
+        font-size: 26px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .dashboard-navigation a,
+    .dashboard-sidebar-bottom a {
+        font-size: 14px !important;
+    }
+
+    .dashboard-page-heading span {
+        font-size: 11px !important;
+    }
+
+    .dashboard-page-heading h1 {
+        font-size: 20px !important;
+    }
+
+    .dashboard-control-button {
+        font-size: 12px !important;
+    }
+
+    .dashboard-profile-info strong {
+        font-size: 12px !important;
+    }
+
+    .dashboard-profile-info > span {
+        font-size: 10px !important;
+    }
+
+    .dashboard-welcome-label {
+        font-size: 10px !important;
+    }
+
+    .dashboard-welcome-content h2 {
+        font-size: 26px !important;
+    }
+
+    .dashboard-welcome-content p {
+        font-size: 14px !important;
+    }
+
+    .dashboard-section-label {
+        font-size: 10px !important;
+    }
+
+    .dashboard-section-heading h2 {
+        font-size: 20px !important;
+    }
+
+    .dashboard-section-note {
+        font-size: 12px !important;
+    }
+
+    .dashboard-section-link {
+        font-size: 12px !important;
+    }
+
+    .dashboard-stat-title {
+        font-size: 12px !important;
+    }
+
+    .dashboard-stat-value {
+        font-size: 24px !important;
+    }
+
+    .dashboard-stat-description {
+        font-size: 11px !important;
+    }
+
+    .dashboard-find-tutor-text h3 {
+        font-size: 17px !important;
+    }
+
+    .dashboard-find-tutor-text p {
+        font-size: 13px !important;
+    }
+
+    .dashboard-tutor-field label {
+        font-size: 11px !important;
+    }
+
+    .dashboard-tutor-input select {
+        font-size: 13px !important;
+    }
+
+    .dashboard-session-info h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-my-tutor-name-row h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-progress-card-header h3 {
+        font-size: 17px !important;
+    }
+
+    .dashboard-progress-circle-content strong {
+        font-size: 26px !important;
+    }
+
+    .dashboard-logout-content h2 {
+        font-size: 20px !important;
+    }
+
+    .dashboard-logout-content p {
+        font-size: 13px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-page-heading h1 {
+        font-size: 19px !important;
+    }
+
+    .dashboard-welcome-content h2 {
+        font-size: 24px !important;
+    }
+
+    .dashboard-welcome-content p {
+        font-size: 13px !important;
+    }
+
+    .dashboard-section-heading h2 {
+        font-size: 19px !important;
+    }
+
+    .dashboard-stat-value {
+        font-size: 22px !important;
+    }
+
+    .dashboard-find-tutor-text h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-session-info h3 {
+        font-size: 15px !important;
+    }
+
+    .dashboard-my-tutor-name-row h3 {
+        font-size: 15px !important;
+    }
+
+    .dashboard-progress-card-header h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-progress-circle-content strong {
+        font-size: 24px !important;
+    }
+}
+
+/* =========================================================
+   DASHBOARD FIND TUTOR PAGE
+   FONT SIZE CONSISTENCY
+   TOPBAR + SIDEBAR NOT INCLUDED
+========================================================= */
+
+
+/* =========================================================
+   PAGE INTRO
+========================================================= */
+
+.dashboard-find-page-heading .dashboard-section-label {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+
+.dashboard-find-page-heading h2 {
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-find-page-heading p {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+}
+
+
+/* =========================================================
+   COMMON SECTION HEADINGS
+========================================================= */
+
+.dashboard-section-heading .dashboard-section-label {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+
+.dashboard-section-heading h2 {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-section-note {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* =========================================================
+   SEARCH CARD
+========================================================= */
+
+.dashboard-find-search-header h3 {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-find-search-header p {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* =========================================================
+   SEARCH FORM
+========================================================= */
+
+.dashboard-find-form-group label {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-find-select select {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-find-search-button {
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-find-search-trust {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* =========================================================
+   RECOMMENDED TUTOR CARDS
+========================================================= */
+
+.dashboard-tutor-name-row h3 {
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-tutor-name-row i {
+    font-size: 13px !important;
+}
+
+.dashboard-recommended-tutor-info > p {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-tutor-rating {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-tutor-rating strong {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-tutor-rating span {
+    font-size: 11px !important;
+}
+
+
+/* =========================================================
+   TUTOR TAGS
+========================================================= */
+
+.dashboard-tutor-tags span {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 500 !important;
+}
+
+
+/* =========================================================
+   TUTOR DETAILS
+========================================================= */
+
+.dashboard-tutor-details span {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+}
+
+.dashboard-tutor-details i {
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   TUTOR PRICE
+========================================================= */
+
+.dashboard-tutor-price strong {
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-tutor-price span {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+}
+
+
+/* =========================================================
+   TUTOR PROFILE BUTTON
+========================================================= */
+
+.dashboard-tutor-profile-button {
+    font-size: 13px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   TUTOR CATEGORIES
+========================================================= */
+
+.dashboard-tutor-category-content strong {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-tutor-category-content small {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+}
+
+
+/* =========================================================
+   HELP PANEL
+========================================================= */
+
+.dashboard-find-help-text .dashboard-section-label {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+
+.dashboard-find-help-text h2 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-find-help-text p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+.dashboard-find-help-button {
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .dashboard-find-page-heading h2 {
+        font-size: 26px !important;
+    }
+
+    .dashboard-section-heading h2 {
+        font-size: 22px !important;
+    }
+
+    .dashboard-find-search-header h3 {
+        font-size: 17px !important;
+    }
+
+    .dashboard-tutor-name-row h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-find-help-text h2 {
+        font-size: 21px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .dashboard-find-page-heading h2 {
+        font-size: 24px !important;
+    }
+
+    .dashboard-find-page-heading p {
+        font-size: 13px !important;
+    }
+
+    .dashboard-section-heading h2 {
+        font-size: 20px !important;
+    }
+
+    .dashboard-section-note {
+        font-size: 12px !important;
+    }
+
+    .dashboard-find-search-header h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-find-search-header p {
+        font-size: 12px !important;
+    }
+
+    .dashboard-find-form-group label {
+        font-size: 11px !important;
+    }
+
+    .dashboard-find-select select {
+        font-size: 13px !important;
+    }
+
+    .dashboard-find-search-button {
+        font-size: 13px !important;
+    }
+
+    .dashboard-tutor-name-row h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-recommended-tutor-info > p {
+        font-size: 12px !important;
+    }
+
+    .dashboard-tutor-rating {
+        font-size: 11px !important;
+    }
+
+    .dashboard-tutor-tags span {
+        font-size: 10px !important;
+    }
+
+    .dashboard-tutor-details span {
+        font-size: 11px !important;
+    }
+
+    .dashboard-tutor-price strong {
+        font-size: 18px !important;
+    }
+
+    .dashboard-tutor-price span {
+        font-size: 10px !important;
+    }
+
+    .dashboard-tutor-profile-button {
+        font-size: 12px !important;
+    }
+
+    .dashboard-tutor-category-content strong {
+        font-size: 14px !important;
+    }
+
+    .dashboard-tutor-category-content small {
+        font-size: 10px !important;
+    }
+
+    .dashboard-find-help-text h2 {
+        font-size: 20px !important;
+    }
+
+    .dashboard-find-help-text p {
+        font-size: 13px !important;
+    }
+
+    .dashboard-find-help-button {
+        font-size: 13px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-find-page-heading h2 {
+        font-size: 22px !important;
+    }
+
+    .dashboard-section-heading h2 {
+        font-size: 19px !important;
+    }
+
+    .dashboard-find-search-header h3 {
+        font-size: 15px !important;
+    }
+
+    .dashboard-tutor-name-row h3 {
+        font-size: 15px !important;
+    }
+
+    .dashboard-tutor-category-content strong {
+        font-size: 13px !important;
+    }
+
+    .dashboard-find-help-text h2 {
+        font-size: 19px !important;
+    }
+}
+/* =========================================================
+   DASHBOARD FIND TUTOR
+   FIX NORMAL VISIBILITY
+========================================================= */
+
+/* Search Tutors button */
+.dashboard-find-search-button {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.dashboard-find-search-button i {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Search Tutors hover */
+.dashboard-find-search-button:hover {
+    background: #FFFFFF !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+.dashboard-find-search-button:hover i {
+    color: #2563EB !important;
+}
+
+
+/* =========================================================
+   RECOMMENDED TUTOR - VIEW PROFILE
+========================================================= */
+
+.dashboard-tutor-profile-button {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.dashboard-tutor-profile-button:hover {
+    background: #FFFFFF !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+
+/* =========================================================
+   TRUST MESSAGE
+========================================================= */
+
+.dashboard-find-search-trust {
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: #64748B !important;
+}
+
+.dashboard-find-search-trust i {
+    color: #2563EB !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.dashboard-find-search-trust span {
+    color: #64748B !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .dashboard-find-search-button {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-find-search-button i {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .dashboard-find-search-button:hover {
+    background: #FFFFFF !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-find-search-button:hover i {
+    color: #2563EB !important;
+}
+
+
+body.dark-mode .dashboard-tutor-profile-button {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-tutor-profile-button:hover {
+    background: #FFFFFF !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+
+body.dark-mode .dashboard-find-search-trust {
+    color: #CBD5E1 !important;
+}
+
+body.dark-mode .dashboard-find-search-trust i {
+    color: #60A5FA !important;
+}
+
+body.dark-mode .dashboard-find-search-trust span {
+    color: #CBD5E1 !important;
+}
+
+/* =========================================================
+   FIND TUTOR - CONTACT SUPPORT BUTTON
+   FIX NORMAL VISIBILITY
+========================================================= */
+
+.dashboard-find-help-button {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border: 1px solid #2563EB !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.dashboard-find-help-button i {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Hover */
+.dashboard-find-help-button:hover {
+    background: #FFFFFF !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+.dashboard-find-help-button:hover i {
+    color: #2563EB !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .dashboard-find-help-button {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-find-help-button i {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .dashboard-find-help-button:hover {
+    background: #FFFFFF !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-find-help-button:hover i {
+    color: #2563EB !important;
+}
+
+
+/* =========================================================
+   MY TUTORS PAGE
+   CONSISTENT FONT SIZES
+   Topbar / Sidebar excluded
+========================================================= */
+
+/* =========================================================
+   1. MY TUTORS INTRO
+========================================================= */
+
+.dashboard-my-tutors-intro .dashboard-section-label {
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-my-tutors-intro-content h2 {
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.dashboard-my-tutors-intro-content p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.dashboard-my-tutors-find-button {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   2. SECTION HEADINGS
+========================================================= */
+
+.dashboard-my-tutors-overview-section .dashboard-section-label,
+.dashboard-my-tutors-list-section .dashboard-section-label,
+.dashboard-tutor-activity-section .dashboard-section-label,
+.dashboard-my-tutors-support-section .dashboard-section-label {
+    font-size: 11px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-my-tutors-overview-section .dashboard-section-heading h2,
+.dashboard-my-tutors-list-section .dashboard-section-heading h2,
+.dashboard-tutor-activity-section .dashboard-section-heading h2 {
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-my-tutors-overview-section .dashboard-section-note,
+.dashboard-tutor-activity-section .dashboard-section-note {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.dashboard-my-tutors-list-section .dashboard-section-link {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   3. TUTOR OVERVIEW STAT CARDS
+========================================================= */
+
+.dashboard-my-tutors-stat-content > span {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.dashboard-my-tutors-stat-content > strong {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.dashboard-my-tutors-stat-content > small {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   4. MY ACTIVE TUTORS DESCRIPTION
+========================================================= */
+
+.dashboard-my-tutors-description {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   5. TUTOR CARDS
+========================================================= */
+
+.dashboard-my-tutor-name-row h3 {
+    font-size: 17px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-my-tutor-name-row i {
+    font-size: 13px;
+}
+
+.dashboard-my-tutor-info > p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.dashboard-my-tutor-rating {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.dashboard-my-tutor-rating i {
+    font-size: 12px;
+}
+
+.dashboard-my-tutor-rating strong {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.dashboard-my-tutor-rating span {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   6. TUTOR ACTIVITY DETAILS
+========================================================= */
+
+.dashboard-my-tutor-activity-item > i {
+    font-size: 14px;
+}
+
+.dashboard-my-tutor-activity-item span {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.dashboard-my-tutor-activity-item strong {
+    font-size: 15px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   7. NEXT SESSION
+========================================================= */
+
+.dashboard-my-tutor-next-session > div:not(.dashboard-my-tutor-next-icon) > span {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.dashboard-my-tutor-next-session > div:not(.dashboard-my-tutor-next-icon) > strong {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.dashboard-my-tutor-next-session > div:not(.dashboard-my-tutor-next-icon) > small {
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   8. TUTOR ACTION BUTTONS
+========================================================= */
+
+.dashboard-my-tutor-profile-button,
+.dashboard-my-tutor-book-button {
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.dashboard-my-tutor-profile-button i,
+.dashboard-my-tutor-book-button i {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   9. TUTOR ACTIVITY CARDS
+========================================================= */
+
+.dashboard-tutor-activity-card-content > span {
+    font-size: 11px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.dashboard-tutor-activity-card-content h3 {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.dashboard-tutor-activity-card-content p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.dashboard-tutor-activity-arrow {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   10. FIND MORE SUPPORT
+========================================================= */
+
+.dashboard-my-tutors-support-text .dashboard-section-label {
+    font-size: 11px;
+    line-height: 1.3;
+}
+
+.dashboard-my-tutors-support-text h2 {
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-my-tutors-support-text p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.dashboard-my-tutors-support-button {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.dashboard-my-tutors-support-button i {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .dashboard-my-tutors-intro-content h2 {
+        font-size: 26px;
+    }
+
+    .dashboard-my-tutors-overview-section .dashboard-section-heading h2,
+    .dashboard-my-tutors-list-section .dashboard-section-heading h2,
+    .dashboard-tutor-activity-section .dashboard-section-heading h2 {
+        font-size: 22px;
+    }
+
+    .dashboard-my-tutors-stat-content > strong {
+        font-size: 26px;
+    }
+
+    .dashboard-my-tutor-name-row h3 {
+        font-size: 16px;
+    }
+
+    .dashboard-my-tutors-support-text h2 {
+        font-size: 21px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .dashboard-my-tutors-intro .dashboard-section-label {
+        font-size: 10px;
+    }
+
+    .dashboard-my-tutors-intro-content h2 {
+        font-size: 24px;
+    }
+
+    .dashboard-my-tutors-intro-content p {
+        font-size: 13px;
+    }
+
+    .dashboard-my-tutors-find-button {
+        font-size: 13px;
+    }
+
+
+    .dashboard-my-tutors-overview-section .dashboard-section-heading h2,
+    .dashboard-my-tutors-list-section .dashboard-section-heading h2,
+    .dashboard-tutor-activity-section .dashboard-section-heading h2 {
+        font-size: 20px;
+    }
+
+    .dashboard-my-tutors-overview-section .dashboard-section-note,
+    .dashboard-tutor-activity-section .dashboard-section-note {
+        font-size: 12px;
+    }
+
+    .dashboard-my-tutors-list-section .dashboard-section-link {
+        font-size: 12px;
+    }
+
+
+    .dashboard-my-tutors-stat-content > span {
+        font-size: 12px;
+    }
+
+    .dashboard-my-tutors-stat-content > strong {
+        font-size: 24px;
+    }
+
+    .dashboard-my-tutors-stat-content > small {
+        font-size: 11px;
+    }
+
+
+    .dashboard-my-tutors-description {
+        font-size: 13px;
+    }
+
+
+    .dashboard-my-tutor-name-row h3 {
+        font-size: 16px;
+    }
+
+    .dashboard-my-tutor-info > p {
+        font-size: 12px;
+    }
+
+    .dashboard-my-tutor-rating {
+        font-size: 11px;
+    }
+
+    .dashboard-my-tutor-rating strong {
+        font-size: 12px;
+    }
+
+    .dashboard-my-tutor-rating span {
+        font-size: 10px;
+    }
+
+
+    .dashboard-my-tutor-activity-item span {
+        font-size: 10px;
+    }
+
+    .dashboard-my-tutor-activity-item strong {
+        font-size: 14px;
+    }
+
+
+    .dashboard-my-tutor-next-session > div:not(.dashboard-my-tutor-next-icon) > span {
+        font-size: 10px;
+    }
+
+    .dashboard-my-tutor-next-session > div:not(.dashboard-my-tutor-next-icon) > strong {
+        font-size: 13px;
+    }
+
+    .dashboard-my-tutor-next-session > div:not(.dashboard-my-tutor-next-icon) > small {
+        font-size: 10px;
+    }
+
+
+    .dashboard-my-tutor-profile-button,
+    .dashboard-my-tutor-book-button {
+        font-size: 12px;
+    }
+
+
+    .dashboard-tutor-activity-card-content > span {
+        font-size: 10px;
+    }
+
+    .dashboard-tutor-activity-card-content h3 {
+        font-size: 15px;
+    }
+
+    .dashboard-tutor-activity-card-content p {
+        font-size: 11px;
+    }
+
+
+    .dashboard-my-tutors-support-text .dashboard-section-label {
+        font-size: 10px;
+    }
+
+    .dashboard-my-tutors-support-text h2 {
+        font-size: 20px;
+    }
+
+    .dashboard-my-tutors-support-text p {
+        font-size: 13px;
+    }
+
+    .dashboard-my-tutors-support-button {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-my-tutors-intro-content h2 {
+        font-size: 22px;
+    }
+
+    .dashboard-my-tutors-intro-content p {
+        font-size: 13px;
+    }
+
+    .dashboard-my-tutors-overview-section .dashboard-section-heading h2,
+    .dashboard-my-tutors-list-section .dashboard-section-heading h2,
+    .dashboard-tutor-activity-section .dashboard-section-heading h2 {
+        font-size: 19px;
+    }
+
+    .dashboard-my-tutors-stat-content > strong {
+        font-size: 22px;
+    }
+
+    .dashboard-my-tutor-name-row h3 {
+        font-size: 15px;
+    }
+
+    .dashboard-my-tutor-info > p {
+        font-size: 12px;
+    }
+
+    .dashboard-tutor-activity-card-content h3 {
+        font-size: 15px;
+    }
+
+    .dashboard-my-tutors-support-text h2 {
+        font-size: 19px;
+    }
+}
+
+
+
+/* =========================================================
+   MY ACTIVE TUTORS
+   CORRECT DESKTOP ALIGNMENT + BUTTON VISIBILITY
+========================================================= */
+
+.dashboard-my-tutors-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.dashboard-my-tutor-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(240px, 1.25fr)
+                           minmax(360px, 1.8fr)
+                           minmax(230px, 1.2fr)
+                           auto;
+    align-items: center;
+    gap: 28px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TUTOR INFORMATION
+========================================================= */
+
+.dashboard-my-tutor-main {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.dashboard-my-tutor-photo {
+    flex: 0 0 78px;
+    width: 78px;
+    height: 78px;
+}
+
+.dashboard-my-tutor-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dashboard-my-tutor-info {
+    min-width: 0;
+}
+
+.dashboard-my-tutor-name-row {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 0;
+}
+
+.dashboard-my-tutor-name-row h3 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.dashboard-my-tutor-info > p {
+    margin: 4px 0 7px;
+}
+
+.dashboard-my-tutor-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ACTIVITY
+========================================================= */
+
+.dashboard-my-tutor-activity {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    align-items: center;
+}
+
+.dashboard-my-tutor-activity-item {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard-my-tutor-activity-item > i {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #EFF6FF;
+    color: #2563EB !important;
+}
+
+.dashboard-my-tutor-activity-item > div {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.dashboard-my-tutor-activity-item span,
+.dashboard-my-tutor-activity-item strong {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   NEXT SESSION
+========================================================= */
+
+.dashboard-my-tutor-next-session {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dashboard-my-tutor-next-icon {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #EFF6FF;
+    color: #2563EB !important;
+}
+
+.dashboard-my-tutor-next-session > div:last-child {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.dashboard-my-tutor-next-session span,
+.dashboard-my-tutor-next-session strong,
+.dashboard-my-tutor-next-session small {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.dashboard-my-tutor-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.dashboard-my-tutor-profile-button,
+.dashboard-my-tutor-book-button {
+    min-height: 40px;
+    padding: 0 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    box-sizing: border-box;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   VIEW PROFILE - ALWAYS VISIBLE
+========================================================= */
+
+html body .dashboard-my-tutor-profile-button {
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    border: 1px solid #E2E8F0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html body .dashboard-my-tutor-profile-button i {
+    color: #0F172A !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html body .dashboard-my-tutor-profile-button:hover {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+html body .dashboard-my-tutor-profile-button:hover i {
+    color: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   BOOK SESSION
+========================================================= */
+
+html body .dashboard-my-tutor-book-button {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border: 1px solid #2563EB !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html body .dashboard-my-tutor-book-button i {
+    color: #FFFFFF !important;
+}
+
+html body .dashboard-my-tutor-book-button:hover {
+    background: #FFFFFF !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+html body .dashboard-my-tutor-book-button:hover i {
+    color: #2563EB !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .dashboard-my-tutor-activity-item > i,
+body.dark-mode .dashboard-my-tutor-next-icon {
+    background: #172554 !important;
+    color: #60A5FA !important;
+}
+
+body.dark-mode .dashboard-my-tutor-activity-item > i,
+body.dark-mode .dashboard-my-tutor-next-icon i {
+    color: #60A5FA !important;
+}
+
+body.dark-mode .dashboard-my-tutor-profile-button {
+    background: #1E293B !important;
+    color: #F8FAFC !important;
+    border-color: #334155 !important;
+}
+
+body.dark-mode .dashboard-my-tutor-profile-button i {
+    color: #F8FAFC !important;
+}
+
+body.dark-mode .dashboard-my-tutor-profile-button:hover {
+    background: #FFFFFF !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-my-tutor-profile-button:hover i {
+    color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-my-tutor-book-button {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-my-tutor-book-button i {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .dashboard-my-tutor-book-button:hover {
+    background: #FFFFFF !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-my-tutor-book-button:hover i {
+    color: #2563EB !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .dashboard-my-tutor-card {
+        grid-template-columns: minmax(220px, 1.1fr)
+                               minmax(300px, 1.5fr)
+                               minmax(210px, 1fr);
+        gap: 20px;
+    }
+
+    .dashboard-my-tutor-actions {
+        grid-column: 1 / -1;
+        justify-content: flex-end;
+        padding-top: 4px;
+    }
+
+    .dashboard-my-tutor-activity {
+        gap: 12px;
+    }
+
+    .dashboard-my-tutor-photo {
+        flex-basis: 68px;
+        width: 68px;
+        height: 68px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .dashboard-my-tutors-list {
+        gap: 16px;
+    }
+
+    .dashboard-my-tutor-card {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .dashboard-my-tutor-main {
+        width: 100%;
+    }
+
+    .dashboard-my-tutor-activity {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .dashboard-my-tutor-activity-item {
+        gap: 7px;
+    }
+
+    .dashboard-my-tutor-activity-item > i {
+        flex-basis: 36px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .dashboard-my-tutor-next-session {
+        width: 100%;
+    }
+
+    .dashboard-my-tutor-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding-top: 0;
+    }
+
+    .dashboard-my-tutor-profile-button,
+    .dashboard-my-tutor-book-button {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-my-tutor-card {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .dashboard-my-tutor-main {
+        gap: 12px;
+    }
+
+    .dashboard-my-tutor-photo {
+        flex-basis: 60px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .dashboard-my-tutor-activity {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .dashboard-my-tutor-activity-item {
+        padding: 4px 0;
+    }
+
+    .dashboard-my-tutor-next-session {
+        gap: 10px;
+    }
+
+    .dashboard-my-tutor-actions {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================================================
+   MY TUTORS - FIND A TUTOR SUPPORT BUTTON
+   FIX NORMAL VISIBILITY
+========================================================= */
+
+html body .dashboard-my-tutors-support-button {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border: 1px solid #2563EB !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html body .dashboard-my-tutors-support-button span {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html body .dashboard-my-tutors-support-button i.fa-arrow-right {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* Hover */
+
+html body .dashboard-my-tutors-support-button:hover {
+    background: #FFFFFF !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+html body .dashboard-my-tutors-support-button:hover span {
+    color: #2563EB !important;
+}
+
+html body .dashboard-my-tutors-support-button:hover i.fa-arrow-right {
+    color: #2563EB !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .dashboard-my-tutors-support-button {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-my-tutors-support-button span {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .dashboard-my-tutors-support-button i.fa-arrow-right {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .dashboard-my-tutors-support-button:hover {
+    background: #FFFFFF !important;
+    color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-my-tutors-support-button:hover span {
+    color: #2563EB !important;
+}
+
+body.dark-mode .dashboard-my-tutors-support-button:hover i.fa-arrow-right {
+    color: #2563EB !important;
+}
+
+/* =========================================================
+   MY SESSIONS PAGE
+   CONSISTENT FONT SIZE SYSTEM
+   Topbar & Sidebar excluded
+========================================================= */
+
+
+/* =========================================================
+   1. MY SESSIONS INTRO
+========================================================= */
+
+.dashboard-my-sessions-intro-label {
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-sessions-intro-label i {
+    font-size: 12px !important;
+}
+
+.dashboard-my-sessions-intro-content h2 {
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-sessions-intro-content p {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+}
+
+.dashboard-my-sessions-book-button {
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-sessions-book-button i {
+    font-size: 13px !important;
+}
+
+
+/* =========================================================
+   2. SESSION OVERVIEW
+========================================================= */
+
+.dashboard-my-sessions-overview-section
+.dashboard-section-label,
+.dashboard-upcoming-session-page-section
+.dashboard-section-label,
+.dashboard-completed-sessions-section
+.dashboard-section-label {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-sessions-overview-section .dashboard-section-heading h2,
+.dashboard-upcoming-session-page-section .dashboard-section-heading h2,
+.dashboard-completed-sessions-section .dashboard-section-heading h2 {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-sessions-overview-section .dashboard-section-note,
+.dashboard-upcoming-session-page-section .dashboard-section-note {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* Overview stat cards */
+
+.dashboard-my-sessions-stat-content > span {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-my-sessions-stat-content > strong {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-sessions-stat-content > small {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+.dashboard-my-sessions-stat-icon i {
+    font-size: 17px !important;
+}
+
+
+/* =========================================================
+   3. UPCOMING SESSIONS
+========================================================= */
+
+.dashboard-session-page-date > span {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-session-page-date > strong {
+    font-size: 26px !important;
+    line-height: 1.1 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-session-page-date > small {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+}
+
+
+/* Session header */
+
+.dashboard-session-page-label {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-session-page-header h3 {
+    font-size: 17px !important;
+    line-height: 1.35 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-session-page-status {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-session-page-status i {
+    font-size: 7px !important;
+}
+
+
+/* Session details */
+
+.dashboard-session-page-details > span {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+.dashboard-session-page-details > span i {
+    font-size: 13px !important;
+}
+
+
+/* Session buttons */
+
+.dashboard-session-page-details-button {
+    font-size: 13px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-session-page-more-button i {
+    font-size: 14px !important;
+}
+
+
+/* Session footer */
+
+.dashboard-session-page-footer > span {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+.dashboard-session-page-footer > span i {
+    font-size: 13px !important;
+}
+
+.dashboard-session-page-footer > a {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-session-page-footer > a i {
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   4. RECENT COMPLETED SESSIONS
+========================================================= */
+
+.dashboard-completed-session-info > span {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-completed-session-info h3 {
+    font-size: 17px !important;
+    line-height: 1.35 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-completed-session-info p {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* Completed session date */
+
+.dashboard-completed-session-date > span {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-completed-session-date > small {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+}
+
+
+/* Completed status */
+
+.dashboard-completed-session-status > span {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard-completed-session-status i {
+    font-size: 12px !important;
+}
+
+
+/* Completed session button */
+
+.dashboard-completed-session-button {
+    font-size: 13px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   5. SESSION SUPPORT
+========================================================= */
+
+.dashboard-my-sessions-support-text > span {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-sessions-support-text h2 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-sessions-support-text p {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+}
+
+.dashboard-my-sessions-support-button {
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+.dashboard-my-sessions-support-button i {
+    font-size: 13px !important;
+}
+
+.dashboard-my-sessions-support-icon i {
+    font-size: 18px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .dashboard-my-sessions-intro-content h2 {
+        font-size: 26px !important;
+    }
+
+    .dashboard-my-sessions-intro-content p {
+        font-size: 14px !important;
+    }
+
+    .dashboard-my-sessions-overview-section .dashboard-section-heading h2,
+    .dashboard-upcoming-session-page-section .dashboard-section-heading h2,
+    .dashboard-completed-sessions-section .dashboard-section-heading h2 {
+        font-size: 22px !important;
+    }
+
+    .dashboard-my-sessions-stat-content > strong {
+        font-size: 26px !important;
+    }
+
+    .dashboard-session-page-header h3,
+    .dashboard-completed-session-info h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-my-sessions-support-text h2 {
+        font-size: 21px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .dashboard-my-sessions-intro-label {
+        font-size: 10px !important;
+    }
+
+    .dashboard-my-sessions-intro-content h2 {
+        font-size: 24px !important;
+    }
+
+    .dashboard-my-sessions-intro-content p {
+        font-size: 13px !important;
+    }
+
+    .dashboard-my-sessions-book-button {
+        font-size: 13px !important;
+    }
+
+
+    /* Section headings */
+
+    .dashboard-my-sessions-overview-section .dashboard-section-heading h2,
+    .dashboard-upcoming-session-page-section .dashboard-section-heading h2,
+    .dashboard-completed-sessions-section .dashboard-section-heading h2 {
+        font-size: 20px !important;
+    }
+
+    .dashboard-my-sessions-overview-section .dashboard-section-note,
+    .dashboard-upcoming-session-page-section .dashboard-section-note {
+        font-size: 12px !important;
+    }
+
+
+    /* Stats */
+
+    .dashboard-my-sessions-stat-content > span {
+        font-size: 12px !important;
+    }
+
+    .dashboard-my-sessions-stat-content > strong {
+        font-size: 24px !important;
+    }
+
+    .dashboard-my-sessions-stat-content > small {
+        font-size: 11px !important;
+    }
+
+
+    /* Upcoming sessions */
+
+    .dashboard-session-page-header h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-session-page-details > span {
+        font-size: 11px !important;
+    }
+
+    .dashboard-session-page-details-button {
+        font-size: 12px !important;
+    }
+
+    .dashboard-session-page-footer > span {
+        font-size: 11px !important;
+    }
+
+    .dashboard-session-page-footer > a {
+        font-size: 12px !important;
+    }
+
+
+    /* Completed */
+
+    .dashboard-completed-session-info h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-completed-session-info p {
+        font-size: 11px !important;
+    }
+
+    .dashboard-completed-session-date > span {
+        font-size: 11px !important;
+    }
+
+    .dashboard-completed-session-button {
+        font-size: 12px !important;
+    }
+
+
+    /* Support */
+
+    .dashboard-my-sessions-support-text h2 {
+        font-size: 20px !important;
+    }
+
+    .dashboard-my-sessions-support-text p {
+        font-size: 13px !important;
+    }
+
+    .dashboard-my-sessions-support-button {
+        font-size: 13px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-my-sessions-intro-content h2 {
+        font-size: 22px !important;
+    }
+
+    .dashboard-my-sessions-intro-content p {
+        font-size: 13px !important;
+    }
+
+    .dashboard-my-sessions-overview-section .dashboard-section-heading h2,
+    .dashboard-upcoming-session-page-section .dashboard-section-heading h2,
+    .dashboard-completed-sessions-section .dashboard-section-heading h2 {
+        font-size: 19px !important;
+    }
+
+    .dashboard-my-sessions-stat-content > strong {
+        font-size: 22px !important;
+    }
+
+    .dashboard-session-page-header h3,
+    .dashboard-completed-session-info h3 {
+        font-size: 15px !important;
+    }
+
+    .dashboard-my-sessions-support-text h2 {
+        font-size: 19px !important;
+    }
+}
+/* =========================================================
+   MY SESSIONS - UPCOMING SESSION CARD ALIGNMENT
+========================================================= */
+
+.dashboard-session-page-card {
+    display: grid !important;
+    grid-template-columns: 90px minmax(0, 1fr) auto !important;
+    align-items: center !important;
+    column-gap: 28px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+
+/* Date */
+
+.dashboard-session-page-date {
+    width: 90px !important;
+    min-width: 90px !important;
+    text-align: center !important;
+    align-self: center !important;
+}
+
+
+/* Main content */
+
+.dashboard-session-page-main {
+    min-width: 0 !important;
+    width: 100% !important;
+    align-self: center !important;
+}
+
+
+/* Header */
+
+.dashboard-session-page-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+
+/* Status stays on the right */
+
+.dashboard-session-page-status {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+}
+
+
+/* Details */
+
+.dashboard-session-page-details {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 10px 22px !important;
+}
+
+
+/* Actions */
+
+.dashboard-session-page-actions {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 10px !important;
+    width: auto !important;
+    min-width: 198px !important;
+    flex-shrink: 0 !important;
+}
+
+
+/* View Details button */
+
+.dashboard-session-page-details-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 141px !important;
+    height: 48px !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    color: #2563EB !important;
+    background: #FFFFFF !important;
+    border: 1px solid #2563EB !important;
+}
+
+
+/* More button */
+
+.dashboard-session-page-more-button {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .dashboard-session-page-card {
+        grid-template-columns: 75px minmax(0, 1fr) auto !important;
+        column-gap: 20px !important;
+    }
+
+    .dashboard-session-page-date {
+        width: 75px !important;
+        min-width: 75px !important;
+    }
+
+    .dashboard-session-page-actions {
+        min-width: 190px !important;
+    }
+
+    .dashboard-session-page-details-button {
+        min-width: 135px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .dashboard-session-page-card {
+        display: grid !important;
+        grid-template-columns: 64px minmax(0, 1fr) !important;
+        column-gap: 16px !important;
+        row-gap: 18px !important;
+        align-items: start !important;
+    }
+
+    .dashboard-session-page-date {
+        width: 64px !important;
+        min-width: 64px !important;
+    }
+
+    .dashboard-session-page-main {
+        width: 100% !important;
+    }
+
+    .dashboard-session-page-header {
+        align-items: flex-start !important;
+        flex-direction: column !important;
+        gap: 8px !important;
+    }
+
+    .dashboard-session-page-status {
+        align-self: flex-start !important;
+    }
+
+    .dashboard-session-page-details {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+        margin-top: 12px !important;
+    }
+
+    .dashboard-session-page-actions {
+        grid-column: 1 / -1 !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        justify-content: flex-end !important;
+    }
+
+    .dashboard-session-page-details-button {
+        min-width: 140px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-session-page-card {
+        grid-template-columns: 58px minmax(0, 1fr) !important;
+        column-gap: 12px !important;
+    }
+
+    .dashboard-session-page-date {
+        width: 58px !important;
+        min-width: 58px !important;
+    }
+
+    .dashboard-session-page-actions {
+        gap: 8px !important;
+    }
+
+    .dashboard-session-page-details-button {
+        min-width: 130px !important;
+        height: 44px !important;
+        padding: 0 15px !important;
+    }
+
+    .dashboard-session-page-more-button {
+        width: 44px !important;
+        min-width: 44px !important;
+        height: 44px !important;
+    }
+}
+
+/* =========================================================
+   SESSION NOTES PAGE
+   CONSISTENT FONT SIZES
+   Do not include topbar / sidebar typography here
+========================================================= */
+
+/* =========================================================
+   SECTION 1 — SESSION NOTES INTRO
+========================================================= */
+
+.dashboard-session-notes-intro-label {
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-session-notes-intro h1 {
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.dashboard-session-notes-intro-content p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.dashboard-session-notes-view-button {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   Same scale used throughout dashboard content
+========================================================= */
+
+.dashboard-section-label {
+    font-size: 11px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-section-heading h2 {
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-section-note {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.dashboard-section-link {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   SECTION 2 — NOTES OVERVIEW / STAT CARDS
+========================================================= */
+
+.dashboard-session-notes-stat-content > span {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.dashboard-session-notes-stat-content > strong {
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.dashboard-session-notes-stat-content > small {
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   SECTION 3 — RECENT SESSION NOTES
+========================================================= */
+
+.dashboard-session-note-subject {
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.dashboard-session-note-header h3 {
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+.dashboard-session-note-status {
+    font-size: 11px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.dashboard-session-note-details span {
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.dashboard-session-note-summary {
+    font-size: 13px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.dashboard-session-note-view-button {
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.dashboard-session-notes-list-footer {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.dashboard-session-notes-list-footer a {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   SECTION 4 — LEARNING HIGHLIGHTS
+========================================================= */
+
+.dashboard-learning-highlight-content > span {
+    font-size: 11px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-learning-highlight-content h3 {
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+.dashboard-learning-highlight-content p {
+    font-size: 13px;
+    line-height: 1.65;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   SECTION 5 — TUTOR NOTES
+========================================================= */
+
+.dashboard-tutor-note-info h3 {
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+.dashboard-tutor-note-info > span {
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.dashboard-tutor-note-card > p {
+    font-size: 13px;
+    line-height: 1.65;
+    font-weight: 400;
+}
+
+.dashboard-tutor-note-footer {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.dashboard-tutor-note-footer a {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   SECTION 6 — SUPPORT
+========================================================= */
+
+.dashboard-session-notes-support-text > span {
+    font-size: 11px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-session-notes-support-text h2 {
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-session-notes-support-text p {
+    font-size: 14px;
+    line-height: 1.65;
+    font-weight: 400;
+}
+
+.dashboard-session-notes-support-button {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLET — 768px to 1199px
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .dashboard-session-notes-intro h1 {
+        font-size: 26px;
+    }
+
+    .dashboard-session-notes-intro-content p {
+        font-size: 13px;
+    }
+
+    .dashboard-section-heading h2 {
+        font-size: 22px;
+    }
+
+    .dashboard-session-notes-stat-content > strong {
+        font-size: 26px;
+    }
+
+    .dashboard-session-note-header h3 {
+        font-size: 16px;
+    }
+
+    .dashboard-learning-highlight-content h3 {
+        font-size: 16px;
+    }
+
+    .dashboard-session-notes-support-text h2 {
+        font-size: 21px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — 480px to 767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .dashboard-session-notes-intro-label {
+        font-size: 10px;
+    }
+
+    .dashboard-session-notes-intro h1 {
+        font-size: 24px;
+    }
+
+    .dashboard-session-notes-intro-content p {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .dashboard-session-notes-view-button {
+        font-size: 13px;
+    }
+
+    .dashboard-section-label {
+        font-size: 10px;
+    }
+
+    .dashboard-section-heading h2 {
+        font-size: 20px;
+    }
+
+    .dashboard-section-note {
+        font-size: 12px;
+    }
+
+    .dashboard-section-link {
+        font-size: 12px;
+    }
+
+
+    /* Stats */
+
+    .dashboard-session-notes-stat-content > span {
+        font-size: 12px;
+    }
+
+    .dashboard-session-notes-stat-content > strong {
+        font-size: 24px;
+    }
+
+    .dashboard-session-notes-stat-content > small {
+        font-size: 11px;
+    }
+
+
+    /* Session notes */
+
+    .dashboard-session-note-subject {
+        font-size: 11px;
+    }
+
+    .dashboard-session-note-header h3 {
+        font-size: 16px;
+    }
+
+    .dashboard-session-note-status {
+        font-size: 10px;
+    }
+
+    .dashboard-session-note-details span {
+        font-size: 11px;
+    }
+
+    .dashboard-session-note-summary {
+        font-size: 12px;
+        line-height: 1.65;
+    }
+
+    .dashboard-session-note-view-button {
+        font-size: 12px;
+    }
+
+    .dashboard-session-notes-list-footer {
+        font-size: 11px;
+    }
+
+    .dashboard-session-notes-list-footer a {
+        font-size: 12px;
+    }
+
+
+    /* Learning highlights */
+
+    .dashboard-learning-highlight-content > span {
+        font-size: 10px;
+    }
+
+    .dashboard-learning-highlight-content h3 {
+        font-size: 15px;
+    }
+
+    .dashboard-learning-highlight-content p {
+        font-size: 12px;
+    }
+
+
+    /* Tutor notes */
+
+    .dashboard-tutor-note-info h3 {
+        font-size: 15px;
+    }
+
+    .dashboard-tutor-note-info > span {
+        font-size: 11px;
+    }
+
+    .dashboard-tutor-note-card > p {
+        font-size: 12px;
+    }
+
+    .dashboard-tutor-note-footer {
+        font-size: 11px;
+    }
+
+    .dashboard-tutor-note-footer a {
+        font-size: 12px;
+    }
+
+
+    /* Support */
+
+    .dashboard-session-notes-support-text > span {
+        font-size: 10px;
+    }
+
+    .dashboard-session-notes-support-text h2 {
+        font-size: 20px;
+    }
+
+    .dashboard-session-notes-support-text p {
+        font-size: 13px;
+    }
+
+    .dashboard-session-notes-support-button {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE — 480px and below
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-session-notes-intro h1 {
+        font-size: 22px;
+    }
+
+    .dashboard-session-notes-intro-content p {
+        font-size: 13px;
+    }
+
+    .dashboard-section-heading h2 {
+        font-size: 19px;
+    }
+
+    .dashboard-session-notes-stat-content > strong {
+        font-size: 22px;
+    }
+
+    .dashboard-session-note-header h3 {
+        font-size: 15px;
+    }
+
+    .dashboard-session-note-summary {
+        font-size: 12px;
+    }
+
+    .dashboard-learning-highlight-content h3 {
+        font-size: 15px;
+    }
+
+    .dashboard-learning-highlight-content p {
+        font-size: 12px;
+    }
+
+    .dashboard-tutor-note-info h3 {
+        font-size: 15px;
+    }
+
+    .dashboard-session-notes-support-text h2 {
+        font-size: 19px;
+    }
+
+    .dashboard-session-notes-support-text p {
+        font-size: 12px;
+    }
+}
+
+/* =========================================================
+   PAYMENT PAGE
+   CONSISTENT FONT SIZE
+   Topbar + Sidebar intentionally excluded
+========================================================= */
+
+/* =========================================================
+   1. PAYMENT HERO
+========================================================= */
+
+.dashboard-payment-intro-label {
+    font-size: 12px !important;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.dashboard-payment-intro h2 {
+    font-size: 28px !important;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.dashboard-payment-intro p {
+    font-size: 14px !important;
+    line-height: 1.7;
+}
+
+.dashboard-payment-history-button {
+    font-size: 14px !important;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   2. COMMON SECTION HEADINGS
+========================================================= */
+
+.dashboard-payment-overview-section .dashboard-section-label,
+.dashboard-recent-payments-section .dashboard-section-label,
+.dashboard-payment-history-section .dashboard-section-label,
+.dashboard-payment-methods-section .dashboard-section-label {
+    font-size: 11px !important;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-payment-overview-section .dashboard-section-heading h2,
+.dashboard-recent-payments-section .dashboard-section-heading h2,
+.dashboard-payment-history-section .dashboard-section-heading h2,
+.dashboard-payment-methods-section .dashboard-section-heading h2 {
+    font-size: 24px !important;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-payment-overview-section .dashboard-section-note,
+.dashboard-recent-payments-section .dashboard-section-note {
+    font-size: 13px !important;
+    line-height: 1.5;
+}
+
+.dashboard-recent-payments-section .dashboard-section-link {
+    font-size: 13px !important;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   3. PAYMENT OVERVIEW CARDS
+========================================================= */
+
+.dashboard-payment-stat-content > span {
+    font-size: 13px !important;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.dashboard-payment-stat-content > strong {
+    font-size: 28px !important;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.dashboard-payment-stat-content > small {
+    font-size: 12px !important;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   4. RECENT PAYMENTS
+========================================================= */
+
+.dashboard-payment-subject {
+    font-size: 12px !important;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.dashboard-payment-card-header h3 {
+    font-size: 17px !important;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+.dashboard-payment-status {
+    font-size: 11px !important;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-payment-card-details span {
+    font-size: 12px !important;
+    line-height: 1.5;
+}
+
+.dashboard-payment-card-amount strong {
+    font-size: 20px !important;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.dashboard-payment-card-amount span {
+    font-size: 11px !important;
+    line-height: 1.4;
+}
+
+.dashboard-payment-receipt-button {
+    font-size: 13px !important;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   5. PAYMENT HISTORY TABLE
+========================================================= */
+
+.dashboard-payment-history-header span {
+    font-size: 11px !important;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.dashboard-payment-history-row > span,
+.dashboard-payment-history-row > strong {
+    font-size: 12px !important;
+    line-height: 1.5;
+}
+
+.dashboard-payment-history-row > strong {
+    font-weight: 600;
+}
+
+.dashboard-payment-history-payment {
+    font-size: 12px !important;
+    font-weight: 500;
+}
+
+.dashboard-payment-history-status {
+    font-size: 11px !important;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   6. PAYMENT METHODS
+========================================================= */
+
+.dashboard-payment-method-content > span {
+    font-size: 12px !important;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.dashboard-payment-method-content > strong {
+    font-size: 15px !important;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.dashboard-payment-method-content > small {
+    font-size: 11px !important;
+    line-height: 1.5;
+}
+
+.dashboard-payment-method-default {
+    font-size: 11px !important;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-payment-method-manage-button {
+    font-size: 13px !important;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.dashboard-payment-add-method-button,
+.dashboard-payment-filter-button {
+    font-size: 13px !important;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   7. PAYMENT SUPPORT
+========================================================= */
+
+.dashboard-payment-support-label {
+    font-size: 11px !important;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-payment-support-text h2 {
+    font-size: 22px !important;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-payment-support-text p {
+    font-size: 14px !important;
+    line-height: 1.7;
+}
+
+.dashboard-payment-support-button {
+    font-size: 14px !important;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 1199px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .dashboard-payment-intro h2 {
+        font-size: 26px !important;
+    }
+
+    .dashboard-payment-intro p {
+        font-size: 13px !important;
+    }
+
+    .dashboard-payment-overview-section .dashboard-section-heading h2,
+    .dashboard-recent-payments-section .dashboard-section-heading h2,
+    .dashboard-payment-history-section .dashboard-section-heading h2,
+    .dashboard-payment-methods-section .dashboard-section-heading h2 {
+        font-size: 22px !important;
+    }
+
+    .dashboard-payment-stat-content > strong {
+        font-size: 26px !important;
+    }
+
+    .dashboard-payment-card-header h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-payment-support-text h2 {
+        font-size: 21px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   max-width: 767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .dashboard-payment-intro-label {
+        font-size: 10px !important;
+    }
+
+    .dashboard-payment-intro h2 {
+        font-size: 24px !important;
+    }
+
+    .dashboard-payment-intro p {
+        font-size: 13px !important;
+    }
+
+    .dashboard-payment-history-button {
+        font-size: 13px !important;
+    }
+
+
+    /* Section headings */
+
+    .dashboard-payment-overview-section .dashboard-section-heading h2,
+    .dashboard-recent-payments-section .dashboard-section-heading h2,
+    .dashboard-payment-history-section .dashboard-section-heading h2,
+    .dashboard-payment-methods-section .dashboard-section-heading h2 {
+        font-size: 20px !important;
+    }
+
+    .dashboard-payment-overview-section .dashboard-section-note,
+    .dashboard-recent-payments-section .dashboard-section-note {
+        font-size: 12px !important;
+    }
+
+    .dashboard-recent-payments-section .dashboard-section-link {
+        font-size: 12px !important;
+    }
+
+
+    /* Stats */
+
+    .dashboard-payment-stat-content > span {
+        font-size: 12px !important;
+    }
+
+    .dashboard-payment-stat-content > strong {
+        font-size: 24px !important;
+    }
+
+    .dashboard-payment-stat-content > small {
+        font-size: 11px !important;
+    }
+
+
+    /* Recent payments */
+
+    .dashboard-payment-card-header h3 {
+        font-size: 16px !important;
+    }
+
+    .dashboard-payment-card-details span {
+        font-size: 11px !important;
+    }
+
+    .dashboard-payment-card-amount strong {
+        font-size: 18px !important;
+    }
+
+    .dashboard-payment-receipt-button {
+        font-size: 12px !important;
+    }
+
+
+    /* History */
+
+    .dashboard-payment-history-header span {
+        font-size: 10px !important;
+    }
+
+    .dashboard-payment-history-row > span,
+    .dashboard-payment-history-row > strong,
+    .dashboard-payment-history-payment {
+        font-size: 11px !important;
+    }
+
+
+    /* Payment methods */
+
+    .dashboard-payment-method-content > strong {
+        font-size: 14px !important;
+    }
+
+    .dashboard-payment-method-manage-button,
+    .dashboard-payment-add-method-button,
+    .dashboard-payment-filter-button {
+        font-size: 12px !important;
+    }
+
+
+    /* Support */
+
+    .dashboard-payment-support-text h2 {
+        font-size: 20px !important;
+    }
+
+    .dashboard-payment-support-text p {
+        font-size: 13px !important;
+    }
+
+    .dashboard-payment-support-button {
+        font-size: 13px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   max-width: 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-payment-intro h2 {
+        font-size: 22px !important;
+    }
+
+    .dashboard-payment-intro p {
+        font-size: 13px !important;
+    }
+
+    .dashboard-payment-overview-section .dashboard-section-heading h2,
+    .dashboard-recent-payments-section .dashboard-section-heading h2,
+    .dashboard-payment-history-section .dashboard-section-heading h2,
+    .dashboard-payment-methods-section .dashboard-section-heading h2 {
+        font-size: 19px !important;
+    }
+
+    .dashboard-payment-stat-content > strong {
+        font-size: 22px !important;
+    }
+
+    .dashboard-payment-card-header h3 {
+        font-size: 15px !important;
+    }
+
+    .dashboard-payment-card-amount strong {
+        font-size: 17px !important;
+    }
+
+    .dashboard-payment-method-content > strong {
+        font-size: 13px !important;
+    }
+
+    .dashboard-payment-support-text h2 {
+        font-size: 19px !important;
+    }
+}
+/* =========================================================
+   PROFILE PAGE — CONSISTENT FONT SIZES
+   Does not include sidebar or topbar typography
+========================================================= */
+
+/* =========================================================
+   1. PROFILE HERO
+========================================================= */
+
+.dashboard-profile-intro-label {
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-profile-intro-text h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.dashboard-profile-intro-text p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.dashboard-profile-intro-meta {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.dashboard-profile-edit-button {
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   2. SECTION HEADINGS
+   Uses the same dashboard system
+========================================================= */
+
+.dashboard-profile-personal-section .dashboard-section-label,
+.dashboard-profile-learning-section .dashboard-section-label,
+.dashboard-profile-preferences-section .dashboard-section-label,
+.dashboard-profile-security-section .dashboard-section-label {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.dashboard-profile-personal-section .dashboard-section-heading h2,
+.dashboard-profile-learning-section .dashboard-section-heading h2,
+.dashboard-profile-preferences-section .dashboard-section-heading h2,
+.dashboard-profile-security-section .dashboard-section-heading h2 {
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.dashboard-profile-personal-section .dashboard-section-note,
+.dashboard-profile-learning-section .dashboard-section-note {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   3. PERSONAL INFORMATION FORM
+========================================================= */
+
+.dashboard-profile-field label {
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.dashboard-profile-input-wrap input,
+.dashboard-profile-input-wrap select {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.dashboard-profile-input-wrap input::placeholder {
+    font-size: 13px;
+}
+
+.dashboard-profile-form-message {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.dashboard-profile-cancel-button,
+.dashboard-profile-save-button {
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   4. CHILD / LEARNING INFORMATION
+========================================================= */
+
+.dashboard-profile-subject-heading {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.dashboard-profile-subject-tags span {
+    font-size: 11px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   5. ACCOUNT PREFERENCES
+========================================================= */
+
+.dashboard-profile-preference-content > span {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.dashboard-profile-preference-content strong {
+    font-size: 15px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-profile-preference-content small {
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.dashboard-profile-preference-arrow {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   6. SECURITY
+========================================================= */
+
+.dashboard-profile-security-content > span {
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.dashboard-profile-security-content h3 {
+    font-size: 17px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-profile-security-content p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.dashboard-profile-security-content small {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.dashboard-profile-password-button {
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   7. PROFILE SUPPORT
+========================================================= */
+
+.dashboard-profile-support-text > span {
+    font-size: 11px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-profile-support-text h2 {
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.dashboard-profile-support-text p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.dashboard-profile-support-button {
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLET — 768px to 1199px
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .dashboard-profile-intro-text h2 {
+        font-size: 28px;
+    }
+
+    .dashboard-profile-intro-text p {
+        font-size: 14px;
+    }
+
+    .dashboard-profile-personal-section .dashboard-section-heading h2,
+    .dashboard-profile-learning-section .dashboard-section-heading h2,
+    .dashboard-profile-preferences-section .dashboard-section-heading h2,
+    .dashboard-profile-security-section .dashboard-section-heading h2 {
+        font-size: 22px;
+    }
+
+    .dashboard-profile-support-text h2 {
+        font-size: 21px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — 767px and below
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* Profile hero */
+    .dashboard-profile-intro-label {
+        font-size: 10px;
+    }
+
+    .dashboard-profile-intro-text h2 {
+        font-size: 26px;
+    }
+
+    .dashboard-profile-intro-text p {
+        font-size: 13px;
+    }
+
+    .dashboard-profile-intro-meta {
+        font-size: 11px;
+    }
+
+    .dashboard-profile-edit-button {
+        font-size: 12px;
+    }
+
+
+    /* Section headings */
+    .dashboard-profile-personal-section .dashboard-section-label,
+    .dashboard-profile-learning-section .dashboard-section-label,
+    .dashboard-profile-preferences-section .dashboard-section-label,
+    .dashboard-profile-security-section .dashboard-section-label {
+        font-size: 10px;
+    }
+
+    .dashboard-profile-personal-section .dashboard-section-heading h2,
+    .dashboard-profile-learning-section .dashboard-section-heading h2,
+    .dashboard-profile-preferences-section .dashboard-section-heading h2,
+    .dashboard-profile-security-section .dashboard-section-heading h2 {
+        font-size: 20px;
+    }
+
+    .dashboard-profile-personal-section .dashboard-section-note,
+    .dashboard-profile-learning-section .dashboard-section-note {
+        font-size: 12px;
+    }
+
+
+    /* Form */
+    .dashboard-profile-field label {
+        font-size: 11px;
+    }
+
+    .dashboard-profile-input-wrap input,
+    .dashboard-profile-input-wrap select,
+    .dashboard-profile-input-wrap input::placeholder {
+        font-size: 13px;
+    }
+
+    .dashboard-profile-form-message {
+        font-size: 11px;
+    }
+
+    .dashboard-profile-cancel-button,
+    .dashboard-profile-save-button {
+        font-size: 12px;
+    }
+
+
+    /* Subjects */
+    .dashboard-profile-subject-heading {
+        font-size: 12px;
+    }
+
+    .dashboard-profile-subject-tags span {
+        font-size: 10px;
+    }
+
+
+    /* Preferences */
+    .dashboard-profile-preference-content > span {
+        font-size: 11px;
+    }
+
+    .dashboard-profile-preference-content strong {
+        font-size: 14px;
+    }
+
+    .dashboard-profile-preference-content small {
+        font-size: 10px;
+    }
+
+    .dashboard-profile-preference-arrow {
+        font-size: 12px;
+    }
+
+
+    /* Security */
+    .dashboard-profile-security-content > span {
+        font-size: 11px;
+    }
+
+    .dashboard-profile-security-content h3 {
+        font-size: 16px;
+    }
+
+    .dashboard-profile-security-content p {
+        font-size: 13px;
+    }
+
+    .dashboard-profile-security-content small {
+        font-size: 10px;
+    }
+
+    .dashboard-profile-password-button {
+        font-size: 12px;
+    }
+
+
+    /* Support */
+    .dashboard-profile-support-text > span {
+        font-size: 10px;
+    }
+
+    .dashboard-profile-support-text h2 {
+        font-size: 20px;
+    }
+
+    .dashboard-profile-support-text p {
+        font-size: 13px;
+    }
+
+    .dashboard-profile-support-button {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE — 480px and below
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-profile-intro-text h2 {
+        font-size: 24px;
+    }
+
+    .dashboard-profile-intro-text p {
+        font-size: 13px;
+    }
+
+    .dashboard-profile-intro-meta {
+        font-size: 10px;
+    }
+
+    .dashboard-profile-personal-section .dashboard-section-heading h2,
+    .dashboard-profile-learning-section .dashboard-section-heading h2,
+    .dashboard-profile-preferences-section .dashboard-section-heading h2,
+    .dashboard-profile-security-section .dashboard-section-heading h2 {
+        font-size: 19px;
+    }
+
+    .dashboard-profile-personal-section .dashboard-section-note,
+    .dashboard-profile-learning-section .dashboard-section-note {
+        font-size: 11px;
+    }
+
+    .dashboard-profile-field label {
+        font-size: 11px;
+    }
+
+    .dashboard-profile-input-wrap input,
+    .dashboard-profile-input-wrap select,
+    .dashboard-profile-input-wrap input::placeholder {
+        font-size: 12px;
+    }
+
+    .dashboard-profile-cancel-button,
+    .dashboard-profile-save-button {
+        font-size: 12px;
+    }
+
+    .dashboard-profile-subject-heading {
+        font-size: 11px;
+    }
+
+    .dashboard-profile-preference-content > span {
+        font-size: 10px;
+    }
+
+    .dashboard-profile-preference-content strong {
+        font-size: 13px;
+    }
+
+    .dashboard-profile-preference-content small {
+        font-size: 10px;
+    }
+
+    .dashboard-profile-security-content h3 {
+        font-size: 15px;
+    }
+
+    .dashboard-profile-security-content p {
+        font-size: 12px;
+    }
+
+    .dashboard-profile-support-text h2 {
+        font-size: 19px;
+    }
+
+    .dashboard-profile-support-text p {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   DASHBOARD MY TUTORS - FIND ANOTHER TUTOR
+   DARK MODE
+========================================================= */
+
+body.dark-mode .dashboard-my-tutors-find-button {
+    color: #ffffff !important;
+}
+
+body.dark-mode .dashboard-my-tutors-find-button i.fa-user-plus {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Keep white on hover */
+body.dark-mode .dashboard-my-tutors-find-button:hover {
+    color: #ffffff !important;
+}
+
+body.dark-mode .dashboard-my-tutors-find-button:hover span {
+    color: #ffffff !important;
+}
+
+body.dark-mode .dashboard-my-tutors-find-button:hover i.fa-user-plus {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* =========================================================
+   DASHBOARD MY SESSIONS - DARK MODE HEADING
+========================================================= */
+
+body.dark-mode .dashboard-my-sessions-intro h2 {
+    color: #ffffff !important;
+}
+
+/* MY SESSIONS - DARK MODE HEADING */
+html body.dark-mode .dashboard-my-sessions-intro h2 {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+
+/* =========================================================
+   DASHBOARD PROFILE - DARK MODE
+========================================================= */
+
+body.dark-mode .dashboard-profile-info strong {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+body.dark-mode .dashboard-profile-info small {
+    color: #CBD5E1 !important;
+    -webkit-text-fill-color: #CBD5E1 !important;
+}
+body.dark-mode .dashboard-profile-button i {
+    color: #CBD5E1 !important;
+    -webkit-text-fill-color: #CBD5E1 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
