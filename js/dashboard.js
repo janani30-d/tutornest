@@ -745,3 +745,89 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+/* =========================================================
+   DASHBOARD RTL TOGGLE
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const html = document.documentElement;
+    const rtlButton = document.getElementById("dashboardRtlToggle");
+
+    if (!rtlButton) return;
+
+
+    function updateRTL() {
+
+        const isRTL = html.getAttribute("dir") === "rtl";
+
+        const icon = rtlButton.querySelector("i");
+
+        if (icon) {
+            icon.className = isRTL
+                ? "fas fa-right-left"
+                : "fas fa-right-left";
+        }
+
+        rtlButton.setAttribute(
+            "aria-label",
+            isRTL
+                ? "Switch to left-to-right"
+                : "Switch to right-to-left"
+        );
+
+        rtlButton.setAttribute(
+            "title",
+            isRTL ? "LTR" : "RTL"
+        );
+    }
+
+
+    /* APPLY SAVED DIRECTION */
+
+    const savedDirection =
+        localStorage.getItem("tutornest-direction");
+
+    if (savedDirection === "rtl") {
+        html.setAttribute("dir", "rtl");
+    } else {
+        html.setAttribute("dir", "ltr");
+    }
+
+
+    updateRTL();
+
+
+    /* TOGGLE RTL */
+
+    rtlButton.addEventListener("click", function () {
+
+        const currentDirection =
+            html.getAttribute("dir");
+
+        if (currentDirection === "rtl") {
+
+            html.setAttribute("dir", "ltr");
+
+            localStorage.setItem(
+                "tutornest-direction",
+                "ltr"
+            );
+
+        } else {
+
+            html.setAttribute("dir", "rtl");
+
+            localStorage.setItem(
+                "tutornest-direction",
+                "rtl"
+            );
+        }
+
+        updateRTL();
+
+    });
+
+});
