@@ -29876,44 +29876,7 @@ textarea {
 }
 
 
-/* =========================================================
-   HOME PROGRESS SECTION - FORCE RTL HEADING ALIGNMENT
-========================================================= */
 
-html[dir="rtl"] body .home-progress-section .home-progress-content {
-    text-align: right !important;
-    direction: rtl !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
-html[dir="rtl"] body .home-progress-section .home-progress-title {
-    display: block !important;
-    width: 100% !important;
-    text-align: right !important;
-    direction: rtl !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
-html[dir="rtl"] body .home-progress-section .home-progress-title span {
-    display: inline !important;
-    text-align: right !important;
-    direction: rtl !important;
-}
-
-html[dir="rtl"] body .home-progress-section .home-progress-badge {
-    text-align: right !important;
-    direction: rtl !important;
-}
-
-html[dir="rtl"] body .home-progress-section .home-progress-description {
-    width: 100% !important;
-    text-align: right !important;
-    direction: rtl !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
 
 /* =========================================================
    CONTACT PHONE INPUT - RTL
@@ -30687,291 +30650,7 @@ body.dark-mode .pricing-comparison-most-popular i.fa-star {
 
 
 
-/* =========================================================
-   HOME PROGRESS - RTL COLUMN SWAP
-   IMAGE LEFT | CONTENT + BUTTON RIGHT
-========================================================= */
 
-html[dir="rtl"] .home-progress-wrapper {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-}
-
-/* Content + button → RIGHT */
-html[dir="rtl"] .home-progress-content {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-
-    width: 100% !important;
-    margin: 0 !important;
-
-    justify-self: stretch !important;
-    align-items: flex-end !important;
-    text-align: right !important;
-}
-
-/* All content stays on the right */
-html[dir="rtl"] .home-progress-badge,
-html[dir="rtl"] .home-progress-title,
-html[dir="rtl"] .home-progress-description,
-html[dir="rtl"] .home-progress-list {
-    width: 100% !important;
-    text-align: right !important;
-}
-
-/* Button → right */
-html[dir="rtl"] .home-progress-button {
-    align-self: flex-end !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
-/* Image → LEFT */
-html[dir="rtl"] .home-progress-image {
-    grid-column: 1 !important;
-    grid-row: 1 !important;
-
-    justify-self: stretch !important;
-}
-
-/* =========================================================
-   HOME PROGRESS - FORCE RTL SWAP
-   IMAGE = LEFT
-   CONTENT + BUTTON = RIGHT
-========================================================= */
-
-html[dir="rtl"] .home-progress-wrapper {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    direction: ltr !important;
-    width: 100% !important;
-}
-
-/* IMAGE → LEFT */
-html[dir="rtl"] .home-progress-wrapper .home-progress-image {
-    grid-column: 1 !important;
-    grid-row: 1 !important;
-    width: 100% !important;
-    justify-self: stretch !important;
-}
-
-/* CONTENT → RIGHT */
-html[dir="rtl"] .home-progress-wrapper .home-progress-content {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-    width: 100% !important;
-
-    direction: rtl !important;
-    text-align: right !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-end !important;
-    justify-content: center !important;
-
-    margin: 0 !important;
-}
-
-/* Badge */
-html[dir="rtl"] .home-progress-content .home-progress-badge {
-    width: 100% !important;
-    text-align: right !important;
-}
-
-/* Heading */
-html[dir="rtl"] .home-progress-content .home-progress-title {
-    width: 100% !important;
-    text-align: right !important;
-}
-
-/* Description */
-html[dir="rtl"] .home-progress-content .home-progress-description {
-    width: 100% !important;
-    text-align: right !important;
-}
-
-/* Progress list */
-html[dir="rtl"] .home-progress-content .home-progress-list {
-    width: 100% !important;
-    direction: rtl !important;
-    text-align: right !important;
-}
-
-/* Button → RIGHT */
-html[dir="rtl"] .home-progress-content .home-progress-button {
-    align-self: flex-end !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 767px) {
-
-    html[dir="rtl"] .home-progress-wrapper {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        direction: rtl !important;
-    }
-
-    html[dir="rtl"] .home-progress-wrapper .home-progress-content {
-        grid-column: 1 !important;
-        grid-row: 1 !important;
-        width: 100% !important;
-        align-items: flex-end !important;
-        text-align: right !important;
-    }
-
-    html[dir="rtl"] .home-progress-wrapper .home-progress-image {
-        grid-column: 1 !important;
-        grid-row: 2 !important;
-        width: 100% !important;
-    }
-
-    html[dir="rtl"] .home-progress-content .home-progress-button {
-        align-self: flex-end !important;
-    }
-}
-
-
-/* =========================================================
-   HOME PROGRESS - RTL
-   IMAGE LEFT | CONTENT + BUTTON RIGHT
-========================================================= */
-
-html[dir="rtl"] .home-progress-wrapper {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    direction: ltr !important;
-}
-
-/* CONTENT + BUTTON → RIGHT */
-html[dir="rtl"] .home-progress-content {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-
-    direction: rtl !important;
-    text-align: right !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-end !important;
-
-    width: 100% !important;
-    margin: 0 !important;
-}
-
-/* Badge */
-html[dir="rtl"] .home-progress-badge {
-    align-self: flex-end !important;
-    text-align: right !important;
-}
-
-/* Heading */
-html[dir="rtl"] .home-progress-title {
-    width: 100% !important;
-    text-align: right !important;
-}
-
-/* Highlighted heading */
-html[dir="rtl"] .home-progress-title span {
-    text-align: right !important;
-}
-
-/* Description */
-html[dir="rtl"] .home-progress-description {
-    width: 100% !important;
-    text-align: right !important;
-}
-
-/* List */
-html[dir="rtl"] .home-progress-list {
-    width: 100% !important;
-    direction: rtl !important;
-    text-align: right !important;
-}
-
-/* List items */
-html[dir="rtl"] .home-progress-item {
-    direction: rtl !important;
-    justify-content: flex-start !important;
-}
-
-/* Button → RIGHT */
-html[dir="rtl"] .home-progress-button {
-    align-self: flex-end !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
-/* IMAGE → LEFT */
-html[dir="rtl"] .home-progress-image {
-    grid-column: 1 !important;
-    grid-row: 1 !important;
-
-    width: 100% !important;
-    margin: 0 !important;
-}
-
-
-/* =========================================================
-   HOME PROGRESS - RTL BUTTON WITH CONTENT
-========================================================= */
-
-html[dir="rtl"] .home-progress-content .home-progress-button {
-    align-self: flex-end !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
-/* Make sure the button stays inside the right content column */
-html[dir="rtl"] .home-progress-content {
-    align-items: flex-end !important;
-}
-
-
-html[dir="rtl"] .home-progress-button {
-    position: relative !important;
-    left: auto !important;
-    right: auto !important;
-
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-
-    align-self: flex-end !important;
-}
-
-
-/* =========================================================
-   HOME PROGRESS - RTL
-   CONTENT + BUTTON RIGHT
-========================================================= */
-
-html[dir="rtl"] .home-progress-content {
-    align-items: flex-start !important;
-}
-
-/* Keep text aligned to the right */
-html[dir="rtl"] .home-progress-badge,
-html[dir="rtl"] .home-progress-title,
-html[dir="rtl"] .home-progress-description,
-html[dir="rtl"] .home-progress-list {
-    width: 100% !important;
-    text-align: right !important;
-}
-
-/* BUTTON → RIGHT */
-html[dir="rtl"] .home-progress-button {
-    align-self: flex-start !important;
-
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-
-    left: auto !important;
-    right: auto !important;
-}
 
 
 
@@ -31139,117 +30818,508 @@ html[dir="rtl"] .home-two-hero-image-wrapper {
 
 
 
+
 /* =========================================================
-   HOME 2 HERO - RTL CONTENT RIGHT
+   PRICING PLANS
+   CENTER LAST CARD - iPad Mini + iPad Pro
 ========================================================= */
 
-html[dir="rtl"] .home-two-hero-content {
-    text-align: right !important;
-    align-items: flex-end !important;
-    justify-content: flex-start !important;
-    direction: rtl !important;
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .pricing-plans-section .pricing-plans-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .pricing-plans-section .pricing-plan-card:last-child {
+        grid-column: 1 / -1 !important;
+        width: 50% !important;
+        justify-self: center !important;
+    }
+
 }
 
-/* Badge */
-html[dir="rtl"] .home-two-hero-badge {
-    align-self: flex-end !important;
-}
 
-/* Heading */
-html[dir="rtl"] .home-two-hero-title {
-    text-align: right !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
 
-/* Description */
-html[dir="rtl"] .home-two-hero-description {
-    text-align: right !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
-/* BUTTON CONTAINER → RIGHT */
-html[dir="rtl"] .home-two-hero-actions {
-    display: flex !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-    direction: rtl !important;
-    width: 100% !important;
-}
-
-/* Individual buttons */
-html[dir="rtl"] .home-two-hero-primary-button,
-html[dir="rtl"] .home-two-hero-secondary-button {
-    margin-left: 0 !important;
-}
-
-/* Trust items → RIGHT */
-html[dir="rtl"] .home-two-hero-trust {
-    display: flex !important;
-    justify-content: flex-start !important;
-    direction: rtl !important;
-    width: 100% !important;
-}
 
 
 /* =========================================================
-   HOME 2 HERO - RTL ALIGNMENT
-   Badge + Heading + Paragraph + Buttons + Points
-   all aligned to the RIGHT
+   DASHBOARD PAYMENTS
+   iPAD MINI + iPAD PRO
+   FINAL OVERLAP FIX
 ========================================================= */
 
-html[dir="rtl"] .home-two-hero-content {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-end !important;
-    text-align: right !important;
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    /* PAYMENT CARD */
+    .dashboard-payment-card {
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        gap: 10px !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    /* MAIN CONTENT */
+    .dashboard-payment-card-main {
+        flex: 1 1 auto !important;
+        width: auto !important;
+        min-width: 0 !important;
+        overflow: hidden !important;
+    }
+
+    /* AMOUNT + PAYMENT ID */
+    .dashboard-payment-card-amount {
+        position: static !important;
+        flex: 0 0 82px !important;
+        width: 82px !important;
+        min-width: 82px !important;
+        max-width: 82px !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-end !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .dashboard-payment-card-amount strong {
+        display: block !important;
+        width: 100% !important;
+        text-align: right !important;
+        white-space: nowrap !important;
+    }
+
+    .dashboard-payment-card-amount span {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+
+        text-align: right !important;
+        white-space: nowrap !important;
+
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    /* RECEIPT AREA */
+    .dashboard-payment-card-action {
+        position: static !important;
+        flex: 0 0 68px !important;
+        width: 68px !important;
+        min-width: 68px !important;
+        max-width: 68px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* RECEIPT BUTTON */
+    .dashboard-payment-receipt-button {
+        position: static !important;
+
+        width: 64px !important;
+        min-width: 64px !important;
+        max-width: 64px !important;
+
+        margin: 0 !important;
+        padding: 7px 5px !important;
+
+        white-space: nowrap !important;
+        box-sizing: border-box !important;
+    }
+
 }
 
-/* Personalized Learning Made Simple */
-html[dir="rtl"] .home-two-hero-badge {
-    align-self: flex-end !important;
-    text-align: right !important;
-}
 
-/* Heading */
-html[dir="rtl"] .home-two-hero-title {
-    width: 100% !important;
-    text-align: right !important;
-}
+/* =========================================================
+   iPAD MINI / NARROW TABLET
+========================================================= */
 
-/* Paragraph */
-html[dir="rtl"] .home-two-hero-description {
-    width: 100% !important;
-    text-align: right !important;
-}
+@media (min-width: 768px) and (max-width: 850px) {
 
-/* Buttons */
-html[dir="rtl"] .home-two-hero-actions {
-    width: 100% !important;
-    display: flex !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-    direction: rtl !important;
-}
+    .dashboard-payment-card {
+        gap: 7px !important;
+    }
 
-/* Trust / Points */
-html[dir="rtl"] .home-two-hero-trust {
-    width: 100% !important;
-    display: flex !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-    direction: rtl !important;
-}
+    .dashboard-payment-card-amount {
+        flex-basis: 72px !important;
+        width: 72px !important;
+        min-width: 72px !important;
+        max-width: 72px !important;
+    }
 
-html[dir="rtl"] .home-two-hero-trust-item {
-    direction: rtl !important;
-    text-align: right !important;
+    .dashboard-payment-card-action {
+        flex-basis: 64px !important;
+        width: 64px !important;
+        min-width: 64px !important;
+        max-width: 64px !important;
+    }
+
+    .dashboard-payment-receipt-button {
+        width: 60px !important;
+        min-width: 60px !important;
+        max-width: 60px !important;
+        padding: 7px 4px !important;
+    }
+
 }
 
 
-html[dir="rtl"] .home-two-hero-actions,
-html[dir="rtl"] .home-two-hero-trust {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+
+
+
+
+/* =========================================================
+   DASHBOARD PAYMENTS
+   FIX PAYMENT CARD OVERLAPPING
+   iPad Mini + iPad Pro
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .dashboard-payment-card {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            42px
+            minmax(0, 1fr)
+            105px
+            72px !important;
+
+        column-gap: 12px !important;
+        align-items: center !important;
+
+        padding: 12px 14px !important;
+        box-sizing: border-box !important;
+
+        overflow: hidden !important;
+    }
+
+    /* Icon */
+    .dashboard-payment-card-icon {
+        width: 42px !important;
+        min-width: 42px !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* Main content */
+    .dashboard-payment-card-main {
+        min-width: 0 !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .dashboard-payment-card-header {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .dashboard-payment-card-header > div {
+        min-width: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .dashboard-payment-card-header h3 {
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .dashboard-payment-card-details {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        gap: 8px !important;
+
+        width: 100% !important;
+        min-width: 0 !important;
+
+        overflow: hidden !important;
+    }
+
+    .dashboard-payment-card-details span {
+        white-space: nowrap !important;
+        min-width: 0 !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    /* Amount */
+    .dashboard-payment-card-amount {
+        width: 105px !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        overflow: hidden !important;
+    }
+
+    .dashboard-payment-card-amount strong {
+        white-space: nowrap !important;
+    }
+
+    .dashboard-payment-card-amount span {
+        width: 100% !important;
+
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+
+        font-size: 9px !important;
+    }
+
+    /* Receipt button */
+    .dashboard-payment-card-action {
+        width: 72px !important;
+        min-width: 72px !important;
+
+        display: flex !important;
+        justify-content: flex-end !important;
+
+        overflow: visible !important;
+    }
+
+    .dashboard-payment-receipt-button {
+        width: 72px !important;
+        min-width: 72px !important;
+
+        padding: 7px 5px !important;
+
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 4px !important;
+
+        white-space: nowrap !important;
+
+        box-sizing: border-box !important;
+    }
+
+    .dashboard-payment-receipt-button i {
+        flex-shrink: 0 !important;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   DASHBOARD PAYMENTS
+   IPAD MINI + IPAD PRO OVERLAP FIX
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .dashboard-payment-card {
+        display: grid !important;
+        grid-template-columns: 38px minmax(0, 1fr) !important;
+        grid-template-rows: auto auto auto !important;
+        column-gap: 12px !important;
+        row-gap: 6px !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 12px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Payment icon */
+    .dashboard-payment-card-icon {
+        grid-column: 1 !important;
+        grid-row: 1 / span 3 !important;
+
+        width: 38px !important;
+        height: 38px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* Main payment information */
+    .dashboard-payment-card-main {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .dashboard-payment-card-header {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .dashboard-payment-card-header > div {
+        min-width: 0 !important;
+    }
+
+    .dashboard-payment-subject,
+    .dashboard-payment-card-header h3 {
+        display: block !important;
+        max-width: 100% !important;
+
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    /* Date / time / payment method */
+    .dashboard-payment-card-details {
+        grid-column: 2 !important;
+        grid-row: 2 !important;
+
+        width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 4px 10px !important;
+    }
+
+    .dashboard-payment-card-details span {
+        white-space: nowrap !important;
+        max-width: 100% !important;
+    }
+
+    /* Amount + Payment ID */
+    .dashboard-payment-card-amount {
+        grid-column: 2 !important;
+        grid-row: 3 !important;
+
+        width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 10px !important;
+
+        box-sizing: border-box !important;
+    }
+
+    .dashboard-payment-card-amount strong {
+        flex: 0 0 auto !important;
+        white-space: nowrap !important;
+    }
+
+    .dashboard-payment-card-amount span {
+        min-width: 0 !important;
+        max-width: 100% !important;
+
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    /* Receipt button gets its own row */
+    .dashboard-payment-card-action {
+        grid-column: 2 !important;
+        grid-row: 4 !important;
+
+        width: 100% !important;
+
+        display: flex !important;
+        justify-content: flex-start !important;
+
+        margin-top: 2px !important;
+    }
+
+    .dashboard-payment-receipt-button {
+        width: auto !important;
+        min-width: 78px !important;
+        height: 32px !important;
+
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
+    }
+}
+
+
+
+/* =========================================================
+   PRICING FAQ - IPAD PRO SIDE GAP
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .pricing-faq-section > .container {
+        width: calc(100% - 40px) !important;
+        max-width: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .pricing-faq-wrapper {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .pricing-faq-content,
+    .pricing-faq-list {
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* =========================================================
+   HOW IT WORKS HERO - MOBILE
+   Full-width background with no side gap
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .how-it-works-hero-section {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .how-it-works-hero-section .container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .how-it-works-hero-content {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 70px 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .how-it-works-hero-section {
+        background-position: center center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .how-it-works-hero-overlay {
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
 }

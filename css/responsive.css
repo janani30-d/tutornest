@@ -4560,47 +4560,8 @@ html[dir="rtl"] .home-hero-slider-dots {
 }
 
 
-/* =========================================================
-   RTL — TABLET & MOBILE
-========================================================= */
-
-@media (max-width: 1199px) {
-
-    html[dir="rtl"] .home-progress-content {
-        align-items: flex-end;
-        text-align: right;
-    }
-
-    html[dir="rtl"] .home-progress-description {
-        text-align: right;
-    }
-
-    html[dir="rtl"] .home-progress-list {
-        text-align: right;
-    }
-
-    html[dir="rtl"] .home-progress-item {
-        direction: rtl;
-    }
-
-    html[dir="rtl"] .home-progress-button {
-        direction: rtl;
-    }
-
-}
 
 
-/* =========================================================
-   RTL — BUTTON ARROW
-========================================================= */
-
-@media (max-width: 1199px) {
-
-    html[dir="rtl"] .home-progress-button:hover i {
-        transform: translateX(-3px);
-    }
-
-}
 
 
 /* =========================================================
@@ -6086,46 +6047,6 @@ html[dir="rtl"] .home-hero-slider-dots {
 }
 
 
-/* =========================================================
-   RTL — TABLET
-========================================================= */
-
-@media (min-width: 768px) and (max-width: 1199px) {
-
-    html[dir="rtl"] .home-two-hero-content {
-        align-items: flex-end;
-        text-align: right;
-    }
-
-    html[dir="rtl"] .home-two-hero-floating-card {
-        left: auto;
-        right: -18px;
-    }
-
-    html[dir="rtl"] .home-two-search-header {
-        direction: rtl;
-    }
-
-    html[dir="rtl"] .home-two-search-form {
-        direction: rtl;
-    }
-
-    html[dir="rtl"] .home-two-search-field {
-        text-align: right;
-    }
-
-    html[dir="rtl"] .home-two-search-input {
-        direction: rtl;
-    }
-
-    html[dir="rtl"] .home-two-search-input select {
-        text-align: right;
-    }
-
-    html[dir="rtl"] .home-two-search-button {
-        direction: rtl;
-    }
-}
 
 
 /* =========================================================
@@ -31316,5 +31237,441 @@ html[dir="rtl"] .pricing-how-works-action-content {
     .contact-hero-section > .container {
         padding-left: 8px !important;
         padding-right: 8px !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   HOME PROGRESS - RTL FINAL ALIGNMENT
+========================================================= */
+
+html[dir="rtl"] .home-progress-content {
+    align-items: flex-end !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .home-progress-badge,
+html[dir="rtl"] .home-progress-title,
+html[dir="rtl"] .home-progress-button {
+    align-self: flex-end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+html[dir="rtl"] .home-progress-title {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .home-progress-button {
+    direction: rtl !important;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   HOME PROGRESS - FINAL RTL POSITION
+========================================================= */
+
+html[dir="rtl"] .home-progress-section .home-progress-content {
+    align-items: flex-end !important;
+}
+
+/* Badge */
+html[dir="rtl"] .home-progress-section .home-progress-badge {
+    align-self: flex-end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: right !important;
+}
+
+/* Heading */
+html[dir="rtl"] .home-progress-section .home-progress-title {
+    align-self: flex-end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: right !important;
+}
+
+/* Button */
+html[dir="rtl"] .home-progress-section .home-progress-button {
+    align-self: flex-end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   HOME PROGRESS - RTL FINAL FIX
+   IMAGE LEFT / ALL CONTENT + BUTTON RIGHT
+========================================================= */
+
+html[dir="rtl"] .home-progress-wrapper {
+    direction: rtl !important;
+}
+
+/* COMPLETE CONTENT COLUMN */
+html[dir="rtl"] .home-progress-content {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    width: 100% !important;
+
+    /* IMPORTANT: flex-end becomes LEFT in RTL */
+    align-items: flex-start !important;
+
+    text-align: right !important;
+}
+
+/* Badge */
+html[dir="rtl"] .home-progress-badge {
+    text-align: right !important;
+    width: 100% !important;
+}
+
+/* Heading */
+html[dir="rtl"] .home-progress-title {
+    text-align: right !important;
+    width: 100% !important;
+}
+
+/* Paragraph */
+html[dir="rtl"] .home-progress-description {
+    text-align: right !important;
+    width: 100% !important;
+}
+
+/* Points */
+html[dir="rtl"] .home-progress-list {
+    width: 100% !important;
+    align-items: flex-start !important;
+}
+
+html[dir="rtl"] .home-progress-item {
+    justify-content: flex-start !important;
+}
+
+/* BUTTON - RIGHT SIDE */
+html[dir="rtl"] .home-progress-button {
+    align-self: flex-start !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* IMAGE - LEFT SIDE */
+html[dir="rtl"] .home-progress-image {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .home-progress-wrapper {
+        grid-template-columns: 1fr !important;
+    }
+
+    html[dir="rtl"] .home-progress-content {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        align-items: flex-start !important;
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .home-progress-image {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+    }
+
+    html[dir="rtl"] .home-progress-button {
+        align-self: flex-start !important;
+    }
+}
+
+
+/* =========================================================
+   HOME PROGRESS - RTL BUTTON ALIGNMENT
+========================================================= */
+
+html[dir="rtl"] .home-progress-content {
+    display: flex !important;
+    align-items: flex-start !important;
+    text-align: right !important;
+}
+
+/* Keep button aligned with the right-side content */
+html[dir="rtl"] .home-progress-button {
+    align-self: flex-start !important;
+    margin-inline-start: 0 !important;
+    margin-inline-end: 0 !important;
+}
+
+/* Keep the button itself in normal RTL direction */
+html[dir="rtl"] .home-progress-button {
+    direction: rtl !important;
+}
+
+/* Points stay aligned to the right */
+html[dir="rtl"] .home-progress-list {
+    align-self: flex-start !important;
+    text-align: right !important;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    html[dir="rtl"] .home-progress-content {
+        align-items: flex-start !important;
+    }
+
+    html[dir="rtl"] .home-progress-button {
+        align-self: flex-start !important;
+    }
+}
+
+
+
+/* =========================================================
+   HOME TWO HERO - RTL
+   ALL CONTENT ALIGNED TO RIGHT
+========================================================= */
+
+html[dir="rtl"] .home-two-hero-content {
+    text-align: right !important;
+    align-items: flex-start !important;
+}
+
+/* Badge */
+html[dir="rtl"] .home-two-hero-badge {
+    align-self: flex-start !important;
+    text-align: right !important;
+}
+
+/* Heading */
+html[dir="rtl"] .home-two-hero-title {
+    text-align: right !important;
+}
+
+/* Paragraph */
+html[dir="rtl"] .home-two-hero-description {
+    text-align: right !important;
+}
+
+/* Buttons */
+html[dir="rtl"] .home-two-hero-actions {
+    justify-content: flex-start !important;
+    align-self: flex-start !important;
+}
+
+/* Trust items */
+html[dir="rtl"] .home-two-hero-trust {
+    justify-content: flex-start !important;
+    align-self: flex-start !important;
+}
+
+/* Individual trust item */
+html[dir="rtl"] .home-two-hero-trust-item {
+    direction: rtl !important;
+}
+
+
+/* =========================================================
+   HOME TWO HERO - RTL DESKTOP
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    html[dir="rtl"] .home-two-hero-wrapper {
+        direction: rtl !important;
+    }
+
+    /* Content on RIGHT */
+    html[dir="rtl"] .home-two-hero-content {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+
+        text-align: right !important;
+        align-items: flex-start !important;
+    }
+
+    /* Image on LEFT */
+    html[dir="rtl"] .home-two-hero-image-wrapper {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+    }
+}
+
+
+/* =========================================================
+   HOME TWO HERO - TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    html[dir="rtl"] .home-two-hero-content {
+        text-align: right !important;
+        align-items: flex-start !important;
+    }
+
+    html[dir="rtl"] .home-two-hero-badge,
+    html[dir="rtl"] .home-two-hero-actions,
+    html[dir="rtl"] .home-two-hero-trust {
+        align-self: flex-start !important;
+    }
+
+    html[dir="rtl"] .home-two-hero-actions {
+        justify-content: flex-start !important;
+    }
+
+    html[dir="rtl"] .home-two-hero-trust {
+        justify-content: flex-start !important;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================================
+   FIND TUTOR
+   LEARNING MODE CENTER
+   iPad Mini + iPad Pro
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .find-tutor-search-field:last-child {
+        grid-column: 1 / -1 !important;
+        width: 50% !important;
+        max-width: 50% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+}
+
+/* =========================================================
+   LEARNING MODE - CENTER
+   iPad Mini + iPad Pro
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .find-tutor-search-field:has(#findTutorMode) {
+        grid-column: 1 / -1 !important;
+        width: 50% !important;
+        max-width: 50% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   PRICING COMPARISON TABLE
+   HORIZONTAL SCROLL ONLY:
+   MOBILE + IPAD MINI
+========================================================= */
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .pricing-comparison-section {
+        overflow: hidden !important;
+    }
+
+    .pricing-comparison-section > .container {
+        width: calc(100% - 32px) !important;
+        max-width: none !important;
+        margin-inline: auto !important;
+        padding: 0 !important;
+    }
+
+    .pricing-comparison-table-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    .pricing-comparison-table {
+        width: 850px !important;
+        min-width: 850px !important;
+        max-width: none !important;
+    }
+}
+
+
+/* iPad Mini only */
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .pricing-comparison-section {
+        overflow: hidden !important;
+    }
+
+    .pricing-comparison-section > .container {
+        width: calc(100% - 32px) !important;
+        max-width: none !important;
+        margin-inline: auto !important;
+        padding: 0 !important;
+    }
+
+    .pricing-comparison-table-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    .pricing-comparison-table {
+        width: 850px !important;
+        min-width: 850px !important;
+        max-width: none !important;
+    }
+}
+
+
+/* iPad Pro - NO horizontal table scrolling */
+@media (min-width: 820px) and (max-width: 1199px) {
+
+    .pricing-comparison-table-wrapper {
+        overflow-x: visible !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .pricing-comparison-table {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
     }
 }
