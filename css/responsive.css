@@ -63,6 +63,10 @@
         width: 140px;
     }
 
+    .how-it-works-page .menu-toggle {
+        display: none;
+    }
+
 }
 
 
@@ -30964,6 +30968,7 @@ html[dir="rtl"] .pricing-how-works-action-content {
         justify-content: space-between !important;
 
         gap: 10px !important;
+        text-align: left !important;
     }
 
     .pricing-faq-question > span:first-child {
@@ -30973,7 +30978,7 @@ html[dir="rtl"] .pricing-how-works-action-content {
         font-size: 12px !important;
         line-height: 1.4 !important;
 
-        text-align: right !important;
+        text-align: left !important;
     }
 
     .pricing-faq-toggle {
@@ -31673,5 +31678,1808 @@ html[dir="rtl"] .home-two-hero-trust-item {
         width: 100% !important;
         min-width: 0 !important;
         max-width: 100% !important;
+    }
+}
+
+
+/* =========================================================
+   PRICING COMPARISON TABLE
+   iPAD MINI FIT FIX
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .pricing-comparison-table-wrapper {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .pricing-comparison-table {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        table-layout: fixed !important;
+    }
+
+    .pricing-comparison-table thead th {
+        padding: 18px 10px !important;
+    }
+
+    .pricing-comparison-table tbody th,
+    .pricing-comparison-table tbody td {
+        height: 58px !important;
+        padding: 10px 9px !important;
+    }
+
+    .pricing-comparison-table thead th:first-child {
+        width: 36% !important;
+    }
+
+    .pricing-comparison-table thead th:not(:first-child) {
+        width: 21.333% !important;
+    }
+
+    .pricing-comparison-plan-heading strong {
+        font-size: 15px !important;
+    }
+
+    .pricing-comparison-plan-label,
+    .pricing-comparison-plan-price {
+        font-size: 9px !important;
+    }
+
+    .pricing-comparison-most-popular {
+        padding: 4px 7px !important;
+        font-size: 8px !important;
+        letter-spacing: 0.3px !important;
+    }
+
+    .pricing-comparison-feature {
+        gap: 7px !important;
+    }
+
+    .pricing-comparison-feature i {
+        flex: 0 0 26px !important;
+        width: 26px !important;
+        height: 26px !important;
+        border-radius: 8px !important;
+        font-size: 11px !important;
+    }
+
+    .pricing-comparison-feature span {
+        font-size: 11px !important;
+        line-height: 1.3 !important;
+    }
+
+    .pricing-comparison-check,
+    .pricing-comparison-unavailable {
+        width: 26px !important;
+        height: 26px !important;
+    }
+}
+
+
+/* =========================================================
+   HOW IT WORKS
+   MOBILE MENU ICON REMOVAL
+========================================================= */
+
+.how-it-works-page .menu-toggle,
+.how-it-works-page .mobile-nav-list i {
+    display: none !important;
+}
+
+
+/* =========================================================
+   PRICING FINAL CTA
+   MOBILE PADDING FIX
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .pricing-final-cta-section {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .pricing-final-cta-section > .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .pricing-final-cta-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 34px 18px !important;
+        border-radius: 0 !important;
+        background: linear-gradient(
+            135deg,
+            #2563EB 0%,
+            #4F46E5 55%,
+            #4338CA 100%
+        ) !important;
+        box-sizing: border-box !important;
+    }
+
+    .pricing-final-cta-title,
+    .pricing-final-cta-title span,
+    .pricing-final-cta-description {
+        color: #ffffff !important;
+    }
+
+    .pricing-final-cta-badge {
+        background: rgba(255, 255, 255, 0.14) !important;
+        border-color: rgba(255, 255, 255, 0.24) !important;
+        color: #ffffff !important;
+    }
+}
+
+
+/* =========================================================
+   LOGIN + REGISTER
+   MOBILE FONT SIZE BALANCE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .login-card-title,
+    .register-card-title {
+        font-size: 24px !important;
+        line-height: 1.25 !important;
+    }
+
+    .login-card-description,
+    .register-card-description {
+        font-size: 12px !important;
+        line-height: 1.55 !important;
+    }
+
+    .login-card-label,
+    .register-card-label,
+    .login-divider small,
+    .register-divider small {
+        font-size: 10px !important;
+        line-height: 1.35 !important;
+    }
+
+    .login-form-group label,
+    .register-form-group label {
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+    }
+
+    .login-input-wrapper input,
+    .register-input-wrapper input,
+    .register-input-wrapper select {
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+    }
+
+    .login-remember,
+    .login-forgot,
+    .register-terms-label,
+    .login-card-footer,
+    .register-card-footer,
+    .login-card-footer a,
+    .register-card-footer a {
+        font-size: 11px !important;
+        line-height: 1.45 !important;
+    }
+
+    .login-submit,
+    .register-submit,
+    .login-guest-button {
+        font-size: 12px !important;
+        line-height: 1 !important;
+    }
+
+    .login-error-message,
+    .register-error-message,
+    .login-auth-message,
+    .register-auth-message {
+        font-size: 11px !important;
+        line-height: 1.4 !important;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .login-card-title,
+    .register-card-title {
+        font-size: 22px !important;
+    }
+
+    .login-card-description,
+    .register-card-description,
+    .login-form-group label,
+    .register-form-group label,
+    .login-input-wrapper input,
+    .register-input-wrapper input,
+    .register-input-wrapper select,
+    .login-submit,
+    .register-submit,
+    .login-guest-button {
+        font-size: 11px !important;
+    }
+
+    .login-remember,
+    .login-forgot,
+    .register-terms-label,
+    .login-card-footer,
+    .register-card-footer,
+    .login-card-footer a,
+    .register-card-footer a {
+        font-size: 10px !important;
+    }
+}
+
+/* =========================================================
+   PRICING FINAL CTA - LIGHT BACKGROUND OVERRIDE
+========================================================= */
+
+.pricing-final-cta-section,
+body.dark-mode .pricing-final-cta-section {
+    background: #eef6ff !important;
+}
+
+.pricing-final-cta-content,
+body.dark-mode .pricing-final-cta-content {
+    background: linear-gradient(135deg, #ffffff 0%, #eff6ff 100%) !important;
+    border-color: #bfdbfe !important;
+    color: #2563eb !important;
+}
+
+.pricing-final-cta-badge,
+body.dark-mode .pricing-final-cta-badge {
+    color: #1d4ed8 !important;
+    background: #dbeafe !important;
+    border-color: #bfdbfe !important;
+}
+
+.pricing-final-cta-title,
+.pricing-final-cta-title span,
+body.dark-mode .pricing-final-cta-title,
+body.dark-mode .pricing-final-cta-title span {
+    color: #0f172a !important;
+}
+
+.pricing-final-cta-description,
+body.dark-mode .pricing-final-cta-description {
+    color: #475569 !important;
+}
+
+.pricing-final-cta-primary,
+body.dark-mode .pricing-final-cta-primary {
+    color: #ffffff !important;
+    background: #2563eb !important;
+    border-color: #2563eb !important;
+}
+
+.pricing-final-cta-secondary,
+body.dark-mode .pricing-final-cta-secondary {
+    color: #1e3a8a !important;
+    background: #ffffff !important;
+    border-color: #bfdbfe !important;
+}
+
+/* =========================================================
+   PRICING FINAL CTA - IMAGE BACKGROUND
+========================================================= */
+
+.pricing-final-cta-section,
+body.dark-mode .pricing-final-cta-section {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(219, 234, 254, 0.82) 0%,
+            rgba(239, 246, 255, 0.78) 100%
+        ),
+        url("../images/home-2-cta.jpg") center / cover no-repeat !important;
+}
+
+.pricing-final-cta-content,
+body.dark-mode .pricing-final-cta-content {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15, 23, 42, 0.82) 0%,
+            rgba(30, 58, 138, 0.74) 54%,
+            rgba(37, 99, 235, 0.55) 100%
+        ),
+        url("../images/home-2-cta.jpg") center / cover no-repeat !important;
+    border-color: rgba(255, 255, 255, 0.24) !important;
+    color: #ffffff !important;
+}
+
+.pricing-final-cta-badge,
+body.dark-mode .pricing-final-cta-badge {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.14) !important;
+    border-color: rgba(255, 255, 255, 0.28) !important;
+}
+
+.pricing-final-cta-title,
+.pricing-final-cta-title span,
+.pricing-final-cta-description,
+body.dark-mode .pricing-final-cta-title,
+body.dark-mode .pricing-final-cta-title span,
+body.dark-mode .pricing-final-cta-description {
+    color: #ffffff !important;
+}
+
+.pricing-final-cta-primary,
+body.dark-mode .pricing-final-cta-primary {
+    color: #1e3a8a !important;
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.pricing-final-cta-secondary,
+body.dark-mode .pricing-final-cta-secondary {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.36) !important;
+}
+
+/* =========================================================
+   MOBILE NAV ICON REMOVAL
+========================================================= */
+
+.mobile-navigation .mobile-nav-link > i,
+.mobile-navigation .mobile-nav-link-left > i,
+.mobile-navigation .mobile-dropdown-menu a > i {
+    display: none !important;
+}
+
+.mobile-navigation .mobile-nav-link,
+.mobile-navigation .mobile-nav-link-left,
+.mobile-navigation .mobile-dropdown-menu a {
+    gap: 0 !important;
+}
+
+.mobile-navigation .mobile-dropdown-menu a {
+    padding-left: 20px !important;
+}
+
+html[dir="rtl"] .mobile-navigation .mobile-dropdown-menu a {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+
+
+
+/* =========================================================
+   TUTORNEST HEADER
+   HAMBURGER — MOBILE + IPAD MINI + IPAD PRO
+========================================================= */
+
+/* Desktop */
+.menu-toggle {
+    display: none !important;
+}
+
+
+/* =========================================================
+   TABLET + MOBILE
+   1199px and below
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .desktop-navigation,
+    .desktop-header-actions {
+        display: none !important;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        margin: 0;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        background: var(--surface-color);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 10002;
+    }
+
+    .hamburger-line {
+        display: block !important;
+        width: 20px;
+        height: 2px;
+        background: var(--primary-color);
+        border-radius: 10px;
+        transition: transform 0.25s ease,
+                    opacity 0.25s ease;
+    }
+
+    /* Hamburger open state */
+    .menu-toggle.active .hamburger-line:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .hamburger-line:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Header layout */
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .site-logo {
+        flex-shrink: 0;
+    }
+
+    .logo-image {
+        max-width: 150px;
+        height: auto;
+        display: block;
+    }
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    body.dark-mode .menu-toggle {
+        background: #1E293B !important;
+        border-color: #334155 !important;
+    }
+
+    body.dark-mode .hamburger-line {
+        background: #3B82F6 !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+}
+
+
+
+/* =========================================================
+   HOW IT WORKS PAGE
+   FIX HAMBURGER VISIBILITY
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    body.how-it-works-page .menu-toggle {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 44px !important;
+        height: 44px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+        position: relative !important;
+        z-index: 10002 !important;
+        cursor: pointer !important;
+    }
+
+    body.how-it-works-page .hamburger-line {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 20px !important;
+        height: 2px !important;
+        background: var(--primary-color) !important;
+        border-radius: 10px !important;
+    }
+
+}
+
+
+/* DARK MODE */
+
+@media (max-width: 1199px) {
+
+    body.how-it-works-page.dark-mode .menu-toggle {
+        background: #1E293B !important;
+        border-color: #334155 !important;
+    }
+
+    body.how-it-works-page.dark-mode .hamburger-line {
+        background: #3B82F6 !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   HOW IT WORKS ONLY
+   HAMBURGER SIZE
+========================================================= */
+
+/* iPad Pro + iPad Mini */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    body.how-it-works-page .menu-toggle {
+        width: 44px !important;
+        height: 44px !important;
+        padding: 0 !important;
+        gap: 5px !important;
+        border-radius: 10px !important;
+    }
+
+    body.how-it-works-page .hamburger-line {
+        width: 20px !important;
+        height: 2px !important;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    body.how-it-works-page .menu-toggle {
+        width: 40px !important;
+        height: 40px !important;
+        padding: 0 !important;
+        gap: 4px !important;
+        border-radius: 9px !important;
+    }
+
+    body.how-it-works-page .hamburger-line {
+        width: 18px !important;
+        height: 2px !important;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    body.how-it-works-page .menu-toggle {
+        width: 38px !important;
+        height: 38px !important;
+        border-radius: 8px !important;
+    }
+
+    body.how-it-works-page .hamburger-line {
+        width: 17px !important;
+        height: 2px !important;
+    }
+}
+
+
+
+/* =========================================================
+   SUBJECTS HERO
+   IPAD MINI + IPAD PRO
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    /* HERO */
+    .subjects-hero-section {
+        min-height: 500px !important;
+        padding: 90px 0 70px !important;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .subjects-hero-section > .container {
+        width: calc(100% - 64px) !important;
+        max-width: 1000px !important;
+        margin-inline: auto !important;
+        padding: 0 !important;
+    }
+
+    /* HERO CONTENT */
+    .subjects-hero-content {
+        width: 100% !important;
+        max-width: 760px !important;
+        margin: 0 auto 30px !important;
+        text-align: center !important;
+        position: relative;
+        z-index: 2;
+    }
+
+    .subjects-hero-badge {
+        margin-inline: auto !important;
+    }
+
+    .subjects-hero-title {
+        text-align: center !important;
+        margin-inline: auto !important;
+    }
+
+    .subjects-hero-description {
+        max-width: 680px !important;
+        margin-inline: auto !important;
+        text-align: center !important;
+    }
+
+
+    /* SEARCH BOX */
+    .subjects-hero-search-box {
+        width: 100% !important;
+        max-width: 900px !important;
+        margin: 0 auto !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+        position: relative;
+        z-index: 3;
+    }
+
+
+    /* SEARCH FORM */
+    .subjects-hero-search-form {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: minmax(0, 1.6fr) minmax(220px, 1fr) auto !important;
+        gap: 12px !important;
+        align-items: end !important;
+    }
+
+
+    /* SEARCH FIELDS */
+    .subjects-hero-search-field {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .subjects-hero-search-input,
+    .subjects-hero-search-select {
+        width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .subjects-hero-search-input input,
+    .subjects-hero-search-select select {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+
+    /* SEARCH BUTTON */
+    .subjects-hero-search-button {
+        width: auto !important;
+        min-width: 170px !important;
+        height: 46px !important;
+        padding: 0 22px !important;
+        white-space: nowrap !important;
+        box-sizing: border-box !important;
+    }
+}
+
+
+/* =========================================================
+   IPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 850px) {
+
+    .subjects-hero-section {
+        min-height: 470px !important;
+        padding: 80px 0 55px !important;
+    }
+
+    .subjects-hero-section > .container {
+        width: calc(100% - 48px) !important;
+    }
+
+    .subjects-hero-content {
+        margin-bottom: 24px !important;
+    }
+
+    .subjects-hero-search-box {
+        padding: 16px !important;
+    }
+
+    .subjects-hero-search-form {
+        grid-template-columns: minmax(0, 1fr) minmax(190px, 0.9fr) auto !important;
+        gap: 10px !important;
+    }
+
+    .subjects-hero-search-button {
+        min-width: 150px !important;
+        padding-inline: 16px !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   SUBJECTS HERO — IPAD MINI + IPAD PRO
+   KEEP DROPDOWN INSIDE SEARCH FIELD
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .subjects-hero-section {
+        position: relative;
+        overflow: visible !important;
+    }
+
+    .subjects-hero-section > .container {
+        position: relative;
+        overflow: visible !important;
+    }
+
+    .subjects-hero-search-box {
+        position: relative;
+        width: calc(100% - 32px) !important;
+        max-width: none !important;
+        margin-inline: auto !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+        z-index: 100 !important;
+    }
+
+    .subjects-hero-search-form {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+        gap: 10px !important;
+        position: relative;
+        z-index: 101;
+    }
+
+    .subjects-hero-search-field {
+        width: 100% !important;
+        min-width: 0 !important;
+        position: relative !important;
+    }
+
+    .subjects-hero-search-input,
+    .subjects-hero-search-select {
+        width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        position: relative !important;
+    }
+
+    .subjects-hero-search-input input,
+    .subjects-hero-search-select select {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .subjects-hero-search-select {
+        overflow: visible !important;
+    }
+
+    .subjects-hero-search-select select {
+        height: 46px !important;
+        padding: 0 40px 0 14px !important;
+    }
+
+    .subjects-hero-search-button {
+        grid-column: 1 / -1;
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+}
+
+
+/* =========================================================
+   SUBJECTS HERO SEARCH
+   IPAD MINI + IPAD PRO
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .subjects-hero-search-box {
+        width: calc(100% - 32px) !important;
+        max-width: 760px !important;
+        margin: -55px auto 0 !important;
+        padding: 16px !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+    }
+
+    .subjects-hero-search-form {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+        gap: 10px !important;
+        align-items: stretch !important;
+        box-sizing: border-box !important;
+    }
+
+    .subjects-hero-search-field {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .subjects-hero-search-input,
+    .subjects-hero-search-select {
+        width: 100% !important;
+        min-width: 0 !important;
+        height: 44px !important;
+        box-sizing: border-box !important;
+    }
+
+    .subjects-hero-search-input input,
+    .subjects-hero-search-select select {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        height: 44px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Search input */
+    .subjects-hero-search-input input {
+        padding: 0 38px !important;
+    }
+
+    /* Learning level */
+    .subjects-hero-search-select {
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    .subjects-hero-search-select select {
+        padding: 0 36px 0 12px !important;
+        appearance: none !important;
+        -webkit-appearance: none !important;
+    }
+
+    /* Select arrow */
+    .subjects-hero-search-select > i {
+        position: absolute !important;
+        top: 50% !important;
+        right: 12px !important;
+        transform: translateY(-50%) !important;
+        pointer-events: none !important;
+        z-index: 5 !important;
+    }
+
+    /* Search button */
+    .subjects-hero-search-button {
+        grid-column: 1 / -1 !important;
+        width: 100% !important;
+        height: 44px !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+}
+
+
+/* =========================================================
+   IPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .subjects-hero-search-box {
+        max-width: 680px !important;
+        padding: 14px !important;
+    }
+
+    .subjects-hero-search-form {
+        gap: 8px !important;
+    }
+
+    .subjects-hero-search-input input,
+    .subjects-hero-search-select select,
+    .subjects-hero-search-input,
+    .subjects-hero-search-select,
+    .subjects-hero-search-button {
+        height: 42px !important;
+    }
+
+    .subjects-hero-search-input input,
+    .subjects-hero-search-select select {
+        font-size: 12px !important;
+    }
+
+    .subjects-hero-search-button {
+        font-size: 12px !important;
+    }
+}
+
+
+/* =========================================================
+   IPAD PRO
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1199px) {
+
+    .subjects-hero-search-box {
+        max-width: 850px !important;
+        padding: 18px !important;
+    }
+
+    .subjects-hero-search-form {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr) !important;
+
+        gap: 10px !important;
+    }
+
+    .subjects-hero-search-input input,
+    .subjects-hero-search-select select,
+    .subjects-hero-search-input,
+    .subjects-hero-search-select,
+    .subjects-hero-search-button {
+        height: 44px !important;
+    }
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    html[dir="rtl"] .subjects-hero-search-input input {
+        direction: rtl !important;
+        text-align: right !important;
+        padding-right: 38px !important;
+        padding-left: 12px !important;
+    }
+
+    html[dir="rtl"] .subjects-hero-search-input > i {
+        right: auto !important;
+        left: 12px !important;
+    }
+
+    html[dir="rtl"] .subjects-hero-search-select select {
+        direction: rtl !important;
+        text-align: right !important;
+        padding-right: 12px !important;
+        padding-left: 36px !important;
+    }
+
+    html[dir="rtl"] .subjects-hero-search-select > i {
+        right: auto !important;
+        left: 12px !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   HOW IT WORKS / ALL PAGES
+   IPAD PRO HAMBURGER — FULL WIDTH MENU
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1199px) {
+
+    /* Full mobile/tablet navigation */
+    .mobile-navigation {
+        position: fixed !important;
+        top: 76px !important;
+        left: 0 !important;
+        right: 0 !important;
+
+        width: 100% !important;
+        max-width: none !important;
+
+        margin: 0 !important;
+        padding: 20px 32px 30px !important;
+
+        box-sizing: border-box !important;
+
+        border-radius: 0 !important;
+
+        overflow-y: auto !important;
+    }
+
+    /* Navigation list */
+    .mobile-navigation .mobile-nav-list {
+        width: 100% !important;
+        max-width: none !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Every menu item */
+    .mobile-navigation .mobile-nav-item {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Links */
+    .mobile-navigation .mobile-nav-link {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Home dropdown */
+    .mobile-navigation .mobile-nav-dropdown {
+        width: 100% !important;
+    }
+
+    .mobile-navigation .mobile-dropdown-menu {
+        width: 100% !important;
+        max-width: none !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Controls */
+    .mobile-navigation .mobile-nav-controls {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Dark mode / RTL / Login / Dashboard */
+    .mobile-navigation .mobile-theme-toggle,
+    .mobile-navigation .mobile-rtl-toggle,
+    .mobile-navigation .mobile-login-btn,
+    .mobile-navigation .mobile-dashboard-btn {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+
+/* =========================================================
+   IPAD PRO — HAMBURGER MENU HEIGHT
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1199px) {
+
+    .mobile-navigation {
+        position: fixed !important;
+
+        top: 76px !important;
+        left: 0 !important;
+        right: 0 !important;
+
+        width: 100% !important;
+
+        /* REMOVE FULL SCREEN HEIGHT */
+        height: auto !important;
+        max-height: calc(100vh - 76px) !important;
+
+        padding: 18px 32px 24px !important;
+
+        background: #ffffff !important;
+
+        overflow-y: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    .mobile-navigation .mobile-nav-list {
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .mobile-navigation .mobile-nav-item {
+        height: auto !important;
+    }
+
+    .mobile-navigation .mobile-nav-link {
+        min-height: 44px !important;
+        height: 44px !important;
+    }
+
+    /* Reduce spacing between menu items */
+    .mobile-navigation .mobile-nav-item + .mobile-nav-item {
+        margin-top: 0 !important;
+    }
+
+    /* Controls */
+    .mobile-navigation .mobile-nav-controls {
+        margin-top: 12px !important;
+        padding-top: 12px !important;
+    }
+
+    .mobile-navigation .mobile-theme-toggle,
+    .mobile-navigation .mobile-rtl-toggle,
+    .mobile-navigation .mobile-login-btn,
+    .mobile-navigation .mobile-dashboard-btn {
+        height: 42px !important;
+        min-height: 42px !important;
+    }
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1199px) {
+
+    body.dark-mode .mobile-navigation {
+        background: #0F172A !important;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   SUBJECTS HERO SEARCH
+   IPAD MINI + IPAD PRO
+   FINAL ALIGNMENT
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    /* HERO */
+    .subjects-hero-section {
+        width: 100%;
+        overflow: hidden !important;
+    }
+
+    .subjects-hero-section > .container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+        padding: 0 24px !important;
+        box-sizing: border-box !important;
+    }
+
+
+    /* -----------------------------------------------------
+       HERO CONTENT
+    ----------------------------------------------------- */
+
+    .subjects-hero-content {
+        width: 100% !important;
+        max-width: 700px !important;
+        margin: 0 auto !important;
+
+        padding: 70px 20px 90px !important;
+
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .subjects-hero-badge {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .subjects-hero-title {
+        max-width: 650px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+    .subjects-hero-description {
+        max-width: 620px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       SEARCH CARD
+    ----------------------------------------------------- */
+
+    .subjects-hero-search-box {
+        position: relative !important;
+        z-index: 10 !important;
+
+        width: calc(100% - 32px) !important;
+        max-width: 760px !important;
+
+        margin: -50px auto 0 !important;
+
+        padding: 18px !important;
+
+        box-sizing: border-box !important;
+
+        border-radius: 16px !important;
+
+        overflow: visible !important;
+    }
+
+
+    /* -----------------------------------------------------
+       FORM
+    ----------------------------------------------------- */
+
+    .subjects-hero-search-form {
+        width: 100% !important;
+        max-width: none !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr) !important;
+
+        gap: 12px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        align-items: stretch !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* -----------------------------------------------------
+       FIELDS
+    ----------------------------------------------------- */
+
+    .subjects-hero-search-field {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* -----------------------------------------------------
+       INPUT WRAPPER
+    ----------------------------------------------------- */
+
+    .subjects-hero-search-input {
+        position: relative !important;
+
+        width: 100% !important;
+        height: 46px !important;
+
+        margin: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+    .subjects-hero-search-input input {
+        display: block !important;
+
+        width: 100% !important;
+        height: 46px !important;
+
+        min-width: 0 !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        padding: 0 40px !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* -----------------------------------------------------
+       SELECT WRAPPER
+    ----------------------------------------------------- */
+
+    .subjects-hero-search-select {
+        position: relative !important;
+
+        width: 100% !important;
+        height: 46px !important;
+
+        margin: 0 !important;
+
+        box-sizing: border-box !important;
+
+        overflow: visible !important;
+    }
+
+    .subjects-hero-search-select select {
+        display: block !important;
+
+        width: 100% !important;
+        height: 46px !important;
+
+        min-width: 0 !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        padding: 0 38px 0 14px !important;
+
+        box-sizing: border-box !important;
+
+        appearance: none !important;
+        -webkit-appearance: none !important;
+    }
+
+    .subjects-hero-search-select > i {
+        position: absolute !important;
+
+        top: 50% !important;
+        right: 14px !important;
+
+        transform: translateY(-50%) !important;
+
+        pointer-events: none !important;
+
+        z-index: 5 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       BUTTON
+    ----------------------------------------------------- */
+
+    .subjects-hero-search-button {
+        grid-column: 1 / -1 !important;
+
+        width: 100% !important;
+        height: 46px !important;
+
+        min-width: 0 !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        box-sizing: border-box !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 8px !important;
+    }
+}
+
+
+/* =========================================================
+   IPAD MINI
+   768px – 819px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .subjects-hero-section > .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .subjects-hero-content {
+        padding-top: 65px !important;
+        padding-bottom: 85px !important;
+    }
+
+    .subjects-hero-search-box {
+        width: calc(100% - 24px) !important;
+        max-width: 680px !important;
+
+        padding: 14px !important;
+
+        margin-top: -45px !important;
+    }
+
+    .subjects-hero-search-form {
+        gap: 10px !important;
+    }
+
+    .subjects-hero-search-input,
+    .subjects-hero-search-input input,
+    .subjects-hero-search-select,
+    .subjects-hero-search-select select,
+    .subjects-hero-search-button {
+        height: 44px !important;
+    }
+}
+
+
+/* =========================================================
+   IPAD PRO
+   820px – 1199px
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1199px) {
+
+    .subjects-hero-section > .container {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    .subjects-hero-content {
+        max-width: 800px !important;
+
+        padding-top: 75px !important;
+        padding-bottom: 95px !important;
+    }
+
+    .subjects-hero-search-box {
+        width: calc(100% - 48px) !important;
+        max-width: 850px !important;
+
+        padding: 20px !important;
+
+        margin-top: -50px !important;
+    }
+
+    .subjects-hero-search-form {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr) !important;
+
+        gap: 12px !important;
+    }
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    html[dir="rtl"] .subjects-hero-content {
+        text-align: center !important;
+    }
+
+    html[dir="rtl"] .subjects-hero-title,
+    html[dir="rtl"] .subjects-hero-description {
+        text-align: center !important;
+    }
+
+    html[dir="rtl"] .subjects-hero-search-input input {
+        direction: rtl !important;
+        text-align: right !important;
+
+        padding-right: 40px !important;
+        padding-left: 14px !important;
+    }
+
+    html[dir="rtl"] .subjects-hero-search-input > i {
+        left: 14px !important;
+        right: auto !important;
+    }
+
+    html[dir="rtl"] .subjects-hero-search-select select {
+        direction: rtl !important;
+        text-align: right !important;
+
+        padding-right: 14px !important;
+        padding-left: 38px !important;
+    }
+
+    html[dir="rtl"] .subjects-hero-search-select > i {
+        left: 14px !important;
+        right: auto !important;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   HOME 1 - HOW IT WORKS
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* Section */
+    .home-how-section {
+        width: 100%;
+        padding: 60px 0 !important;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .home-how-section > .container {
+        width: calc(100% - 32px) !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION HEADER
+    ----------------------------------------------------- */
+
+    .home-how-section .home-section-header {
+        width: 100% !important;
+        max-width: 600px !important;
+        margin: 0 auto 36px !important;
+        text-align: center !important;
+    }
+
+    .home-how-section .home-section-badge {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-how-section .home-section-title {
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+        margin: 12px auto !important;
+        text-align: center !important;
+    }
+
+    .home-how-section .home-section-description {
+        max-width: 520px !important;
+        margin: 0 auto !important;
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       STEPS
+    ----------------------------------------------------- */
+
+    .home-how-steps {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        align-items: stretch !important;
+
+        gap: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       STEP
+    ----------------------------------------------------- */
+
+    .home-how-step {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        align-items: flex-start !important;
+
+        gap: 16px !important;
+
+        padding: 20px 0 !important;
+
+        margin: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* -----------------------------------------------------
+       STEP TOP
+    ----------------------------------------------------- */
+
+    .home-how-step-top {
+        flex: 0 0 auto !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        gap: 7px !important;
+
+        width: 48px !important;
+    }
+
+
+    /* Number */
+    .home-how-number {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: 30px !important;
+        height: 22px !important;
+
+        font-size: 11px !important;
+        line-height: 1 !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* Icon */
+    .home-how-icon {
+        width: 44px !important;
+        height: 44px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        flex-shrink: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+    .home-how-icon i {
+        font-size: 16px !important;
+    }
+
+
+    /* -----------------------------------------------------
+       CONTENT
+    ----------------------------------------------------- */
+
+    .home-how-content {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+
+        padding: 2px 0 0 !important;
+    }
+
+    .home-how-title {
+        font-size: 17px !important;
+        line-height: 1.3 !important;
+
+        margin: 0 0 6px !important;
+    }
+
+    .home-how-description {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+
+        margin: 0 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       CONNECTORS
+       Hide horizontal arrows on mobile
+    ----------------------------------------------------- */
+
+    .home-how-connector {
+        display: none !important;
+    }
+
+
+    /* -----------------------------------------------------
+       DIVIDER BETWEEN STEPS
+    ----------------------------------------------------- */
+
+    .home-how-step + .home-how-step {
+        border-top: 1px solid var(--border-color) !important;
+    }
+
+    body.dark-mode .home-how-step + .home-how-step {
+        border-top-color: #334155 !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   480px AND BELOW
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .home-how-section {
+        padding: 50px 0 !important;
+    }
+
+    .home-how-section > .container {
+        width: calc(100% - 28px) !important;
+    }
+
+
+    .home-how-section .home-section-header {
+        margin-bottom: 28px !important;
+    }
+
+    .home-how-section .home-section-title {
+        font-size: 27px !important;
+    }
+
+    .home-how-section .home-section-description {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+    }
+
+
+    .home-how-step {
+        gap: 13px !important;
+        padding: 17px 0 !important;
+    }
+
+    .home-how-step-top {
+        width: 42px !important;
+    }
+
+    .home-how-number {
+        width: 28px !important;
+        height: 21px !important;
+        font-size: 10px !important;
+    }
+
+    .home-how-icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .home-how-icon i {
+        font-size: 15px !important;
+    }
+
+    .home-how-title {
+        font-size: 16px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .home-how-description {
+        font-size: 12px !important;
+        line-height: 1.55 !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE RTL
+========================================================= */
+
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .home-how-step {
+        flex-direction: row-reverse !important;
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .home-how-content {
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .home-how-step-top {
+        align-items: center !important;
+    }
+
+    html[dir="rtl"] .home-how-section .home-section-header,
+    html[dir="rtl"] .home-how-section .home-section-title,
+    html[dir="rtl"] .home-how-section .home-section-description {
+        text-align: center !important;
     }
 }
