@@ -34842,1383 +34842,6 @@ html body.dark-mode
 
 
 
-/* =========================================================
-   SUBJECTS FINAL CTA
-   EXACT HTML CLASS NAMES
-========================================================= */
-
-.subjects-final-cta-section {
-    position: relative;
-    width: 100%;
-    min-height: 420px;
-
-    display: flex;
-    align-items: center;
-
-    padding: 80px 0;
-
-    overflow: hidden;
-
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(15, 23, 42, 0.88),
-            rgba(37, 99, 235, 0.72)
-        ),
-        url("../images/subjects-cta.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-/* =========================================================
-   CONTAINER
-========================================================= */
-
-.subjects-final-cta-section .container {
-    width: calc(100% - 32px);
-    max-width: 1440px;
-
-    margin-inline: auto;
-    padding: 0;
-}
-
-
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.subjects-final-cta-content {
-    position: relative;
-    z-index: 5;
-
-    width: min(100%, 760px);
-
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-}
-
-
-/* =========================================================
-   BADGE
-========================================================= */
-
-.subjects-final-cta-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    padding: 9px 15px;
-
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 50px;
-
-    background: rgba(255, 255, 255, 0.12);
-
-    color: #ffffff !important;
-
-    font-size: 11px;
-    line-height: 1.2;
-    font-weight: 600;
-
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-}
-
-.subjects-final-cta-badge i {
-    color: #ffffff !important;
-    font-size: 12px;
-}
-
-
-/* =========================================================
-   TITLE
-========================================================= */
-
-.subjects-final-cta-title {
-    max-width: 700px;
-
-    margin: 20px auto 0;
-
-    color: #ffffff !important;
-
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: 600;
-
-    letter-spacing: -0.02em;
-}
-
-.subjects-final-cta-title span {
-    color: #ffffff !important;
-}
-
-
-/* =========================================================
-   DESCRIPTION
-========================================================= */
-
-.subjects-final-cta-description {
-    max-width: 620px;
-
-    margin: 15px auto 0;
-
-    color: rgba(255, 255, 255, 0.88) !important;
-
-    font-size: 15px;
-    line-height: 1.7;
-
-    text-align: center;
-}
-
-
-/* =========================================================
-   ACTIONS
-========================================================= */
-
-.subjects-final-cta-actions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-
-    margin-top: 27px;
-}
-
-
-/* =========================================================
-   PRIMARY BUTTON
-========================================================= */
-
-.subjects-final-cta-primary {
-    min-height: 50px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-
-    padding: 0 23px;
-
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-
-    background: #ffffff;
-
-    color: #2563EB !important;
-
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 600;
-
-    text-decoration: none;
-
-    transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        border-color 0.25s ease;
-}
-
-.subjects-final-cta-primary i {
-    color: #2563EB !important;
-}
-
-.subjects-final-cta-primary:hover {
-    background: #2563EB !important;
-    border-color: #2563EB !important;
-
-    color: #ffffff !important;
-}
-
-.subjects-final-cta-primary:hover i {
-    color: #ffffff !important;
-}
-
-
-/* =========================================================
-   SECONDARY BUTTON
-========================================================= */
-
-.subjects-final-cta-secondary {
-    min-height: 50px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    padding: 0 22px;
-
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    border-radius: 10px;
-
-    background: rgba(255, 255, 255, 0.10);
-
-    color: #ffffff !important;
-
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 600;
-
-    text-decoration: none;
-
-    backdrop-filter: blur(5px);
-
-    transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        border-color 0.25s ease;
-}
-
-.subjects-final-cta-secondary i {
-    color: #ffffff !important;
-}
-
-.subjects-final-cta-secondary:hover {
-    background: #ffffff !important;
-    border-color: #ffffff !important;
-
-    color: #2563EB !important;
-}
-
-.subjects-final-cta-secondary:hover i {
-    color: #2563EB !important;
-}
-
-
-/* =========================================================
-   DECORATIVE CIRCLES
-========================================================= */
-
-.subjects-final-cta-circle {
-    position: absolute;
-
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-
-    pointer-events: none;
-
-    z-index: 1;
-}
-
-.subjects-final-cta-circle-one {
-    width: 360px;
-    height: 360px;
-
-    left: -170px;
-    top: -150px;
-}
-
-.subjects-final-cta-circle-two {
-    width: 260px;
-    height: 260px;
-
-    right: -100px;
-    bottom: -130px;
-}
-
-.subjects-final-cta-circle-three {
-    width: 160px;
-    height: 160px;
-
-    right: 12%;
-    top: -90px;
-}
-
-
-/* =========================================================
-   DARK MODE
-========================================================= */
-
-body.dark-mode .subjects-final-cta-section {
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(2, 6, 23, 0.92),
-            rgba(30, 64, 175, 0.78)
-        ),
-        url("../images/subjects-cta.jpg");
-}
-
-
-/* Badge */
-
-body.dark-mode .subjects-final-cta-badge,
-body.dark-mode .subjects-final-cta-badge i {
-    color: #ffffff !important;
-}
-
-
-/* Title */
-
-body.dark-mode .subjects-final-cta-title,
-body.dark-mode .subjects-final-cta-title span {
-    color: #ffffff !important;
-}
-
-
-/* Description */
-
-body.dark-mode .subjects-final-cta-description {
-    color: #E2E8F0 !important;
-}
-
-
-/* Primary */
-
-body.dark-mode .subjects-final-cta-primary {
-    background: #ffffff !important;
-    border-color: #ffffff !important;
-
-    color: #2563EB !important;
-}
-
-body.dark-mode .subjects-final-cta-primary i {
-    color: #2563EB !important;
-}
-
-body.dark-mode .subjects-final-cta-primary:hover {
-    background: #2563EB !important;
-    border-color: #2563EB !important;
-
-    color: #ffffff !important;
-}
-
-body.dark-mode .subjects-final-cta-primary:hover i {
-    color: #ffffff !important;
-}
-
-
-/* Secondary */
-
-body.dark-mode .subjects-final-cta-secondary {
-    background: rgba(255, 255, 255, 0.08) !important;
-    border-color: rgba(255, 255, 255, 0.35) !important;
-
-    color: #ffffff !important;
-}
-
-body.dark-mode .subjects-final-cta-secondary i {
-    color: #ffffff !important;
-}
-
-body.dark-mode .subjects-final-cta-secondary:hover {
-    background: #ffffff !important;
-    border-color: #ffffff !important;
-
-    color: #2563EB !important;
-}
-
-body.dark-mode .subjects-final-cta-secondary:hover i {
-    color: #2563EB !important;
-}
-
-
-/* =========================================================
-   RTL
-========================================================= */
-
-html[dir="rtl"] .subjects-final-cta-content {
-    text-align: center;
-}
-
-html[dir="rtl"] .subjects-final-cta-description,
-html[dir="rtl"] .subjects-final-cta-title {
-    text-align: center;
-}
-
-html[dir="rtl"] .subjects-final-cta-actions {
-    flex-direction: row-reverse;
-}
-
-
-/* =========================================================
-   TABLET / IPAD PRO
-========================================================= */
-
-@media (max-width: 1199px) {
-
-    .subjects-final-cta-section {
-        min-height: 390px;
-        padding: 65px 0;
-    }
-
-    .subjects-final-cta-title {
-        font-size: 36px;
-    }
-
-    .subjects-final-cta-description {
-        font-size: 14px;
-    }
-}
-
-
-/* =========================================================
-   IPAD MINI
-========================================================= */
-
-@media (max-width: 767px) {
-
-    .subjects-final-cta-section {
-        min-height: auto;
-
-        padding: 55px 0;
-    }
-
-    .subjects-final-cta-section .container {
-        width: calc(100% - 32px);
-    }
-
-    .subjects-final-cta-content {
-        width: 100%;
-    }
-
-    .subjects-final-cta-title {
-        margin-top: 17px;
-
-        font-size: 30px;
-        line-height: 1.22;
-    }
-
-    .subjects-final-cta-description {
-        margin-top: 13px;
-
-        font-size: 14px;
-        line-height: 1.65;
-    }
-
-    .subjects-final-cta-actions {
-        width: 100%;
-
-        flex-direction: column;
-
-        gap: 10px;
-
-        margin-top: 23px;
-    }
-
-    html[dir="rtl"] .subjects-final-cta-actions {
-        flex-direction: column;
-    }
-
-    .subjects-final-cta-primary,
-    .subjects-final-cta-secondary {
-        width: min(100%, 280px);
-
-        min-height: 48px;
-
-        padding-inline: 18px;
-
-        font-size: 13px;
-    }
-
-    .subjects-final-cta-circle-one {
-        width: 260px;
-        height: 260px;
-
-        left: -150px;
-        top: -110px;
-    }
-
-    .subjects-final-cta-circle-two {
-        width: 200px;
-        height: 200px;
-
-        right: -100px;
-        bottom: -110px;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .subjects-final-cta-section {
-        padding: 45px 0;
-    }
-
-    .subjects-final-cta-section .container {
-        width: calc(100% - 24px);
-    }
-
-    .subjects-final-cta-title {
-        font-size: 27px;
-    }
-
-    .subjects-final-cta-description {
-        font-size: 13px;
-    }
-
-    .subjects-final-cta-badge {
-        padding: 8px 12px;
-        font-size: 10px;
-    }
-
-    .subjects-final-cta-primary,
-    .subjects-final-cta-secondary {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-/* =========================================================
-   PRICING FINAL CTA
-   CORRECT ALIGNMENT + FULL BACKGROUND IMAGE
-========================================================= */
-
-.pricing-final-cta-section {
-    position: relative;
-    width: 100%;
-    min-height: 430px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 80px 0;
-
-    overflow: hidden;
-
-    background-image:
-        linear-gradient(
-            rgba(15, 23, 42, 0.68),
-            rgba(37, 99, 235, 0.62)
-        ),
-        url("../images/pricing-cta.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-/* =========================================================
-   CONTAINER
-========================================================= */
-
-.pricing-final-cta-section > .container {
-    position: relative;
-    z-index: 5;
-
-    width: calc(100% - 32px);
-    max-width: 1440px;
-
-    margin-inline: auto;
-    padding: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.pricing-final-cta-content {
-    width: min(100%, 900px);
-
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-}
-
-
-/* =========================================================
-   BADGE
-========================================================= */
-
-.pricing-final-cta-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    padding: 9px 16px;
-
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 50px;
-
-    background: rgba(255, 255, 255, 0.12);
-
-    color: #ffffff !important;
-
-    font-size: 11px;
-    line-height: 1.2;
-    font-weight: 600;
-
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-}
-
-.pricing-final-cta-badge i {
-    color: #ffffff !important;
-    font-size: 12px;
-}
-
-
-/* =========================================================
-   TITLE
-========================================================= */
-
-.pricing-final-cta-title {
-    width: 100%;
-    max-width: 850px;
-
-    margin: 20px auto 0;
-
-    color: #ffffff !important;
-
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: 600;
-
-    letter-spacing: -0.02em;
-
-    text-align: center;
-}
-
-.pricing-final-cta-title span {
-    display: block;
-
-    margin-top: 3px;
-
-    color: #ffffff !important;
-}
-
-
-/* =========================================================
-   DESCRIPTION
-========================================================= */
-
-.pricing-final-cta-description {
-    width: 100%;
-    max-width: 680px;
-
-    margin: 16px auto 0;
-
-    color: rgba(255, 255, 255, 0.90) !important;
-
-    font-size: 15px;
-    line-height: 1.7;
-
-    text-align: center;
-}
-
-
-/* =========================================================
-   BUTTONS
-========================================================= */
-
-.pricing-final-cta-actions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 12px;
-
-    margin-top: 27px;
-}
-
-
-/* =========================================================
-   PRIMARY BUTTON
-========================================================= */
-
-.pricing-final-cta-primary {
-    min-height: 50px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-
-    padding: 0 24px;
-
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-
-    background: #ffffff;
-
-    color: #2563EB !important;
-
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 600;
-
-    text-decoration: none;
-
-    transition: all 0.25s ease;
-}
-
-.pricing-final-cta-primary i {
-    color: #2563EB !important;
-}
-
-.pricing-final-cta-primary:hover {
-    background: #2563EB !important;
-    border-color: #2563EB !important;
-
-    color: #ffffff !important;
-}
-
-.pricing-final-cta-primary:hover i {
-    color: #ffffff !important;
-}
-
-
-/* =========================================================
-   SECONDARY BUTTON
-========================================================= */
-
-.pricing-final-cta-secondary {
-    min-height: 50px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    padding: 0 23px;
-
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    border-radius: 10px;
-
-    background: rgba(255, 255, 255, 0.10);
-
-    color: #ffffff !important;
-
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 600;
-
-    text-decoration: none;
-
-    backdrop-filter: blur(6px);
-
-    transition: all 0.25s ease;
-}
-
-.pricing-final-cta-secondary i {
-    color: #ffffff !important;
-}
-
-.pricing-final-cta-secondary:hover {
-    background: #ffffff !important;
-    border-color: #ffffff !important;
-
-    color: #2563EB !important;
-}
-
-.pricing-final-cta-secondary:hover i {
-    color: #2563EB !important;
-}
-
-
-/* =========================================================
-   DECORATIVE CIRCLES
-========================================================= */
-
-.pricing-final-cta-circle {
-    position: absolute;
-
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50%;
-
-    pointer-events: none;
-
-    z-index: 2;
-}
-
-.pricing-final-cta-circle-one {
-    width: 330px;
-    height: 330px;
-
-    left: -150px;
-    top: -150px;
-}
-
-.pricing-final-cta-circle-two {
-    width: 250px;
-    height: 250px;
-
-    right: -100px;
-    bottom: -130px;
-}
-
-.pricing-final-cta-circle-three {
-    width: 160px;
-    height: 160px;
-
-    right: 15%;
-    top: -80px;
-}
-
-
-/* =========================================================
-   DARK MODE
-========================================================= */
-
-body.dark-mode .pricing-final-cta-section {
-    background-image:
-        linear-gradient(
-            rgba(2, 6, 23, 0.78),
-            rgba(30, 64, 175, 0.68)
-        ),
-        url("../images/pricing-cta.jpg");
-}
-
-body.dark-mode .pricing-final-cta-badge {
-    background: rgba(255, 255, 255, 0.10);
-    border-color: rgba(255, 255, 255, 0.30);
-}
-
-body.dark-mode .pricing-final-cta-title,
-body.dark-mode .pricing-final-cta-title span {
-    color: #ffffff !important;
-}
-
-body.dark-mode .pricing-final-cta-description {
-    color: #E2E8F0 !important;
-}
-
-
-/* Primary dark mode */
-
-body.dark-mode .pricing-final-cta-primary {
-    background: #ffffff !important;
-    border-color: #ffffff !important;
-    color: #2563EB !important;
-}
-
-body.dark-mode .pricing-final-cta-primary i {
-    color: #2563EB !important;
-}
-
-body.dark-mode .pricing-final-cta-primary:hover {
-    background: #2563EB !important;
-    border-color: #2563EB !important;
-    color: #ffffff !important;
-}
-
-body.dark-mode .pricing-final-cta-primary:hover i {
-    color: #ffffff !important;
-}
-
-
-/* Secondary dark mode */
-
-body.dark-mode .pricing-final-cta-secondary {
-    background: rgba(255, 255, 255, 0.08) !important;
-    border-color: rgba(255, 255, 255, 0.35) !important;
-    color: #ffffff !important;
-}
-
-body.dark-mode .pricing-final-cta-secondary i {
-    color: #ffffff !important;
-}
-
-body.dark-mode .pricing-final-cta-secondary:hover {
-    background: #ffffff !important;
-    border-color: #ffffff !important;
-    color: #2563EB !important;
-}
-
-body.dark-mode .pricing-final-cta-secondary:hover i {
-    color: #2563EB !important;
-}
-
-
-/* =========================================================
-   RTL
-========================================================= */
-
-html[dir="rtl"] .pricing-final-cta-content {
-    text-align: center;
-}
-
-html[dir="rtl"] .pricing-final-cta-title,
-html[dir="rtl"] .pricing-final-cta-description {
-    text-align: center;
-}
-
-html[dir="rtl"] .pricing-final-cta-actions {
-    flex-direction: row-reverse;
-}
-
-
-/* =========================================================
-   IPAD PRO / TABLET
-========================================================= */
-
-@media (max-width: 1199px) {
-
-    .pricing-final-cta-section {
-        min-height: 400px;
-        padding: 65px 0;
-    }
-
-    .pricing-final-cta-title {
-        font-size: 36px;
-    }
-
-    .pricing-final-cta-description {
-        font-size: 14px;
-    }
-}
-
-
-/* =========================================================
-   IPAD MINI + MOBILE
-========================================================= */
-
-@media (max-width: 767px) {
-
-    .pricing-final-cta-section {
-        min-height: 390px;
-
-        padding: 55px 0;
-    }
-
-    .pricing-final-cta-section > .container {
-        width: calc(100% - 32px);
-    }
-
-    .pricing-final-cta-content {
-        width: 100%;
-    }
-
-    .pricing-final-cta-title {
-        font-size: 30px;
-        line-height: 1.22;
-    }
-
-    .pricing-final-cta-description {
-        max-width: 580px;
-
-        font-size: 14px;
-        line-height: 1.65;
-    }
-
-    .pricing-final-cta-actions {
-        flex-direction: column;
-
-        width: 100%;
-
-        gap: 10px;
-
-        margin-top: 23px;
-    }
-
-    html[dir="rtl"] .pricing-final-cta-actions {
-        flex-direction: column;
-    }
-
-    .pricing-final-cta-primary,
-    .pricing-final-cta-secondary {
-        width: min(100%, 280px);
-
-        min-height: 48px;
-
-        font-size: 13px;
-    }
-
-    .pricing-final-cta-circle-one {
-        width: 240px;
-        height: 240px;
-
-        left: -130px;
-        top: -100px;
-    }
-
-    .pricing-final-cta-circle-two {
-        width: 190px;
-        height: 190px;
-
-        right: -90px;
-        bottom: -100px;
-    }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .pricing-final-cta-section {
-        min-height: 370px;
-
-        padding: 45px 0;
-    }
-
-    .pricing-final-cta-section > .container {
-        width: calc(100% - 24px);
-    }
-
-    .pricing-final-cta-badge {
-        padding: 8px 12px;
-        font-size: 10px;
-    }
-
-    .pricing-final-cta-title {
-        font-size: 27px;
-    }
-
-    .pricing-final-cta-description {
-        font-size: 13px;
-    }
-
-    .pricing-final-cta-primary,
-    .pricing-final-cta-secondary {
-        width: 100%;
-    }
-}
-
-
-
-/* =========================================================
-   PRICING CTA - INNER CARD PADDING FIX
-========================================================= */
-
-.pricing-final-cta-content {
-    width: min(100%, 900px);
-    margin: 0 auto;
-
-    padding: 42px 55px 44px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    box-sizing: border-box;
-}
-
-
-/* Badge */
-.pricing-final-cta-badge {
-    margin: 0 0 18px;
-}
-
-
-/* Heading */
-.pricing-final-cta-title {
-    margin: 0 auto;
-
-    max-width: 820px;
-}
-
-
-/* Description */
-.pricing-final-cta-description {
-    margin: 17px auto 0;
-
-    max-width: 680px;
-}
-
-
-/* Buttons */
-.pricing-final-cta-actions {
-    margin-top: 26px;
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1199px) {
-
-    .pricing-final-cta-content {
-        width: min(100%, 820px);
-
-        padding: 38px 42px 40px;
-    }
-
-    .pricing-final-cta-title {
-        max-width: 760px;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 767px) {
-
-    .pricing-final-cta-content {
-        width: 100%;
-
-        padding: 32px 24px 34px;
-    }
-
-    .pricing-final-cta-badge {
-        margin-bottom: 15px;
-    }
-
-    .pricing-final-cta-title {
-        max-width: 100%;
-    }
-
-    .pricing-final-cta-description {
-        margin-top: 14px;
-    }
-
-    .pricing-final-cta-actions {
-        margin-top: 22px;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .pricing-final-cta-content {
-        padding: 28px 18px 30px;
-    }
-
-    .pricing-final-cta-badge {
-        margin-bottom: 13px;
-    }
-
-    .pricing-final-cta-description {
-        margin-top: 12px;
-    }
-
-    .pricing-final-cta-actions {
-        margin-top: 20px;
-    }
-
-}
-
-
-
-/* =========================================================
-   PRICING CTA PRIMARY BUTTON - LIGHT MODE HOVER
-========================================================= */
-
-body:not(.dark-mode) .pricing-final-cta-primary {
-    background: #ffffff !important;
-    color: #2563EB !important;
-    border: 1px solid #ffffff !important;
-}
-
-body:not(.dark-mode) .pricing-final-cta-primary i {
-    color: #2563EB !important;
-}
-
-body:not(.dark-mode) .pricing-final-cta-primary:hover {
-    background: #2563EB !important;
-    color: #ffffff !important;
-    border-color: #2563EB !important;
-}
-
-body:not(.dark-mode) .pricing-final-cta-primary:hover i {
-    color: #ffffff !important;
-}
-
-
-
-/* =========================================================
-   PRICING CTA PRIMARY BUTTON
-   LIGHT MODE HOVER — WHITE TEXT + ARROW
-========================================================= */
-
-html body:not(.dark-mode) .pricing-final-cta-primary:hover {
-    background: #2563EB !important;
-    color: #ffffff !important;
-    border-color: #2563EB !important;
-}
-
-html body:not(.dark-mode) .pricing-final-cta-primary:hover span {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-html body:not(.dark-mode) .pricing-final-cta-primary:hover i.fa-solid.fa-arrow-right {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-    opacity: 1 !important;
-}
-
-
-/* =========================================================
-   PRICING CTA PRIMARY BUTTON
-   HOVER — ALL MODES
-========================================================= */
-
-html body .pricing-final-cta-primary:hover {
-    background: #2563EB !important;
-    color: #ffffff !important;
-    border-color: #2563EB !important;
-}
-
-html body .pricing-final-cta-primary:hover span {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-html body .pricing-final-cta-primary:hover i.fa-solid.fa-arrow-right {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-    opacity: 1 !important;
-}
-
-
-/* DARK MODE — FORCE WHITE TEXT + ARROW */
-
-html body.dark-mode .pricing-final-cta-primary:hover {
-    background: #2563EB !important;
-    color: #ffffff !important;
-    border-color: #2563EB !important;
-}
-
-html body.dark-mode .pricing-final-cta-primary:hover span {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-html body.dark-mode .pricing-final-cta-primary:hover i.fa-solid.fa-arrow-right {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-    opacity: 1 !important;
-}
-
-
-/* =========================================================
-   PRICING CTA PRIMARY BUTTON
-   NORMAL STATE — LIGHT + DARK MODE
-========================================================= */
-
-html body .pricing-final-cta-primary {
-    background: #2563EB !important;
-    color: #ffffff !important;
-    border: 1px solid #2563EB !important;
-}
-
-html body .pricing-final-cta-primary span {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-html body .pricing-final-cta-primary i.fa-solid.fa-arrow-right {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-    opacity: 1 !important;
-}
-
-
-/* DARK MODE NORMAL */
-
-html body.dark-mode .pricing-final-cta-primary {
-    background: #2563EB !important;
-    color: #ffffff !important;
-    border-color: #2563EB !important;
-}
-
-html body.dark-mode .pricing-final-cta-primary span {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-html body.dark-mode .pricing-final-cta-primary i.fa-solid.fa-arrow-right {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-
-
-/* =========================================================
-   PRICING CTA SECONDARY BUTTON - HOVER
-========================================================= */
-
-html body .pricing-final-cta-secondary:hover {
-    background: #2563EB !important;
-    color: #ffffff !important;
-    border-color: #2563EB !important;
-}
-
-html body .pricing-final-cta-secondary:hover span {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-html body .pricing-final-cta-secondary:hover i {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-    opacity: 1 !important;
-}
-
-
-/* DARK MODE HOVER */
-
-html body.dark-mode .pricing-final-cta-secondary:hover {
-    background: #2563EB !important;
-    color: #ffffff !important;
-    border-color: #2563EB !important;
-}
-
-html body.dark-mode .pricing-final-cta-secondary:hover span,
-html body.dark-mode .pricing-final-cta-secondary:hover i {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-
-
-
-
-/* =========================================================
-   PRICING CTA PRIMARY BUTTON
-   LIGHT MODE - NORMAL STATE
-========================================================= */
-
-html body:not(.dark-mode) .pricing-final-cta-primary {
-    background: #2563EB !important;
-    color: #ffffff !important;
-    border: 1px solid #2563EB !important;
-}
-
-html body:not(.dark-mode) .pricing-final-cta-primary span {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-html body:not(.dark-mode) .pricing-final-cta-primary i.fa-arrow-right {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
 
 
 
@@ -36470,4 +35093,1212 @@ html body.dark-mode .subjects-final-cta-primary:hover span {
 html body.dark-mode .subjects-final-cta-primary:hover i.fa-solid.fa-arrow-right {
     color: #2563EB !important;
     -webkit-text-fill-color: #2563EB !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   TUTORNEST HEADER
+   CONSISTENT SPACING ACROSS ALL PAGES
+========================================================= */
+
+.site-header .header-container {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.site-header .site-logo {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.site-header .desktop-navigation {
+    margin-left: 70px !important;
+    flex: 1 !important;
+}
+
+
+.site-header .nav-list {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 26px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* Keep each menu item consistent */
+.site-header .nav-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+
+/* Navigation links */
+.site-header .nav-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+
+    margin: 0 !important;
+    padding: 8px 0 !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
+.site-header .desktop-header-actions {
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 8px !important;
+
+    margin-left: 35px !important;
+    flex-shrink: 0 !important;
+}
+
+
+/* All header buttons same vertical alignment */
+.site-header .desktop-header-actions > * {
+    margin: 0 !important;
+}
+
+
+/* Icon buttons */
+.site-header .header-icon-btn,
+.site-header .header-rtl-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 32px !important;
+    height: 32px !important;
+
+    padding: 0 !important;
+}
+
+
+/* Login */
+.site-header .header-login-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+
+    min-width: 64px !important;
+    height: 32px !important;
+
+    padding: 0 10px !important;
+    white-space: nowrap !important;
+}
+
+
+/* Dashboard */
+.site-header .header-dashboard-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+
+    min-width: 82px !important;
+    height: 32px !important;
+
+    padding: 0 12px !important;
+    white-space: nowrap !important;
+}
+
+
+
+
+
+
+
+/* =========================================================
+   WHY CHOOSE TUTORNEST
+   EQUAL LEFT + RIGHT PADDING
+========================================================= */
+
+.home-why-section {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+
+/* Main container */
+.home-why-section > .container {
+    width: 100% !important;
+    max-width: 1200px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Section header */
+.home-why-section .home-section-header {
+    width: 100% !important;
+    max-width: 850px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    text-align: center !important;
+    box-sizing: border-box !important;
+}
+
+
+/* Cards grid */
+.home-why-section .home-why-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Cards must stay inside grid */
+.home-why-section .home-why-card {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   FIND A TUTOR HERO
+   RESIZE SEARCH FORM
+========================================================= */
+
+.find-tutor-hero-section .find-tutor-search-box {
+    width: 100% !important;
+    max-width: 760px !important;
+    margin: 30px auto 0 !important;
+
+    padding: 16px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* Search form */
+.find-tutor-hero-section .find-tutor-search-form {
+    width: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 10px !important;
+}
+
+
+/* Individual fields */
+.find-tutor-hero-section .find-tutor-search-field {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+}
+
+
+/* Select containers */
+.find-tutor-hero-section .find-tutor-search-select {
+    width: 100% !important;
+    height: 46px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Select */
+.find-tutor-hero-section .find-tutor-search-select select {
+    width: 100% !important;
+    height: 46px !important;
+
+    padding: 0 35px 0 12px !important;
+
+    font-size: 14px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* Search button */
+.find-tutor-hero-section .find-tutor-search-button {
+    flex: 0 0 auto !important;
+
+    height: 46px !important;
+    padding: 0 20px !important;
+
+    white-space: nowrap !important;
+
+    font-size: 14px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .find-tutor-hero-section .find-tutor-search-box {
+        max-width: 680px !important;
+    }
+
+    .find-tutor-hero-section .find-tutor-search-form {
+        flex-wrap: wrap !important;
+    }
+
+    .find-tutor-hero-section .find-tutor-search-field {
+        flex: 1 1 calc(50% - 5px) !important;
+    }
+
+    .find-tutor-hero-section .find-tutor-search-button {
+        width: 100% !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .find-tutor-hero-section .find-tutor-search-box {
+        max-width: 100% !important;
+        padding: 12px !important;
+    }
+
+    .find-tutor-hero-section .find-tutor-search-form {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .find-tutor-hero-section .find-tutor-search-field {
+        width: 100% !important;
+        flex: none !important;
+    }
+
+    .find-tutor-hero-section .find-tutor-search-button {
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   FIND TUTOR HERO - FIX SEARCH BOX OVERLAPPING
+========================================================= */
+
+.find-tutor-hero-section .find-tutor-search-box {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 35px auto 0 !important;
+    padding: 14px !important;
+
+    box-sizing: border-box !important;
+
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+
+/* FORM */
+.find-tutor-hero-section .find-tutor-search-form {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        minmax(150px, 1fr)
+        minmax(150px, 1fr)
+        minmax(150px, 1fr)
+        auto !important;
+
+    gap: 10px !important;
+
+    align-items: center !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* EACH FIELD */
+.find-tutor-hero-section .find-tutor-search-field {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    position: relative !important;
+}
+
+
+/* SELECT WRAPPER */
+.find-tutor-hero-section .find-tutor-search-select {
+    width: 100% !important;
+    height: 50px !important;
+
+    position: relative !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* SELECT */
+.find-tutor-hero-section .find-tutor-search-select select {
+    width: 100% !important;
+    height: 50px !important;
+
+    display: block !important;
+
+    padding: 0 38px 0 14px !important;
+
+    box-sizing: border-box !important;
+
+    font-size: 14px !important;
+}
+
+
+/* DROPDOWN ICON */
+.find-tutor-hero-section .find-tutor-search-select i {
+    position: absolute !important;
+
+    right: 14px !important;
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+
+    pointer-events: none !important;
+}
+
+
+/* SEARCH BUTTON */
+.find-tutor-hero-section .find-tutor-search-button {
+    width: auto !important;
+    min-width: 165px !important;
+
+    height: 50px !important;
+
+    padding: 0 22px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+
+    white-space: nowrap !important;
+
+    box-sizing: border-box !important;
+
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .find-tutor-hero-section .find-tutor-search-box {
+        max-width: 700px !important;
+    }
+
+    .find-tutor-hero-section .find-tutor-search-form {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .find-tutor-hero-section .find-tutor-search-button {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .find-tutor-hero-section .find-tutor-search-box {
+        width: calc(100% - 30px) !important;
+        max-width: 100% !important;
+
+        padding: 12px !important;
+    }
+
+    .find-tutor-hero-section .find-tutor-search-form {
+        display: flex !important;
+        flex-direction: column !important;
+
+        width: 100% !important;
+        gap: 10px !important;
+    }
+
+    .find-tutor-hero-section .find-tutor-search-field {
+        width: 100% !important;
+    }
+
+    .find-tutor-hero-section .find-tutor-search-button {
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================================
+   SUBJECTS HERO SEARCH - OVERLAP FIX
+========================================================= */
+
+.subjects-hero-section .subjects-hero-search-box {
+    width: 100% !important;
+    max-width: 800px !important;
+
+    margin: 35px auto 0 !important;
+    padding: 14px !important;
+
+    box-sizing: border-box !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+
+/* SEARCH FORM */
+.subjects-hero-section .subjects-hero-search-form {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        minmax(200px, 1fr)
+        minmax(180px, 1fr)
+        auto !important;
+
+    gap: 10px !important;
+
+    align-items: center !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* SEARCH FIELD */
+.subjects-hero-section .subjects-hero-search-field {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    position: relative !important;
+}
+
+
+/* TEXT INPUT WRAPPER */
+.subjects-hero-section .subjects-hero-search-input {
+    width: 100% !important;
+    height: 50px !important;
+
+    position: relative !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* TEXT INPUT */
+.subjects-hero-section .subjects-hero-search-input input {
+    width: 100% !important;
+    height: 50px !important;
+
+    display: block !important;
+
+    padding: 0 14px 0 42px !important;
+
+    box-sizing: border-box !important;
+
+    font-size: 14px !important;
+}
+
+
+/* SEARCH ICON */
+.subjects-hero-section .subjects-hero-search-input i {
+    position: absolute !important;
+
+    left: 15px !important;
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+
+    pointer-events: none !important;
+
+    z-index: 2 !important;
+}
+
+
+/* SELECT WRAPPER */
+.subjects-hero-section .subjects-hero-search-select {
+    width: 100% !important;
+    height: 50px !important;
+
+    position: relative !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* SELECT */
+.subjects-hero-section .subjects-hero-search-select select {
+    width: 100% !important;
+    height: 50px !important;
+
+    display: block !important;
+
+    padding: 0 38px 0 14px !important;
+
+    box-sizing: border-box !important;
+
+    font-size: 14px !important;
+}
+
+
+/* SELECT ARROW */
+.subjects-hero-section .subjects-hero-search-select i {
+    position: absolute !important;
+
+    right: 14px !important;
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+
+    pointer-events: none !important;
+}
+
+
+/* EXPLORE BUTTON */
+.subjects-hero-section .subjects-hero-search-button {
+    width: auto !important;
+    min-width: 170px !important;
+
+    height: 50px !important;
+
+    padding: 0 22px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 8px !important;
+
+    white-space: nowrap !important;
+
+    box-sizing: border-box !important;
+
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .subjects-hero-section .subjects-hero-search-box {
+        max-width: 700px !important;
+    }
+
+    .subjects-hero-section .subjects-hero-search-form {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .subjects-hero-section .subjects-hero-search-button {
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        grid-column: 1 / -1 !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .subjects-hero-section .subjects-hero-search-box {
+        width: calc(100% - 30px) !important;
+        max-width: 100% !important;
+
+        padding: 12px !important;
+    }
+
+    .subjects-hero-section .subjects-hero-search-form {
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        width: 100% !important;
+
+        gap: 10px !important;
+    }
+
+    .subjects-hero-section .subjects-hero-search-field {
+        width: 100% !important;
+    }
+
+    .subjects-hero-section .subjects-hero-search-button {
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   LEARNING CTA
+========================================================= */
+
+.learning-cta-section {
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+
+    background-image: url("../images/pricing-final-cta.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 90px 30px;
+
+    overflow: hidden;
+}
+
+
+/* DARK IMAGE OVERLAY */
+
+.learning-cta-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(10, 30, 70, 0.68);
+
+    z-index: 0;
+}
+
+
+/* CONTENT */
+
+.learning-cta-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+
+/* BADGE */
+
+.learning-cta-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px 22px;
+
+    margin-bottom: 25px;
+
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    border-radius: 50px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* TITLE */
+
+.learning-cta-title {
+    margin: 0 auto 22px;
+
+    max-width: 900px;
+
+    color: #ffffff;
+
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.12;
+    font-weight: 800;
+
+    text-align: center;
+}
+
+.learning-cta-title span {
+    display: block;
+    color: #ffffff;
+}
+
+
+/* DESCRIPTION */
+
+.learning-cta-description {
+    max-width: 760px;
+
+    margin: 0 auto 35px;
+
+    color: #ffffff;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+
+/* BUTTONS */
+
+.learning-cta-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+/* PRIMARY */
+
+.learning-cta-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-width: 190px;
+    min-height: 58px;
+
+    padding: 15px 26px;
+
+    color: #ffffff;
+    background: #2563eb;
+
+    border: 2px solid #2563eb;
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.learning-cta-primary:hover {
+    transform: translateY(-3px);
+}
+
+
+/* SECONDARY */
+
+.learning-cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    min-width: 170px;
+    min-height: 58px;
+
+    padding: 15px 26px;
+
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.learning-cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.20);
+    transform: translateY(-3px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .learning-cta-section {
+        min-height: auto;
+        padding: 70px 20px;
+    }
+
+    .learning-cta-title {
+        font-size: 38px;
+    }
+
+    .learning-cta-description {
+        font-size: 15px;
+    }
+
+    .learning-cta-actions {
+        flex-direction: column;
+    }
+
+    .learning-cta-primary,
+    .learning-cta-secondary {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+html.dark-mode .learning-cta-primary i,
+html.dark-mode .learning-cta-primary .fa-arrow-right,
+body.dark-mode .learning-cta-primary i,
+body.dark-mode .learning-cta-primary .fa-arrow-right {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    opacity: 1 !important;
+}
+/* =========================================================
+   GLOBAL BUTTON DESIGN SYSTEM
+   ========================================================= */
+
+:root {
+    --btn-primary: #2563eb;
+    --btn-primary-hover: #1d4ed8;
+    --btn-text: #ffffff;
+
+    --btn-secondary-border: #2563eb;
+    --btn-secondary-text: #2563eb;
+    --btn-secondary-hover: #2563eb;
+
+    --btn-radius: 10px;
+    --btn-transition: all 0.25s ease;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTONS
+   ========================================================= */
+
+.primary-btn,
+.primary-button,
+.find-tutor-search-button,
+.subjects-hero-search-button,
+.header-dashboard-btn,
+.header-login-btn,
+.pricing-final-cta-primary,
+.new-arrivals-hero-btn,
+.brands-hero-btn {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 12px 22px;
+
+    min-height: 44px;
+
+    border: 1px solid transparent;
+    border-radius: var(--btn-radius);
+
+    background: var(--btn-primary);
+    color: var(--btn-text);
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: var(--btn-transition);
+}
+
+
+/* PRIMARY HOVER */
+
+.primary-btn:hover,
+.primary-button:hover,
+.find-tutor-search-button:hover,
+.subjects-hero-search-button:hover,
+.header-dashboard-btn:hover,
+.header-login-btn:hover,
+.pricing-final-cta-primary:hover,
+.new-arrivals-hero-btn:hover,
+.brands-hero-btn:hover {
+
+    background: var(--btn-primary-hover);
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.20);
+}
+
+
+/* PRIMARY ACTIVE */
+
+.primary-btn:active,
+.primary-button:active,
+.find-tutor-search-button:active,
+.subjects-hero-search-button:active,
+.header-dashboard-btn:active,
+.header-login-btn:active,
+.pricing-final-cta-primary:active,
+.new-arrivals-hero-btn:active,
+.brands-hero-btn:active {
+
+    transform: translateY(0);
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   SECONDARY BUTTONS
+   ========================================================= */
+
+.secondary-btn,
+.secondary-button,
+.pricing-final-cta-secondary {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 12px 22px;
+
+    min-height: 44px;
+
+    border: 1px solid var(--btn-secondary-border);
+    border-radius: var(--btn-radius);
+
+    background: transparent;
+    color: var(--btn-secondary-text);
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: var(--btn-transition);
+}
+
+
+/* SECONDARY HOVER */
+
+.secondary-btn:hover,
+.secondary-button:hover,
+.pricing-final-cta-secondary:hover {
+
+    background: var(--btn-secondary-hover);
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.18);
+}
+
+
+/* SECONDARY ACTIVE */
+
+.secondary-btn:active,
+.secondary-button:active,
+.pricing-final-cta-secondary:active {
+
+    transform: translateY(0);
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   BUTTON ICONS
+   ========================================================= */
+
+.primary-btn i,
+.primary-button i,
+.find-tutor-search-button i,
+.subjects-hero-search-button i,
+.header-dashboard-btn i,
+.header-login-btn i,
+.pricing-final-cta-primary i,
+.pricing-final-cta-secondary i,
+.secondary-btn i,
+.secondary-button i {
+
+    font-size: 14px;
+
+    transition: transform 0.25s ease,
+                color 0.25s ease;
+}
+
+
+/* ICON MOVEMENT ON HOVER */
+
+.primary-btn:hover i,
+.primary-button:hover i,
+.pricing-final-cta-primary:hover i,
+.secondary-btn:hover i,
+.secondary-button:hover i {
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   KEYBOARD FOCUS
+   ========================================================= */
+
+.primary-btn:focus-visible,
+.primary-button:focus-visible,
+.secondary-btn:focus-visible,
+.secondary-button:focus-visible,
+.find-tutor-search-button:focus-visible,
+.subjects-hero-search-button:focus-visible,
+.header-dashboard-btn:focus-visible,
+.header-login-btn:focus-visible {
+
+    outline: 3px solid rgba(37, 99, 235, 0.25);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   DISABLED BUTTON
+   ========================================================= */
+
+button:disabled,
+.primary-btn.disabled,
+.primary-button.disabled {
+
+    opacity: 0.55;
+
+    cursor: not-allowed;
+
+    transform: none !important;
+
+    box-shadow: none !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .primary-btn,
+    .primary-button,
+    .secondary-btn,
+    .secondary-button,
+    .find-tutor-search-button,
+    .subjects-hero-search-button,
+    .pricing-final-cta-primary,
+    .pricing-final-cta-secondary {
+
+        min-height: 42px;
+
+        padding: 11px 18px;
+
+        font-size: 13px;
+
+    }
+
 }
